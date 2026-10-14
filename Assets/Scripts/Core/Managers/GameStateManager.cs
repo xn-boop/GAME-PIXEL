@@ -1,6 +1,8 @@
 using System;
 using UnityEngine;
 using JourneyOfMemories.Core.Data;
+using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 namespace JourneyOfMemories.Core.Managers
 {
@@ -21,11 +23,14 @@ namespace JourneyOfMemories.Core.Managers
         [SerializeField] private bool pedestalPlaced = false;
         [SerializeField] private bool bridgeReady = false;
         [SerializeField] private bool reunionSeen = false;
+        [SerializeField] private List<int> collectedMapFragments = new List<int>();
+        [SerializeField] private List<int> placedMapFragments = new List<int>();
 
         [Header("Game Flags")]
         [SerializeField] private bool introSeen = true;
         [SerializeField] private bool finalPageConfirmed = false;
         [SerializeField] private bool gameCompleted = false;
+        private readonly HashSet<string> controlLocks = new HashSet<string>();
 
         // Events
         public event Action<MapState> OnMapStateChanged;
@@ -44,6 +49,9 @@ namespace JourneyOfMemories.Core.Managers
         public bool ReunionSeen => reunionSeen;
         public bool IntroSeen => introSeen;
         public bool GameCompleted => gameCompleted;
+        public bool FinalPageConfirmed => finalPageConfirmed;
+        public IReadOnlyList<int> CollectedMapFragments => collectedMapFragments.AsReadOnly();
+        public IReadOnlyList<int> PlacedMapFragments => placedMapFragments.AsReadOnly();
 
         private void Awake()
         {
@@ -55,13 +63,19 @@ namespace JourneyOfMemories.Core.Managers
             Instance = this;
         }
 
+        private void OnDestroy() { if (Instance == this) Instance = null; }
+
+        private void OnEnable() { SceneManager.sceneLoaded += OnSceneLoaded; }
+        private void OnDisable() { SceneManager.sceneLoaded -= OnSceneLoaded; }
+        private void OnSceneLoaded(Scene scene, LoadSceneMode mode) { ApplyPlayerControlLock(); }
+
         private void Start()
         {
             // Kiểm tra trạng thái lúc khởi động
             CheckObjectives();
         }
 
-        public void SetMapState(MapState newState)
+        private void SetMapState(MapState newState)
         {
             if (currentMapState == newState) return;
             currentMapState = newState;
@@ -70,16 +84,18 @@ namespace JourneyOfMemories.Core.Managers
 
             if (newState == MapState.MemoryPending || newState == MapState.JournalPending)
             {
-                SetPlayerControlLock(true);
+                AcquirePlayerControlLock("MapFlow");
             }
             else if (newState == MapState.Completed || newState == MapState.Active)
             {
-                SetPlayerControlLock(false);
+                ReleasePlayerControlLock("MapFlow");
             }
         }
 
-        public void SetMiniGameDone(int mapIndex, bool isDone)
+        public bool SetMiniGameDone(int mapIndex, bool isDone)
         {
+            if (mapIndex < 1 || mapIndex > 3) return false;
+            if (mapIndex == 3 && isDone && placedMapFragments.Count != 4) return false;
             switch (mapIndex)
             {
                 case 1: m1_miniDone = isDone; break;
@@ -89,6 +105,72 @@ namespace JourneyOfMemories.Core.Managers
             Debug.Log($"[GameStateManager] MiniGame Map {mapIndex} cập nhật: {isDone}");
             CheckObjectives();
             SaveLoadManager.Instance?.RequestAutoSave();
+            return true;
+        }
+
+        public bool CollectMapFragment(int fragmentIndex)
+        {
+            if (currentMap != MapId.Map3_Garden || fragmentIndex < 1 || fragmentIndex > 4)
+                return false;
+            if (collectedMapFragments.Contains(fragmentIndex)) return true;
+            collectedMapFragments.Add(fragmentIndex);
+            SaveLoadManager.Instance?.RequestAutoSave();
+            return true;
+        }
+
+        public bool PlaceMapFragment(int fragmentIndex)
+        {
+            if (!collectedMapFragments.Contains(fragmentIndex)) return false;
+            if (!placedMapFragments.Contains(fragmentIndex)) placedMapFragments.Add(fragmentIndex);
+            if (placedMapFragments.Count == 4) m3_miniDone = true;
+            CheckObjectives();
+            SaveLoadManager.Instance?.RequestAutoSave();
+            return true;
+        }
+
+        public bool MarkPedestalPlaced()
+        {
+            if (currentMap != MapId.Map3_Garden || !m3_miniDone ||
+                PlacementManager.Instance == null || !PlacementManager.Instance.IsSlotFilled(GameIds.Slot.Pedestal))
+                return false;
+            pedestalPlaced = true;
+            SaveLoadManager.Instance?.RequestAutoSave();
+            return true;
+        }
+
+        public bool MarkBridgeReady()
+        {
+            if (!pedestalPlaced) return false;
+            bridgeReady = true;
+            SaveLoadManager.Instance?.RequestAutoSave();
+            return true;
+        }
+
+        public bool MarkReunionSeen()
+        {
+            if (currentMap != MapId.Map3_Garden || !bridgeReady) return false;
+            reunionSeen = true;
+            CheckObjectives();
+            SaveLoadManager.Instance?.RequestAutoSave();
+            return true;
+        }
+
+        public bool ConfirmFinalPage()
+        {
+            if (currentMap != MapId.Ending || currentMapState != MapState.Active) return false;
+            finalPageConfirmed = true;
+            SaveLoadManager.Instance?.RequestAutoSave();
+            return true;
+        }
+
+        public bool CompleteGame()
+        {
+            if (currentMap != MapId.Ending || !finalPageConfirmed || gameCompleted) return false;
+            gameCompleted = true;
+            SetMapState(MapState.Completed);
+            OnMapCompleted?.Invoke(MapId.Ending);
+            SaveLoadManager.Instance?.RequestAutoSave();
+            return true;
         }
 
         public void CheckObjectives()
@@ -160,24 +242,32 @@ namespace JourneyOfMemories.Core.Managers
             SaveLoadManager.Instance?.RequestAutoSave();
         }
 
-        public void NotifyMemoryFinished()
+        public bool NotifyMemoryFinished()
         {
+            if (currentMapState != MapState.MemoryPending) return false;
             SetMapState(MapState.JournalPending);
             OnJournalReady?.Invoke(currentMap);
+            SaveLoadManager.Instance?.RequestAutoSave();
+            return true;
         }
 
         /// <summary>
         /// API Hợp đồng: ConfirmJournal
         /// Khi người chơi ấn "Ghi nhớ" ở trang nhật ký
         /// </summary>
-        public void ConfirmJournal(MapId mapId)
+        public bool ConfirmJournal(MapId mapId)
         {
-            if (mapId != currentMap) return;
+            if (mapId != currentMap || currentMapState != MapState.JournalPending)
+            {
+                Debug.LogWarning($"[GameStateManager] Từ chối xác nhận nhật ký {mapId} ở state {currentMapState}.");
+                return false;
+            }
 
             SetMapState(MapState.Completed);
             Debug.Log($"[GameStateManager] Xác nhận nhật ký cho {mapId}. Map đã hoàn tất!");
             OnMapCompleted?.Invoke(mapId);
             SaveLoadManager.Instance?.RequestAutoSave();
+            return true;
         }
 
         /// <summary>
@@ -203,6 +293,8 @@ namespace JourneyOfMemories.Core.Managers
                 return false;
             }
 
+            if (targetMapId == MapId.Ending && !reunionSeen) return false;
+
             currentMap = targetMapId;
             SetMapState(MapState.Active);
             SaveLoadManager.Instance?.RequestAutoSave();
@@ -211,6 +303,27 @@ namespace JourneyOfMemories.Core.Managers
 
         public void SetPlayerControlLock(bool locked)
         {
+            if (locked) AcquirePlayerControlLock("Legacy");
+            else ReleasePlayerControlLock("Legacy");
+        }
+
+        public void AcquirePlayerControlLock(string owner)
+        {
+            if (string.IsNullOrEmpty(owner)) return;
+            controlLocks.Add(owner);
+            ApplyPlayerControlLock();
+        }
+
+        public void ReleasePlayerControlLock(string owner)
+        {
+            if (string.IsNullOrEmpty(owner)) return;
+            controlLocks.Remove(owner);
+            ApplyPlayerControlLock();
+        }
+
+        private void ApplyPlayerControlLock()
+        {
+            bool locked = controlLocks.Count > 0;
             OnPlayerControlLockChanged?.Invoke(locked);
 
             var movement = FindAnyObjectByType<PlayerMovement>();
@@ -229,7 +342,11 @@ namespace JourneyOfMemories.Core.Managers
             bool pedPlaced,
             bool brReady,
             bool reunSeen,
-            bool doneGame)
+            bool introWasSeen,
+            bool finalWasConfirmed,
+            bool doneGame,
+            IEnumerable<int> collectedFragments = null,
+            IEnumerable<int> placedFragments = null)
         {
             currentMap = map;
             currentMapState = state;
@@ -239,9 +356,33 @@ namespace JourneyOfMemories.Core.Managers
             pedestalPlaced = pedPlaced;
             bridgeReady = brReady;
             reunionSeen = reunSeen;
+            introSeen = introWasSeen;
+            finalPageConfirmed = finalWasConfirmed;
             gameCompleted = doneGame;
+            collectedMapFragments = collectedFragments != null ? new List<int>(collectedFragments) : new List<int>();
+            placedMapFragments = placedFragments != null ? new List<int>(placedFragments) : new List<int>();
 
+            controlLocks.Clear();
+            if (currentMapState == MapState.MemoryPending || currentMapState == MapState.JournalPending)
+                controlLocks.Add("MapFlow");
             OnMapStateChanged?.Invoke(currentMapState);
+            ApplyPlayerControlLock();
+        }
+
+        public void ResetProgress()
+        {
+            currentMap = MapId.Map1_Kitchen;
+            currentMapState = MapState.Active;
+            m1_miniDone = m2_miniDone = m3_miniDone = false;
+            pedestalPlaced = bridgeReady = reunionSeen = false;
+            introSeen = false;
+            finalPageConfirmed = false;
+            gameCompleted = false;
+            collectedMapFragments.Clear();
+            placedMapFragments.Clear();
+            controlLocks.Clear();
+            OnMapStateChanged?.Invoke(currentMapState);
+            ApplyPlayerControlLock();
         }
     }
 }

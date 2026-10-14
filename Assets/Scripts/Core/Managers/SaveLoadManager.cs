@@ -9,7 +9,7 @@ namespace JourneyOfMemories.Core.Managers
     [Serializable]
     public class SaveData
     {
-        public int SaveVersion = 1;
+        public int SaveVersion = 2;
         public string CurrentMap = MapId.Map1_Kitchen.ToString();
         public string CurrentMapState = MapState.Active.ToString();
 
@@ -21,10 +21,13 @@ namespace JourneyOfMemories.Core.Managers
         public bool BridgeReady = false;
         public bool ReunionSeen = false;
         public bool IntroSeen = true;
+        public bool FinalPageConfirmed = false;
         public bool GameCompleted = false;
 
         public List<string> InventoryItems = new List<string>();
         public List<string> SolvedQuizzes = new List<string>();
+        public List<int> CollectedMapFragments = new List<int>();
+        public List<int> PlacedMapFragments = new List<int>();
 
         // Serialization helper for Dictionary
         public List<string> SlotKeys = new List<string>();
@@ -34,9 +37,15 @@ namespace JourneyOfMemories.Core.Managers
     public class SaveLoadManager : MonoBehaviour
     {
         public static SaveLoadManager Instance { get; private set; }
+#if UNITY_EDITOR
+        public static bool DisableDiskPersistenceForTests { get; set; }
+#endif
 
         private string saveFilePath;
+        private string temporarySaveFilePath;
         private bool isSaving = false;
+        private int batchDepth = 0;
+        private bool saveRequestedDuringBatch = false;
 
         public event Action OnGameSaved;
         public event Action OnGameLoaded;
@@ -51,19 +60,21 @@ namespace JourneyOfMemories.Core.Managers
             Instance = this;
 
             saveFilePath = Path.Combine(Application.persistentDataPath, "savegame.json");
+            temporarySaveFilePath = saveFilePath + ".tmp";
+#if UNITY_EDITOR
+            if (!DisableDiskPersistenceForTests && HasSaveData()) LoadGame();
+#else
+            if (HasSaveData()) LoadGame();
+#endif
         }
 
-        private void Start()
-        {
-            // Tự động tải dữ liệu nếu có file save
-            if (HasSaveData())
-            {
-                LoadGame();
-            }
-        }
+        private void OnDestroy() { if (Instance == this) Instance = null; }
 
         public bool HasSaveData()
         {
+#if UNITY_EDITOR
+            if (DisableDiskPersistenceForTests) return false;
+#endif
             if (string.IsNullOrEmpty(saveFilePath))
             {
                 saveFilePath = Path.Combine(Application.persistentDataPath, "savegame.json");
@@ -73,12 +84,36 @@ namespace JourneyOfMemories.Core.Managers
 
         public void RequestAutoSave()
         {
+            if (batchDepth > 0)
+            {
+                saveRequestedDuringBatch = true;
+                return;
+            }
             if (isSaving) return;
             SaveGame();
         }
 
+        public void BeginBatch()
+        {
+            batchDepth++;
+        }
+
+        public void EndBatch(bool commit)
+        {
+            if (batchDepth == 0) return;
+            batchDepth--;
+            if (batchDepth > 0) return;
+
+            bool shouldSave = commit && saveRequestedDuringBatch;
+            saveRequestedDuringBatch = false;
+            if (shouldSave) SaveGame();
+        }
+
         public void SaveGame()
         {
+#if UNITY_EDITOR
+            if (DisableDiskPersistenceForTests) return;
+#endif
             try
             {
                 isSaving = true;
@@ -95,7 +130,10 @@ namespace JourneyOfMemories.Core.Managers
                     data.BridgeReady = GameStateManager.Instance.BridgeReady;
                     data.ReunionSeen = GameStateManager.Instance.ReunionSeen;
                     data.IntroSeen = GameStateManager.Instance.IntroSeen;
+                    data.FinalPageConfirmed = GameStateManager.Instance.FinalPageConfirmed;
                     data.GameCompleted = GameStateManager.Instance.GameCompleted;
+                    data.CollectedMapFragments = new List<int>(GameStateManager.Instance.CollectedMapFragments);
+                    data.PlacedMapFragments = new List<int>(GameStateManager.Instance.PlacedMapFragments);
                 }
 
                 if (InventoryManager.Instance != null)
@@ -118,7 +156,9 @@ namespace JourneyOfMemories.Core.Managers
                 }
 
                 string json = JsonUtility.ToJson(data, true);
-                File.WriteAllText(saveFilePath, json);
+                File.WriteAllText(temporarySaveFilePath, json);
+                File.Copy(temporarySaveFilePath, saveFilePath, true);
+                File.Delete(temporarySaveFilePath);
                 Debug.Log($"[SaveLoadManager] Đã lưu tiến trình game xuống: {saveFilePath}");
 
                 OnGameSaved?.Invoke();
@@ -152,6 +192,21 @@ namespace JourneyOfMemories.Core.Managers
                     return false;
                 }
 
+                if (data.SaveVersion < 1 || data.SaveVersion > 2)
+                {
+                    Debug.LogError($"[SaveLoadManager] SaveVersion không được hỗ trợ: {data.SaveVersion}");
+                    return false;
+                }
+
+                if (!Enum.TryParse<MapId>(data.CurrentMap, out var mapId) ||
+                    !Enum.TryParse<MapState>(data.CurrentMapState, out var mapState))
+                {
+                    Debug.LogError("[SaveLoadManager] Map ID hoặc Map State trong save không hợp lệ.");
+                    return false;
+                }
+
+                BeginBatch();
+
                 // Nạp vào Inventory
                 if (InventoryManager.Instance != null)
                 {
@@ -178,10 +233,7 @@ namespace JourneyOfMemories.Core.Managers
                 // Nạp vào GameStateManager
                 if (GameStateManager.Instance != null)
                 {
-                    if (Enum.TryParse<MapId>(data.CurrentMap, out var mapId) &&
-                        Enum.TryParse<MapState>(data.CurrentMapState, out var mapState))
-                    {
-                        GameStateManager.Instance.LoadState(
+                    GameStateManager.Instance.LoadState(
                             mapId,
                             mapState,
                             data.M1_MiniDone,
@@ -190,10 +242,17 @@ namespace JourneyOfMemories.Core.Managers
                             data.PedestalPlaced,
                             data.BridgeReady,
                             data.ReunionSeen,
-                            data.GameCompleted
-                        );
-                    }
+                            data.IntroSeen,
+                            data.FinalPageConfirmed,
+                            data.GameCompleted,
+                            data.CollectedMapFragments,
+                            data.PlacedMapFragments
+                    );
                 }
+
+                bool repaired = RepairMissingQuizRewards();
+                if (repaired) RequestAutoSave();
+                EndBatch(repaired);
 
                 Debug.Log("[SaveLoadManager] Khôi phục tiến trình thành công từ file save!");
                 OnGameLoaded?.Invoke();
@@ -201,9 +260,26 @@ namespace JourneyOfMemories.Core.Managers
             }
             catch (Exception ex)
             {
+                batchDepth = 0;
+                saveRequestedDuringBatch = false;
                 Debug.LogError($"[SaveLoadManager] Lỗi khi nạp dữ liệu save: {ex.Message}");
                 return false;
             }
+        }
+
+        private bool RepairMissingQuizRewards()
+        {
+            if (QuizManager.Instance == null || InventoryManager.Instance == null) return false;
+            bool repaired = false;
+            foreach (string quizId in QuizManager.Instance.SolvedQuizIds)
+            {
+                var quiz = QuizManager.Instance.GetQuizData(quizId);
+                if (quiz == null || string.IsNullOrEmpty(quiz.RewardItemId)) continue;
+                if (IsItemAlreadyCollectedOrPlaced(quiz.RewardItemId)) continue;
+                if (InventoryManager.Instance.AddItem(quiz.RewardItemId)) repaired = true;
+                else Debug.LogError($"[SaveLoadManager] Không thể phục hồi phần thưởng còn thiếu: {quiz.RewardItemId}");
+            }
+            return repaired;
         }
 
         public void DeleteSave()
@@ -213,6 +289,18 @@ namespace JourneyOfMemories.Core.Managers
                 File.Delete(saveFilePath);
                 Debug.Log("[SaveLoadManager] Đã xóa file save tiến trình.");
             }
+            if (!string.IsNullOrEmpty(temporarySaveFilePath) && File.Exists(temporarySaveFilePath))
+                File.Delete(temporarySaveFilePath);
+        }
+
+        public void StartNewGame()
+        {
+            DeleteSave();
+            InventoryManager.Instance?.Clear();
+            QuizManager.Instance?.ResetProgress();
+            PlacementManager.Instance?.ResetProgress();
+            GameStateManager.Instance?.ResetProgress();
+            SaveGame();
         }
 
         /// <summary>

@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using JourneyOfMemories.Core.Data;
 
 public class JournalController : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class JournalController : MonoBehaviour
 
     [Header("Optional")]
     [SerializeField] private TMP_Text statusText;
+    [SerializeField] private MapId mapId = MapId.Map1_Kitchen;
 
     private void Awake()
     {
@@ -51,7 +53,7 @@ public class JournalController : MonoBehaviour
         // Thông báo cho Core Logic xác nhận trang nhật ký
         if (JourneyOfMemories.Core.Managers.GameStateManager.Instance != null)
         {
-            JourneyOfMemories.Core.Managers.GameStateManager.Instance.ConfirmJournal(JourneyOfMemories.Core.Data.MapId.Map1_Kitchen);
+            JourneyOfMemories.Core.Managers.GameStateManager.Instance.ConfirmJournal(mapId);
         }
     }
 }

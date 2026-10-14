@@ -1,11 +1,13 @@
 
 using UnityEngine;
+using JourneyOfMemories.Core.Data;
 
 public class FoodSlot : MonoBehaviour
 {
     [Header("Slot Settings")]
     [SerializeField] private string requiredFoodName;
     [SerializeField] private string slotId;
+    [SerializeField] private string requiredItemId;
 
     private bool isCompleted = false;
 
@@ -26,12 +28,15 @@ public class FoodSlot : MonoBehaviour
         // Đăng ký cấu hình với PlacementManager
         if (JourneyOfMemories.Core.Managers.PlacementManager.Instance != null)
         {
-            JourneyOfMemories.Core.Managers.PlacementManager.Instance.RegisterSlotConfig(slotId, requiredFoodName);
+            string coreRequiredId = JourneyOfMemories.Core.Managers.PlacementManager.Instance.GetRequiredItemId(slotId);
+            if (!string.IsNullOrEmpty(requiredItemId) && coreRequiredId != requiredItemId)
+                Debug.LogError($"FoodSlot '{name}' cấu hình lệch Core: {requiredItemId} != {coreRequiredId}");
 
             // Kiểm tra trạng thái đã hoàn thành khi nạp game
             if (JourneyOfMemories.Core.Managers.PlacementManager.Instance.IsSlotFilled(slotId))
             {
                 isCompleted = true;
+                RestoreVisual(JourneyOfMemories.Core.Managers.PlacementManager.Instance.GetItemInSlot(slotId));
             }
         }
     }
@@ -47,7 +52,7 @@ public class FoodSlot : MonoBehaviour
         // Ưu tiên ủy quyền phân xử cho PlacementManager nếu có
         if (JourneyOfMemories.Core.Managers.PlacementManager.Instance != null)
         {
-            var result = JourneyOfMemories.Core.Managers.PlacementManager.Instance.TryPlaceItem(food.FoodName, slotId);
+            var result = JourneyOfMemories.Core.Managers.PlacementManager.Instance.TryPlaceItem(food.ItemId, slotId);
             if (result != JourneyOfMemories.Core.Data.PlacementResult.Success)
             {
                 Debug.Log($"Sai món! Vị trí '{slotId}' cần: {requiredFoodName}. Kết quả: {result}");
@@ -72,23 +77,36 @@ public class FoodSlot : MonoBehaviour
         food.transform.position = transform.position;
         food.transform.localScale = Vector3.one * 0.5f;
 
-        // Cập nhật tiến độ màn chơi
-        LevelManager levelManager =
-            FindAnyObjectByType<LevelManager>();
-
-        if (levelManager != null)
-        {
-            levelManager.RegisterCompletedSlot();
-        }
-        else
-        {
-            Debug.LogWarning(
-                "Không tìm thấy LevelManager trong Scene!"
-            );
-        }
-
         Debug.Log("Đặt đúng món: " + requiredFoodName);
 
         return true;
+    }
+
+    public bool TryPlaceItem(string itemId)
+    {
+        if (isCompleted || string.IsNullOrEmpty(itemId)) return false;
+        var placement = JourneyOfMemories.Core.Managers.PlacementManager.Instance;
+        if (placement == null) return false;
+        if (placement.TryPlaceItem(itemId, slotId) != PlacementResult.Success) return false;
+
+        isCompleted = true;
+        RestoreVisual(itemId);
+        return true;
+    }
+
+    private void RestoreVisual(string itemId)
+    {
+        FoodItem[] worldItems = FindObjectsByType<FoodItem>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+        foreach (var worldItem in worldItems)
+        {
+            if (worldItem != null && worldItem.ItemId == itemId)
+            {
+                worldItem.gameObject.SetActive(true);
+                worldItem.transform.SetParent(transform);
+                worldItem.transform.position = transform.position;
+                worldItem.transform.localScale = Vector3.one * 0.5f;
+                break;
+            }
+        }
     }
 }

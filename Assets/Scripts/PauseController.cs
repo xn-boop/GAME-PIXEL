@@ -26,6 +26,7 @@ public class PauseController : MonoBehaviour
         pausePanel.SetActive(true);
         Time.timeScale = 0f;
         isPaused = true;
+        JourneyOfMemories.Core.Managers.GameStateManager.Instance?.AcquirePlayerControlLock("Pause");
     }
 
     public void ResumeGame()
@@ -35,6 +36,7 @@ public class PauseController : MonoBehaviour
         pausePanel.SetActive(false);
         Time.timeScale = 1f;
         isPaused = false;
+        JourneyOfMemories.Core.Managers.GameStateManager.Instance?.ReleasePlayerControlLock("Pause");
     }
 
     public void TogglePause()

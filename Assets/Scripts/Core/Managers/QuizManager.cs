@@ -32,6 +32,8 @@ namespace JourneyOfMemories.Core.Managers
             quizDatabase = new Dictionary<string, QuizData>(DefaultQuizDatabase.Quizzes);
         }
 
+        private void OnDestroy() { if (Instance == this) Instance = null; }
+
         public bool IsQuizSolved(string quizId)
         {
             if (string.IsNullOrEmpty(quizId)) return false;
@@ -51,23 +53,26 @@ namespace JourneyOfMemories.Core.Managers
         /// <summary>
         /// API Hợp đồng: SubmitQuizAnswer
         /// </summary>
-        public (bool isCorrect, string feedback) SubmitQuizAnswer(string quizId, QuizOption selectedOption)
+        public (QuizSubmitStatus status, string feedback, string rewardItemId) SubmitQuizAnswer(string quizId, QuizOption selectedOption)
         {
             if (string.IsNullOrEmpty(quizId))
             {
-                return (false, "Lỗi: Không tìm thấy mã câu hỏi!");
+                return (QuizSubmitStatus.InvalidQuiz, "Lỗi: Không tìm thấy mã câu hỏi!", null);
             }
 
             var quiz = GetQuizData(quizId);
             if (quiz == null)
             {
-                return (false, $"Lỗi: Câu hỏi '{quizId}' không tồn tại trong hệ thống.");
+                return (QuizSubmitStatus.InvalidQuiz, $"Lỗi: Câu hỏi '{quizId}' không tồn tại trong hệ thống.", null);
             }
+
+            if (selectedOption == QuizOption.None)
+                return (QuizSubmitStatus.InvalidOption, "Vui lòng chọn một đáp án.", null);
 
             // Kiểm tra trạng thái đã giải chưa
             if (IsQuizSolved(quizId))
             {
-                return (true, "Câu hỏi này đã được hoàn thành trước đó.");
+                return (QuizSubmitStatus.AlreadySolved, "Câu hỏi này đã được hoàn thành trước đó.", quiz.RewardItemId);
             }
 
             // Nhánh Sai
@@ -75,33 +80,28 @@ namespace JourneyOfMemories.Core.Managers
             {
                 Debug.Log($"[QuizManager] Trả lời sai cho {quizId}. Người chơi chọn: {selectedOption}, Đáp án đúng: {quiz.CorrectOption}");
                 OnQuizAnswerWrong?.Invoke(quizId);
-                return (false, quiz.HintWrong);
+                return (QuizSubmitStatus.Incorrect, quiz.HintWrong, null);
             }
 
-            // Nhánh Đúng
-            solvedQuizIds.Add(quizId);
-            Debug.Log($"[QuizManager] Trả lời đúng cho {quizId}!");
-
-            // Cấp thưởng vật phẩm vào Inventory
+            // Chỉ đánh dấu solved sau khi chắc chắn cấp được phần thưởng.
             if (!string.IsNullOrEmpty(quiz.RewardItemId))
             {
-                bool added = false;
-                if (InventoryManager.Instance != null)
-                {
-                    added = InventoryManager.Instance.AddItem(quiz.RewardItemId);
-                }
+                if (InventoryManager.Instance == null || !InventoryManager.Instance.CanAddItem(quiz.RewardItemId))
+                    return (QuizSubmitStatus.InventoryFull, "Túi đồ đã đầy hoặc vật phẩm đã tồn tại. Hãy kiểm tra túi đồ rồi thử lại.", null);
 
-                if (!added)
-                {
-                    Debug.LogWarning($"[QuizManager] Không thể thêm {quiz.RewardItemId} vào túi đồ (có thể túi đã đầy)!");
-                }
+                SaveLoadManager.Instance?.BeginBatch();
+                InventoryManager.Instance.AddItem(quiz.RewardItemId);
             }
+
+            solvedQuizIds.Add(quizId);
+            Debug.Log($"[QuizManager] Trả lời đúng cho {quizId}!");
 
             OnQuizSolved?.Invoke(quizId, quiz.RewardItemId);
             GameStateManager.Instance?.CheckObjectives();
             SaveLoadManager.Instance?.RequestAutoSave();
+            SaveLoadManager.Instance?.EndBatch(true);
 
-            return (true, quiz.FeedbackCorrect);
+            return (QuizSubmitStatus.Success, quiz.FeedbackCorrect, quiz.RewardItemId);
         }
 
         public void LoadSolvedQuizzes(IEnumerable<string> loadedIds)
@@ -117,6 +117,11 @@ namespace JourneyOfMemories.Core.Managers
                     }
                 }
             }
+        }
+
+        public void ResetProgress()
+        {
+            solvedQuizIds.Clear();
         }
     }
 }

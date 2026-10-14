@@ -4423,6 +4423,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FoodSlot
   requiredFoodName: "Th\u1ECBt kho tr\u1EE9ng"
+  slotId: Slot_ThitKhoTrung
+  requiredItemId: Food_ThitKhoTrung
 --- !u!1 &1226508635
 GameObject:
   m_ObjectHideFlags: 0
@@ -4667,7 +4669,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FoodItem
   foodName: Kimchi
+  itemId: Food_Kimchi
   inventoryIcon: {fileID: -4355272409397247203, guid: e8e19365281c91944b52075bd2d1fba5, type: 3}
+  quizId: Q02
 --- !u!58 &1234253307
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4886,7 +4890,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FoodItem
   foodName: "Th\u1ECBt kho tr\u1EE9ng"
+  itemId: Food_ThitKhoTrung
   inventoryIcon: {fileID: 3310002292416464744, guid: e493b01d858aafa49b0a6afb525923bb, type: 3}
+  quizId: Q01
 --- !u!58 &1318249091
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5289,6 +5295,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FoodSlot
   requiredFoodName: Kimchi
+  slotId: Slot_Kimchi
+  requiredItemId: Food_Kimchi
 --- !u!1 &1486805242
 GameObject:
   m_ObjectHideFlags: 0
@@ -6105,7 +6113,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FoodItem
   foodName: "C\u01A1m cu\u1ED9n"
+  itemId: Food_ComCuon
   inventoryIcon: {fileID: -6619111317931664985, guid: efa3672d79d92c74583b841a1a04e978, type: 3}
+  quizId: Q03
 --- !u!58 &1694047132
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7063,6 +7073,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FoodSlot
   requiredFoodName: "C\u01A1m cu\u1ED9n"
+  slotId: Slot_ComCuon
+  requiredItemId: Food_ComCuon
 --- !u!1 &1957011420
 GameObject:
   m_ObjectHideFlags: 0

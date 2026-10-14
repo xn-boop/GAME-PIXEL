@@ -29,6 +29,8 @@ namespace JourneyOfMemories.Core.Managers
             Instance = this;
         }
 
+        private void OnDestroy() { if (Instance == this) Instance = null; }
+
         public bool AddItem(string itemId)
         {
             if (string.IsNullOrEmpty(itemId))
@@ -37,7 +39,13 @@ namespace JourneyOfMemories.Core.Managers
                 return false;
             }
 
-            if (items.Count >= MaxCapacity)
+            if (items.Contains(itemId))
+            {
+                Debug.LogWarning($"[InventoryManager] Vật phẩm nhiệm vụ đã tồn tại: {itemId}");
+                return false;
+            }
+
+            if (!CanAddItem(itemId))
             {
                 Debug.LogWarning($"[InventoryManager] Túi đồ đã đầy ({MaxCapacity}/{MaxCapacity}). Không thể thêm: {itemId}");
                 return false;
@@ -46,6 +54,42 @@ namespace JourneyOfMemories.Core.Managers
             items.Add(itemId);
             Debug.Log($"[InventoryManager] Đã thêm vật phẩm: {itemId}. Số lượng hiện tại: {items.Count}/{MaxCapacity}");
 
+            OnInventoryUpdated?.Invoke(items.AsReadOnly());
+            SaveLoadManager.Instance?.RequestAutoSave();
+            return true;
+        }
+
+        public bool CanAddItem(string itemId)
+        {
+            return !string.IsNullOrEmpty(itemId) &&
+                   !items.Contains(itemId) &&
+                   items.Count < MaxCapacity;
+        }
+
+        /// <summary>
+        /// Thay nhiều vật phẩm trong một mutation duy nhất. Dùng cho ghép ngọc để save
+        /// không bao giờ thấy trạng thái mới xóa một nửa.
+        /// </summary>
+        public bool TryReplaceItems(IReadOnlyList<string> removeIds, string addItemId)
+        {
+            if (removeIds == null || removeIds.Count == 0 || string.IsNullOrEmpty(addItemId))
+                return false;
+
+            if (items.Contains(addItemId))
+                return false;
+
+            var candidate = new List<string>(items);
+            foreach (var removeId in removeIds)
+            {
+                if (string.IsNullOrEmpty(removeId) || !candidate.Remove(removeId))
+                    return false;
+            }
+
+            if (candidate.Count >= MaxCapacity)
+                return false;
+
+            candidate.Add(addItemId);
+            items = candidate;
             OnInventoryUpdated?.Invoke(items.AsReadOnly());
             SaveLoadManager.Instance?.RequestAutoSave();
             return true;
