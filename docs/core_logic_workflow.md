@@ -68,8 +68,10 @@ Quản lý tối đa 5 ô chứa đồ, độc lập hoàn toàn với việc hi
 
 | Tên Hàm (Action) | Component Gọi (Từ đâu) | Component Xử lý (Core) | Tham số truyền vào (Input) | Kết quả trả về (Output / Callback) |
 | :--- | :--- | :--- | :--- | :--- |
-| `SubmitQuizAnswer` | Quiz UI | QuizManager | `QuizID`, `OptionID` | `isCorrect` (bool), `FeedbackText` (string) |
+| `SubmitQuizAnswer` | Quiz UI | QuizManager | `QuizID`, `OptionID` | `QuizSubmitStatus`, `FeedbackText`, `RewardItemID` |
 | `TryPlaceItem` | Inventory UI | PlacementManager | `ItemID`, `SlotID` | `Success`, `ItemMismatch`, `SlotFull` |
-| `TryCombineGems` | MiniGame UI (Map 3) | InventoryManager | Không (Tự quét túi) | `Success` (cấp `Gem_Whole`), `NotEnoughParts` |
-| `ConfirmJournal` | Journal UI | GameManager | `MapID` | Mở khóa cửa/cầu, Save game |
-| `RequestTransition`| Trigger Cửa / Cầu | StateManager | `TargetMapID` | `Allowed` (load scene mới), `Denied` (thiếu đ/k) |
+| `TryCombineGems` | MiniGame UI (Map 3) | CombineManager | Không (tự quét túi) | `CombineResult`, `Gem_Whole`, thông báo |
+| `ConfirmJournal` | Journal UI | GameStateManager | `MapID` | Chỉ thành công từ `JournalPending` |
+| `RequestAndLoad`| Trigger Cửa | SceneFlowManager | `TargetMapID` | Kiểm tra tuyến, lưu state rồi load scene |
+
+Danh sách ID chuẩn nằm duy nhất trong `GameIds.cs`. Chi tiết trách nhiệm và API bắt buộc xem `docs/API_CONTRACT.md`.
