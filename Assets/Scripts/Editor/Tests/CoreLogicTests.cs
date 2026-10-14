@@ -28,6 +28,11 @@ namespace JourneyOfMemories.Tests
             combineManager = testRoot.AddComponent<CombineManager>();
             gameStateManager = testRoot.AddComponent<GameStateManager>();
             saveLoadManager = testRoot.AddComponent<SaveLoadManager>();
+
+            // EditMode tests do not run the normal PlayMode lifecycle. Invoke
+            // Awake after every manager has been attached so singleton-based
+            // manager dependencies are initialized exactly as they are in-game.
+            testRoot.SendMessage("Awake", SendMessageOptions.DontRequireReceiver);
         }
 
         [TearDown]
