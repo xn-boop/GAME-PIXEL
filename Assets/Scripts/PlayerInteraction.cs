@@ -180,6 +180,35 @@ public class PlayerInteraction : MonoBehaviour
             return;
         }
 
+        // Kiểm tra điều kiện hoàn thành Mini-game mèo trước khi thu thập
+        if (JourneyOfMemories.Core.Managers.GameStateManager.Instance != null &&
+            !JourneyOfMemories.Core.Managers.GameStateManager.Instance.M1_MiniDone)
+        {
+            ShowMessage("Hãy vuốt ve chú mèo để tìm manh mối trước khi lấy món ăn!");
+            return;
+        }
+
+        // Kiểm tra câu đố văn hóa nếu có
+        string quizId = food.QuizId;
+        if (string.IsNullOrEmpty(quizId))
+        {
+            if (food.FoodName.Contains("Thịt kho") || food.FoodName.Contains("ThitKho")) quizId = "Q01";
+            else if (food.FoodName.Contains("Kim chi") || food.FoodName.Contains("Kimchi")) quizId = "Q02";
+            else if (food.FoodName.Contains("Kimbap") || food.FoodName.Contains("ComCuon")) quizId = "Q03";
+        }
+
+        if (!string.IsNullOrEmpty(quizId) && JourneyOfMemories.Core.Managers.QuizManager.Instance != null)
+        {
+            if (!JourneyOfMemories.Core.Managers.QuizManager.Instance.IsQuizSolved(quizId))
+            {
+                if (JourneyOfMemories.Core.UI.QuizUIController.Instance != null)
+                {
+                    JourneyOfMemories.Core.UI.QuizUIController.Instance.OpenQuiz(quizId);
+                    return;
+                }
+            }
+        }
+
         // Thêm vào Inventory trước khi xác nhận nhặt.
         bool added = inventoryUI.AddItem(food);
 

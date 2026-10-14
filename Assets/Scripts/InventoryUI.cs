@@ -40,11 +40,18 @@ public class InventoryUI : MonoBehaviour
         }
     }
 
+    public string SelectedItemId => SelectedItem != null ? SelectedItem.FoodName : null;
+
     // Số lượng món đang có trong Inventory.
     public int ItemCount
     {
         get
         {
+            if (JourneyOfMemories.Core.Managers.InventoryManager.Instance != null)
+            {
+                return JourneyOfMemories.Core.Managers.InventoryManager.Instance.ItemCount;
+            }
+
             int count = 0;
 
             foreach (FoodItem item in inventoryItems)
@@ -57,6 +64,27 @@ public class InventoryUI : MonoBehaviour
 
             return count;
         }
+    }
+
+    private void OnEnable()
+    {
+        if (JourneyOfMemories.Core.Managers.InventoryManager.Instance != null)
+        {
+            JourneyOfMemories.Core.Managers.InventoryManager.Instance.OnInventoryUpdated += OnCoreInventoryUpdated;
+        }
+    }
+
+    private void OnDisable()
+    {
+        if (JourneyOfMemories.Core.Managers.InventoryManager.Instance != null)
+        {
+            JourneyOfMemories.Core.Managers.InventoryManager.Instance.OnInventoryUpdated -= OnCoreInventoryUpdated;
+        }
+    }
+
+    private void OnCoreInventoryUpdated(System.Collections.Generic.IReadOnlyList<string> items)
+    {
+        RefreshAllSlots();
     }
 
     private void Start()
@@ -118,6 +146,12 @@ public class InventoryUI : MonoBehaviour
                     "Đã thêm vào Inventory: " + item.FoodName
                 );
 
+                if (JourneyOfMemories.Core.Managers.InventoryManager.Instance != null &&
+                    !JourneyOfMemories.Core.Managers.InventoryManager.Instance.HasItem(item.FoodName))
+                {
+                    JourneyOfMemories.Core.Managers.InventoryManager.Instance.AddItem(item.FoodName);
+                }
+
                 return true;
             }
         }
@@ -178,6 +212,11 @@ public class InventoryUI : MonoBehaviour
             Debug.Log(
                 "Đã xóa món khỏi Inventory: " + item.FoodName
             );
+
+            if (JourneyOfMemories.Core.Managers.InventoryManager.Instance != null)
+            {
+                JourneyOfMemories.Core.Managers.InventoryManager.Instance.RemoveItem(item.FoodName);
+            }
 
             return;
         }

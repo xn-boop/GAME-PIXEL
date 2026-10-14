@@ -5,10 +5,36 @@ public class FoodSlot : MonoBehaviour
 {
     [Header("Slot Settings")]
     [SerializeField] private string requiredFoodName;
+    [SerializeField] private string slotId;
 
     private bool isCompleted = false;
 
     public bool IsCompleted => isCompleted;
+    public string SlotId => slotId;
+
+    private void Start()
+    {
+        // Tự động suy ra slotId nếu chưa gán
+        if (string.IsNullOrEmpty(slotId))
+        {
+            if (requiredFoodName.Contains("Thịt kho") || requiredFoodName.Contains("ThitKho")) slotId = "Slot_ThitKhoTrung";
+            else if (requiredFoodName.Contains("Kim chi") || requiredFoodName.Contains("Kimchi")) slotId = "Slot_Kimchi";
+            else if (requiredFoodName.Contains("Kimbap") || requiredFoodName.Contains("ComCuon")) slotId = "Slot_ComCuon";
+            else slotId = "Slot_" + requiredFoodName;
+        }
+
+        // Đăng ký cấu hình với PlacementManager
+        if (JourneyOfMemories.Core.Managers.PlacementManager.Instance != null)
+        {
+            JourneyOfMemories.Core.Managers.PlacementManager.Instance.RegisterSlotConfig(slotId, requiredFoodName);
+
+            // Kiểm tra trạng thái đã hoàn thành khi nạp game
+            if (JourneyOfMemories.Core.Managers.PlacementManager.Instance.IsSlotFilled(slotId))
+            {
+                isCompleted = true;
+            }
+        }
+    }
 
     public bool TryPlaceFood(FoodItem food)
     {
@@ -18,11 +44,24 @@ public class FoodSlot : MonoBehaviour
             return false;
         }
 
-        // Kiểm tra món ăn có đúng ô không
-        if (food.FoodName != requiredFoodName)
+        // Ưu tiên ủy quyền phân xử cho PlacementManager nếu có
+        if (JourneyOfMemories.Core.Managers.PlacementManager.Instance != null)
         {
-            Debug.Log("Sai món! Ô này cần: " + requiredFoodName);
-            return false;
+            var result = JourneyOfMemories.Core.Managers.PlacementManager.Instance.TryPlaceItem(food.FoodName, slotId);
+            if (result != JourneyOfMemories.Core.Data.PlacementResult.Success)
+            {
+                Debug.Log($"Sai món! Vị trí '{slotId}' cần: {requiredFoodName}. Kết quả: {result}");
+                return false;
+            }
+        }
+        else
+        {
+            // Kiểm tra món ăn có đúng ô không (fallback)
+            if (food.FoodName != requiredFoodName)
+            {
+                Debug.Log("Sai món! Ô này cần: " + requiredFoodName);
+                return false;
+            }
         }
 
         // Đánh dấu ô đã hoàn thành

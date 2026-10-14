@@ -43,12 +43,23 @@ public class MemorySceneController : MonoBehaviour
 
         if (levelManager != null)
             levelManager.OnLevelCompleted += StartMemorySequence;
+
+        if (JourneyOfMemories.Core.Managers.GameStateManager.Instance != null)
+            JourneyOfMemories.Core.Managers.GameStateManager.Instance.OnMemoryTriggered += OnCoreMemoryTriggered;
     }
 
     private void OnDisable()
     {
         if (levelManager != null)
             levelManager.OnLevelCompleted -= StartMemorySequence;
+
+        if (JourneyOfMemories.Core.Managers.GameStateManager.Instance != null)
+            JourneyOfMemories.Core.Managers.GameStateManager.Instance.OnMemoryTriggered -= OnCoreMemoryTriggered;
+    }
+
+    private void OnCoreMemoryTriggered(JourneyOfMemories.Core.Data.MapId mapId)
+    {
+        StartMemorySequence();
     }
 
     private void Start()
@@ -103,5 +114,6 @@ public class MemorySceneController : MonoBehaviour
         journalPanel.SetActive(true);
 
         Debug.Log("Đã mở trang nhật ký số 1!");
+        JourneyOfMemories.Core.Managers.GameStateManager.Instance?.NotifyMemoryFinished();
     }
 }

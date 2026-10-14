@@ -7,11 +7,24 @@ public class FoodItem : MonoBehaviour
     [SerializeField] private string foodName = "Food";
     [SerializeField] private Sprite inventoryIcon;
 
+    [SerializeField] private string quizId = "";
+
     private bool isCollected = false;
 
     public string FoodName => foodName;
+    public string QuizId => quizId;
     public bool IsCollected => isCollected;
     public Sprite InventoryIcon => inventoryIcon;
+
+    private void Start()
+    {
+        // Chống nhân đôi: Nếu vật phẩm đã có trong túi hoặc đã đặt lên slot
+        if (JourneyOfMemories.Core.Managers.SaveLoadManager.Instance != null &&
+            JourneyOfMemories.Core.Managers.SaveLoadManager.Instance.IsItemAlreadyCollectedOrPlaced(foodName))
+        {
+            gameObject.SetActive(false);
+        }
+    }
 
     public void Collect(Transform player)
     {

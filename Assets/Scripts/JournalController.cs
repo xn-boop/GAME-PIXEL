@@ -47,5 +47,11 @@ public class JournalController : MonoBehaviour
         }
 
         Debug.Log("Người chơi đã hoàn thành Ký ức #1.");
+
+        // Thông báo cho Core Logic xác nhận trang nhật ký
+        if (JourneyOfMemories.Core.Managers.GameStateManager.Instance != null)
+        {
+            JourneyOfMemories.Core.Managers.GameStateManager.Instance.ConfirmJournal(JourneyOfMemories.Core.Data.MapId.Map1_Kitchen);
+        }
     }
 }
