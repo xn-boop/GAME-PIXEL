@@ -38,21 +38,12 @@ public class MemorySceneController : MonoBehaviour
 
     private void OnEnable()
     {
-        if (levelManager == null)
-            levelManager = FindAnyObjectByType<LevelManager>();
-
-        if (levelManager != null)
-            levelManager.OnLevelCompleted += StartMemorySequence;
-
         if (JourneyOfMemories.Core.Managers.GameStateManager.Instance != null)
             JourneyOfMemories.Core.Managers.GameStateManager.Instance.OnMemoryTriggered += OnCoreMemoryTriggered;
     }
 
     private void OnDisable()
     {
-        if (levelManager != null)
-            levelManager.OnLevelCompleted -= StartMemorySequence;
-
         if (JourneyOfMemories.Core.Managers.GameStateManager.Instance != null)
             JourneyOfMemories.Core.Managers.GameStateManager.Instance.OnMemoryTriggered -= OnCoreMemoryTriggered;
     }
@@ -64,14 +55,6 @@ public class MemorySceneController : MonoBehaviour
 
     private void Start()
     {
-        if (levelManager == null)
-        {
-            Debug.LogError(
-                "MemorySceneController: Chưa tìm thấy LevelManager!"
-            );
-            return;
-        }
-
         if (memoryPanel == null || journalPanel == null)
         {
             Debug.LogError(
@@ -80,9 +63,8 @@ public class MemorySceneController : MonoBehaviour
             return;
         }
 
-        // Phòng trường hợp màn chơi đã hoàn thành
-        // trước khi controller đăng ký sự kiện.
-        if (levelManager.IsLevelCompleted)
+        var core = JourneyOfMemories.Core.Managers.GameStateManager.Instance;
+        if (core != null && core.CurrentMapState == JourneyOfMemories.Core.Data.MapState.MemoryPending)
             StartMemorySequence();
     }
 
@@ -92,10 +74,6 @@ public class MemorySceneController : MonoBehaviour
             return;
 
         sequenceStarted = true;
-        if (playerMovement != null)
-        {
-            playerMovement.SetMovementLocked(true);
-        }
         StartCoroutine(PlayMemorySequence());
     }
 
