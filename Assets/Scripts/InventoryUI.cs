@@ -1,285 +1,109 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using JourneyOfMemories.Core.Managers;
 
+/// <summary>UI adapter; InventoryManager is the only gameplay source of truth.</summary>
 public class InventoryUI : MonoBehaviour
 {
     [Header("Inventory Slots")]
-    [SerializeField]
-    private Image[] itemIcons = new Image[5];
-
-    [SerializeField]
-    private Button[] slotButtons = new Button[5];
-
+    [SerializeField] private Image[] itemIcons = new Image[5];
+    [SerializeField] private Button[] slotButtons = new Button[5];
     [Header("Selection Visual")]
-    [SerializeField]
-    private Image[] slotBackgrounds = new Image[5];
+    [SerializeField] private Image[] slotBackgrounds = new Image[5];
+    [SerializeField] private Color normalColor = Color.white;
+    [SerializeField] private Color selectedColor = new Color(1f, 0.85f, 0.4f, 1f);
 
-    [SerializeField]
-    private Color normalColor = Color.white;
-
-    [SerializeField]
-    private Color selectedColor =
-        new Color(1f, 0.85f, 0.4f, 1f);
-
-    private FoodItem[] inventoryItems = new FoodItem[5];
-
+    private readonly Dictionary<string, Sprite> iconByItemId = new Dictionary<string, Sprite>();
     private int selectedIndex = -1;
 
-    // Món hiện đang được chọn.
-    public FoodItem SelectedItem
+    public string SelectedItemId
     {
         get
         {
-            if (selectedIndex < 0 ||
-                selectedIndex >= inventoryItems.Length)
-            {
-                return null;
-            }
-
-            return inventoryItems[selectedIndex];
+            var inventory = InventoryManager.Instance;
+            return inventory != null && selectedIndex >= 0 && selectedIndex < inventory.Items.Count
+                ? inventory.Items[selectedIndex]
+                : null;
         }
     }
 
-    public string SelectedItemId => SelectedItem != null ? SelectedItem.FoodName : null;
+    public int ItemCount => InventoryManager.Instance != null ? InventoryManager.Instance.ItemCount : 0;
 
-    // Số lượng món đang có trong Inventory.
-    public int ItemCount
+    private void Awake()
     {
-        get
-        {
-            if (JourneyOfMemories.Core.Managers.InventoryManager.Instance != null)
-            {
-                return JourneyOfMemories.Core.Managers.InventoryManager.Instance.ItemCount;
-            }
-
-            int count = 0;
-
-            foreach (FoodItem item in inventoryItems)
-            {
-                if (item != null)
-                {
-                    count++;
-                }
-            }
-
-            return count;
-        }
+        FoodItem[] sources = FindObjectsByType<FoodItem>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+        foreach (var source in sources)
+            if (source != null && source.InventoryIcon != null) iconByItemId[source.ItemId] = source.InventoryIcon;
     }
 
     private void OnEnable()
     {
-        if (JourneyOfMemories.Core.Managers.InventoryManager.Instance != null)
-        {
-            JourneyOfMemories.Core.Managers.InventoryManager.Instance.OnInventoryUpdated += OnCoreInventoryUpdated;
-        }
-    }
-
-    private void OnDisable()
-    {
-        if (JourneyOfMemories.Core.Managers.InventoryManager.Instance != null)
-        {
-            JourneyOfMemories.Core.Managers.InventoryManager.Instance.OnInventoryUpdated -= OnCoreInventoryUpdated;
-        }
-    }
-
-    private void OnCoreInventoryUpdated(System.Collections.Generic.IReadOnlyList<string> items)
-    {
-        RefreshAllSlots();
+        if (InventoryManager.Instance != null)
+            InventoryManager.Instance.OnInventoryUpdated += OnInventoryUpdated;
     }
 
     private void Start()
     {
-        // Đăng ký sự kiện nhấn từng ô Inventory.
-        if (slotButtons != null)
+        for (int i = 0; i < slotButtons.Length; i++)
         {
-            for (int i = 0; i < slotButtons.Length; i++)
-            {
-                int index = i;
-
-                if (slotButtons[i] != null)
-                {
-                    slotButtons[i].onClick.AddListener(
-                        () => SelectSlot(index)
-                    );
-                }
-            }
+            int captured = i;
+            if (slotButtons[i] != null) slotButtons[i].onClick.AddListener(() => SelectSlot(captured));
         }
+        RefreshAllSlots();
+    }
 
+    private void OnDisable()
+    {
+        if (InventoryManager.Instance != null)
+            InventoryManager.Instance.OnInventoryUpdated -= OnInventoryUpdated;
+    }
+
+    private void OnInventoryUpdated(IReadOnlyList<string> items)
+    {
+        if (selectedIndex >= items.Count) selectedIndex = -1;
+        RefreshAllSlots();
+    }
+
+    public void SelectSlot(int index)
+    {
+        var inventory = InventoryManager.Instance;
+        if (inventory == null || index < 0 || index >= inventory.Items.Count) return;
+        selectedIndex = selectedIndex == index ? -1 : index;
+        RefreshAllSlots();
+    }
+
+    public void ClearSelection()
+    {
+        selectedIndex = -1;
         RefreshAllSlots();
     }
 
     public bool AddItem(FoodItem item)
     {
-        if (item == null)
-        {
-            Debug.LogWarning(
-                "Không thể thêm món null vào Inventory!"
-            );
-            return false;
-        }
-
-        // Tránh thêm cùng một món hai lần.
-        for (int i = 0; i < inventoryItems.Length; i++)
-        {
-            if (inventoryItems[i] == item)
-            {
-                // Nếu món đã tồn tại, chọn lại món đó.
-                selectedIndex = i;
-                RefreshAllSlots();
-                return true;
-            }
-        }
-
-        // Tìm ô trống.
-        for (int i = 0; i < inventoryItems.Length; i++)
-        {
-            if (inventoryItems[i] == null)
-            {
-                inventoryItems[i] = item;
-
-                // Tự động chọn món vừa nhặt.
-                selectedIndex = i;
-
-                RefreshAllSlots();
-
-                Debug.Log(
-                    "Đã thêm vào Inventory: " + item.FoodName
-                );
-
-                if (JourneyOfMemories.Core.Managers.InventoryManager.Instance != null &&
-                    !JourneyOfMemories.Core.Managers.InventoryManager.Instance.HasItem(item.FoodName))
-                {
-                    JourneyOfMemories.Core.Managers.InventoryManager.Instance.AddItem(item.FoodName);
-                }
-
-                return true;
-            }
-        }
-
-        Debug.Log("Inventory đã đầy!");
-        return false;
-    }
-
-    public void SelectSlot(int index)
-    {
-        if (index < 0 || index >= inventoryItems.Length)
-            return;
-
-        // Không thể chọn ô trống.
-        if (inventoryItems[index] == null)
-            return;
-
-        // Chạm lại món đang chọn để bỏ chọn.
-        if (selectedIndex == index)
-        {
-            selectedIndex = -1;
-
-            Debug.Log("Đã bỏ chọn món ăn.");
-        }
-        else
-        {
-            // Chọn món khác hoặc chuyển lựa chọn.
-            selectedIndex = index;
-
-            Debug.Log(
-                "Đang chọn: " + inventoryItems[index].FoodName
-            );
-        }
-
-        RefreshAllSlots();
+        if (item == null || InventoryManager.Instance == null) return false;
+        return InventoryManager.Instance.HasItem(item.ItemId) || InventoryManager.Instance.AddItem(item.ItemId);
     }
 
     public void RemoveItem(FoodItem item)
     {
-        if (item == null)
-            return;
-
-        for (int i = 0; i < inventoryItems.Length; i++)
-        {
-            if (inventoryItems[i] != item)
-                continue;
-
-            inventoryItems[i] = null;
-
-            // Nếu xóa món đang chọn, bỏ lựa chọn.
-            if (selectedIndex == i)
-            {
-                selectedIndex = -1;
-            }
-
-            RefreshAllSlots();
-
-            Debug.Log(
-                "Đã xóa món khỏi Inventory: " + item.FoodName
-            );
-
-            if (JourneyOfMemories.Core.Managers.InventoryManager.Instance != null)
-            {
-                JourneyOfMemories.Core.Managers.InventoryManager.Instance.RemoveItem(item.FoodName);
-            }
-
-            return;
-        }
+        if (item != null) InventoryManager.Instance?.RemoveItem(item.ItemId);
     }
 
     private void RefreshAllSlots()
     {
-        for (int i = 0; i < inventoryItems.Length; i++)
+        var items = InventoryManager.Instance != null ? InventoryManager.Instance.Items : null;
+        for (int i = 0; i < itemIcons.Length; i++)
         {
-            UpdateSlotUI(i);
-        }
-    }
-
-    private void UpdateSlotUI(int index)
-    {
-        // Cập nhật biểu tượng món ăn.
-        if (itemIcons != null &&
-            index < itemIcons.Length &&
-            itemIcons[index] != null)
-        {
-            FoodItem item = inventoryItems[index];
-
-            Image icon = itemIcons[index];
-
-            icon.sprite = item != null
-                ? item.InventoryIcon
-                : null;
-
-            icon.enabled =
-                item != null && item.InventoryIcon != null;
-
-            icon.preserveAspect = true;
-        }
-
-        // Cập nhật màu nền của ô đang chọn.
-        if (slotBackgrounds != null &&
-            index < slotBackgrounds.Length &&
-            slotBackgrounds[index] != null)
-        {
-            slotBackgrounds[index].color =
-                selectedIndex == index
-                    ? selectedColor
-                    : normalColor;
-        }
-    }
-
-    private void OnDestroy()
-    {
-        // Gỡ listener do script đăng ký để tránh đăng ký trùng
-        // khi component được khởi tạo lại trong cùng phiên.
-        if (slotButtons == null)
-            return;
-
-        for (int i = 0; i < slotButtons.Length; i++)
-        {
-            int index = i;
-
-            if (slotButtons[i] != null)
+            string itemId = items != null && i < items.Count ? items[i] : null;
+            if (itemIcons[i] != null)
             {
-                slotButtons[i].onClick.RemoveListener(
-                    () => SelectSlot(index)
-                );
+                itemIcons[i].sprite = itemId != null && iconByItemId.TryGetValue(itemId, out var icon) ? icon : null;
+                itemIcons[i].enabled = itemIcons[i].sprite != null;
+                itemIcons[i].preserveAspect = true;
             }
+            if (i < slotBackgrounds.Length && slotBackgrounds[i] != null)
+                slotBackgrounds[i].color = selectedIndex == i ? selectedColor : normalColor;
         }
     }
 }
