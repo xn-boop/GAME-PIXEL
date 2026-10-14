@@ -23,7 +23,8 @@ namespace JourneyOfMemories.Core.Data
         ItemMismatch,
         SlotAlreadyFilled,
         ItemNotInInventory,
-        InvalidSlot
+        InvalidSlot,
+        ConditionsNotMet
     }
 
     public enum QuizOption
@@ -33,5 +34,24 @@ namespace JourneyOfMemories.Core.Data
         B = 2,
         C = 3,
         D = 4
+    }
+
+    public enum QuizSubmitStatus
+    {
+        Incorrect,
+        Success,
+        AlreadySolved,
+        InventoryFull,
+        InvalidQuiz,
+        InvalidOption
+    }
+
+    public enum CombineResult
+    {
+        Success,
+        MissingParts,
+        QuizzesNotSolved,
+        AlreadyCombined,
+        InventoryUnavailable
     }
 }
