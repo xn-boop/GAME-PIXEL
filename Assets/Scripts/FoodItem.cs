@@ -1,10 +1,12 @@
 
 using UnityEngine;
+using JourneyOfMemories.Core.Data;
 
 public class FoodItem : MonoBehaviour
 {
     [Header("Food Information")]
     [SerializeField] private string foodName = "Food";
+    [SerializeField] private string itemId = "";
     [SerializeField] private Sprite inventoryIcon;
 
     [SerializeField] private string quizId = "";
@@ -12,6 +14,7 @@ public class FoodItem : MonoBehaviour
     private bool isCollected = false;
 
     public string FoodName => foodName;
+    public string ItemId => ResolveItemId();
     public string QuizId => quizId;
     public bool IsCollected => isCollected;
     public Sprite InventoryIcon => inventoryIcon;
@@ -20,7 +23,8 @@ public class FoodItem : MonoBehaviour
     {
         // Chống nhân đôi: Nếu vật phẩm đã có trong túi hoặc đã đặt lên slot
         if (JourneyOfMemories.Core.Managers.SaveLoadManager.Instance != null &&
-            JourneyOfMemories.Core.Managers.SaveLoadManager.Instance.IsItemAlreadyCollectedOrPlaced(foodName))
+            JourneyOfMemories.Core.Managers.SaveLoadManager.Instance.IsItemAlreadyCollectedOrPlaced(ItemId) &&
+            GetComponentInParent<FoodSlot>() == null)
         {
             gameObject.SetActive(false);
         }
@@ -47,5 +51,22 @@ public class FoodItem : MonoBehaviour
     public void ResetCollection()
     {
         isCollected = false;
+    }
+
+    public void MarkCollectedAndHide()
+    {
+        isCollected = true;
+        var itemCollider = GetComponent<Collider2D>();
+        if (itemCollider != null) itemCollider.enabled = false;
+        gameObject.SetActive(false);
+    }
+
+    private string ResolveItemId()
+    {
+        if (!string.IsNullOrWhiteSpace(itemId)) return itemId;
+        if (foodName.Contains("Thịt kho") || foodName.Contains("ThitKho")) return GameIds.Item.ThitKhoTrung;
+        if (foodName.Contains("Kim chi") || foodName.Contains("Kimchi")) return GameIds.Item.Kimchi;
+        if (foodName.Contains("Kimbap") || foodName.Contains("Cơm cuộn") || foodName.Contains("ComCuon")) return GameIds.Item.ComCuon;
+        return foodName;
     }
 }
