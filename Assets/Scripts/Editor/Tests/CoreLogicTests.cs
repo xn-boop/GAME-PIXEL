@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Reflection;
 using NUnit.Framework;
 using UnityEngine;
 using JourneyOfMemories.Core.Data;
@@ -30,9 +31,23 @@ namespace JourneyOfMemories.Tests
             saveLoadManager = testRoot.AddComponent<SaveLoadManager>();
 
             // EditMode tests do not run the normal PlayMode lifecycle. Invoke
-            // Awake after every manager has been attached so singleton-based
-            // manager dependencies are initialized exactly as they are in-game.
-            testRoot.SendMessage("Awake", SendMessageOptions.DontRequireReceiver);
+            // Awake directly after every manager has been attached so their
+            // singleton dependencies are initialized exactly as in-game.
+            InvokeAwake(inventoryManager);
+            InvokeAwake(quizManager);
+            InvokeAwake(placementManager);
+            InvokeAwake(combineManager);
+            InvokeAwake(gameStateManager);
+            InvokeAwake(saveLoadManager);
+        }
+
+        private static void InvokeAwake(MonoBehaviour behaviour)
+        {
+            MethodInfo awake = behaviour.GetType().GetMethod(
+                "Awake",
+                BindingFlags.Instance | BindingFlags.NonPublic);
+            Assert.IsNotNull(awake, $"{behaviour.GetType().Name} must define Awake().");
+            awake.Invoke(behaviour, null);
         }
 
         [TearDown]
