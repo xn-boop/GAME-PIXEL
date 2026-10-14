@@ -103,7 +103,7 @@ namespace JourneyOfMemories.Core.UI
             }
 
             // Khóa điều khiển nhân vật khi mở bảng câu đố
-            GameStateManager.Instance?.SetPlayerControlLock(true);
+            GameStateManager.Instance?.AcquirePlayerControlLock("Quiz");
 
             if (quizPanel != null)
             {
@@ -115,14 +115,14 @@ namespace JourneyOfMemories.Core.UI
         {
             if (QuizManager.Instance == null || string.IsNullOrEmpty(currentQuizId)) return;
 
-            var (isCorrect, feedback) = QuizManager.Instance.SubmitQuizAnswer(currentQuizId, option);
+            var (status, feedback, _) = QuizManager.Instance.SubmitQuizAnswer(currentQuizId, option);
 
             if (feedbackText != null)
             {
                 feedbackText.text = feedback;
             }
 
-            if (isCorrect)
+            if (status == QuizSubmitStatus.Success || status == QuizSubmitStatus.AlreadySolved)
             {
                 isAnsweredCorrectly = true;
                 Debug.Log($"[QuizUIController] Hoàn thành câu hỏi {currentQuizId}!");
@@ -139,10 +139,7 @@ namespace JourneyOfMemories.Core.UI
             currentQuizId = null;
 
             // Mở lại điều khiển nhân vật nếu không có cảnh ký ức đang chạy
-            if (GameStateManager.Instance != null && GameStateManager.Instance.CurrentMapState == MapState.Active)
-            {
-                GameStateManager.Instance.SetPlayerControlLock(false);
-            }
+            GameStateManager.Instance?.ReleasePlayerControlLock("Quiz");
         }
     }
 }
