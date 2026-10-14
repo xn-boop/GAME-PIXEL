@@ -20,6 +20,7 @@ namespace JourneyOfMemories.Tests
         [SetUp]
         public void SetUp()
         {
+            SaveLoadManager.DisableDiskPersistenceForTests = true;
             testRoot = new GameObject("[UnitTestRoot]");
             inventoryManager = testRoot.AddComponent<InventoryManager>();
             quizManager = testRoot.AddComponent<QuizManager>();
@@ -36,6 +37,7 @@ namespace JourneyOfMemories.Tests
             {
                 Object.DestroyImmediate(testRoot);
             }
+            SaveLoadManager.DisableDiskPersistenceForTests = false;
         }
 
         #region InventoryManager Tests
@@ -82,9 +84,9 @@ namespace JourneyOfMemories.Tests
             inventoryManager.Clear();
 
             // Q01 đáp án đúng là B (Thịt kho trứng)
-            var (isCorrect, feedback) = quizManager.SubmitQuizAnswer("Q01", QuizOption.B);
+            var (status, feedback, _) = quizManager.SubmitQuizAnswer("Q01", QuizOption.B);
 
-            Assert.IsTrue(isCorrect);
+            Assert.AreEqual(QuizSubmitStatus.Success, status);
             Assert.IsTrue(quizManager.IsQuizSolved("Q01"));
             Assert.IsTrue(inventoryManager.HasItem("Food_ThitKhoTrung"));
             Assert.IsFalse(string.IsNullOrEmpty(feedback));
@@ -96,9 +98,9 @@ namespace JourneyOfMemories.Tests
             inventoryManager.Clear();
 
             // Q01 chọn sai (A)
-            var (isCorrect, feedback) = quizManager.SubmitQuizAnswer("Q01", QuizOption.A);
+            var (status, feedback, _) = quizManager.SubmitQuizAnswer("Q01", QuizOption.A);
 
-            Assert.IsFalse(isCorrect);
+            Assert.AreEqual(QuizSubmitStatus.Incorrect, status);
             Assert.IsFalse(quizManager.IsQuizSolved("Q01"));
             Assert.IsFalse(inventoryManager.HasItem("Food_ThitKhoTrung"));
             Assert.IsFalse(string.IsNullOrEmpty(feedback));
@@ -165,9 +167,9 @@ namespace JourneyOfMemories.Tests
             Assert.IsTrue(inventoryManager.HasItem("Gem_MugunghwaHalf"));
             Assert.AreEqual(2, inventoryManager.ItemCount);
 
-            var (success, resultGemId, message) = combineManager.TryCombineGems();
+            var (result, resultGemId, message) = combineManager.TryCombineGems();
 
-            Assert.IsTrue(success);
+            Assert.AreEqual(CombineResult.Success, result);
             Assert.AreEqual("Gem_Whole", resultGemId);
             Assert.IsTrue(inventoryManager.HasItem("Gem_Whole"));
             Assert.IsFalse(inventoryManager.HasItem("Gem_LotusHalf"));
@@ -206,8 +208,12 @@ namespace JourneyOfMemories.Tests
             // Ban đầu chưa xong Map 1 -> Từ chối chuyển Map 2
             Assert.IsFalse(gameStateManager.RequestTransition(MapId.Map2_DressingRoom));
 
-            // Xác nhận nhật ký Map 1 -> Map 1 Completed
-            gameStateManager.ConfirmJournal(MapId.Map1_Kitchen);
+            // Không được bỏ qua MemoryPending/JournalPending.
+            Assert.IsFalse(gameStateManager.ConfirmJournal(MapId.Map1_Kitchen));
+            gameStateManager.LoadState(MapId.Map1_Kitchen, MapState.MemoryPending,
+                false, false, false, false, false, false, true, false, false);
+            Assert.IsTrue(gameStateManager.NotifyMemoryFinished());
+            Assert.IsTrue(gameStateManager.ConfirmJournal(MapId.Map1_Kitchen));
             Assert.AreEqual(MapState.Completed, gameStateManager.CurrentMapState);
 
             // Giờ chuyển sang Map 2 phải thành công
@@ -217,6 +223,47 @@ namespace JourneyOfMemories.Tests
         }
 
         #endregion
+
+        [Test]
+        public void QuizManager_FullInventory_DoesNotConsumeQuiz()
+        {
+            inventoryManager.Clear();
+            for (int i = 0; i < InventoryManager.MaxCapacity; i++)
+                inventoryManager.AddItem("Dummy_" + i);
+
+            var (status, _, _) = quizManager.SubmitQuizAnswer("Q01", QuizOption.B);
+            Assert.AreEqual(QuizSubmitStatus.InventoryFull, status);
+            Assert.IsFalse(quizManager.IsQuizSolved("Q01"));
+            Assert.IsFalse(inventoryManager.HasItem(GameIds.Item.ThitKhoTrung));
+        }
+
+        [Test]
+        public void GameStateManager_Map3Gates_CannotBeSkipped()
+        {
+            gameStateManager.LoadState(MapId.Map3_Garden, MapState.Active, false, false, false,
+                false, false, false, true, false, false);
+
+            Assert.IsFalse(gameStateManager.MarkBridgeReady());
+            Assert.IsFalse(gameStateManager.MarkReunionSeen());
+            for (int i = 1; i <= 4; i++)
+            {
+                Assert.IsTrue(gameStateManager.CollectMapFragment(i));
+                Assert.IsTrue(gameStateManager.PlaceMapFragment(i));
+            }
+            Assert.IsTrue(gameStateManager.M3_MiniDone);
+        }
+
+        [Test]
+        public void GameStateManager_Ending_RequiresFinalPageBeforeCompletion()
+        {
+            gameStateManager.LoadState(MapId.Ending, MapState.Active, false, false, false,
+                true, true, true, true, false, false);
+            Assert.IsFalse(gameStateManager.CompleteGame());
+            Assert.IsTrue(gameStateManager.ConfirmFinalPage());
+            Assert.IsTrue(gameStateManager.CompleteGame());
+            Assert.IsTrue(gameStateManager.GameCompleted);
+            Assert.AreEqual(MapState.Completed, gameStateManager.CurrentMapState);
+        }
 
         #region SaveLoadManager Tests
 
