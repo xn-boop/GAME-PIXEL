@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 /// <summary>
@@ -79,14 +78,39 @@ public class MainMenuController : MonoBehaviour
     public void PlayGame()
     {
         Debug.Log("MainMenuController: Đang vào game...");
-        if (!string.IsNullOrEmpty(firstLevelSceneName))
+        var save = JourneyOfMemories.Core.Managers.SaveLoadManager.Instance;
+        if (save != null && save.HasSaveData())
         {
-            SceneManager.LoadScene(firstLevelSceneName);
+            Debug.LogWarning("Đã có lượt chơi. UI cần xác nhận rồi gọi ConfirmStartNewGame().");
+            return;
         }
-        else
+        StartNewGameConfirmed();
+    }
+
+    public void ConfirmStartNewGame()
+    {
+        StartNewGameConfirmed();
+    }
+
+    private void StartNewGameConfirmed()
+    {
+        JourneyOfMemories.Core.Managers.SaveLoadManager.Instance?.StartNewGame();
+        if (JourneyOfMemories.Core.Managers.SceneFlowManager.Instance == null ||
+            !JourneyOfMemories.Core.Managers.SceneFlowManager.Instance.LoadCurrentMap())
+            Debug.LogError("Không thể tải scene đầu tiên qua SceneFlowManager.");
+    }
+
+    public void ContinueGame()
+    {
+        var save = JourneyOfMemories.Core.Managers.SaveLoadManager.Instance;
+        var flow = JourneyOfMemories.Core.Managers.SceneFlowManager.Instance;
+        if (save == null || flow == null || !save.HasSaveData())
         {
-            Debug.LogError("MainMenuController: firstLevelSceneName chưa được thiết lập!");
+            Debug.LogWarning("Không có lượt chơi để tiếp tục.");
+            return;
         }
+        save.LoadGame();
+        flow.LoadCurrentMap();
     }
 
     /// <summary>
