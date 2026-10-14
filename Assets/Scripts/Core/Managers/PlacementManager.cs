@@ -43,10 +43,13 @@ namespace JourneyOfMemories.Core.Managers
             Instance = this;
         }
 
-        public void RegisterSlotConfig(string slotId, string requiredItemId)
+        private void OnDestroy() { if (Instance == this) Instance = null; }
+
+        public string GetRequiredItemId(string slotId)
         {
-            if (string.IsNullOrEmpty(slotId) || string.IsNullOrEmpty(requiredItemId)) return;
-            slotConfig[slotId] = requiredItemId;
+            return !string.IsNullOrEmpty(slotId) && slotConfig.TryGetValue(slotId, out var itemId)
+                ? itemId
+                : null;
         }
 
         public bool IsSlotFilled(string slotId)
@@ -72,6 +75,14 @@ namespace JourneyOfMemories.Core.Managers
                 return PlacementResult.InvalidSlot;
             }
 
+            if (slotId == GameIds.Slot.Pedestal &&
+                (GameStateManager.Instance == null ||
+                 GameStateManager.Instance.CurrentMap != MapId.Map3_Garden ||
+                 !GameStateManager.Instance.M3_MiniDone))
+            {
+                return PlacementResult.ConditionsNotMet;
+            }
+
             // 1. Kiểm tra Slot đích đã có đồ chưa
             if (IsSlotFilled(slotId))
             {
@@ -80,7 +91,7 @@ namespace JourneyOfMemories.Core.Managers
             }
 
             // 2. Kiểm tra vật phẩm có trong túi đồ không
-            if (InventoryManager.Instance != null && !InventoryManager.Instance.HasItem(itemId))
+            if (InventoryManager.Instance == null || !InventoryManager.Instance.HasItem(itemId))
             {
                 Debug.LogWarning($"[PlacementManager] Người chơi không sở hữu vật phẩm '{itemId}' trong túi đồ.");
                 return PlacementResult.ItemNotInInventory;
@@ -105,12 +116,15 @@ namespace JourneyOfMemories.Core.Managers
             Debug.Log($"[PlacementManager] Đặt thành công '{itemId}' vào vị trí '{slotId}'.");
 
             // Tiêu thụ vật phẩm khỏi túi đồ
-            if (InventoryManager.Instance != null)
+            if (!InventoryManager.Instance.RemoveItem(itemId))
             {
-                InventoryManager.Instance.RemoveItem(itemId);
+                filledSlots.Remove(slotId);
+                return PlacementResult.ItemNotInInventory;
             }
 
             OnItemPlaced?.Invoke(slotId, itemId);
+            if (slotId == GameIds.Slot.Pedestal)
+                GameStateManager.Instance?.MarkPedestalPlaced();
             GameStateManager.Instance?.CheckObjectives();
             SaveLoadManager.Instance?.RequestAutoSave();
 
@@ -127,6 +141,11 @@ namespace JourneyOfMemories.Core.Managers
                     filledSlots[kvp.Key] = kvp.Value;
                 }
             }
+        }
+
+        public void ResetProgress()
+        {
+            filledSlots.Clear();
         }
     }
 }
