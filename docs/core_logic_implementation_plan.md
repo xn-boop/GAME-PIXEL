@@ -1,5 +1,7 @@
 # Kế hoạch Triển khai Kiến trúc CORE LOGIC: Journey of Memories
 
+> **Trạng thái:** nền Core trong tài liệu này đã được triển khai. API hiện hành và quy tắc chia việc phải đọc theo `docs/API_CONTRACT.md` và `GameIds.cs`; không dùng các đoạn “đề xuất” bên dưới để tạo manager thứ hai trong scene.
+
 Tài liệu thiết kế kỹ thuật và kế hoạch thực hiện cho dự án game pixel 2D **Journey of Memories** (Unity 6 / C#) tại `D:\game\GAME-PIXEL`, dựa trên quy chuẩn kiến trúc từ `docs/core_logic_workflow.md` và chi tiết nhiệm vụ từ `docs/Workflow_Logic_Maps_Journey_of_Memories.md`.
 
 ---
