@@ -113,12 +113,12 @@ public class PlayerInteraction : MonoBehaviour
             return;
         }
 
-        FoodItem selectedFood = inventoryUI.SelectedItem;
+        string selectedItemId = inventoryUI.SelectedItemId;
 
         // Đang chọn món thì ưu tiên đặt món đó.
-        if (selectedFood != null)
+        if (!string.IsNullOrEmpty(selectedItemId))
         {
-            TryPlaceFood(selectedFood);
+            TryPlaceItem(selectedItemId);
             return;
         }
 
@@ -192,9 +192,9 @@ public class PlayerInteraction : MonoBehaviour
         string quizId = food.QuizId;
         if (string.IsNullOrEmpty(quizId))
         {
-            if (food.FoodName.Contains("Thịt kho") || food.FoodName.Contains("ThitKho")) quizId = "Q01";
-            else if (food.FoodName.Contains("Kim chi") || food.FoodName.Contains("Kimchi")) quizId = "Q02";
-            else if (food.FoodName.Contains("Kimbap") || food.FoodName.Contains("ComCuon")) quizId = "Q03";
+            if (food.ItemId == JourneyOfMemories.Core.Data.GameIds.Item.ThitKhoTrung) quizId = JourneyOfMemories.Core.Data.GameIds.Quiz.Q01;
+            else if (food.ItemId == JourneyOfMemories.Core.Data.GameIds.Item.Kimchi) quizId = JourneyOfMemories.Core.Data.GameIds.Quiz.Q02;
+            else if (food.ItemId == JourneyOfMemories.Core.Data.GameIds.Item.ComCuon) quizId = JourneyOfMemories.Core.Data.GameIds.Quiz.Q03;
         }
 
         if (!string.IsNullOrEmpty(quizId) && JourneyOfMemories.Core.Managers.QuizManager.Instance != null)
@@ -209,28 +209,27 @@ public class PlayerInteraction : MonoBehaviour
             }
         }
 
-        // Thêm vào Inventory trước khi xác nhận nhặt.
-        bool added = inventoryUI.AddItem(food);
-
-        if (!added)
+        // QuizManager đã cấp vật phẩm cho Core. Với vật phẩm không có quiz,
+        // PlayerInteraction mới gửi yêu cầu thêm vào Core.
+        var coreInventory = JourneyOfMemories.Core.Managers.InventoryManager.Instance;
+        if (coreInventory == null) return;
+        if (!coreInventory.HasItem(food.ItemId) && !coreInventory.AddItem(food.ItemId))
         {
-            ShowMessage(
-                "Inventory đã đầy! Hãy đặt bớt món trước khi nhặt thêm."
-            );
+            ShowMessage("Inventory đã đầy! Hãy đặt bớt món trước khi nhặt thêm.");
             return;
         }
 
-        food.Collect(transform);
+        food.MarkCollectedAndHide();
 
         ShowMessage("Đã nhặt: " + food.FoodName);
     }
 
-    private void TryPlaceFood(FoodItem food)
+    private void TryPlaceItem(string itemId)
     {
         if (isInteractionLocked)
             return;
 
-        if (food == null)
+        if (string.IsNullOrEmpty(itemId))
         {
             ShowMessage(
                 "Món đang chọn không hợp lệ. Hãy chọn lại trong Inventory!"
@@ -242,26 +241,25 @@ public class PlayerInteraction : MonoBehaviour
         if (nearbySlot == null)
         {
             ShowMessage(
-                "Bạn đang chọn " + food.FoodName +
+                "Bạn đang chọn " + itemId +
                 ". Hãy đến gần một ô trống trên mâm cơm!"
             );
             return;
         }
 
         // Thử đặt món vào ô trống gần nhất.
-        bool success = nearbySlot.TryPlaceFood(food);
+        bool success = nearbySlot.TryPlaceItem(itemId);
 
         if (success)
         {
-            inventoryUI.RemoveItem(food);
-
-            ShowMessage("Đặt món thành công: " + food.FoodName);
+            inventoryUI.ClearSelection();
+            ShowMessage("Đặt vật phẩm thành công: " + itemId);
         }
         else
         {
             // Đặt sai thì giữ nguyên món trong Inventory.
             ShowMessage(
-                "Sai món! " + food.FoodName +
+                "Sai vật phẩm! " + itemId +
                 " vẫn ở trong Inventory. Hãy thử ô khác!"
             );
         }
