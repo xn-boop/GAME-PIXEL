@@ -157,7 +157,8 @@ namespace JourneyOfMemories.Core.Managers
 
                 string json = JsonUtility.ToJson(data, true);
                 File.WriteAllText(temporarySaveFilePath, json);
-                File.Move(temporarySaveFilePath, saveFilePath, true);
+                File.Copy(temporarySaveFilePath, saveFilePath, true);
+                File.Delete(temporarySaveFilePath);
                 Debug.Log($"[SaveLoadManager] Đã lưu tiến trình game xuống: {saveFilePath}");
 
                 OnGameSaved?.Invoke();
