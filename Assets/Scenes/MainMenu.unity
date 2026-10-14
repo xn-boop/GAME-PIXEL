@@ -177,7 +177,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 020b85b0db9846d8a9c387e37dfd2b1c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cc74193a768d4dc1bc19f9cd46c4869b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -208,12 +208,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIFrameAnimator
   frames:
+  - {fileID: 21300000, guid: cc74193a768d4dc1bc19f9cd46c4869b, type: 3}
   - {fileID: 21300000, guid: 020b85b0db9846d8a9c387e37dfd2b1c, type: 3}
   - {fileID: 21300000, guid: a97fbb2a67f1409eb4aef05f522c5845, type: 3}
   - {fileID: 21300000, guid: 2d6a35af4fb04d808b70837bd09d9b46, type: 3}
   - {fileID: 21300000, guid: 14335becd67b4e029fa42785017f12f2, type: 3}
   - {fileID: 21300000, guid: 670b4dcf630c405a89a2ba1dbe24ada6, type: 3}
-  framesPerSecond: 4.545455
+  - {fileID: 21300000, guid: b76235704cc864e08cf930784b6dded9, type: 3}
+  - {fileID: 21300000, guid: 203d0a4ae8a8f83bcf43c7772683d742, type: 3}
+  - {fileID: 21300000, guid: a319b30d76bd8632b9ab1d7154fc0c36, type: 3}
+  - {fileID: 21300000, guid: 2f8cff0776c99e89aa7623bc6aacfabd, type: 3}
+  - {fileID: 21300000, guid: 7c7561ef93e6426b752558b9a31ceda8, type: 3}
+  - {fileID: 21300000, guid: 83a98c8a8779884eb60deecf13ed2d8c, type: 3}
+  - {fileID: 21300000, guid: 95f4c64715a7a4eef4d4e70a5c4de492, type: 3}
+  - {fileID: 21300000, guid: c2c8782571e8ed5f3a9b31abf2cbd502, type: 3}
+  - {fileID: 21300000, guid: 8128a658a56795197f38cf35d2dddb75, type: 3}
+  - {fileID: 21300000, guid: 5d2fc1bdefbafa290ea461bf493f6080, type: 3}
+  - {fileID: 21300000, guid: ffca02095f1cead6f16bd155bca44150, type: 3}
+  - {fileID: 21300000, guid: c452986753211feaa72a8f2441ec8e8a, type: 3}
+  - {fileID: 21300000, guid: 777d7838e9d4af4c0aaf04e7b1649aac, type: 3}
+  - {fileID: 21300000, guid: 1435553ff6afdd5c9f93af7746e7616f, type: 3}
+  - {fileID: 21300000, guid: 6913197fc0074022d7c0fd0db5310f84, type: 3}
+  - {fileID: 21300000, guid: 96635215f1e15a29ed8b61c13c0be57c, type: 3}
+  - {fileID: 21300000, guid: 1a45d0bf9caaf0de5b36b7b3dfe5680e, type: 3}
+  - {fileID: 21300000, guid: 85aacefb4352224b934df76af2ae2792, type: 3}
+  - {fileID: 21300000, guid: 6c4874123b3f9e6f62e1cfa95c745350, type: 3}
+  - {fileID: 21300000, guid: eb3857b853b46a020b8dcafcbc58ebef, type: 3}
+  - {fileID: 21300000, guid: 6c8d64216d0e7bd7082bf3fade159094, type: 3}
+  - {fileID: 21300000, guid: b2caa7c766119c96137ba17cf8f5b16e, type: 3}
+  - {fileID: 21300000, guid: a662697bae53ca5de5d8dfe37864e7e0, type: 3}
+  - {fileID: 21300000, guid: 145465779a6b9ea9a624e14bcd4fbaea, type: 3}
+  - {fileID: 21300000, guid: 1ce3738d2bdd1fd716107beebefc2987, type: 3}
+  framesPerSecond: 10
   loop: 1
   unscaledTime: 1
 --- !u!1 &258510147
@@ -498,6 +524,9 @@ MonoBehaviour:
   firstLevelSceneName: Level1_Prototype
   mainPanel: {fileID: 0}
   settingsPanel: {fileID: 829930897}
+  tapToStartEffect: {fileID: 1018322883}
+  screenFadeOverlay: {fileID: 0}
+  fadeDuration: 0.35
   musicVolumeSlider: {fileID: 0}
 --- !u!4 &747474805
 Transform:
@@ -603,6 +632,7 @@ GameObject:
   - component: {fileID: 861485027}
   - component: {fileID: 861485026}
   - component: {fileID: 861485025}
+  - component: {fileID: 861485028}
   m_Layer: 0
   m_Name: LanguageButton
   m_TagString: Untagged
@@ -624,10 +654,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1850104337}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.93, y: 0.05}
-  m_AnchorMax: {x: 0.93, y: 0.05}
+  m_AnchorMin: {x: 0.906, y: 0.096}
+  m_AnchorMax: {x: 0.906, y: 0.096}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 180, y: 50}
+  m_SizeDelta: {x: 220, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &861485025
 MonoBehaviour:
@@ -672,7 +702,40 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 861485026}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 861485028}
+        m_TargetAssemblyTypeName: LanguageSelectorUI, Assembly-CSharp
+        m_MethodName: OnLanguageButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &861485028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861485023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22a64799daf7e01d302ccad6b4d6aeac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LanguageSelectorUI
+  enText: {fileID: 0}
+  vnText: {fileID: 0}
+  activeIndicator: {fileID: 0}
+  activeColor: {r: 1, g: 0.95, b: 0.65, a: 1}
+  inactiveColor: {r: 0.75, g: 0.8, b: 0.85, a: 0.45}
+  toastPanel: {fileID: 0}
+  toastText: {fileID: 0}
+  toastCanvasGroup: {fileID: 0}
+  clickSound: {fileID: 0}
 --- !u!114 &861485026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -875,16 +938,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1018322879}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 481fa95e368ee1a4bba4e1109deceaee, type: 3}
+  m_Script: {fileID: 11500000, guid: 1b046e82feda82ded39534d00885c9e9, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MenuBlinkEffect
+  m_EditorClassIdentifier: Assembly-CSharp::TapToStartEffect
   canvasGroup: {fileID: 0}
-  speed: 2.5
-  minAlpha: 0.2
-  maxAlpha: 0.8
-  enableScalePulse: 1
-  minScale: 0.98
-  maxScale: 1.02
+  idleSpeed: 2.5
+  idleMinAlpha: 0.25
+  idleMaxAlpha: 0.95
+  enableIdlePulse: 1
+  idleMinScale: 0.97
+  idleMaxScale: 1.03
+  flashOverlay: {fileID: 1018322881}
+  rippleRing: {fileID: 0}
+  tapDuration: 0.45
+  tapSoundClip: {fileID: 0}
   unscaledTime: 1
 --- !u!1 &1850104336
 GameObject:
@@ -961,7 +1028,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1672, y: 941}
+  m_ReferenceResolution: {x: 1844, y: 853}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
@@ -1159,10 +1226,10 @@ RectTransform:
   - {fileID: 1018322880}
   m_Father: {fileID: 1850104337}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.23}
-  m_AnchorMax: {x: 0.5, y: 0.23}
+  m_AnchorMin: {x: 0.5, y: 0.208}
+  m_AnchorMax: {x: 0.5, y: 0.208}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 520, y: 100}
+  m_SizeDelta: {x: 440, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2080684367
 MonoBehaviour:

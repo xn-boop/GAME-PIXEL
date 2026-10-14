@@ -1,8 +1,12 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 /// <summary>
 /// Quản lý màn hình Menu chính / Bắt đầu game.
+/// Tích hợp hiệu ứng Tap cho nút "TAP TO START", chuyển cảnh mượt mà với Screen Fade,
+/// và hỗ trợ đa ngôn ngữ.
 /// </summary>
 public class MainMenuController : MonoBehaviour
 {
@@ -17,9 +21,61 @@ public class MainMenuController : MonoBehaviour
     [Tooltip("Panel cài đặt (nếu có)")]
     public GameObject settingsPanel;
 
+    [Header("Tap Feedback & Transition")]
+    [Tooltip("Hiệu ứng phản hồi khi chạm nút Tap To Start")]
+    public TapToStartEffect tapToStartEffect;
+
+    [Tooltip("Lớp phủ mờ dần màn hình khi chuyển cảnh (Fade to Black)")]
+    public CanvasGroup screenFadeOverlay;
+
+    [Tooltip("Thời gian chuyển cảnh mờ màn hình (giây)")]
+    public float fadeDuration = 0.35f;
+
     [Header("Audio (Optional)")]
     [Tooltip("Slider chỉnh âm lượng nhạc nền")]
     public Slider musicVolumeSlider;
+
+    private bool isStartingGame = false;
+
+    private void Awake()
+    {
+        // Tự tìm TapToStartEffect nếu chưa gán
+        if (tapToStartEffect == null)
+        {
+            tapToStartEffect = FindObjectOfType<TapToStartEffect>();
+        }
+
+        // Đảm bảo màn hình không bị tối ban đầu
+        if (screenFadeOverlay != null)
+        {
+            screenFadeOverlay.alpha = 0f;
+            screenFadeOverlay.blocksRaycasts = false;
+        }
+        else
+        {
+            Canvas canvas = FindObjectOfType<Canvas>();
+            if (canvas != null)
+            {
+                var fadeObj = new GameObject("ScreenFadeOverlay", typeof(RectTransform), typeof(CanvasRenderer), typeof(Image), typeof(CanvasGroup));
+                fadeObj.transform.SetParent(canvas.transform, false);
+                fadeObj.transform.SetAsLastSibling();
+
+                var fRect = fadeObj.GetComponent<RectTransform>();
+                fRect.anchorMin = Vector2.zero;
+                fRect.anchorMax = Vector2.one;
+                fRect.sizeDelta = Vector2.zero;
+
+                var fImg = fadeObj.GetComponent<Image>();
+                fImg.color = Color.black;
+                fImg.raycastTarget = true;
+
+                screenFadeOverlay = fadeObj.GetComponent<CanvasGroup>();
+                screenFadeOverlay.alpha = 0f;
+                screenFadeOverlay.blocksRaycasts = false;
+                fadeObj.SetActive(false);
+            }
+        }
+    }
 
     private void Start()
     {
@@ -49,6 +105,8 @@ public class MainMenuController : MonoBehaviour
 
     private void Update()
     {
+        if (isStartingGame) return;
+
         // Cho phép nhấn Space hoặc Enter để vào game
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
         {
@@ -73,17 +131,50 @@ public class MainMenuController : MonoBehaviour
     }
 
     /// <summary>
-    /// Bắt đầu game - Chuyển sang scene màn chơi
+    /// Bắt đầu game - Kích hoạt hiệu ứng Tap và chuyển cảnh mượt mà
     /// </summary>
     public void PlayGame()
     {
-        Debug.Log("MainMenuController: Đang vào game...");
-        var save = JourneyOfMemories.Core.Managers.SaveLoadManager.Instance;
-        if (save != null && save.HasSaveData())
+        if (isStartingGame) return;
+        isStartingGame = true;
+
+        Debug.Log("MainMenuController: Đang kích hoạt hiệu ứng Tap và vào game...");
+
+        StartCoroutine(StartGameRoutine());
+    }
+
+    private IEnumerator StartGameRoutine()
+    {
+        // 1. Kích hoạt hiệu ứng Tap trên nút
+        if (tapToStartEffect != null)
         {
-            Debug.LogWarning("Đã có lượt chơi. UI cần xác nhận rồi gọi ConfirmStartNewGame().");
-            return;
+            tapToStartEffect.TriggerTapEffect();
         }
+
+        // Chờ hiệu ứng Tap diễn ra để người chơi cảm nhận độ nảy và âm thanh
+        yield return new WaitForSecondsRealtime(0.25f);
+
+        // 2. Chuyển dần màn hình sang đen (Fade to black)
+        if (screenFadeOverlay != null)
+        {
+            screenFadeOverlay.gameObject.SetActive(true);
+            screenFadeOverlay.blocksRaycasts = true;
+
+            float elapsed = 0f;
+            while (elapsed < fadeDuration)
+            {
+                elapsed += Time.unscaledDeltaTime;
+                screenFadeOverlay.alpha = Mathf.Lerp(0f, 1f, elapsed / fadeDuration);
+                yield return null;
+            }
+            screenFadeOverlay.alpha = 1f;
+        }
+        else
+        {
+            yield return new WaitForSecondsRealtime(0.15f);
+        }
+
+        // 3. Tải scene tiếp theo qua SceneFlowManager hoặc SceneManager
         StartNewGameConfirmed();
     }
 
@@ -94,10 +185,24 @@ public class MainMenuController : MonoBehaviour
 
     private void StartNewGameConfirmed()
     {
-        JourneyOfMemories.Core.Managers.SaveLoadManager.Instance?.StartNewGame();
-        if (JourneyOfMemories.Core.Managers.SceneFlowManager.Instance == null ||
-            !JourneyOfMemories.Core.Managers.SceneFlowManager.Instance.LoadCurrentMap())
-            Debug.LogError("Không thể tải scene đầu tiên qua SceneFlowManager.");
+        var save = JourneyOfMemories.Core.Managers.SaveLoadManager.Instance;
+        save?.StartNewGame();
+
+        var flow = JourneyOfMemories.Core.Managers.SceneFlowManager.Instance;
+        if (flow != null && flow.LoadCurrentMap())
+        {
+            return;
+        }
+
+        if (!string.IsNullOrEmpty(firstLevelSceneName))
+        {
+            SceneManager.LoadScene(firstLevelSceneName);
+        }
+        else
+        {
+            Debug.LogError("MainMenuController: firstLevelSceneName chưa được thiết lập!");
+            isStartingGame = false;
+        }
     }
 
     public void ContinueGame()
@@ -118,6 +223,7 @@ public class MainMenuController : MonoBehaviour
     /// </summary>
     public void OpenSettings()
     {
+        if (isStartingGame) return;
         if (mainPanel != null) mainPanel.SetActive(false);
         if (settingsPanel != null) settingsPanel.SetActive(true);
     }
