@@ -63,7 +63,11 @@ public class LanguageSelectorUI : MonoBehaviour
     /// </summary>
     private void EnsureVisualElements()
     {
-        Font font = Resources.GetBuiltinResource<Font>("Arial.ttf");
+        Font font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+        if (font == null)
+        {
+            try { font = Resources.GetBuiltinResource<Font>("Arial.ttf"); } catch { }
+        }
 
         // 1. Tạo Khung viền / Indicator phát sáng làm nổi bật ngôn ngữ được chọn
         if (activeIndicator == null)

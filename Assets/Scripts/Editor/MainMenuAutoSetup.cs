@@ -28,6 +28,7 @@ namespace JourneyOfMemories.Editor
 
         private static void ExecuteSetupIfNeeded()
         {
+            if (EditorApplication.isPlayingOrWillChangePlaymode) return;
             if (!EditorPrefs.GetBool(PREF_KEY, false))
             {
                 ExecuteSetup();
@@ -36,6 +37,7 @@ namespace JourneyOfMemories.Editor
 
         public static void ExecuteSetup()
         {
+            if (EditorApplication.isPlayingOrWillChangePlaymode) return;
             string scenePath = "Assets/Scenes/MainMenu.unity";
             var scene = EditorSceneManager.OpenScene(scenePath, OpenSceneMode.Single);
             if (!scene.IsValid())
@@ -221,7 +223,11 @@ namespace JourneyOfMemories.Editor
                 }
 
                 // Tạo Overlay Text cho VN và EN để hiển thị làm nổi bật ngôn ngữ đang chọn
-                Font legacyFont = Resources.GetBuiltinResource<Font>("Arial.ttf");
+                Font legacyFont = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+                if (legacyFont == null)
+                {
+                    try { legacyFont = Resources.GetBuiltinResource<Font>("Arial.ttf"); } catch { }
+                }
 
                 Transform indicatorTrans = langBtnObj.transform.Find("ActiveIndicator");
                 if (indicatorTrans == null)

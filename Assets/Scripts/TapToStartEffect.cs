@@ -171,6 +171,12 @@ public class TapToStartEffect : MonoBehaviour
         if (isTapped) return;
         isTapped = true;
 
+        if (!gameObject.activeInHierarchy)
+        {
+            onComplete?.Invoke();
+            return;
+        }
+
         if (tapCoroutine != null)
         {
             StopCoroutine(tapCoroutine);

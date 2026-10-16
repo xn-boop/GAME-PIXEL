@@ -11,7 +11,13 @@ using UnityEngine.UI;
 public class MainMenuController : MonoBehaviour
 {
     [Header("Scene Configuration")]
-    [Tooltip("Tên scene gameplay sẽ tải khi nhấn nút Bắt đầu")]
+    [Tooltip("Tên scene đăng nhập sẽ chuyển đến khi nhấn TAP TO START")]
+    public string loginSceneName = "LoginMenu";
+
+    [Tooltip("Tên scene đăng ký dự phòng")]
+    public string registerSceneName = "RegisterMenu";
+
+    [Tooltip("Tên scene gameplay dự phòng")]
     public string firstLevelSceneName = "Level1_Prototype";
 
     [Header("UI Panels")]
@@ -174,8 +180,19 @@ public class MainMenuController : MonoBehaviour
             yield return new WaitForSecondsRealtime(0.15f);
         }
 
-        // 3. Tải scene tiếp theo qua SceneFlowManager hoặc SceneManager
-        StartNewGameConfirmed();
+        // 3. Tải scene tiếp theo: Ưu tiên LoginMenu theo luồng, fallback sang RegisterMenu hoặc firstLevelSceneName
+        if (!string.IsNullOrEmpty(loginSceneName) && Application.CanStreamedLevelBeLoaded(loginSceneName))
+        {
+            SceneManager.LoadScene(loginSceneName);
+        }
+        else if (!string.IsNullOrEmpty(registerSceneName) && Application.CanStreamedLevelBeLoaded(registerSceneName))
+        {
+            SceneManager.LoadScene(registerSceneName);
+        }
+        else
+        {
+            StartNewGameConfirmed();
+        }
     }
 
     public void ConfirmStartNewGame()

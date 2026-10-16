@@ -65,6 +65,7 @@ namespace JourneyOfMemories.Tests
         [Test]
         public void LocalizationManager_OnLanguageChanged_FiresEvent()
         {
+            LocalizationManager.CurrentLanguage = GameLanguage.Vietnamese;
             bool eventFired = false;
             GameLanguage receivedLang = GameLanguage.Vietnamese;
 
