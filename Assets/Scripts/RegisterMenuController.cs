@@ -60,6 +60,7 @@ public class RegisterMenuController : MonoBehaviour
     public AudioSource audioSource;
 
     private bool isTransitioning = false;
+    public bool IsTransitioning => isTransitioning;
     private Coroutine statusBlinkCoroutine;
 
     // Pattern regex kiểm tra định dạng email tiêu chuẩn
@@ -322,6 +323,14 @@ public class RegisterMenuController : MonoBehaviour
     }
 
     /// <summary>
+    /// Cho phép unit test chạy trực tiếp coroutine SimulateRegistration
+    /// </summary>
+    public IEnumerator SimulateRegistrationForTest(string username, string email)
+    {
+        return SimulateRegistrationRoutine(username, email);
+    }
+
+    /// <summary>
     /// Quy trình mô phỏng đăng ký và chuyển cảnh vào game.
     /// Nêu rõ giới hạn mô phỏng cục bộ trong log console và UI.
     /// </summary>
@@ -347,31 +356,114 @@ public class RegisterMenuController : MonoBehaviour
                   $"Tên: '{username}', Email: '{email}'. " +
                   $"Lưu ý: Chưa có máy chủ Backend thực tế; tài khoản được lưu cục bộ trên máy.");
 
-        // Thông báo thành công trên giao diện
-        SetStatusMessage(GetText("Đăng ký thành công! (Mô phỏng máy chủ cục bộ). Đang vào game...", "Registration successful! (Local simulation). Entering game..."), isError: false);
-        PlayFeedbackTone(1050f, 0.22f);
-
-        yield return new WaitForSecondsRealtime(0.7f);
-
-        // Khởi tạo trạng thái game mới nếu hệ sinh thái Core Logic đã khởi tạo
         var save = JourneyOfMemories.Core.Managers.SaveLoadManager.Instance;
-        save?.StartNewGame();
-
-        // Hiệu ứng mờ dần màn hình sang đen trước khi đổi Scene
-        yield return StartCoroutine(FadeOutRoutine());
-
-        // Chuyển sang scene Gameplay
-        if (!string.IsNullOrEmpty(gameSceneName) && Application.CanStreamedLevelBeLoaded(gameSceneName))
+        if (save == null)
         {
-            SceneManager.LoadScene(gameSceneName);
+            save = FindObjectOfType<JourneyOfMemories.Core.Managers.SaveLoadManager>();
+        }
+        var flow = JourneyOfMemories.Core.Managers.SceneFlowManager.Instance;
+        if (flow == null)
+        {
+            flow = FindObjectOfType<JourneyOfMemories.Core.Managers.SceneFlowManager>();
+        }
+
+        // BR-04: Đăng ký mô phỏng không mặc định reset save chung. Khi đã có save, luồng đăng ký tiếp tục save hiện có.
+        bool hasSave = save != null && save.HasSaveData();
+        if (hasSave)
+        {
+            // Đã có save -> Tải save hiện có, KHÔNG ĐƯỢC gọi StartNewGame()
+            bool loadSuccess = save.LoadGame();
+            if (!loadSuccess)
+            {
+                // Có file save nhưng tải lỗi -> BR-03: giữ nguyên file, không tạo save mới, báo lỗi có thể hiểu được
+                Debug.LogError($"[RegisterMenu] Tải file save thất bại: {save.LastErrorMessage}. Giữ nguyên file save.");
+                SetStatusMessage(GetText("Không thể tải tiến trình đã lưu! File save có thể bị lỗi.",
+                                         "Failed to load saved progress! Save data may be corrupted."), isError: true);
+                PlayFeedbackTone(350f, 0.2f);
+                isTransitioning = false;
+                SetInteractable(true);
+                yield break;
+            }
+
+            SetStatusMessage(GetText("Đăng ký thành công! Đang tải tiến trình...",
+                                     "Registration successful! Loading progress..."), isError: false);
+            PlayFeedbackTone(1050f, 0.22f);
+            yield return new WaitForSecondsRealtime(0.5f);
+
+            // Hiệu ứng mờ dần màn hình sang đen
+            yield return StartCoroutine(FadeOutRoutine());
+
+            // Chuyển scene theo SceneFlowManager.LoadCurrentMap()
+            bool sceneLoaded = false;
+            if (flow != null)
+            {
+                sceneLoaded = flow.LoadCurrentMap();
+            }
+            else
+            {
+                string targetScene = !string.IsNullOrEmpty(gameSceneName) ? gameSceneName : "Level1_Prototype";
+                if (Application.CanStreamedLevelBeLoaded(targetScene))
+                {
+                    SceneManager.LoadScene(targetScene);
+                    sceneLoaded = true;
+                }
+            }
+
+            if (!sceneLoaded)
+            {
+                // AC-09: Scene của map đã lưu chưa có trong Build Settings -> Không reset save; hiển thị lỗi; có thể quay lại menu
+                Debug.LogError("[RegisterMenu] Scene của bản đồ đã lưu chưa có trong Build Settings! Giữ nguyên save.");
+                if (screenFadeOverlay != null)
+                {
+                    StartCoroutine(FadeInRoutine());
+                }
+                SetStatusMessage(GetText("Scene của bản đồ đã lưu chưa có trong Build Settings!",
+                                         "The scene for the saved map is not in Build Settings!"), isError: true);
+                PlayFeedbackTone(350f, 0.2f);
+                isTransitioning = false;
+                SetInteractable(true);
+            }
         }
         else
         {
-            var flow = JourneyOfMemories.Core.Managers.SceneFlowManager.Instance;
-            if (flow == null || !flow.LoadCurrentMap())
+            // BR-02: Chưa có save -> khởi tạo lượt chơi đầu tiên ở Map 1
+            SetStatusMessage(GetText("Đăng ký thành công! Bắt đầu hành trình mới...",
+                                     "Registration successful! Starting a new journey..."), isError: false);
+            PlayFeedbackTone(1050f, 0.22f);
+
+            save?.StartNewGame();
+
+            yield return new WaitForSecondsRealtime(0.5f);
+            yield return StartCoroutine(FadeOutRoutine());
+
+            bool sceneLoaded = false;
+            if (flow != null)
             {
-                Debug.LogWarning($"[RegisterMenu] Scene '{gameSceneName}' chưa sẵn sàng, thử tải 'Level1_Prototype'.");
-                SceneManager.LoadScene("Level1_Prototype");
+                sceneLoaded = flow.LoadCurrentMap();
+            }
+
+            if (!sceneLoaded)
+            {
+                string targetScene = !string.IsNullOrEmpty(gameSceneName) ? gameSceneName : "Level1_Prototype";
+                if (Application.CanStreamedLevelBeLoaded(targetScene))
+                {
+                    SceneManager.LoadScene(targetScene);
+                    sceneLoaded = true;
+                }
+            }
+
+            if (!sceneLoaded)
+            {
+                Debug.LogError("[RegisterMenu] Không thể tải scene bắt đầu.");
+                if (screenFadeOverlay != null)
+                {
+                    StartCoroutine(FadeInRoutine());
+                }
+                SetStatusMessage(GetText("Không thể tải scene bắt đầu!",
+                                         "Unable to load start scene!"), isError: true);
+                PlayFeedbackTone(350f, 0.2f);
+                isTransitioning = false;
+                SetInteractable(true);
             }
         }
     }

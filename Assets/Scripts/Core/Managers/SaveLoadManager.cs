@@ -34,6 +34,17 @@ namespace JourneyOfMemories.Core.Managers
         public List<string> SlotValues = new List<string>();
     }
 
+    public enum SaveLoadStatus
+    {
+        None,
+        Success,
+        NoSaveData,
+        CorruptedData,
+        UnsupportedVersion,
+        InvalidMapData,
+        LoadError
+    }
+
     public class SaveLoadManager : MonoBehaviour
     {
         public static SaveLoadManager Instance { get; private set; }
@@ -50,6 +61,9 @@ namespace JourneyOfMemories.Core.Managers
         public event Action OnGameSaved;
         public event Action OnGameLoaded;
 
+        public SaveLoadStatus LastLoadStatus { get; private set; } = SaveLoadStatus.None;
+        public string LastErrorMessage { get; private set; } = string.Empty;
+
         private void Awake()
         {
             if (Instance != null && Instance != this)
@@ -59,8 +73,7 @@ namespace JourneyOfMemories.Core.Managers
             }
             Instance = this;
 
-            saveFilePath = Path.Combine(Application.persistentDataPath, "savegame.json");
-            temporarySaveFilePath = saveFilePath + ".tmp";
+            EnsurePaths();
 #if UNITY_EDITOR
             if (!DisableDiskPersistenceForTests && HasSaveData()) LoadGame();
 #else
@@ -70,15 +83,30 @@ namespace JourneyOfMemories.Core.Managers
 
         private void OnDestroy() { if (Instance == this) Instance = null; }
 
+        public void EnsurePaths()
+        {
+            if (string.IsNullOrEmpty(saveFilePath))
+            {
+                saveFilePath = Path.Combine(Application.persistentDataPath, "savegame.json");
+            }
+            if (string.IsNullOrEmpty(temporarySaveFilePath))
+            {
+                temporarySaveFilePath = saveFilePath + ".tmp";
+            }
+        }
+
+        public string GetSaveFilePath()
+        {
+            EnsurePaths();
+            return saveFilePath;
+        }
+
         public bool HasSaveData()
         {
 #if UNITY_EDITOR
             if (DisableDiskPersistenceForTests) return false;
 #endif
-            if (string.IsNullOrEmpty(saveFilePath))
-            {
-                saveFilePath = Path.Combine(Application.persistentDataPath, "savegame.json");
-            }
+            EnsurePaths();
             return File.Exists(saveFilePath);
         }
 
@@ -114,6 +142,7 @@ namespace JourneyOfMemories.Core.Managers
 #if UNITY_EDITOR
             if (DisableDiskPersistenceForTests) return;
 #endif
+            EnsurePaths();
             try
             {
                 isSaving = true;
@@ -175,26 +204,42 @@ namespace JourneyOfMemories.Core.Managers
 
         public bool LoadGame()
         {
+            EnsurePaths();
+
             if (!HasSaveData())
             {
                 Debug.Log("[SaveLoadManager] Không tìm thấy file save để tải.");
+                LastLoadStatus = SaveLoadStatus.NoSaveData;
+                LastErrorMessage = "Không tìm thấy file save.";
                 return false;
             }
 
             try
             {
                 string json = File.ReadAllText(saveFilePath);
+                if (string.IsNullOrEmpty(json) || string.IsNullOrEmpty(json.Trim()))
+                {
+                    Debug.LogError("[SaveLoadManager] Dữ liệu file save rỗng hoặc bị hỏng.");
+                    LastLoadStatus = SaveLoadStatus.CorruptedData;
+                    LastErrorMessage = "File save rỗng.";
+                    return false;
+                }
+
                 var data = JsonUtility.FromJson<SaveData>(json);
 
                 if (data == null)
                 {
                     Debug.LogError("[SaveLoadManager] Dữ liệu file save bị hỏng.");
+                    LastLoadStatus = SaveLoadStatus.CorruptedData;
+                    LastErrorMessage = "Dữ liệu JSON không hợp lệ.";
                     return false;
                 }
 
                 if (data.SaveVersion < 1 || data.SaveVersion > 2)
                 {
                     Debug.LogError($"[SaveLoadManager] SaveVersion không được hỗ trợ: {data.SaveVersion}");
+                    LastLoadStatus = SaveLoadStatus.UnsupportedVersion;
+                    LastErrorMessage = $"SaveVersion không được hỗ trợ: {data.SaveVersion}";
                     return false;
                 }
 
@@ -202,6 +247,8 @@ namespace JourneyOfMemories.Core.Managers
                     !Enum.TryParse<MapState>(data.CurrentMapState, out var mapState))
                 {
                     Debug.LogError("[SaveLoadManager] Map ID hoặc Map State trong save không hợp lệ.");
+                    LastLoadStatus = SaveLoadStatus.InvalidMapData;
+                    LastErrorMessage = "Map ID hoặc Map State trong save không hợp lệ.";
                     return false;
                 }
 
@@ -255,6 +302,8 @@ namespace JourneyOfMemories.Core.Managers
                 EndBatch(repaired);
 
                 Debug.Log("[SaveLoadManager] Khôi phục tiến trình thành công từ file save!");
+                LastLoadStatus = SaveLoadStatus.Success;
+                LastErrorMessage = string.Empty;
                 OnGameLoaded?.Invoke();
                 return true;
             }
@@ -262,6 +311,8 @@ namespace JourneyOfMemories.Core.Managers
             {
                 batchDepth = 0;
                 saveRequestedDuringBatch = false;
+                LastLoadStatus = SaveLoadStatus.LoadError;
+                LastErrorMessage = ex.Message;
                 Debug.LogError($"[SaveLoadManager] Lỗi khi nạp dữ liệu save: {ex.Message}");
                 return false;
             }
