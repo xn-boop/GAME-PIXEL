@@ -145,7 +145,7 @@ namespace JourneyOfMemories.Tests
         {
             if (testRoot != null)
             {
-                Object.DestroyImmediate(testRoot);
+                UnityEngine.Object.DestroyImmediate(testRoot);
             }
 
             // File test nằm trong temporary cache và được hệ điều hành dọn; không xóa file nào trong TearDown.
