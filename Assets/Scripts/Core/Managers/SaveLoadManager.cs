@@ -50,6 +50,12 @@ namespace JourneyOfMemories.Core.Managers
         public static SaveLoadManager Instance { get; private set; }
 #if UNITY_EDITOR
         public static bool DisableDiskPersistenceForTests { get; set; }
+
+        /// <summary>
+        /// Chỉ dùng trong EditMode test để cô lập test khỏi savegame.json thật của người chơi.
+        /// Không tồn tại trong bản build.
+        /// </summary>
+        public static string TestSaveFilePathOverride { get; set; }
 #endif
 
         private string saveFilePath;
@@ -85,6 +91,14 @@ namespace JourneyOfMemories.Core.Managers
 
         public void EnsurePaths()
         {
+#if UNITY_EDITOR
+            if (!string.IsNullOrEmpty(TestSaveFilePathOverride))
+            {
+                saveFilePath = TestSaveFilePathOverride;
+                temporarySaveFilePath = saveFilePath + ".tmp";
+                return;
+            }
+#endif
             if (string.IsNullOrEmpty(saveFilePath))
             {
                 saveFilePath = Path.Combine(Application.persistentDataPath, "savegame.json");
@@ -145,6 +159,12 @@ namespace JourneyOfMemories.Core.Managers
             EnsurePaths();
             try
             {
+                string saveDirectory = Path.GetDirectoryName(saveFilePath);
+                if (!string.IsNullOrEmpty(saveDirectory) && !Directory.Exists(saveDirectory))
+                {
+                    Directory.CreateDirectory(saveDirectory);
+                }
+
                 isSaving = true;
                 var data = new SaveData();
 
