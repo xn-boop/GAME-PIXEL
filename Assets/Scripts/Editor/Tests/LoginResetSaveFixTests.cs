@@ -1,9 +1,12 @@
 using System;
 using System.Collections;
 using System.IO;
+using System.Reflection;
+using System.Text.RegularExpressions;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.TestTools;
 using JourneyOfMemories.Core.Data;
 using JourneyOfMemories.Core.Managers;
 
@@ -182,6 +185,16 @@ namespace JourneyOfMemories.Tests
             return obj.GetComponent<Text>();
         }
 
+        private static void ExpectError(string message)
+        {
+            LogAssert.Expect(LogType.Error, message);
+        }
+
+        private static void ExpectSaveLoadError()
+        {
+            LogAssert.Expect(LogType.Error, new Regex(@"^\[SaveLoadManager\] Lỗi khi nạp dữ liệu save:"));
+        }
+
         private void StepCoroutine(IEnumerator routine, int maxSteps = 50)
         {
             int steps = 0;
@@ -216,7 +229,8 @@ namespace JourneyOfMemories.Tests
             loginEmailInput.text = "testuser@gmail.com";
             loginPassInput.text = "123456";
 
-            // 2. Thực hiện đăng nhập
+            // Scene giả lập cố ý không có trong Build Settings; đây là nhánh cần kiểm tra trạng thái/save.
+            ExpectError("[LoginMenu] Scene của bản đồ đã lưu chưa có trong Build Settings! Giữ nguyên save.");
             var routine = loginController.SimulateLoginForTest("testuser@gmail.com", "123456");
             StepCoroutine(routine);
 
@@ -237,6 +251,7 @@ namespace JourneyOfMemories.Tests
             // Save ở Map 2
             CreateCustomSaveFile(MapId.Map2_DressingRoom, "Hanbok_Jeogori", "Q04");
 
+            ExpectError("[LoginMenu] Scene của bản đồ đã lưu chưa có trong Build Settings! Giữ nguyên save.");
             var routine = loginController.SimulateLoginForTest("player@gmail.com", "123456");
             StepCoroutine(routine);
 
@@ -253,6 +268,7 @@ namespace JourneyOfMemories.Tests
         {
             Assert.IsFalse(saveLoadManager.HasSaveData(), "Ban đầu chưa có file save.");
 
+            ExpectError("[LoginMenu] Không thể tải scene bắt đầu.");
             var routine = loginController.SimulateLoginForTest("newuser@gmail.com", "123456");
             StepCoroutine(routine);
 
@@ -289,6 +305,7 @@ namespace JourneyOfMemories.Tests
         {
             CreateCustomSaveFile(MapId.Map1_Kitchen, "Food_Kimchi", "Q02");
 
+            ExpectError("[RegisterMenu] Scene của bản đồ đã lưu chưa có trong Build Settings! Giữ nguyên save.");
             var routine = registerController.SimulateRegistrationForTest("PlayerX", "playerx@gmail.com");
             StepCoroutine(routine);
 
@@ -332,6 +349,7 @@ namespace JourneyOfMemories.Tests
         {
             CreateCustomSaveFile(MapId.Map1_Kitchen, "Food_ComCuon", "Q03");
 
+            ExpectError("MainMenuController: firstLevelSceneName chưa được thiết lập hoặc chưa có trong Build Settings!");
             mainMenuController.ConfirmStartNewGame();
 
             Assert.AreEqual(MapId.Map1_Kitchen, gameStateManager.CurrentMap, "Game mới phải ở Map 1.");
@@ -349,7 +367,9 @@ namespace JourneyOfMemories.Tests
             string corruptJson = "{ \"Corrupted_Data\": true, INVALID JSON... }";
             File.WriteAllText(saveFilePath, corruptJson);
 
-            // 1. Thử qua LoginMenu
+            // 1. Thử qua LoginMenu. Hai Error dưới đây là hành vi mong đợi của nhánh save hỏng.
+            ExpectSaveLoadError();
+            LogAssert.Expect(LogType.Error, new Regex(@"^\[LoginMenu\] Tải file save thất bại:"));
             var loginRoutine = loginController.SimulateLoginForTest("user@test.com", "123456");
             StepCoroutine(loginRoutine);
 
@@ -360,6 +380,8 @@ namespace JourneyOfMemories.Tests
             Assert.IsFalse(loginController.IsTransitioning, "Controller phải mở lại tương tác.");
 
             // 2. Thử qua MainMenu Continue
+            ExpectSaveLoadError();
+            LogAssert.Expect(LogType.Error, new Regex(@"^\[MainMenuController\] Không thể tải dữ liệu save:"));
             mainMenuController.ContinueGame();
             Assert.IsTrue(File.Exists(saveFilePath), "ContinueGame không được xóa file save hỏng.");
             Assert.AreEqual(corruptJson, File.ReadAllText(saveFilePath), "Nội dung file save hỏng vẫn phải nguyên vẹn.");
@@ -378,6 +400,7 @@ namespace JourneyOfMemories.Tests
             CreateCustomSaveFile(MapId.Map3_Garden, "Gem_Whole", "Q08");
             string originalJson = File.ReadAllText(saveFilePath);
 
+            ExpectError("[LoginMenu] Scene của bản đồ đã lưu chưa có trong Build Settings! Giữ nguyên save.");
             var routine = loginController.SimulateLoginForTest("user@test.com", "123456");
             StepCoroutine(routine);
 
