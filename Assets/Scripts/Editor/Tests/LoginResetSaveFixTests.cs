@@ -1,8 +1,12 @@
+using System;
 using System.Collections;
 using System.IO;
+using System.Reflection;
+using System.Text.RegularExpressions;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.TestTools;
 using JourneyOfMemories.Core.Data;
 using JourneyOfMemories.Core.Managers;
 
@@ -17,7 +21,6 @@ namespace JourneyOfMemories.Tests
         private InventoryManager inventoryManager;
         private QuizManager quizManager;
         private PlacementManager placementManager;
-        private SceneFlowManager sceneFlowManager;
 
         private LoginMenuController loginController;
         private InputField loginEmailInput;
@@ -38,11 +41,25 @@ namespace JourneyOfMemories.Tests
         private Text mainMenuStatusText;
 
         private string saveFilePath;
+        private string testSaveDirectory;
 
         [SetUp]
         public void SetUp()
         {
+            // Mỗi test dùng file save ngẫu nhiên trong Unity temporary cache, tuyệt đối không chạm savegame.json thật.
+            testSaveDirectory = Path.Combine(
+                Application.temporaryCachePath,
+                "JourneyOfMemoriesTests",
+                Guid.NewGuid().ToString("N"));
+            Directory.CreateDirectory(testSaveDirectory);
+            SaveLoadManager.TestSaveFilePathOverride = Path.Combine(testSaveDirectory, "savegame.json");
+            SaveLoadManager.DisableDiskPersistenceForTests = true;
+
             testRoot = new GameObject("[LoginResetSaveFixTestsRoot]");
+
+            // Canvas là dependency của dialog Chơi mới được tạo động.
+            GameObject canvasObj = new GameObject("TestCanvas", typeof(RectTransform), typeof(Canvas));
+            canvasObj.transform.SetParent(testRoot.transform);
 
             // 1. Core Managers
             gameStateManager = testRoot.AddComponent<GameStateManager>();
@@ -50,13 +67,17 @@ namespace JourneyOfMemories.Tests
             quizManager = testRoot.AddComponent<QuizManager>();
             placementManager = testRoot.AddComponent<PlacementManager>();
             saveLoadManager = testRoot.AddComponent<SaveLoadManager>();
-            sceneFlowManager = testRoot.AddComponent<SceneFlowManager>();
+
+            // EditMode không bảo đảm Unity gọi Awake(). Khởi tạo singleton đúng thứ tự
+            // để SaveLoadManager.LoadGame() nạp dữ liệu vào các manager thật của test.
+            InvokeAwake(gameStateManager);
+            InvokeAwake(inventoryManager);
+            InvokeAwake(quizManager);
+            InvokeAwake(placementManager);
+            InvokeAwake(saveLoadManager);
 
             saveFilePath = saveLoadManager.GetSaveFilePath();
-            if (File.Exists(saveFilePath))
-            {
-                File.Delete(saveFilePath);
-            }
+            SaveLoadManager.DisableDiskPersistenceForTests = false;
 
             // 2. LoginMenu Controller setup
             GameObject loginObj = new GameObject("LoginController", typeof(LoginMenuController));
@@ -75,6 +96,8 @@ namespace JourneyOfMemories.Tests
             loginController.loginButton = loginBtn;
             loginController.statusText = loginStatusText;
             loginController.fadeDuration = 0.01f;
+            // Unit test chỉ kiểm tra state/save; không được load scene thật và phá test fixture.
+            loginController.gameSceneName = "__TestSceneMissing__";
 
             // 3. RegisterMenu Controller setup
             GameObject regObj = new GameObject("RegisterController", typeof(RegisterMenuController));
@@ -96,6 +119,7 @@ namespace JourneyOfMemories.Tests
             registerController.registerButton = regBtn;
             registerController.statusText = regStatusText;
             registerController.fadeDuration = 0.01f;
+            registerController.gameSceneName = "__TestSceneMissing__";
 
             // 4. MainMenu Controller setup
             GameObject mmObj = new GameObject("MainMenuController", typeof(MainMenuController));
@@ -104,6 +128,16 @@ namespace JourneyOfMemories.Tests
             mainMenuStatusText = CreateText("MainMenuStatusText", mmObj.transform);
             mainMenuController.statusText = mainMenuStatusText;
             mainMenuController.fadeDuration = 0.01f;
+            mainMenuController.firstLevelSceneName = "__TestSceneMissing__";
+        }
+
+        private static void InvokeAwake(MonoBehaviour behaviour)
+        {
+            MethodInfo awake = behaviour.GetType().GetMethod(
+                "Awake",
+                BindingFlags.Instance | BindingFlags.NonPublic);
+            Assert.IsNotNull(awake, $"{behaviour.GetType().Name} must define Awake().");
+            awake.Invoke(behaviour, null);
         }
 
         [TearDown]
@@ -114,10 +148,9 @@ namespace JourneyOfMemories.Tests
                 Object.DestroyImmediate(testRoot);
             }
 
-            if (!string.IsNullOrEmpty(saveFilePath) && File.Exists(saveFilePath))
-            {
-                try { File.Delete(saveFilePath); } catch { }
-            }
+            // File test nằm trong temporary cache và được hệ điều hành dọn; không xóa file nào trong TearDown.
+            SaveLoadManager.DisableDiskPersistenceForTests = false;
+            SaveLoadManager.TestSaveFilePathOverride = null;
         }
 
         private InputField CreateInputField(string name, Transform parent)
@@ -150,6 +183,16 @@ namespace JourneyOfMemories.Tests
             GameObject obj = new GameObject(name, typeof(RectTransform), typeof(Text));
             obj.transform.SetParent(parent);
             return obj.GetComponent<Text>();
+        }
+
+        private static void ExpectError(string message)
+        {
+            LogAssert.Expect(LogType.Error, message);
+        }
+
+        private static void ExpectSaveLoadError()
+        {
+            LogAssert.Expect(LogType.Error, new Regex(@"^\[SaveLoadManager\] Lỗi khi nạp dữ liệu save:"));
         }
 
         private void StepCoroutine(IEnumerator routine, int maxSteps = 50)
@@ -186,7 +229,8 @@ namespace JourneyOfMemories.Tests
             loginEmailInput.text = "testuser@gmail.com";
             loginPassInput.text = "123456";
 
-            // 2. Thực hiện đăng nhập
+            // Scene giả lập cố ý không có trong Build Settings; đây là nhánh cần kiểm tra trạng thái/save.
+            ExpectError("[LoginMenu] Scene của bản đồ đã lưu chưa có trong Build Settings! Giữ nguyên save.");
             var routine = loginController.SimulateLoginForTest("testuser@gmail.com", "123456");
             StepCoroutine(routine);
 
@@ -207,6 +251,7 @@ namespace JourneyOfMemories.Tests
             // Save ở Map 2
             CreateCustomSaveFile(MapId.Map2_DressingRoom, "Hanbok_Jeogori", "Q04");
 
+            ExpectError("[LoginMenu] Scene của bản đồ đã lưu chưa có trong Build Settings! Giữ nguyên save.");
             var routine = loginController.SimulateLoginForTest("player@gmail.com", "123456");
             StepCoroutine(routine);
 
@@ -223,6 +268,7 @@ namespace JourneyOfMemories.Tests
         {
             Assert.IsFalse(saveLoadManager.HasSaveData(), "Ban đầu chưa có file save.");
 
+            ExpectError("[LoginMenu] Không thể tải scene bắt đầu.");
             var routine = loginController.SimulateLoginForTest("newuser@gmail.com", "123456");
             StepCoroutine(routine);
 
@@ -259,6 +305,7 @@ namespace JourneyOfMemories.Tests
         {
             CreateCustomSaveFile(MapId.Map1_Kitchen, "Food_Kimchi", "Q02");
 
+            ExpectError("[RegisterMenu] Scene của bản đồ đã lưu chưa có trong Build Settings! Giữ nguyên save.");
             var routine = registerController.SimulateRegistrationForTest("PlayerX", "playerx@gmail.com");
             StepCoroutine(routine);
 
@@ -302,6 +349,7 @@ namespace JourneyOfMemories.Tests
         {
             CreateCustomSaveFile(MapId.Map1_Kitchen, "Food_ComCuon", "Q03");
 
+            ExpectError("MainMenuController: firstLevelSceneName chưa được thiết lập hoặc chưa có trong Build Settings!");
             mainMenuController.ConfirmStartNewGame();
 
             Assert.AreEqual(MapId.Map1_Kitchen, gameStateManager.CurrentMap, "Game mới phải ở Map 1.");
@@ -319,7 +367,9 @@ namespace JourneyOfMemories.Tests
             string corruptJson = "{ \"Corrupted_Data\": true, INVALID JSON... }";
             File.WriteAllText(saveFilePath, corruptJson);
 
-            // 1. Thử qua LoginMenu
+            // 1. Thử qua LoginMenu. Hai Error dưới đây là hành vi mong đợi của nhánh save hỏng.
+            ExpectSaveLoadError();
+            LogAssert.Expect(LogType.Error, new Regex(@"^\[LoginMenu\] Tải file save thất bại:"));
             var loginRoutine = loginController.SimulateLoginForTest("user@test.com", "123456");
             StepCoroutine(loginRoutine);
 
@@ -330,6 +380,8 @@ namespace JourneyOfMemories.Tests
             Assert.IsFalse(loginController.IsTransitioning, "Controller phải mở lại tương tác.");
 
             // 2. Thử qua MainMenu Continue
+            ExpectSaveLoadError();
+            LogAssert.Expect(LogType.Error, new Regex(@"^\[MainMenuController\] Không thể tải dữ liệu save:"));
             mainMenuController.ContinueGame();
             Assert.IsTrue(File.Exists(saveFilePath), "ContinueGame không được xóa file save hỏng.");
             Assert.AreEqual(corruptJson, File.ReadAllText(saveFilePath), "Nội dung file save hỏng vẫn phải nguyên vẹn.");
@@ -348,6 +400,7 @@ namespace JourneyOfMemories.Tests
             CreateCustomSaveFile(MapId.Map3_Garden, "Gem_Whole", "Q08");
             string originalJson = File.ReadAllText(saveFilePath);
 
+            ExpectError("[LoginMenu] Scene của bản đồ đã lưu chưa có trong Build Settings! Giữ nguyên save.");
             var routine = loginController.SimulateLoginForTest("user@test.com", "123456");
             StepCoroutine(routine);
 
