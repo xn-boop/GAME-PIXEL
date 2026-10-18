@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.IO;
 using NUnit.Framework;
@@ -17,7 +18,6 @@ namespace JourneyOfMemories.Tests
         private InventoryManager inventoryManager;
         private QuizManager quizManager;
         private PlacementManager placementManager;
-        private SceneFlowManager sceneFlowManager;
 
         private LoginMenuController loginController;
         private InputField loginEmailInput;
@@ -38,11 +38,25 @@ namespace JourneyOfMemories.Tests
         private Text mainMenuStatusText;
 
         private string saveFilePath;
+        private string testSaveDirectory;
 
         [SetUp]
         public void SetUp()
         {
+            // Mỗi test dùng file save ngẫu nhiên trong Unity temporary cache, tuyệt đối không chạm savegame.json thật.
+            testSaveDirectory = Path.Combine(
+                Application.temporaryCachePath,
+                "JourneyOfMemoriesTests",
+                Guid.NewGuid().ToString("N"));
+            Directory.CreateDirectory(testSaveDirectory);
+            SaveLoadManager.TestSaveFilePathOverride = Path.Combine(testSaveDirectory, "savegame.json");
+            SaveLoadManager.DisableDiskPersistenceForTests = true;
+
             testRoot = new GameObject("[LoginResetSaveFixTestsRoot]");
+
+            // Canvas là dependency của dialog Chơi mới được tạo động.
+            GameObject canvasObj = new GameObject("TestCanvas", typeof(RectTransform), typeof(Canvas));
+            canvasObj.transform.SetParent(testRoot.transform);
 
             // 1. Core Managers
             gameStateManager = testRoot.AddComponent<GameStateManager>();
@@ -50,13 +64,17 @@ namespace JourneyOfMemories.Tests
             quizManager = testRoot.AddComponent<QuizManager>();
             placementManager = testRoot.AddComponent<PlacementManager>();
             saveLoadManager = testRoot.AddComponent<SaveLoadManager>();
-            sceneFlowManager = testRoot.AddComponent<SceneFlowManager>();
+
+            // EditMode không bảo đảm Unity gọi Awake(). Khởi tạo singleton đúng thứ tự
+            // để SaveLoadManager.LoadGame() nạp dữ liệu vào các manager thật của test.
+            InvokeAwake(gameStateManager);
+            InvokeAwake(inventoryManager);
+            InvokeAwake(quizManager);
+            InvokeAwake(placementManager);
+            InvokeAwake(saveLoadManager);
 
             saveFilePath = saveLoadManager.GetSaveFilePath();
-            if (File.Exists(saveFilePath))
-            {
-                File.Delete(saveFilePath);
-            }
+            SaveLoadManager.DisableDiskPersistenceForTests = false;
 
             // 2. LoginMenu Controller setup
             GameObject loginObj = new GameObject("LoginController", typeof(LoginMenuController));
@@ -75,6 +93,8 @@ namespace JourneyOfMemories.Tests
             loginController.loginButton = loginBtn;
             loginController.statusText = loginStatusText;
             loginController.fadeDuration = 0.01f;
+            // Unit test chỉ kiểm tra state/save; không được load scene thật và phá test fixture.
+            loginController.gameSceneName = "__TestSceneMissing__";
 
             // 3. RegisterMenu Controller setup
             GameObject regObj = new GameObject("RegisterController", typeof(RegisterMenuController));
@@ -96,6 +116,7 @@ namespace JourneyOfMemories.Tests
             registerController.registerButton = regBtn;
             registerController.statusText = regStatusText;
             registerController.fadeDuration = 0.01f;
+            registerController.gameSceneName = "__TestSceneMissing__";
 
             // 4. MainMenu Controller setup
             GameObject mmObj = new GameObject("MainMenuController", typeof(MainMenuController));
@@ -104,6 +125,16 @@ namespace JourneyOfMemories.Tests
             mainMenuStatusText = CreateText("MainMenuStatusText", mmObj.transform);
             mainMenuController.statusText = mainMenuStatusText;
             mainMenuController.fadeDuration = 0.01f;
+            mainMenuController.firstLevelSceneName = "__TestSceneMissing__";
+        }
+
+        private static void InvokeAwake(MonoBehaviour behaviour)
+        {
+            MethodInfo awake = behaviour.GetType().GetMethod(
+                "Awake",
+                BindingFlags.Instance | BindingFlags.NonPublic);
+            Assert.IsNotNull(awake, $"{behaviour.GetType().Name} must define Awake().");
+            awake.Invoke(behaviour, null);
         }
 
         [TearDown]
@@ -114,10 +145,9 @@ namespace JourneyOfMemories.Tests
                 Object.DestroyImmediate(testRoot);
             }
 
-            if (!string.IsNullOrEmpty(saveFilePath) && File.Exists(saveFilePath))
-            {
-                try { File.Delete(saveFilePath); } catch { }
-            }
+            // File test nằm trong temporary cache và được hệ điều hành dọn; không xóa file nào trong TearDown.
+            SaveLoadManager.DisableDiskPersistenceForTests = false;
+            SaveLoadManager.TestSaveFilePathOverride = null;
         }
 
         private InputField CreateInputField(string name, Transform parent)
