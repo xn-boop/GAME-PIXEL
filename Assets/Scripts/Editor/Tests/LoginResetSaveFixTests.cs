@@ -111,7 +111,7 @@ namespace JourneyOfMemories.Tests
         {
             if (testRoot != null)
             {
-                Object.DestroyImmediate(testRoot);
+                UnityEngine.Object.DestroyImmediate(testRoot);
             }
 
             if (!string.IsNullOrEmpty(saveFilePath) && File.Exists(saveFilePath))
