@@ -1,0 +1,4851 @@
+fileFormatVersion: 2
+guid: 02fd180874e34e24b8f090e0b8ab2ced
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2160286829932645606
+    second: Icon_Hanbok_0
+  - first:
+      213: 8261750416784912416
+    second: Icon_Hanbok_1
+  - first:
+      213: 512252438424536663
+    second: Icon_Hanbok_2
+  - first:
+      213: -2143673213696499065
+    second: Icon_Hanbok_3
+  - first:
+      213: 2165260360896298617
+    second: Icon_Hanbok_4
+  - first:
+      213: -8309438761473852881
+    second: Icon_Hanbok_5
+  - first:
+      213: -740202535308466145
+    second: Icon_Hanbok_6
+  - first:
+      213: 5577244768797347637
+    second: Icon_Hanbok_7
+  - first:
+      213: 2107121371614276371
+    second: Icon_Hanbok_8
+  - first:
+      213: -6291167291458545620
+    second: Icon_Hanbok_9
+  - first:
+      213: 1802592365519990435
+    second: Icon_Hanbok_10
+  - first:
+      213: 4266336325879516708
+    second: Icon_Hanbok_11
+  - first:
+      213: -1111110368774158554
+    second: Icon_Hanbok_12
+  - first:
+      213: 4741756215618603424
+    second: Icon_Hanbok_13
+  - first:
+      213: -1866016710170936085
+    second: Icon_Hanbok_14
+  - first:
+      213: -2866276429054889389
+    second: Icon_Hanbok_15
+  - first:
+      213: -4625403044297177781
+    second: Icon_Hanbok_16
+  - first:
+      213: 8383220061223842139
+    second: Icon_Hanbok_17
+  - first:
+      213: -314895768376179209
+    second: Icon_Hanbok_18
+  - first:
+      213: 1618654581769129554
+    second: Icon_Hanbok_19
+  - first:
+      213: -832393010919350940
+    second: Icon_Hanbok_20
+  - first:
+      213: 5101699328808443923
+    second: Icon_Hanbok_21
+  - first:
+      213: -945714039619378466
+    second: Icon_Hanbok_22
+  - first:
+      213: 302367447249310097
+    second: Icon_Hanbok_23
+  - first:
+      213: 1886534630599129203
+    second: Icon_Hanbok_24
+  - first:
+      213: -1605271022330416905
+    second: Icon_Hanbok_25
+  - first:
+      213: 4340143492416509388
+    second: Icon_Hanbok_26
+  - first:
+      213: 3124503639701822093
+    second: Icon_Hanbok_27
+  - first:
+      213: -6967688097652560539
+    second: Icon_Hanbok_28
+  - first:
+      213: -4741582203222615827
+    second: Icon_Hanbok_29
+  - first:
+      213: -2128526008383064946
+    second: Icon_Hanbok_30
+  - first:
+      213: -3580686224906561756
+    second: Icon_Hanbok_31
+  - first:
+      213: -4399454013477183172
+    second: Icon_Hanbok_32
+  - first:
+      213: -6150497009627062099
+    second: Icon_Hanbok_33
+  - first:
+      213: -8880333007509361119
+    second: Icon_Hanbok_34
+  - first:
+      213: 8504148019031135545
+    second: Icon_Hanbok_35
+  - first:
+      213: 3744526939290567500
+    second: Icon_Hanbok_36
+  - first:
+      213: 2270562968661625062
+    second: Icon_Hanbok_37
+  - first:
+      213: 7746951575709627153
+    second: Icon_Hanbok_38
+  - first:
+      213: 7491369544565973597
+    second: Icon_Hanbok_39
+  - first:
+      213: -5745714006609530950
+    second: Icon_Hanbok_40
+  - first:
+      213: -2272499248417781453
+    second: Icon_Hanbok_41
+  - first:
+      213: 2829041096656606983
+    second: Icon_Hanbok_42
+  - first:
+      213: 7194197490917931318
+    second: Icon_Hanbok_43
+  - first:
+      213: -2508931023679899378
+    second: Icon_Hanbok_44
+  - first:
+      213: -2066202755015588428
+    second: Icon_Hanbok_45
+  - first:
+      213: -9049752006082711507
+    second: Icon_Hanbok_46
+  - first:
+      213: 1238336984264192580
+    second: Icon_Hanbok_47
+  - first:
+      213: 2846472652685044488
+    second: Icon_Hanbok_48
+  - first:
+      213: -6225625429555652992
+    second: Icon_Hanbok_49
+  - first:
+      213: -3415807004324785688
+    second: Icon_Hanbok_50
+  - first:
+      213: -3315641091982004969
+    second: Icon_Hanbok_51
+  - first:
+      213: -8917708897544830054
+    second: Icon_Hanbok_52
+  - first:
+      213: -6316692607679081861
+    second: Icon_Hanbok_53
+  - first:
+      213: 2891842470631844688
+    second: Icon_Hanbok_54
+  - first:
+      213: 1186065453806533716
+    second: Icon_Hanbok_55
+  - first:
+      213: 8905477750816161848
+    second: Icon_Hanbok_56
+  - first:
+      213: 6248493204824145649
+    second: Icon_Hanbok_57
+  - first:
+      213: 4004612513005786898
+    second: Icon_Hanbok_58
+  - first:
+      213: 4058349298972170724
+    second: Icon_Hanbok_59
+  - first:
+      213: 7828029225864662198
+    second: Icon_Hanbok_60
+  - first:
+      213: -7132970923825370969
+    second: Icon_Hanbok_61
+  - first:
+      213: 5141177942050112493
+    second: Icon_Hanbok_62
+  - first:
+      213: 1801652828804050905
+    second: Icon_Hanbok_63
+  - first:
+      213: -427015183266081708
+    second: Icon_Hanbok_64
+  - first:
+      213: -4166784173382340073
+    second: Icon_Hanbok_65
+  - first:
+      213: -1282744382004173191
+    second: Icon_Hanbok_66
+  - first:
+      213: -7501106832049274966
+    second: Icon_Hanbok_67
+  - first:
+      213: -493632992713367250
+    second: Icon_Hanbok_68
+  - first:
+      213: 1669723924850965589
+    second: Icon_Hanbok_69
+  - first:
+      213: 6951166558353793791
+    second: Icon_Hanbok_70
+  - first:
+      213: -4208703239393297761
+    second: Icon_Hanbok_71
+  - first:
+      213: 8314748793871962909
+    second: Icon_Hanbok_72
+  - first:
+      213: 7023594466409496555
+    second: Icon_Hanbok_73
+  - first:
+      213: -5724986576535907932
+    second: Icon_Hanbok_74
+  - first:
+      213: -983960229054349722
+    second: Icon_Hanbok_75
+  - first:
+      213: 2432714659192055010
+    second: Icon_Hanbok_76
+  - first:
+      213: -3818770599211396976
+    second: Icon_Hanbok_77
+  - first:
+      213: 5307993855831946719
+    second: Icon_Hanbok_78
+  - first:
+      213: -7939481678876503691
+    second: Icon_Hanbok_79
+  - first:
+      213: -3368555596300458655
+    second: Icon_Hanbok_80
+  - first:
+      213: 2331024845791449453
+    second: Icon_Hanbok_81
+  - first:
+      213: 4664273766411333968
+    second: Icon_Hanbok_82
+  - first:
+      213: 5418380071559061347
+    second: Icon_Hanbok_83
+  - first:
+      213: 2821358898882293217
+    second: Icon_Hanbok_84
+  - first:
+      213: -4510180132514281408
+    second: Icon_Hanbok_85
+  - first:
+      213: 5881264629407945533
+    second: Icon_Hanbok_86
+  - first:
+      213: -4029447735953105215
+    second: Icon_Hanbok_87
+  - first:
+      213: 5452177657460753563
+    second: Icon_Hanbok_88
+  - first:
+      213: 3134414289570137750
+    second: Icon_Hanbok_89
+  - first:
+      213: -8084091736465366075
+    second: Icon_Hanbok_90
+  - first:
+      213: 6309981390831139564
+    second: Icon_Hanbok_91
+  - first:
+      213: -6016342114974508844
+    second: Icon_Hanbok_92
+  - first:
+      213: -6520119380548582493
+    second: Icon_Hanbok_93
+  - first:
+      213: -2017620144748309753
+    second: Icon_Hanbok_94
+  - first:
+      213: 6826344392573319431
+    second: Icon_Hanbok_95
+  - first:
+      213: -8840554388218206177
+    second: Icon_Hanbok_96
+  - first:
+      213: -2793193809681163861
+    second: Icon_Hanbok_97
+  - first:
+      213: 1861452630858281865
+    second: Icon_Hanbok_98
+  - first:
+      213: 2610886549198957275
+    second: Icon_Hanbok_99
+  - first:
+      213: -5523689404278683655
+    second: Icon_Hanbok_100
+  - first:
+      213: 6556286769488704324
+    second: Icon_Hanbok_101
+  - first:
+      213: -4185775145329661333
+    second: Icon_Hanbok_102
+  - first:
+      213: -6246504825190963350
+    second: Icon_Hanbok_103
+  - first:
+      213: 1929790266182591628
+    second: Icon_Hanbok_104
+  - first:
+      213: 2157182856339219004
+    second: Icon_Hanbok_105
+  - first:
+      213: 9075577975555830417
+    second: Icon_Hanbok_106
+  - first:
+      213: 1395348677294665061
+    second: Icon_Hanbok_107
+  - first:
+      213: 1529880079734107682
+    second: Icon_Hanbok_108
+  - first:
+      213: -4521887564798850039
+    second: Icon_Hanbok_109
+  - first:
+      213: 7516851510274727519
+    second: Icon_Hanbok_110
+  - first:
+      213: -1346641347600981672
+    second: Icon_Hanbok_111
+  - first:
+      213: -1002047184298574800
+    second: Icon_Hanbok_112
+  - first:
+      213: 5201856789832710306
+    second: Icon_Hanbok_113
+  - first:
+      213: -4221510448228622971
+    second: Icon_Hanbok_114
+  - first:
+      213: -7703428897957739745
+    second: Icon_Hanbok_115
+  - first:
+      213: 5798678587254533511
+    second: Icon_Hanbok_116
+  - first:
+      213: -4793234372276623712
+    second: Icon_Hanbok_117
+  - first:
+      213: -4267406267220859381
+    second: Icon_Hanbok_118
+  - first:
+      213: -3373240289660754521
+    second: Icon_Hanbok_119
+  - first:
+      213: -6674551464934719937
+    second: Icon_Hanbok_120
+  - first:
+      213: -1011239667755459117
+    second: Icon_Hanbok_121
+  - first:
+      213: -8432237147009040686
+    second: Icon_Hanbok_122
+  - first:
+      213: 277297666295331940
+    second: Icon_Hanbok_123
+  - first:
+      213: 7410094568085226601
+    second: Icon_Hanbok_124
+  - first:
+      213: -8659801707525445314
+    second: Icon_Hanbok_125
+  - first:
+      213: 2230891615883505656
+    second: Icon_Hanbok_126
+  - first:
+      213: -6576756659338125738
+    second: Icon_Hanbok_127
+  - first:
+      213: 2701916300190595856
+    second: Icon_Hanbok_128
+  - first:
+      213: 4660777968498606466
+    second: Icon_Hanbok_129
+  - first:
+      213: 279337720417435244
+    second: Icon_Hanbok_130
+  - first:
+      213: -1353905579662781666
+    second: Icon_Hanbok_131
+  - first:
+      213: 1936509884191707050
+    second: Icon_Hanbok_132
+  - first:
+      213: -6481626641720245196
+    second: Icon_Hanbok_133
+  - first:
+      213: 124538319060308934
+    second: Icon_Hanbok_134
+  - first:
+      213: 5160779161656514336
+    second: Icon_Hanbok_135
+  - first:
+      213: 1938002914777567950
+    second: Icon_Hanbok_136
+  - first:
+      213: 1183815422432543304
+    second: Icon_Hanbok_137
+  - first:
+      213: 3676689294843615271
+    second: Icon_Hanbok_138
+  - first:
+      213: 6968215707576450317
+    second: Icon_Hanbok_139
+  - first:
+      213: -1444902305554054757
+    second: Icon_Hanbok_140
+  - first:
+      213: -3204935532067673353
+    second: Icon_Hanbok_141
+  - first:
+      213: 4129870394879048060
+    second: Icon_Hanbok_142
+  - first:
+      213: 2277149194059076052
+    second: Icon_Hanbok_143
+  - first:
+      213: 6929025531855168505
+    second: Icon_Hanbok_144
+  - first:
+      213: 8358808064024663399
+    second: Icon_Hanbok_145
+  - first:
+      213: -1933122299159275857
+    second: Icon_Hanbok_146
+  - first:
+      213: 7509110917237781954
+    second: Icon_Hanbok_147
+  - first:
+      213: -1172692769219866509
+    second: Icon_Hanbok_148
+  - first:
+      213: 6148370809936059463
+    second: Icon_Hanbok_149
+  - first:
+      213: 6904785940470499507
+    second: Icon_Hanbok_150
+  - first:
+      213: 7347292274837821441
+    second: Icon_Hanbok_151
+  - first:
+      213: -2978843555065393732
+    second: Icon_Hanbok_152
+  - first:
+      213: -3478946698426037890
+    second: Icon_Hanbok_153
+  - first:
+      213: -5760902642460371553
+    second: Icon_Hanbok_154
+  - first:
+      213: -2187650666517319492
+    second: Icon_Hanbok_155
+  - first:
+      213: 8951804424713708386
+    second: Icon_Hanbok_156
+  - first:
+      213: 5466930153241421239
+    second: Icon_Hanbok_157
+  - first:
+      213: -8087059986411226470
+    second: Icon_Hanbok_158
+  - first:
+      213: -4576719898801381747
+    second: Icon_Hanbok_159
+  - first:
+      213: 202539024113062334
+    second: Icon_Hanbok_160
+  - first:
+      213: -803871402300712305
+    second: Icon_Hanbok_161
+  - first:
+      213: -2444756291717823163
+    second: Icon_Hanbok_162
+  - first:
+      213: -4169917886946290616
+    second: Icon_Hanbok_163
+  - first:
+      213: -5470894269528971478
+    second: Icon_Hanbok_164
+  - first:
+      213: 5961088781731912866
+    second: Icon_Hanbok_165
+  - first:
+      213: 2765661815684799741
+    second: Icon_Hanbok_166
+  - first:
+      213: -4475429040370048554
+    second: Icon_Hanbok_167
+  - first:
+      213: 6135742726558629266
+    second: Icon_Hanbok_168
+  - first:
+      213: -8229579060347663559
+    second: Icon_Hanbok_169
+  - first:
+      213: -8426089332728766579
+    second: Icon_Hanbok_170
+  - first:
+      213: 549168455818351733
+    second: Icon_Hanbok_171
+  - first:
+      213: 6788400129076265939
+    second: Icon_Hanbok_172
+  - first:
+      213: -4995746547520782815
+    second: Icon_Hanbok_173
+  - first:
+      213: 6553006965974102182
+    second: Icon_Hanbok_174
+  - first:
+      213: -2550279791164222917
+    second: Icon_Hanbok_175
+  - first:
+      213: -4080455694966347767
+    second: Icon_Hanbok_176
+  - first:
+      213: 6088572220293229310
+    second: Icon_Hanbok_177
+  - first:
+      213: 6962441445928696420
+    second: Icon_Hanbok_178
+  - first:
+      213: 4800326415469278679
+    second: Icon_Hanbok_179
+  - first:
+      213: -6892661102930486652
+    second: Icon_Hanbok_180
+  - first:
+      213: -6815545583203900612
+    second: Icon_Hanbok_181
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Icon_Hanbok_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1015
+        width: 33
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a13f8e8e29e1502e0800000000000000
+      internalID: -2160286829932645606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_1
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 821
+        width: 426
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 020766f3b32a7a270800000000000000
+      internalID: 8261750416784912416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_2
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 959
+        width: 76
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7564f93f0e2eb1700800000000000000
+      internalID: 512252438424536663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_3
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 957
+        width: 106
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 782a91fd1942042e0800000000000000
+      internalID: -2143673213696499065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_4
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 935
+        width: 212
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97e357183dc8c0e10800000000000000
+      internalID: 2165260360896298617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_5
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 959
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2a3d73c871feac80800000000000000
+      internalID: -8309438761473852881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_6
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 1017
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f18681547b54ab5f0800000000000000
+      internalID: -740202535308466145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 991
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53f4295519a566d40800000000000000
+      internalID: 5577244768797347637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 933
+        width: 17
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31be3b539bffd3d10800000000000000
+      internalID: 2107121371614276371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_9
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 973
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c289e023ea841b8a0800000000000000
+      internalID: -6291167291458545620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_10
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 973
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ae66a5b438140910800000000000000
+      internalID: 1802592365519990435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_11
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 975
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42ec46cc842153b30800000000000000
+      internalID: 4266336325879516708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_12
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 973
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62786faa10b8490f0800000000000000
+      internalID: -1111110368774158554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_13
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 967
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a9827bb72a1ec140800000000000000
+      internalID: 4741756215618603424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_14
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 965
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bec715d40b39a16e0800000000000000
+      internalID: -1866016710170936085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 847
+        width: 19
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 352bb1226c0f838d0800000000000000
+      internalID: -2866276429054889389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_16
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 0
+        width: 754
+        height: 937
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4508a900744fcfb0800000000000000
+      internalID: -4625403044297177781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_17
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 901
+        width: 50
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b51fc2fba3e275470800000000000000
+      internalID: 8383220061223842139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_18
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 919
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f50aa097f341abf0800000000000000
+      internalID: -314895768376179209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_19
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 901
+        width: 44
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25e486024cd967610800000000000000
+      internalID: 1618654581769129554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_20
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 911
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46d52ae77feb274f0800000000000000
+      internalID: -832393010919350940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_21
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 877
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 310e9747280ecc640800000000000000
+      internalID: 5101699328808443923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_22
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 901
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed22361771620e2f0800000000000000
+      internalID: -945714039619378466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_23
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 911
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 191dfec5799323400800000000000000
+      internalID: 302367447249310097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_24
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 871
+        width: 47
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 378755150415e2a10800000000000000
+      internalID: 1886534630599129203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_25
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 893
+        width: 34
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f074c1a28ee8b9e0800000000000000
+      internalID: -1605271022330416905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_26
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 898
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc595b3e2894b3c30800000000000000
+      internalID: 4340143492416509388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_27
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 885
+        width: 28
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8a97d781877c5b20800000000000000
+      internalID: 3124503639701822093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_28
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 887
+        width: 34
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56da3b1779ccd4f90800000000000000
+      internalID: -6967688097652560539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_29
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 877
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de81a9fab14823eb0800000000000000
+      internalID: -4741582203222615827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 517
+        width: 73
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e84b52f6fd4f572e0800000000000000
+      internalID: -2128526008383064946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_31
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 845
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4275f4889d8de4ec0800000000000000
+      internalID: -3580686224906561756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_32
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 818
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c31a60152eff1f2c0800000000000000
+      internalID: -4399454013477183172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_33
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 807
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da0a3157e8b05aaa0800000000000000
+      internalID: -6150497009627062099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_34
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 834
+        width: 42
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12e6a300e28b2c480800000000000000
+      internalID: -8880333007509361119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_35
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 821
+        width: 42
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93551bff09dc40670800000000000000
+      internalID: 8504148019031135545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_36
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 815
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c438b44796b37f330800000000000000
+      internalID: 3744526939290567500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_37
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 733
+        width: 89
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e88b337df8a28f10800000000000000
+      internalID: 2270562968661625062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_38
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 834
+        width: 26
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 113335ab963b28b60800000000000000
+      internalID: 7746951575709627153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_39
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 821
+        width: 26
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d52e809e8e0b6f760800000000000000
+      internalID: 7491369544565973597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_40
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 823
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abf6d079d8f1340b0800000000000000
+      internalID: -5745714006609530950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_41
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 823
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33947b949f57670e0800000000000000
+      internalID: -2272499248417781453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_42
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 807
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 707d23573e5c24720800000000000000
+      internalID: 2829041096656606983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_43
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 767
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6397b22608ce6d360800000000000000
+      internalID: 7194197490917931318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_44
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 757
+        width: 36
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e093a9fd68c7e2dd0800000000000000
+      internalID: -2508931023679899378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_45
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 770
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b5cc51aa8f5353e0800000000000000
+      internalID: -2066202755015588428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_46
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 762
+        width: 42
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d20bf048f72d86280800000000000000
+      internalID: -9049752006082711507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_47
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 751
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 442bb4b1de47f2110800000000000000
+      internalID: 1238336984264192580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_48
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 743
+        width: 47
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80be72edbc3b08720800000000000000
+      internalID: 2846472652685044488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_49
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 743
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08652b618a22a99a0800000000000000
+      internalID: -6225625429555652992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_50
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 751
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e11ee590ad9890d0800000000000000
+      internalID: -3415807004324785688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_51
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 751
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71d69bd6ef97cf1d0800000000000000
+      internalID: -3315641091982004969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_52
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 751
+        width: 42
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a930087710fed3480800000000000000
+      internalID: -8917708897544830054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_53
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 743
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b72d3f36a899658a0800000000000000
+      internalID: -6316692607679081861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_54
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 751
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05b2668c763e12820800000000000000
+      internalID: 2891842470631844688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_55
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 733
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45c30860f30c57010800000000000000
+      internalID: 1186065453806533716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_56
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 714
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 830ca84c4dc969b70800000000000000
+      internalID: 8905477750816161848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_57
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 727
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fe3cfeb67b17b650800000000000000
+      internalID: 6248493204824145649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_58
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 727
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2175bccfcdd339730800000000000000
+      internalID: 4004612513005786898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_59
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 647
+        width: 66
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e911b37f27225830800000000000000
+      internalID: 4058349298972170724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_60
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 709
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bc0a033b1fb2ac60800000000000000
+      internalID: 7828029225864662198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_61
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 671
+        width: 60
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a8e234acb8920d90800000000000000
+      internalID: -7132970923825370969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_62
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 671
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de388f26912295740800000000000000
+      internalID: 5141177942050112493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_63
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 671
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9df6175c3b1c00910800000000000000
+      internalID: 1801652828804050905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_64
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 698
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4541ab704ffe21af0800000000000000
+      internalID: -427015183266081708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_65
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 637
+        width: 106
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71273d1fedb9c26c0800000000000000
+      internalID: -4166784173382340073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_66
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 661
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9766305e7c6c23ee0800000000000000
+      internalID: -1282744382004173191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_67
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 655
+        width: 31
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaf727d2417b6e790800000000000000
+      internalID: -7501106832049274966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_68
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 615
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2128e398634629f0800000000000000
+      internalID: -493632992713367250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_69
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 615
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55c76b5201d0c2710800000000000000
+      internalID: 1669723924850965589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_70
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 626
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff2a04de721877060800000000000000
+      internalID: 6951166558353793791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_71
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 613
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9a3de2d3bea795c0800000000000000
+      internalID: -4208703239393297761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_72
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 589
+        width: 52
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d13985f79fbe36370800000000000000
+      internalID: 8314748793871962909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_73
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 589
+        width: 42
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: befbcb064f1d87160800000000000000
+      internalID: 7023594466409496555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_74
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 599
+        width: 42
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a192b97a03cc80b0800000000000000
+      internalID: -5724986576535907932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_75
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 615
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66e7a1a82654852f0800000000000000
+      internalID: -983960229054349722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_76
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 607
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e4270de71db2c120800000000000000
+      internalID: 2432714659192055010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_77
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 607
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0909c4b6f50010bc0800000000000000
+      internalID: -3818770599211396976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_78
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 583
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd5b1d6f948c9a940800000000000000
+      internalID: 5307993855831946719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_79
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 591
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57118dd6a7b41d190800000000000000
+      internalID: -7939481678876503691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_80
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 599
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1656b54588c7041d0800000000000000
+      internalID: -3368555596300458655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_81
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 586
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6152083fb6795020800000000000000
+      internalID: 2331024845791449453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_82
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 535
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 051fe163744dab040800000000000000
+      internalID: 4664273766411333968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_83
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 527
+        width: 50
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36f555f97f3f13b40800000000000000
+      internalID: 5418380071559061347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_84
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 551
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ed24c768fa772720800000000000000
+      internalID: 2821358898882293217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_85
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 535
+        width: 26
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0484670c01f9861c0800000000000000
+      internalID: -4510180132514281408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_86
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 551
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d331ee925037e9150800000000000000
+      internalID: 5881264629407945533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_87
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 551
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ce538112a68418c0800000000000000
+      internalID: -4029447735953105215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_88
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 519
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b94054d41b60aab40800000000000000
+      internalID: 5452177657460753563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_89
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 543
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6968cb4803daf7b20800000000000000
+      internalID: 3134414289570137750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_90
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 551
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c3af44a5698fcf80800000000000000
+      internalID: -8084091736465366075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_91
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 509
+        width: 34
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceab0dba4ae819750800000000000000
+      internalID: 6309981390831139564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_92
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 535
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d8d8bde8b8a18ca0800000000000000
+      internalID: -6016342114974508844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_93
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 525
+        width: 52
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a3034de7f1e385a0800000000000000
+      internalID: -6520119380548582493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_94
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 231
+        width: 65
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 703da9c0b29fff3e0800000000000000
+      internalID: -2017620144748309753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_95
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 447
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 709ffc9be0c0cbe50800000000000000
+      internalID: 6826344392573319431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_96
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 415
+        width: 58
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f18abb88f9a005580800000000000000
+      internalID: -8840554388218206177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_97
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 471
+        width: 23
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba9522177059c39d0800000000000000
+      internalID: -2793193809681163861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_98
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 463
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 983368c2e4535d910800000000000000
+      internalID: 1861452630858281865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_99
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 471
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bda69d1cb7bbb3420800000000000000
+      internalID: 2610886549198957275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_100
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 461
+        width: 34
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f74168a0c9e753b0800000000000000
+      internalID: -5523689404278683655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_101
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 479
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 443b7f4841c9cfa50800000000000000
+      internalID: 6556286769488704324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_102
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 471
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6a67f8bea329e5c0800000000000000
+      internalID: -4185775145329661333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_103
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 453
+        width: 62
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a67aab6f4f4ff49a0800000000000000
+      internalID: -6246504825190963350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_104
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 458
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c84e1dac50ef7ca10800000000000000
+      internalID: 1929790266182591628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_105
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 463
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3269abe06adfed10800000000000000
+      internalID: 2157182856339219004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_106
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 453
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1923d54951ee2fd70800000000000000
+      internalID: 9075577975555830417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_107
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 453
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56da5f7aa364d5310800000000000000
+      internalID: 1395348677294665061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_108
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 463
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22e6f7da3d93b3510800000000000000
+      internalID: 1529880079734107682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_109
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 423
+        width: 6
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90c88e1c7370f31c0800000000000000
+      internalID: -4521887564798850039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_110
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 389
+        width: 44
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5e98436f98315860800000000000000
+      internalID: 7516851510274727519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_111
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 381
+        width: 36
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 851e36444d4cf4de0800000000000000
+      internalID: -1346641347600981672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_112
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 373
+        width: 50
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03cf3bb15630812f0800000000000000
+      internalID: -1002047184298574800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_113
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 378
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a8be629035b03840800000000000000
+      internalID: 5201856789832710306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_114
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 386
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58d9bb52d9e2a65c0800000000000000
+      internalID: -4221510448228622971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_115
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 378
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1300c85b3ce71590800000000000000
+      internalID: -7703428897957739745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_116
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 343
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78d68ffc37b097050800000000000000
+      internalID: 5798678587254533511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_117
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 383
+        width: 58
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a6624bebb20b7db0800000000000000
+      internalID: -4793234372276623712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_118
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 365
+        width: 42
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0666021c9027c4c0800000000000000
+      internalID: -4267406267220859381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_119
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 351
+        width: 89
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a52cb824d7df21d0800000000000000
+      internalID: -3373240289660754521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_120
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 325
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3eb0815eca3f53a0800000000000000
+      internalID: -6674551464934719937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_121
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 343
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ddd6a441ea57f1f0800000000000000
+      internalID: -1011239667755459117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_122
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 327
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2de3cae9dfcaafa80800000000000000
+      internalID: -8432237147009040686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_123
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 303
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46cf39022c829d300800000000000000
+      internalID: 277297666295331940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_124
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 322
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96485c2dfb1f5d660800000000000000
+      internalID: 7410094568085226601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_125
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 314
+        width: 42
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e39ef958a3432d780800000000000000
+      internalID: -8659801707525445314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_126
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 314
+        width: 39
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ff2229da18b5fe10800000000000000
+      internalID: 2230891615883505656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_127
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 309
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65e57f9d9aaaab4a0800000000000000
+      internalID: -6576756659338125738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_128
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 314
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01bb2b54f822f7520800000000000000
+      internalID: 2701916300190595856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_129
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 319
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28183555ed86ea040800000000000000
+      internalID: 4660777968498606466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_130
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 309
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6e39dd3d2860e300800000000000000
+      internalID: 279337720417435244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_131
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 279
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e13d7c07c06f53de0800000000000000
+      internalID: -1353905579662781666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_132
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 314
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaf8747ca7ddfda10800000000000000
+      internalID: 1936509884191707050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_133
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 293
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4348e8519e2ac06a0800000000000000
+      internalID: -6481626641720245196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_134
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 295
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c3938cf0f27ab100800000000000000
+      internalID: 124538319060308934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_135
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 255
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02756c6fd45ce9740800000000000000
+      internalID: 5160779161656514336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_136
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 261
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec21dfc026b25ea10800000000000000
+      internalID: 1938002914777567950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_137
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 250
+        width: 34
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84288b5cad1cd6010800000000000000
+      internalID: 1183815422432543304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_138
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 271
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72892a80f69360330800000000000000
+      internalID: 3676689294843615271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_139
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 261
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0d3460544314b060800000000000000
+      internalID: 6968215707576450317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_140
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 239
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b91ce4e220da2fbe0800000000000000
+      internalID: -1444902305554054757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_141
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 215
+        width: 52
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fa24133d18c583d0800000000000000
+      internalID: -3204935532067673353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_142
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 250
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c79fa2f3e3f305930800000000000000
+      internalID: 4129870394879048060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_143
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 239
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d1557c802f0a9f10800000000000000
+      internalID: 2277149194059076052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_144
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 231
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f3e6d97208d82060800000000000000
+      internalID: 6929025531855168505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_145
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 239
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7655cd9b5a3700470800000000000000
+      internalID: 8358808064024663399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_146
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 199
+        width: 26
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa69933d28b2c25e0800000000000000
+      internalID: -1933122299159275857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_147
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 239
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c537f02898b53860800000000000000
+      internalID: 7509110917237781954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_148
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 111
+        width: 17
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3701bfbb322c9bfe0800000000000000
+      internalID: -1172692769219866509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_149
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 229
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74c9e991da6635550800000000000000
+      internalID: 6148370809936059463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_150
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 178
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b80bdfca3ab2df50800000000000000
+      internalID: 6904785940470499507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_151
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 159
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1081ea67563d6f560800000000000000
+      internalID: 7347292274837821441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_152
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 149
+        width: 66
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbd8ddab19509a6d0800000000000000
+      internalID: -2978843555065393732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_153
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 183
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e794cc7f86c48bfc0800000000000000
+      internalID: -3478946698426037890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_154
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 167
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f955a8ab1992d00b0800000000000000
+      internalID: -5760902642460371553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_155
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 181
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb0b6993f47e3a1e0800000000000000
+      internalID: -2187650666517319492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_156
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 167
+        width: 58
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 263a4d112b23b3c70800000000000000
+      internalID: 8951804424713708386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_157
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 175
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b5a3d362007edb40800000000000000
+      internalID: 5466930153241421239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_158
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 175
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9afea81acdf4cf80800000000000000
+      internalID: -8087059986411226470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_159
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 159
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8e5b7320893c70c0800000000000000
+      internalID: -4576719898801381747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_160
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 175
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb1d9695b209fc200800000000000000
+      internalID: 202539024113062334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_161
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 167
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8a55ccf73318d4f0800000000000000
+      internalID: -803871402300712305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_162
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 159
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54502c50b1b721ed0800000000000000
+      internalID: -2444756291717823163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_163
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 95
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 844d40666c97126c0800000000000000
+      internalID: -4169917886946290616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_164
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 95
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a27610dd5aa7314b0800000000000000
+      internalID: -5470894269528971478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_165
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 79
+        width: 44
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ac52bde9aa0ab250800000000000000
+      internalID: 5961088781731912866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_166
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 87
+        width: 52
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfc11cca4ca916620800000000000000
+      internalID: 2765661815684799741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_167
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 103
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d1a647eff414e1c0800000000000000
+      internalID: -4475429040370048554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_168
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 0
+        width: 193
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29db6b15089862550800000000000000
+      internalID: 6135742726558629266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_169
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 111
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93b0cf06279aacd80800000000000000
+      internalID: -8229579060347663559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_170
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 41
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8f5efc2564801b80800000000000000
+      internalID: -8426089332728766579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_171
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 31
+        width: 52
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57417ea0dc90f9700800000000000000
+      internalID: 549168455818351733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_172
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 79
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d38ece63fd353e50800000000000000
+      internalID: 6788400129076265939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_173
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 87
+        width: 26
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12eb32fcbfa8baab0800000000000000
+      internalID: -4995746547520782815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_174
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 87
+        width: 36
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a0fb81cd15f0fa50800000000000000
+      internalID: 6553006965974102182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_175
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 79
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b329cc9ba069b9cd0800000000000000
+      internalID: -2550279791164222917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_176
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 79
+        width: 34
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 908afc32a2f4f57c0800000000000000
+      internalID: -4080455694966347767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_177
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 71
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efaa3ebfc24fe7450800000000000000
+      internalID: 6088572220293229310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_178
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 63
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46a79024b9f8f9060800000000000000
+      internalID: 6962441445928696420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_179
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 47
+        width: 6
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d578ff017f2e9240800000000000000
+      internalID: 4800326415469278679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_180
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 18
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48a1daaee395850a0800000000000000
+      internalID: -6892661102930486652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icon_Hanbok_181
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 23
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3326a207615a61a0800000000000000
+      internalID: -6815545583203900612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Icon_Hanbok_0: -2160286829932645606
+      Icon_Hanbok_1: 8261750416784912416
+      Icon_Hanbok_10: 1802592365519990435
+      Icon_Hanbok_100: -5523689404278683655
+      Icon_Hanbok_101: 6556286769488704324
+      Icon_Hanbok_102: -4185775145329661333
+      Icon_Hanbok_103: -6246504825190963350
+      Icon_Hanbok_104: 1929790266182591628
+      Icon_Hanbok_105: 2157182856339219004
+      Icon_Hanbok_106: 9075577975555830417
+      Icon_Hanbok_107: 1395348677294665061
+      Icon_Hanbok_108: 1529880079734107682
+      Icon_Hanbok_109: -4521887564798850039
+      Icon_Hanbok_11: 4266336325879516708
+      Icon_Hanbok_110: 7516851510274727519
+      Icon_Hanbok_111: -1346641347600981672
+      Icon_Hanbok_112: -1002047184298574800
+      Icon_Hanbok_113: 5201856789832710306
+      Icon_Hanbok_114: -4221510448228622971
+      Icon_Hanbok_115: -7703428897957739745
+      Icon_Hanbok_116: 5798678587254533511
+      Icon_Hanbok_117: -4793234372276623712
+      Icon_Hanbok_118: -4267406267220859381
+      Icon_Hanbok_119: -3373240289660754521
+      Icon_Hanbok_12: -1111110368774158554
+      Icon_Hanbok_120: -6674551464934719937
+      Icon_Hanbok_121: -1011239667755459117
+      Icon_Hanbok_122: -8432237147009040686
+      Icon_Hanbok_123: 277297666295331940
+      Icon_Hanbok_124: 7410094568085226601
+      Icon_Hanbok_125: -8659801707525445314
+      Icon_Hanbok_126: 2230891615883505656
+      Icon_Hanbok_127: -6576756659338125738
+      Icon_Hanbok_128: 2701916300190595856
+      Icon_Hanbok_129: 4660777968498606466
+      Icon_Hanbok_13: 4741756215618603424
+      Icon_Hanbok_130: 279337720417435244
+      Icon_Hanbok_131: -1353905579662781666
+      Icon_Hanbok_132: 1936509884191707050
+      Icon_Hanbok_133: -6481626641720245196
+      Icon_Hanbok_134: 124538319060308934
+      Icon_Hanbok_135: 5160779161656514336
+      Icon_Hanbok_136: 1938002914777567950
+      Icon_Hanbok_137: 1183815422432543304
+      Icon_Hanbok_138: 3676689294843615271
+      Icon_Hanbok_139: 6968215707576450317
+      Icon_Hanbok_14: -1866016710170936085
+      Icon_Hanbok_140: -1444902305554054757
+      Icon_Hanbok_141: -3204935532067673353
+      Icon_Hanbok_142: 4129870394879048060
+      Icon_Hanbok_143: 2277149194059076052
+      Icon_Hanbok_144: 6929025531855168505
+      Icon_Hanbok_145: 8358808064024663399
+      Icon_Hanbok_146: -1933122299159275857
+      Icon_Hanbok_147: 7509110917237781954
+      Icon_Hanbok_148: -1172692769219866509
+      Icon_Hanbok_149: 6148370809936059463
+      Icon_Hanbok_15: -2866276429054889389
+      Icon_Hanbok_150: 6904785940470499507
+      Icon_Hanbok_151: 7347292274837821441
+      Icon_Hanbok_152: -2978843555065393732
+      Icon_Hanbok_153: -3478946698426037890
+      Icon_Hanbok_154: -5760902642460371553
+      Icon_Hanbok_155: -2187650666517319492
+      Icon_Hanbok_156: 8951804424713708386
+      Icon_Hanbok_157: 5466930153241421239
+      Icon_Hanbok_158: -8087059986411226470
+      Icon_Hanbok_159: -4576719898801381747
+      Icon_Hanbok_16: -4625403044297177781
+      Icon_Hanbok_160: 202539024113062334
+      Icon_Hanbok_161: -803871402300712305
+      Icon_Hanbok_162: -2444756291717823163
+      Icon_Hanbok_163: -4169917886946290616
+      Icon_Hanbok_164: -5470894269528971478
+      Icon_Hanbok_165: 5961088781731912866
+      Icon_Hanbok_166: 2765661815684799741
+      Icon_Hanbok_167: -4475429040370048554
+      Icon_Hanbok_168: 6135742726558629266
+      Icon_Hanbok_169: -8229579060347663559
+      Icon_Hanbok_17: 8383220061223842139
+      Icon_Hanbok_170: -8426089332728766579
+      Icon_Hanbok_171: 549168455818351733
+      Icon_Hanbok_172: 6788400129076265939
+      Icon_Hanbok_173: -4995746547520782815
+      Icon_Hanbok_174: 6553006965974102182
+      Icon_Hanbok_175: -2550279791164222917
+      Icon_Hanbok_176: -4080455694966347767
+      Icon_Hanbok_177: 6088572220293229310
+      Icon_Hanbok_178: 6962441445928696420
+      Icon_Hanbok_179: 4800326415469278679
+      Icon_Hanbok_18: -314895768376179209
+      Icon_Hanbok_180: -6892661102930486652
+      Icon_Hanbok_181: -6815545583203900612
+      Icon_Hanbok_19: 1618654581769129554
+      Icon_Hanbok_2: 512252438424536663
+      Icon_Hanbok_20: -832393010919350940
+      Icon_Hanbok_21: 5101699328808443923
+      Icon_Hanbok_22: -945714039619378466
+      Icon_Hanbok_23: 302367447249310097
+      Icon_Hanbok_24: 1886534630599129203
+      Icon_Hanbok_25: -1605271022330416905
+      Icon_Hanbok_26: 4340143492416509388
+      Icon_Hanbok_27: 3124503639701822093
+      Icon_Hanbok_28: -6967688097652560539
+      Icon_Hanbok_29: -4741582203222615827
+      Icon_Hanbok_3: -2143673213696499065
+      Icon_Hanbok_30: -2128526008383064946
+      Icon_Hanbok_31: -3580686224906561756
+      Icon_Hanbok_32: -4399454013477183172
+      Icon_Hanbok_33: -6150497009627062099
+      Icon_Hanbok_34: -8880333007509361119
+      Icon_Hanbok_35: 8504148019031135545
+      Icon_Hanbok_36: 3744526939290567500
+      Icon_Hanbok_37: 2270562968661625062
+      Icon_Hanbok_38: 7746951575709627153
+      Icon_Hanbok_39: 7491369544565973597
+      Icon_Hanbok_4: 2165260360896298617
+      Icon_Hanbok_40: -5745714006609530950
+      Icon_Hanbok_41: -2272499248417781453
+      Icon_Hanbok_42: 2829041096656606983
+      Icon_Hanbok_43: 7194197490917931318
+      Icon_Hanbok_44: -2508931023679899378
+      Icon_Hanbok_45: -2066202755015588428
+      Icon_Hanbok_46: -9049752006082711507
+      Icon_Hanbok_47: 1238336984264192580
+      Icon_Hanbok_48: 2846472652685044488
+      Icon_Hanbok_49: -6225625429555652992
+      Icon_Hanbok_5: -8309438761473852881
+      Icon_Hanbok_50: -3415807004324785688
+      Icon_Hanbok_51: -3315641091982004969
+      Icon_Hanbok_52: -8917708897544830054
+      Icon_Hanbok_53: -6316692607679081861
+      Icon_Hanbok_54: 2891842470631844688
+      Icon_Hanbok_55: 1186065453806533716
+      Icon_Hanbok_56: 8905477750816161848
+      Icon_Hanbok_57: 6248493204824145649
+      Icon_Hanbok_58: 4004612513005786898
+      Icon_Hanbok_59: 4058349298972170724
+      Icon_Hanbok_6: -740202535308466145
+      Icon_Hanbok_60: 7828029225864662198
+      Icon_Hanbok_61: -7132970923825370969
+      Icon_Hanbok_62: 5141177942050112493
+      Icon_Hanbok_63: 1801652828804050905
+      Icon_Hanbok_64: -427015183266081708
+      Icon_Hanbok_65: -4166784173382340073
+      Icon_Hanbok_66: -1282744382004173191
+      Icon_Hanbok_67: -7501106832049274966
+      Icon_Hanbok_68: -493632992713367250
+      Icon_Hanbok_69: 1669723924850965589
+      Icon_Hanbok_7: 5577244768797347637
+      Icon_Hanbok_70: 6951166558353793791
+      Icon_Hanbok_71: -4208703239393297761
+      Icon_Hanbok_72: 8314748793871962909
+      Icon_Hanbok_73: 7023594466409496555
+      Icon_Hanbok_74: -5724986576535907932
+      Icon_Hanbok_75: -983960229054349722
+      Icon_Hanbok_76: 2432714659192055010
+      Icon_Hanbok_77: -3818770599211396976
+      Icon_Hanbok_78: 5307993855831946719
+      Icon_Hanbok_79: -7939481678876503691
+      Icon_Hanbok_8: 2107121371614276371
+      Icon_Hanbok_80: -3368555596300458655
+      Icon_Hanbok_81: 2331024845791449453
+      Icon_Hanbok_82: 4664273766411333968
+      Icon_Hanbok_83: 5418380071559061347
+      Icon_Hanbok_84: 2821358898882293217
+      Icon_Hanbok_85: -4510180132514281408
+      Icon_Hanbok_86: 5881264629407945533
+      Icon_Hanbok_87: -4029447735953105215
+      Icon_Hanbok_88: 5452177657460753563
+      Icon_Hanbok_89: 3134414289570137750
+      Icon_Hanbok_9: -6291167291458545620
+      Icon_Hanbok_90: -8084091736465366075
+      Icon_Hanbok_91: 6309981390831139564
+      Icon_Hanbok_92: -6016342114974508844
+      Icon_Hanbok_93: -6520119380548582493
+      Icon_Hanbok_94: -2017620144748309753
+      Icon_Hanbok_95: 6826344392573319431
+      Icon_Hanbok_96: -8840554388218206177
+      Icon_Hanbok_97: -2793193809681163861
+      Icon_Hanbok_98: 1861452630858281865
+      Icon_Hanbok_99: 2610886549198957275
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
