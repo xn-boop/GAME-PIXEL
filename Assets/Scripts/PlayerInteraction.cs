@@ -21,7 +21,6 @@ public class PlayerInteraction : MonoBehaviour
     private FoodItem nearbyFood;
     private FoodSlot nearbySlot;
     private CatInteraction nearbyCat;
-    private DustyPaintingInteraction nearbyPainting;
 
     private string lastMessage = "";
 
@@ -44,7 +43,6 @@ public class PlayerInteraction : MonoBehaviour
         nearbyFood = null;
         nearbySlot = null;
         nearbyCat = null;
-        nearbyPainting = null;
 
         // Tìm món ăn hoặc mèo chưa giải trong phạm vi tương tác.
         Collider2D[] hits = Physics2D.OverlapCircleAll(
@@ -69,12 +67,6 @@ public class PlayerInteraction : MonoBehaviour
                     closestCatDistance = dist;
                     nearbyCat = cat;
                 }
-            }
-
-            DustyPaintingInteraction painting = hit.GetComponent<DustyPaintingInteraction>();
-            if (painting != null && !painting.IsCleaned)
-            {
-                nearbyPainting = painting;
             }
 
             FoodItem food = hit.GetComponent<FoodItem>();
@@ -148,12 +140,6 @@ public class PlayerInteraction : MonoBehaviour
         if (nearbyCat != null)
         {
             nearbyCat.Interact();
-            return;
-        }
-
-        if (nearbyPainting != null)
-        {
-            nearbyPainting.Interact();
             return;
         }
 
