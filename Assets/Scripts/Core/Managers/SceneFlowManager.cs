@@ -31,7 +31,7 @@ namespace JourneyOfMemories.Core.Managers
             {
                 case MapId.Map1_Kitchen:
                     return "Map1";
-                case MapId.Map2_DressingRoom: return "Map2_DressingRoom";
+                case MapId.Map2_DressingRoom: return "Scene_Level2";
                 case MapId.Map3_Garden: return "Map3_Garden";
                 case MapId.Ending: return "Ending";
                 default: return string.Empty;
