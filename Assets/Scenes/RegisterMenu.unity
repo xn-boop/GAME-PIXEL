@@ -2278,7 +2278,7 @@ MonoBehaviour:
   fadeDuration: 0.35
   mainMenuSceneName: MainMenu
   loginSceneName: LoginMenu
-  gameSceneName: Level1_Prototype
+  gameSceneName: Map1
   audioSource: {fileID: 0}
 --- !u!1 &100000180
 GameObject:

@@ -70,7 +70,7 @@ public class LocalizationManager : MonoBehaviour
         }
 
         Instance = this;
-        DontDestroyOnLoad(gameObject);
+        if (Application.isPlaying) DontDestroyOnLoad(gameObject);
         InitializeFromPrefs();
     }
 

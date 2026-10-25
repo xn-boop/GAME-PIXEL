@@ -174,6 +174,54 @@ namespace JourneyOfMemories.Core.Data
                     "Hãy liên hệ với mâm cơm và bức ảnh gia đình đã được khôi phục.",
                     "Gem_MugunghwaHalf"
                 )
+            },
+            {
+                "Q_Cat",
+                new QuizData(
+                    "Q_Cat",
+                    "Văn hóa ăn cay của người Hàn Quốc",
+                    "Vì sao vị cay (đặc biệt là từ ớt và tương ớt Gochujang) lại trở thành một nét đặc trưng và được ưa chuộng lâu đời trong ẩm thực truyền thống của người Hàn Quốc?",
+                    "Do người Hàn Quốc từ xưa chỉ thích các món ăn có nhiệt độ cao và vị gắt để kích thích thị giác khi ăn hoàng gia.",
+                    "Do sự kết hợp của điều kiện khí hậu (mùa đông lạnh giá), nhu cầu bảo quản thực phẩm thời xưa, và quan niệm y học cổ truyền giúp làm ấm cơ thể, giải tỏa mồ hôi.",
+                    "Do ảnh hưởng hoàn toàn từ phong cách ẩm thực của các nước phương Tây từ thế kỷ XIX.",
+                    "Do nhà nước Hàn Quốc từng ban hành sắc lệnh bắt buộc toàn dân phải ăn cay để tăng cường sức khỏe công cộng.",
+                    QuizOption.B,
+                    "Vị cay trong ẩm thực Hàn Quốc gắn liền với sự thích ứng tự nhiên (giúp làm ấm cơ thể trong mùa đông lạnh), vai trò lịch sử của ớt trong việc bảo quản/tạo hương vị, và triết lý cân bằng cơ thể của y học Á Đông.",
+                    "Chưa đúng, hãy thử lại nhé! Hãy nghĩ về điều kiện khí hậu và thói quen sinh hoạt truyền thống.",
+                    null
+                )
+            },
+            {
+                "Q_BanhMi",
+                new QuizData(
+                    "Q_BanhMi",
+                    "Ổ bánh mì thịt",
+                    "Trong quá trình hình thành, bánh mì thịt Việt Nam có nguồn gốc từ bánh baguette của Pháp. Điều gì phản ánh rõ nhất sự sáng tạo và tiếp biến văn hóa của người Việt trong món ăn này?",
+                    "Bánh mì Việt Nam bắt buộc phải sử dụng nguyên liệu nhập khẩu 100% từ Pháp để giữ nguyên bản hương vị gốc.",
+                    "Bánh mì là minh chứng cho sự giao thoa, khi lớp vỏ được cải biên cho mỏng, giòn, rỗng ruột hơn để nhồi sự kết hợp hài hòa giữa các loại thịt, chả và rau chua mang đậm hương vị bản địa.",
+                    "Bánh mì thực chất chỉ là một cách để người Việt tiêu thụ lúa mì thay thế cho gạo trong những thời kỳ thiếu thốn lương thực.",
+                    "Người Việt chỉ đơn thuần sao chép lại hình dáng bánh của Pháp mà không có bất kỳ sự thay đổi nào về cấu trúc hay nhân bên trong.",
+                    QuizOption.B,
+                    "Bánh mì Việt Nam là minh chứng sáng tạo cho sự giao thoa văn hóa, biến tấu vỏ giòn rỗng ruột kết hợp nhân thịt, chả và rau chua bản địa.",
+                    "Chưa đúng, hãy thử lại nhé! Hãy chú ý sự cải biên cấu trúc vỏ bánh và phần nhân mang hương vị bản địa.",
+                    "Food_BanhMi"
+                )
+            },
+            {
+                "Q_Tteokbokki",
+                new QuizData(
+                    "Q_Tteokbokki",
+                    "Đĩa bánh gạo cay (Tteokbokki)",
+                    "Tteokbokki với nước sốt đỏ rực là một biểu tượng của ẩm thực đường phố Hàn Quốc hiện đại. Điểm mấu chốt nào tạo nên linh hồn của phiên bản này so với các loại bánh gạo xào thông thường?",
+                    "Vị cay ngọt đặc trưng không đến từ ớt tươi thông thường, mà nhờ sự kết hợp của tương ớt Gochujang lên men truyền thống, tạo nên sự cân bằng hương vị và màu sắc bắt mắt.",
+                    "Tteokbokki phải luôn được làm từ bột mì thay vì bột gạo để đảm bảo độ dai, và chỉ sử dụng phẩm màu để tạo màu đỏ.",
+                    "Món ăn này bắt buộc phải được ăn lạnh thì mới giữ được độ dẻo của bánh gạo và làm dịu đi vị cay nồng của nước sốt.",
+                    "Bánh gạo cay màu đỏ vốn là món ăn lâu đời, chỉ được phục vụ riêng cho các vị vua trong hoàng gia Hàn Quốc từ thời cổ đại.",
+                    QuizOption.A,
+                    "Vị cay ngọt đặc trưng và màu sắc bắt mắt của Tteokbokki đến từ tương ớt Gochujang lên men truyền thống.",
+                    "Chưa đúng, hãy thử lại nhé! Hãy chú ý loại gia vị lên men truyền thống tạo nên linh hồn món ăn.",
+                    "Food_Tteokbokki"
+                )
             }
         };
     }

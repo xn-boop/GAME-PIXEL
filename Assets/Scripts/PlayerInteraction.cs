@@ -20,6 +20,8 @@ public class PlayerInteraction : MonoBehaviour
 
     private FoodItem nearbyFood;
     private FoodSlot nearbySlot;
+    private CatInteraction nearbyCat;
+    private DustyPaintingInteraction nearbyPainting;
 
     private string lastMessage = "";
 
@@ -41,19 +43,39 @@ public class PlayerInteraction : MonoBehaviour
     {
         nearbyFood = null;
         nearbySlot = null;
+        nearbyCat = null;
+        nearbyPainting = null;
 
-        // Tìm món ăn chưa được nhặt gần nhất.
+        // Tìm món ăn hoặc mèo chưa giải trong phạm vi tương tác.
         Collider2D[] hits = Physics2D.OverlapCircleAll(
             transform.position,
             interactionRadius
         );
 
         float closestFoodDistance = float.MaxValue;
+        float closestCatDistance = float.MaxValue;
 
         foreach (Collider2D hit in hits)
         {
             if (hit == null)
                 continue;
+
+            CatInteraction cat = hit.GetComponent<CatInteraction>();
+            if (cat != null)
+            {
+                float dist = Vector2.Distance(transform.position, cat.transform.position);
+                if (dist < closestCatDistance)
+                {
+                    closestCatDistance = dist;
+                    nearbyCat = cat;
+                }
+            }
+
+            DustyPaintingInteraction painting = hit.GetComponent<DustyPaintingInteraction>();
+            if (painting != null && !painting.IsCleaned)
+            {
+                nearbyPainting = painting;
+            }
 
             FoodItem food = hit.GetComponent<FoodItem>();
 
@@ -119,6 +141,19 @@ public class PlayerInteraction : MonoBehaviour
         if (!string.IsNullOrEmpty(selectedItemId))
         {
             TryPlaceItem(selectedItemId);
+            return;
+        }
+
+        // Nếu ở gần chú mèo, ưu tiên tương tác với mèo
+        if (nearbyCat != null)
+        {
+            nearbyCat.Interact();
+            return;
+        }
+
+        if (nearbyPainting != null)
+        {
+            nearbyPainting.Interact();
             return;
         }
 
@@ -233,6 +268,16 @@ public class PlayerInteraction : MonoBehaviour
         {
             ShowMessage(
                 "Món đang chọn không hợp lệ. Hãy chọn lại trong Inventory!"
+            );
+            return;
+        }
+
+        // Kiểm tra nếu là món phụ (Bánh mì, Tteokbokki) thì không thể đặt lên mâm cơm nhiệm vụ
+        if (itemId == JourneyOfMemories.Core.Data.GameIds.Item.BanhMi ||
+            itemId == JourneyOfMemories.Core.Data.GameIds.Item.Tteokbokki)
+        {
+            ShowMessage(
+                "Món này là món phụ ăn thêm, không thuộc 3 món chính của mâm cơm bà nấu! Hãy chọn Thịt kho trứng, Kimchi hoặc Cơm cuộn."
             );
             return;
         }

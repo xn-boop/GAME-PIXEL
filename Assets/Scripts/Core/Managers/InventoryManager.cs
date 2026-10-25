@@ -21,12 +21,16 @@ namespace JourneyOfMemories.Core.Managers
 
         private void Awake()
         {
+#if UNITY_EDITOR
+            Instance = this;
+#else
             if (Instance != null && Instance != this)
             {
                 Destroy(gameObject);
                 return;
             }
             Instance = this;
+#endif
         }
 
         private void OnDestroy() { if (Instance == this) Instance = null; }

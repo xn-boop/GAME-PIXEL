@@ -2562,7 +2562,7 @@ MonoBehaviour:
   fadeDuration: 0.35
   mainMenuSceneName: MainMenu
   registerMenuSceneName: RegisterMenu
-  gameSceneName: Level1_Prototype
+  gameSceneName: Map1
   audioSource: {fileID: 0}
 --- !u!4 &2112662229
 Transform:

@@ -11,7 +11,7 @@ namespace JourneyOfMemories.Core
             Debug.Log("[CoreLogicBootstrap] Khởi tạo hệ sinh thái Core Logic tự động...");
 
             GameObject coreRoot = new GameObject("[CORE_LOGIC_SYSTEM]");
-            Object.DontDestroyOnLoad(coreRoot);
+            if (Application.isPlaying) Object.DontDestroyOnLoad(coreRoot);
 
             if (GameStateManager.Instance == null) coreRoot.AddComponent<GameStateManager>();
             if (InventoryManager.Instance == null) coreRoot.AddComponent<InventoryManager>();
@@ -20,6 +20,8 @@ namespace JourneyOfMemories.Core
             if (CombineManager.Instance == null) coreRoot.AddComponent<CombineManager>();
             if (SaveLoadManager.Instance == null) coreRoot.AddComponent<SaveLoadManager>();
             if (SceneFlowManager.Instance == null) coreRoot.AddComponent<SceneFlowManager>();
+            if (LocalAccountManager.Instance == null) coreRoot.AddComponent<LocalAccountManager>();
+            if (FirebaseAuthManager.Instance == null) coreRoot.AddComponent<FirebaseAuthManager>();
 
             Debug.Log("[CoreLogicBootstrap] Tất cả các Manager lõi đã sẵn sàng!");
         }

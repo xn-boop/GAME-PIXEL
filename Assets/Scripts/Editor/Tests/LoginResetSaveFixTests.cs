@@ -1,3 +1,4 @@
+using System.Reflection;
 using System.Collections;
 using System.IO;
 using NUnit.Framework;
@@ -37,11 +38,22 @@ namespace JourneyOfMemories.Tests
         private MainMenuController mainMenuController;
         private Text mainMenuStatusText;
 
+        private LocalAccountManager localAccountManager;
         private string saveFilePath;
+
+                private static void InvokeAwake(MonoBehaviour behaviour)
+        {
+            if (behaviour == null) return;
+            MethodInfo awake = behaviour.GetType().GetMethod("Awake", BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public);
+            awake?.Invoke(behaviour, null);
+        }
 
         [SetUp]
         public void SetUp()
         {
+            CleanTestFiles();
+            SaveLoadManager.DisableDiskPersistenceForTests = false;
+
             testRoot = new GameObject("[LoginResetSaveFixTestsRoot]");
 
             // 1. Core Managers
@@ -51,12 +63,9 @@ namespace JourneyOfMemories.Tests
             placementManager = testRoot.AddComponent<PlacementManager>();
             saveLoadManager = testRoot.AddComponent<SaveLoadManager>();
             sceneFlowManager = testRoot.AddComponent<SceneFlowManager>();
+            localAccountManager = testRoot.AddComponent<LocalAccountManager>();
 
-            saveFilePath = saveLoadManager.GetSaveFilePath();
-            if (File.Exists(saveFilePath))
-            {
-                File.Delete(saveFilePath);
-            }
+            saveFilePath = Path.Combine(Application.persistentDataPath, "savegame.json");
 
             // 2. LoginMenu Controller setup
             GameObject loginObj = new GameObject("LoginController", typeof(LoginMenuController));
@@ -104,6 +113,27 @@ namespace JourneyOfMemories.Tests
             mainMenuStatusText = CreateText("MainMenuStatusText", mmObj.transform);
             mainMenuController.statusText = mainMenuStatusText;
             mainMenuController.fadeDuration = 0.01f;
+            mainMenuController.firstLevelSceneName = "Map1";
+
+            GameObject dlg = new GameObject("ConfirmDialog");
+            dlg.transform.SetParent(mmObj.transform);
+            mainMenuController.confirmNewGameDialog = dlg;
+            mainMenuController.confirmDialogMessageText = CreateText("ConfirmText", dlg.transform);
+            mainMenuController.confirmDialogMessageText.text = "Chơi mới sẽ thay thế tiến trình hiện tại. Bạn có chắc chắn không?";
+            dlg.SetActive(false);
+
+                        SaveLoadManager.DisableDiskPersistenceForTests = false;
+
+            InvokeAwake(gameStateManager);
+            InvokeAwake(inventoryManager);
+            InvokeAwake(quizManager);
+            InvokeAwake(placementManager);
+            InvokeAwake(saveLoadManager);
+            InvokeAwake(sceneFlowManager);
+            InvokeAwake(localAccountManager);
+            InvokeAwake(loginController);
+            InvokeAwake(registerController);
+            InvokeAwake(mainMenuController);
         }
 
         [TearDown]
@@ -113,11 +143,28 @@ namespace JourneyOfMemories.Tests
             {
                 UnityEngine.Object.DestroyImmediate(testRoot);
             }
+            CleanTestFiles();
+            SaveLoadManager.DisableDiskPersistenceForTests = false;
+            PlayerPrefs.DeleteKey("LoggedInUser_Email");
+            PlayerPrefs.DeleteKey("SavedLogin_Email");
+        }
 
-            if (!string.IsNullOrEmpty(saveFilePath) && File.Exists(saveFilePath))
+        private void CleanTestFiles()
+        {
+            try
             {
-                try { File.Delete(saveFilePath); } catch { }
+                string persistentDir = Application.persistentDataPath;
+                string accountsFile = Path.Combine(persistentDir, "accounts.json");
+                string legacySaveFile = Path.Combine(persistentDir, "savegame.json");
+                string savesDir = Path.Combine(persistentDir, "saves");
+
+                if (File.Exists(accountsFile)) File.Delete(accountsFile);
+                if (File.Exists(legacySaveFile)) File.Delete(legacySaveFile);
+                if (File.Exists(legacySaveFile + ".migrated")) File.Delete(legacySaveFile + ".migrated");
+                if (File.Exists(legacySaveFile + ".owner")) File.Delete(legacySaveFile + ".owner");
+                if (Directory.Exists(savesDir)) Directory.Delete(savesDir, true);
             }
+            catch { }
         }
 
         private InputField CreateInputField(string name, Transform parent)
@@ -171,7 +218,9 @@ namespace JourneyOfMemories.Tests
             if (!string.IsNullOrEmpty(solvedQuiz)) data.SolvedQuizzes.Add(solvedQuiz);
 
             string json = JsonUtility.ToJson(data, true);
-            File.WriteAllText(saveFilePath, json);
+            string targetPath = saveLoadManager.GetSaveFilePath();
+            Directory.CreateDirectory(Path.GetDirectoryName(targetPath));
+            File.WriteAllText(targetPath, json);
         }
 
         #region AC-01: Đăng nhập có save hợp lệ không bị reset save
@@ -257,13 +306,19 @@ namespace JourneyOfMemories.Tests
         [Test]
         public void BR04_AC05_Register_WhenSaveExists_PreservesExistingProgress()
         {
+            saveLoadManager.SetCurrentAccount("acc_existing_player");
             CreateCustomSaveFile(MapId.Map1_Kitchen, "Food_Kimchi", "Q02");
+            string currentSavePath = saveLoadManager.GetSaveFilePath();
 
             var routine = registerController.SimulateRegistrationForTest("PlayerX", "playerx@gmail.com");
             StepCoroutine(routine);
 
-            Assert.IsTrue(File.Exists(saveFilePath), "File save không được bị xóa sau khi đăng ký.");
-            Assert.IsTrue(inventoryManager.HasItem("Food_Kimchi"), "Vật phẩm hiện có phải được bảo toàn.");
+            Assert.IsTrue(File.Exists(currentSavePath), "File save không được bị xóa sau khi đăng ký.");
+            saveLoadManager.SetCurrentAccount("acc_existing_player");
+            bool loadResult = saveLoadManager.LoadGame();
+            Assert.IsTrue(loadResult, $"LoadGame() phải thành công nhưng thất bại: Status={saveLoadManager.LastLoadStatus}, Error='{saveLoadManager.LastErrorMessage}'");
+            Assert.IsTrue(inventoryManager.HasItem("Food_Kimchi"), 
+                $"Items count: {inventoryManager.Items.Count}, File content: '{File.ReadAllText(currentSavePath)}', InvInstance match: {InventoryManager.Instance == inventoryManager}, CurrentAccount: '{saveLoadManager.CurrentAccountId}'");
             Assert.IsTrue(quizManager.IsQuizSolved("Q02"), "Quiz đã giải phải được bảo toàn.");
         }
 
@@ -302,6 +357,7 @@ namespace JourneyOfMemories.Tests
         {
             CreateCustomSaveFile(MapId.Map1_Kitchen, "Food_ComCuon", "Q03");
 
+            saveLoadManager.SetCurrentAccount("acc_test_player");
             mainMenuController.ConfirmStartNewGame();
 
             Assert.AreEqual(MapId.Map1_Kitchen, gameStateManager.CurrentMap, "Game mới phải ở Map 1.");
@@ -316,23 +372,31 @@ namespace JourneyOfMemories.Tests
         [Test]
         public void BR03_AC08_WhenSaveCorrupted_DoesNotDeleteOrOverwrite_ReportsError()
         {
+            localAccountManager.TryLinkFirebaseUser("uid_test_user", "user@test.com", "UserTest", true, "123456", out PlayerAccount acc, out _);
+            saveLoadManager.SetCurrentAccount(acc.accountId);
+            string targetSavePath = saveLoadManager.GetSaveFilePath();
+
             string corruptJson = "{ \"Corrupted_Data\": true, INVALID JSON... }";
-            File.WriteAllText(saveFilePath, corruptJson);
+            File.WriteAllText(targetSavePath, corruptJson);
 
             // 1. Thử qua LoginMenu
+            UnityEngine.TestTools.LogAssert.Expect(LogType.Error, new System.Text.RegularExpressions.Regex("SaveLoadManager.*JSON parse error|Lỗi khi nạp dữ liệu save|JSON parse error"));
+            UnityEngine.TestTools.LogAssert.Expect(LogType.Error, new System.Text.RegularExpressions.Regex("LoginMenu.*Tải file save thất bại"));
             var loginRoutine = loginController.SimulateLoginForTest("user@test.com", "123456");
             StepCoroutine(loginRoutine);
 
-            Assert.IsTrue(File.Exists(saveFilePath), "File save hỏng không được bị xóa.");
-            Assert.AreEqual(corruptJson, File.ReadAllText(saveFilePath), "File save hỏng phải giữ nguyên nội dung trên đĩa.");
+            Assert.IsTrue(File.Exists(targetSavePath), "File save hỏng không được bị xóa.");
+            Assert.AreEqual(corruptJson, File.ReadAllText(targetSavePath), "File save hỏng phải giữ nguyên nội dung trên đĩa.");
             Assert.IsTrue(loginStatusText.text.Contains("lỗi") || loginStatusText.text.Contains("corrupted"),
                 "UI phải báo lỗi không thể nạp save.");
             Assert.IsFalse(loginController.IsTransitioning, "Controller phải mở lại tương tác.");
 
             // 2. Thử qua MainMenu Continue
+            UnityEngine.TestTools.LogAssert.Expect(LogType.Error, new System.Text.RegularExpressions.Regex("SaveLoadManager.*JSON parse error|Lỗi khi nạp dữ liệu save|JSON parse error"));
+            UnityEngine.TestTools.LogAssert.Expect(LogType.Error, new System.Text.RegularExpressions.Regex("MainMenuController.*Không thể tải dữ liệu save"));
             mainMenuController.ContinueGame();
-            Assert.IsTrue(File.Exists(saveFilePath), "ContinueGame không được xóa file save hỏng.");
-            Assert.AreEqual(corruptJson, File.ReadAllText(saveFilePath), "Nội dung file save hỏng vẫn phải nguyên vẹn.");
+            Assert.IsTrue(File.Exists(targetSavePath), "ContinueGame không được xóa file save hỏng.");
+            Assert.AreEqual(corruptJson, File.ReadAllText(targetSavePath), "Nội dung file save hỏng vẫn phải nguyên vẹn.");
             Assert.IsTrue(mainMenuStatusText.text.Contains("lỗi") || mainMenuStatusText.text.Contains("corrupted"),
                 "MainMenu phải báo lỗi khi Tiếp tục với file save hỏng.");
         }
@@ -348,6 +412,8 @@ namespace JourneyOfMemories.Tests
             CreateCustomSaveFile(MapId.Map3_Garden, "Gem_Whole", "Q08");
             string originalJson = File.ReadAllText(saveFilePath);
 
+            UnityEngine.TestTools.LogAssert.Expect(LogType.Error, new System.Text.RegularExpressions.Regex("SceneFlowManager.*Build Settings"));
+            UnityEngine.TestTools.LogAssert.Expect(LogType.Error, new System.Text.RegularExpressions.Regex("LoginMenu.*Build Settings"));
             var routine = loginController.SimulateLoginForTest("user@test.com", "123456");
             StepCoroutine(routine);
 

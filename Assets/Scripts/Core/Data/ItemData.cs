@@ -28,6 +28,8 @@ namespace JourneyOfMemories.Core.Data
             { "Food_ThitKhoTrung", new ItemInfo("Food_ThitKhoTrung", "Thịt kho trứng", "Món ăn ấm cúng mẹ nấu cho cả nhà.") },
             { "Food_Kimchi", new ItemInfo("Food_Kimchi", "Hũ Kim chi", "Hũ thức ăn lên men quen thuộc của ba.") },
             { "Food_ComCuon", new ItemInfo("Food_ComCuon", "Đĩa Kimbap", "Đĩa kimbap thơm ngon xếp cẩn thận.") },
+            { "Food_BanhMi", new ItemInfo("Food_BanhMi", "Ổ bánh mì thịt", "Bánh mì Việt Nam giòn rụm với nhân thịt và rau củ thơm ngon.") },
+            { "Food_Tteokbokki", new ItemInfo("Food_Tteokbokki", "Đĩa bánh gạo cay (Tteokbokki)", "Bánh gạo cay Hàn Quốc sốt tương ớt Gochujang đỏ rực hấp dẫn.") },
             { "Clothing_AoDai", new ItemInfo("Clothing_AoDai", "Áo dài truyền thống", "Tà áo dài duyên dáng của mẹ trong ảnh.") },
             { "Clothing_Hanbok", new ItemInfo("Clothing_Hanbok", "Hanbok nam", "Bộ Hanbok trang trọng của ba.") },
             { "Gem_LotusHalf", new ItemInfo("Gem_LotusHalf", "Nửa ngọc Hoa Sen", "Nửa ngọc chạm khắc họa tiết hoa sen thanh khiết.") },

@@ -14,6 +14,9 @@ namespace JourneyOfMemories.Core.Data
             public const string Q05 = "Q05";
             public const string Q06 = "Q06";
             public const string Q07 = "Q07";
+            public const string CatIntro = "Q_Cat";
+            public const string BanhMi = "Q_BanhMi";
+            public const string Tteokbokki = "Q_Tteokbokki";
         }
 
         public static class Item
@@ -21,6 +24,8 @@ namespace JourneyOfMemories.Core.Data
             public const string ThitKhoTrung = "Food_ThitKhoTrung";
             public const string Kimchi = "Food_Kimchi";
             public const string ComCuon = "Food_ComCuon";
+            public const string BanhMi = "Food_BanhMi";
+            public const string Tteokbokki = "Food_Tteokbokki";
             public const string AoDai = "Clothing_AoDai";
             public const string Hanbok = "Clothing_Hanbok";
             public const string LotusHalf = "Gem_LotusHalf";

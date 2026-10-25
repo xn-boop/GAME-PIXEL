@@ -14,6 +14,9 @@ namespace JourneyOfMemories.Core.UI
         [Header("UI Panels")]
         [SerializeField] private GameObject quizPanel;
 
+        [Header("Illustration")]
+        [SerializeField] private Image illustrationImage;
+
         [Header("Text Displays")]
         [SerializeField] private TMP_Text titleText;
         [SerializeField] private TMP_Text questionText;
@@ -34,6 +37,10 @@ namespace JourneyOfMemories.Core.UI
 
         [Header("Controls")]
         [SerializeField] private Button closeButton;
+        [SerializeField] private Button actionButton;
+        [SerializeField] private TMP_Text actionButtonText;
+
+        public event Action<string, bool> OnQuizClosed;
 
         private string currentQuizId;
         private bool isAnsweredCorrectly = false;
@@ -135,6 +142,8 @@ namespace JourneyOfMemories.Core.UI
             {
                 quizPanel.SetActive(false);
             }
+
+            OnQuizClosed?.Invoke(currentQuizId, isAnsweredCorrectly);
 
             currentQuizId = null;
 

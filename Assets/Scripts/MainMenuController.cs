@@ -18,7 +18,7 @@ public class MainMenuController : MonoBehaviour
     public string registerSceneName = "RegisterMenu";
 
     [Tooltip("Tên scene gameplay dự phòng")]
-    public string firstLevelSceneName = "Level1_Prototype";
+    public string firstLevelSceneName = "Map1";
 
     [Header("UI Panels")]
     [Tooltip("Panel menu chính")]
@@ -330,9 +330,10 @@ public class MainMenuController : MonoBehaviour
             return;
         }
 
-        if (!string.IsNullOrEmpty(firstLevelSceneName) && Application.CanStreamedLevelBeLoaded(firstLevelSceneName))
+        string targetScene = !string.IsNullOrEmpty(firstLevelSceneName) && firstLevelSceneName != "Level1_Prototype" ? firstLevelSceneName : "Map1";
+        if (Application.CanStreamedLevelBeLoaded(targetScene))
         {
-            SceneManager.LoadScene(firstLevelSceneName);
+            SceneManager.LoadScene(targetScene);
         }
         else
         {

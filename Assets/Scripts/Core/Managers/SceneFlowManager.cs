@@ -11,8 +11,16 @@ namespace JourneyOfMemories.Core.Managers
 
         private void Awake()
         {
-            if (Instance != null && Instance != this) { Destroy(gameObject); return; }
+#if UNITY_EDITOR
             Instance = this;
+#else
+            if (Instance != null && Instance != this)
+            {
+                Destroy(gameObject);
+                return;
+            }
+            Instance = this;
+#endif
         }
 
         private void OnDestroy() { if (Instance == this) Instance = null; }
@@ -21,7 +29,8 @@ namespace JourneyOfMemories.Core.Managers
         {
             switch (mapId)
             {
-                case MapId.Map1_Kitchen: return "Level1_Prototype";
+                case MapId.Map1_Kitchen:
+                    return "Map1";
                 case MapId.Map2_DressingRoom: return "Map2_DressingRoom";
                 case MapId.Map3_Garden: return "Map3_Garden";
                 case MapId.Ending: return "Ending";
@@ -45,11 +54,44 @@ namespace JourneyOfMemories.Core.Managers
         private bool LoadMapScene(MapId mapId)
         {
             string sceneName = GetSceneName(mapId);
-            if (string.IsNullOrEmpty(sceneName) || !Application.CanStreamedLevelBeLoaded(sceneName))
+            if (string.IsNullOrEmpty(sceneName))
+            {
+                Debug.LogError($"[SceneFlowManager] Không tìm thấy tên scene tương ứng cho {mapId}.");
+                return false;
+            }
+
+            bool canLoad = Application.CanStreamedLevelBeLoaded(sceneName);
+            if (!canLoad && !sceneName.EndsWith(".unity"))
+            {
+                canLoad = Application.CanStreamedLevelBeLoaded($"Assets/Scenes/{sceneName}.unity");
+            }
+
+#if UNITY_EDITOR
+            if (!canLoad)
+            {
+                foreach (var scene in UnityEditor.EditorBuildSettings.scenes)
+                {
+                    if (scene.enabled && (scene.path.EndsWith($"{sceneName}.unity") || System.IO.Path.GetFileNameWithoutExtension(scene.path) == sceneName))
+                    {
+                        canLoad = true;
+                        break;
+                    }
+                }
+            }
+#endif
+
+            if (!canLoad)
             {
                 Debug.LogError($"[SceneFlowManager] Scene '{sceneName}' chưa có trong Build Settings.");
                 return false;
             }
+
+            #if UNITY_EDITOR
+            if (!Application.isPlaying)
+            {
+                return true;
+            }
+#endif
             SceneManager.LoadScene(sceneName);
             return true;
         }

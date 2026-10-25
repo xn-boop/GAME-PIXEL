@@ -67,6 +67,8 @@ public class FoodItem : MonoBehaviour
         if (foodName.Contains("Thịt kho") || foodName.Contains("ThitKho")) return GameIds.Item.ThitKhoTrung;
         if (foodName.Contains("Kim chi") || foodName.Contains("Kimchi")) return GameIds.Item.Kimchi;
         if (foodName.Contains("Kimbap") || foodName.Contains("Cơm cuộn") || foodName.Contains("ComCuon")) return GameIds.Item.ComCuon;
+        if (foodName.Contains("Bánh mì") || foodName.Contains("BanhMi")) return GameIds.Item.BanhMi;
+        if (foodName.Contains("Tteokbokki") || foodName.Contains("Bánh gạo")) return GameIds.Item.Tteokbokki;
         return foodName;
     }
 }
