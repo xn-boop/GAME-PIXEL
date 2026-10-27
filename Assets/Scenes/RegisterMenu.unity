@@ -193,7 +193,7 @@ Camera:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 245562121}
+  m_TargetTexture: {fileID: 1732552526}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
@@ -2587,7 +2587,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!84 &245562121
+--- !u!84 &1732552526
 RenderTexture:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
