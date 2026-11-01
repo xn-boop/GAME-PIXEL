@@ -4211,7 +4211,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 1.7035532, y: -0.27332723}
+  m_Offset: {x: 1.7035532, y: -0.6653216}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -4221,7 +4221,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 4.4071064, y: 0.26858544}
+  m_Size: {x: 4.4071064, y: 1.1422153}
   m_EdgeRadius: 0
 --- !u!1 &565353849
 GameObject:
@@ -7156,13 +7156,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 615959523}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.9064246, w: 0.42236787}
-  m_LocalPosition: {x: 0.02, y: 0.38, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.2196747, w: -0.97557324}
+  m_LocalPosition: {x: 0.020016432, y: 0.37998676, z: 0}
   m_LocalScale: {x: 0.18841197, y: 0.098325, z: 0.3543243}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 188173587}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 130.032}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -25.38}
 --- !u!212 &615959525
 SpriteRenderer:
   serializedVersion: 3
@@ -8571,7 +8571,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &731893938
 Transform:
   m_ObjectHideFlags: 0
@@ -15966,6 +15966,7 @@ Transform:
   - {fileID: 522565789}
   - {fileID: 1178192754}
   - {fileID: 1609337573}
+  - {fileID: 2005914190}
   m_Father: {fileID: 1654606932}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1057440213
@@ -17285,8 +17286,7 @@ Transform:
   m_LocalPosition: {x: -0.571, y: 0.625, z: 0}
   m_LocalScale: {x: 0.071414284, y: 0.071414284, z: 0.071414284}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2005914190}
+  m_Children: []
   m_Father: {fileID: 1057440212}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1178192755
@@ -24312,11 +24312,11 @@ Transform:
   m_GameObject: {fileID: 2005914189}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.3, y: -2.5, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: -0.04967594, y: 0.4464643, z: 0}
+  m_LocalScale: {x: 0.035707142, y: 0.035707142, z: 0.035707142}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1178192754}
+  m_Father: {fileID: 1057440212}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!199 &2005914191
 ParticleSystemRenderer:

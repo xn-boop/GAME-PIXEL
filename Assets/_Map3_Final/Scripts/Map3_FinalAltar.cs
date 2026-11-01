@@ -30,6 +30,8 @@ namespace Game.Map3
             promptText = "[E] Cử Hành Nghi Thức";
             base.Awake();
 
+            FixVisualTransforms();
+
             if (jadeAuraEffect != null) jadeAuraEffect.SetActive(false);
             if (jadeVietVisual != null) jadeVietVisual.SetActive(false);
             if (jadeKoreaVisual != null) jadeKoreaVisual.SetActive(false);
@@ -39,6 +41,117 @@ namespace Game.Map3
             if (altarRenderer == null)
             {
                 altarRenderer = GetComponentInChildren<SpriteRenderer>();
+            }
+        }
+
+        /// <summary>
+        /// Tự động cấu hình chuẩn hiển thị 2D cho ngọc, đốm sáng, aura và hạt hiệu ứng:
+        /// - Ép toàn bộ localPosition.z về 0f.
+        /// - jadeVietVisual & jadeKoreaVisual: sortingLayerName = "Foreground", sortingOrder = 60.
+        /// - glowVietVisual & glowKoreaVisual: sortingLayerName = "Foreground", sortingOrder = 55, alpha = 0.6f.
+        /// - jadeAuraEffect: localPosition.z = 0f, Renderer = 55, ParticleSystemRenderer = 58.
+        /// - Các ParticleSystem trong glow/aura: sortingLayerName = "Foreground", sortingOrder = 58.
+        /// - glowParticles: localPosition = Vector3.zero, sortingLayerName = "Foreground", sortingOrder = 100.
+        /// </summary>
+        public void FixVisualTransforms()
+        {
+            ConfigureJadeVisual(jadeVietVisual);
+            ConfigureJadeVisual(jadeKoreaVisual);
+            ConfigureGlowVisual(glowVietVisual);
+            ConfigureGlowVisual(glowKoreaVisual);
+            ConfigureJadeAura();
+            ConfigureGlowParticles();
+        }
+
+        private void ConfigureJadeVisual(GameObject jadeGo)
+        {
+            if (jadeGo == null) return;
+
+            Vector3 pos = jadeGo.transform.localPosition;
+            pos.z = 0f;
+            jadeGo.transform.localPosition = pos;
+
+            SpriteRenderer[] renderers = jadeGo.GetComponentsInChildren<SpriteRenderer>(true);
+            foreach (var sr in renderers)
+            {
+                if (sr != null)
+                {
+                    sr.sortingLayerName = "Foreground";
+                    sr.sortingOrder = 60;
+                }
+            }
+        }
+
+        private void ConfigureGlowVisual(GameObject glowGo)
+        {
+            if (glowGo == null) return;
+
+            Vector3 pos = glowGo.transform.localPosition;
+            pos.z = 0f;
+            glowGo.transform.localPosition = pos;
+
+            Renderer[] renderers = glowGo.GetComponentsInChildren<Renderer>(true);
+            foreach (var r in renderers)
+            {
+                if (r == null) continue;
+
+                if (r is ParticleSystemRenderer psr)
+                {
+                    psr.sortingLayerName = "Foreground";
+                    psr.sortingOrder = 58;
+                }
+                else if (r is SpriteRenderer sr)
+                {
+                    sr.sortingLayerName = "Foreground";
+                    sr.sortingOrder = 55;
+                    Color c = sr.color;
+                    c.a = 0.6f;
+                    sr.color = c;
+                }
+                else
+                {
+                    r.sortingLayerName = "Foreground";
+                    r.sortingOrder = 55;
+                }
+            }
+        }
+
+        private void ConfigureJadeAura()
+        {
+            if (jadeAuraEffect == null) return;
+
+            Vector3 pos = jadeAuraEffect.transform.localPosition;
+            pos.z = 0f;
+            jadeAuraEffect.transform.localPosition = pos;
+
+            Renderer[] renderers = jadeAuraEffect.GetComponentsInChildren<Renderer>(true);
+            foreach (var r in renderers)
+            {
+                if (r == null) continue;
+
+                if (r is ParticleSystemRenderer psr)
+                {
+                    psr.sortingLayerName = "Foreground";
+                    psr.sortingOrder = 58;
+                }
+                else
+                {
+                    r.sortingLayerName = "Foreground";
+                    r.sortingOrder = 55;
+                }
+            }
+        }
+
+        private void ConfigureGlowParticles()
+        {
+            if (glowParticles == null) return;
+
+            glowParticles.transform.localPosition = Vector3.zero;
+            var psRenderer = glowParticles.GetComponent<ParticleSystemRenderer>();
+            if (psRenderer != null)
+            {
+                psRenderer.sortingLayerName = "Foreground";
+                psRenderer.sortingOrder = 100;
             }
         }
 
@@ -78,9 +191,11 @@ namespace Game.Map3
                 Map3_PlayerController.Instance.SetMovementLocked(true);
             }
 
-            // 2. Hiện 2 viên ngọc lọt vào bệ đá
+            // 2. Hiện 2 viên ngọc lọt vào bệ đá và kích hoạt vòng sáng tròn quanh bệ đá
+            FixVisualTransforms();
             if (jadeVietVisual != null) jadeVietVisual.SetActive(true);
             if (jadeKoreaVisual != null) jadeKoreaVisual.SetActive(true);
+            if (jadeAuraEffect != null) jadeAuraEffect.SetActive(true);
 
             // 3. Bật vầng sáng riêng và nhấp nháy
             if (glowVietVisual != null)
@@ -93,7 +208,11 @@ namespace Game.Map3
                 glowKoreaVisual.SetActive(true);
                 StartCoroutine(PulseGlowEffect(glowKoreaVisual.transform));
             }
-            if (glowParticles != null) glowParticles.Play();
+            if (glowParticles != null)
+            {
+                glowParticles.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
+                glowParticles.Play();
+            }
 
             // 4. Các hiệu ứng gốc của game
             if (Map3_UIManager.Instance != null)
@@ -102,7 +221,6 @@ namespace Game.Map3
                 Map3_UIManager.Instance.ShowToast("Hai nửa ngọc bội Sen - Mugunghwa tỏa sáng rực rỡ...");
             }
 
-            if (jadeAuraEffect != null) jadeAuraEffect.SetActive(true);
             if (altarRenderer != null) altarRenderer.color = consecratedColor;
 
             ShowIndicator(false);
