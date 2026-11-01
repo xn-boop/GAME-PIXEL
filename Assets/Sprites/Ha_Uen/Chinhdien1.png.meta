@@ -1,0 +1,3811 @@
+fileFormatVersion: 2
+guid: 0d5cbba2771c5d749860617fa783dd23
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 566259504575552787
+    second: Chinhdien1_0
+  - first:
+      213: -6945364656923966111
+    second: Chinhdien1_1
+  - first:
+      213: 4295205702889416800
+    second: Chinhdien1_2
+  - first:
+      213: 4169486032764749980
+    second: Chinhdien1_3
+  - first:
+      213: -4927884481359575073
+    second: Chinhdien1_4
+  - first:
+      213: 2291680086685756057
+    second: Chinhdien1_5
+  - first:
+      213: -4328346816402407350
+    second: Chinhdien1_6
+  - first:
+      213: 8942755750678573204
+    second: Chinhdien1_7
+  - first:
+      213: -3545773663385648610
+    second: Chinhdien1_8
+  - first:
+      213: 6383456881101416229
+    second: Chinhdien1_9
+  - first:
+      213: 2389470124484553681
+    second: Chinhdien1_10
+  - first:
+      213: -2820692390183191741
+    second: Chinhdien1_11
+  - first:
+      213: 9136216177685384363
+    second: Chinhdien1_12
+  - first:
+      213: 4355549593641285047
+    second: Chinhdien1_13
+  - first:
+      213: 6529600476573876296
+    second: Chinhdien1_14
+  - first:
+      213: 2454292850527137541
+    second: Chinhdien1_15
+  - first:
+      213: -8609712162511285014
+    second: Chinhdien1_16
+  - first:
+      213: -5883361106876155994
+    second: Chinhdien1_17
+  - first:
+      213: -1371193458120843426
+    second: Chinhdien1_18
+  - first:
+      213: -3198186956502837004
+    second: Chinhdien1_19
+  - first:
+      213: -5765840882943715024
+    second: Chinhdien1_20
+  - first:
+      213: 8601571090506413635
+    second: Chinhdien1_21
+  - first:
+      213: -1836887498839829002
+    second: Chinhdien1_22
+  - first:
+      213: -2921715773302388417
+    second: Chinhdien1_23
+  - first:
+      213: 3483564732580052261
+    second: Chinhdien1_24
+  - first:
+      213: 4400932029040948444
+    second: Chinhdien1_25
+  - first:
+      213: 7719902549461476476
+    second: Chinhdien1_26
+  - first:
+      213: -6010789887215884122
+    second: Chinhdien1_27
+  - first:
+      213: -742212141305372251
+    second: Chinhdien1_28
+  - first:
+      213: -4524172904142425106
+    second: Chinhdien1_29
+  - first:
+      213: -2067234246235260824
+    second: Chinhdien1_30
+  - first:
+      213: -5188721094800045118
+    second: Chinhdien1_31
+  - first:
+      213: -7428270886900570747
+    second: Chinhdien1_32
+  - first:
+      213: -6891891367056697918
+    second: Chinhdien1_33
+  - first:
+      213: 2583061163285811383
+    second: Chinhdien1_34
+  - first:
+      213: 7211097791647012413
+    second: Chinhdien1_35
+  - first:
+      213: -8619663733221809312
+    second: Chinhdien1_36
+  - first:
+      213: -2685723568313635764
+    second: Chinhdien1_37
+  - first:
+      213: -7549251115166009107
+    second: Chinhdien1_38
+  - first:
+      213: -3955349691869029060
+    second: Chinhdien1_39
+  - first:
+      213: 3556350184656018556
+    second: Chinhdien1_40
+  - first:
+      213: -6734493325140859862
+    second: Chinhdien1_41
+  - first:
+      213: -4496228773623465323
+    second: Chinhdien1_42
+  - first:
+      213: -2837862838817739877
+    second: Chinhdien1_43
+  - first:
+      213: 1048130848350605725
+    second: Chinhdien1_44
+  - first:
+      213: 8218921690574302384
+    second: Chinhdien1_45
+  - first:
+      213: -2837432341438707094
+    second: Chinhdien1_46
+  - first:
+      213: 5871790628995671144
+    second: Chinhdien1_47
+  - first:
+      213: 411495439599703219
+    second: Chinhdien1_48
+  - first:
+      213: 8693250847789636676
+    second: Chinhdien1_49
+  - first:
+      213: -5791165567785349732
+    second: Chinhdien1_50
+  - first:
+      213: 7858950652858513237
+    second: Chinhdien1_51
+  - first:
+      213: -3257782770845020888
+    second: Chinhdien1_52
+  - first:
+      213: 9058363655853682541
+    second: Chinhdien1_53
+  - first:
+      213: -5419703727698798547
+    second: Chinhdien1_54
+  - first:
+      213: 6253175531504204553
+    second: Chinhdien1_55
+  - first:
+      213: 4303138155160888637
+    second: Chinhdien1_56
+  - first:
+      213: 573579982116153341
+    second: Chinhdien1_57
+  - first:
+      213: -8775235246471124914
+    second: Chinhdien1_58
+  - first:
+      213: 989493827529959961
+    second: Chinhdien1_59
+  - first:
+      213: -9028987888987130226
+    second: Chinhdien1_60
+  - first:
+      213: 7652279010549802390
+    second: Chinhdien1_61
+  - first:
+      213: 2306077236153169612
+    second: Chinhdien1_62
+  - first:
+      213: 2894847703477410527
+    second: Chinhdien1_63
+  - first:
+      213: 3937809064151128757
+    second: Chinhdien1_64
+  - first:
+      213: -6752151770692310829
+    second: Chinhdien1_65
+  - first:
+      213: -7850290278970108751
+    second: Chinhdien1_66
+  - first:
+      213: -8707067819171625924
+    second: Chinhdien1_67
+  - first:
+      213: -7470795120060101324
+    second: Chinhdien1_68
+  - first:
+      213: 1419887861807838920
+    second: Chinhdien1_69
+  - first:
+      213: 8764797257607370743
+    second: Chinhdien1_70
+  - first:
+      213: -7252108487314651018
+    second: Chinhdien1_71
+  - first:
+      213: 3338667586576142847
+    second: Chinhdien1_72
+  - first:
+      213: -7006763959565968378
+    second: Chinhdien1_73
+  - first:
+      213: 7461790669149391606
+    second: Chinhdien1_74
+  - first:
+      213: -898002874214209185
+    second: Chinhdien1_75
+  - first:
+      213: 3095357100728714382
+    second: Chinhdien1_76
+  - first:
+      213: 3814994165480852851
+    second: Chinhdien1_77
+  - first:
+      213: 7687946315738886351
+    second: Chinhdien1_78
+  - first:
+      213: 1260833705878573872
+    second: Chinhdien1_79
+  - first:
+      213: 5811848785977640450
+    second: Chinhdien1_80
+  - first:
+      213: 8289691532566414372
+    second: Chinhdien1_81
+  - first:
+      213: -7535488644139744761
+    second: Chinhdien1_82
+  - first:
+      213: 3171269051501186155
+    second: Chinhdien1_83
+  - first:
+      213: -869927998694334089
+    second: Chinhdien1_84
+  - first:
+      213: -7123247607534400573
+    second: Chinhdien1_85
+  - first:
+      213: -2487435750762618220
+    second: Chinhdien1_86
+  - first:
+      213: -5540536734944224573
+    second: Chinhdien1_87
+  - first:
+      213: -5084541083961400489
+    second: Chinhdien1_88
+  - first:
+      213: 2266810567518214294
+    second: Chinhdien1_89
+  - first:
+      213: -5093436708722673188
+    second: Chinhdien1_90
+  - first:
+      213: -2361555268497316602
+    second: Chinhdien1_91
+  - first:
+      213: -4525104294117959095
+    second: Chinhdien1_92
+  - first:
+      213: -8581399953697479519
+    second: Chinhdien1_93
+  - first:
+      213: 6838793156757744325
+    second: Chinhdien1_94
+  - first:
+      213: 6215781859810749245
+    second: Chinhdien1_95
+  - first:
+      213: 1361506182906941150
+    second: Chinhdien1_96
+  - first:
+      213: 5521504765619304588
+    second: Chinhdien1_97
+  - first:
+      213: 8922802803138478557
+    second: Chinhdien1_98
+  - first:
+      213: -2670016108426914609
+    second: Chinhdien1_99
+  - first:
+      213: 1226506586841664103
+    second: Chinhdien1_100
+  - first:
+      213: 4269360925461519112
+    second: Chinhdien1_101
+  - first:
+      213: -338795598087592908
+    second: Chinhdien1_102
+  - first:
+      213: -7425739344205829327
+    second: Chinhdien1_103
+  - first:
+      213: -3006341327770153306
+    second: Chinhdien1_104
+  - first:
+      213: -8856331030886899929
+    second: Chinhdien1_105
+  - first:
+      213: -1658214332975610808
+    second: Chinhdien1_106
+  - first:
+      213: 9157392438503472432
+    second: Chinhdien1_107
+  - first:
+      213: 3992185606581107037
+    second: Chinhdien1_108
+  - first:
+      213: -8552141819432946853
+    second: Chinhdien1_109
+  - first:
+      213: -2651787812640373557
+    second: Chinhdien1_110
+  - first:
+      213: -197589643142801294
+    second: Chinhdien1_111
+  - first:
+      213: 2263971090456405596
+    second: Chinhdien1_112
+  - first:
+      213: 2235686526947948397
+    second: Chinhdien1_113
+  - first:
+      213: 2639157977512489585
+    second: Chinhdien1_114
+  - first:
+      213: 627093619727813465
+    second: Chinhdien1_115
+  - first:
+      213: -8593265345662259680
+    second: Chinhdien1_116
+  - first:
+      213: -3040240802258379128
+    second: Chinhdien1_117
+  - first:
+      213: -123815121873494301
+    second: Chinhdien1_118
+  - first:
+      213: 8410967941917063178
+    second: Chinhdien1_119
+  - first:
+      213: -2454025879016521341
+    second: Chinhdien1_120
+  - first:
+      213: 6295918682301584458
+    second: Chinhdien1_121
+  - first:
+      213: 4968053868997081842
+    second: Chinhdien1_122
+  - first:
+      213: 4828122066348995799
+    second: Chinhdien1_123
+  - first:
+      213: 1568906541722086029
+    second: Chinhdien1_124
+  - first:
+      213: 7288996582707318261
+    second: Chinhdien1_125
+  - first:
+      213: 3194320647539674721
+    second: Chinhdien1_126
+  - first:
+      213: 937407124251946831
+    second: Chinhdien1_127
+  - first:
+      213: 137803964096758092
+    second: Chinhdien1_128
+  - first:
+      213: -1470063203519333059
+    second: Chinhdien1_129
+  - first:
+      213: -5707569008736223809
+    second: Chinhdien1_130
+  - first:
+      213: -6002681681727917697
+    second: Chinhdien1_131
+  - first:
+      213: -6424211562471722851
+    second: Chinhdien1_132
+  - first:
+      213: -3075675261680666543
+    second: Chinhdien1_133
+  - first:
+      213: 4069099532120655195
+    second: Chinhdien1_134
+  - first:
+      213: -847000876975567793
+    second: Chinhdien1_135
+  - first:
+      213: -5770114579847208154
+    second: Chinhdien1_136
+  - first:
+      213: 3164087152441948696
+    second: Chinhdien1_137
+  - first:
+      213: 3966973595093914143
+    second: Chinhdien1_138
+  - first:
+      213: 131550945591882784
+    second: Chinhdien1_139
+  - first:
+      213: 9099159309424986098
+    second: Chinhdien1_140
+  - first:
+      213: -1245814768745928552
+    second: Chinhdien1_141
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Chinhdien1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 821
+        width: 121
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31d1aece402cbd700800000000000000
+      internalID: 566259504575552787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_1
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 0
+        width: 802
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1658e7484ab1d9f90800000000000000
+      internalID: -6945364656923966111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_2
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 957
+        width: 34
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 068a4fd64d2ab9b30800000000000000
+      internalID: 4295205702889416800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_3
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 965
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9845e6b47dfcd930800000000000000
+      internalID: 4169486032764749980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_4
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 965
+        width: 140
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd7076a5c23ac9bb0800000000000000
+      internalID: -4927884481359575073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_5
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 973
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99aadb1a5eeadcf10800000000000000
+      internalID: 2291680086685756057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_6
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 959
+        width: 81
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4044a7c08f9ee3c0800000000000000
+      internalID: -4328346816402407350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_7
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 967
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 490374879fc0b1c70800000000000000
+      internalID: 8942755750678573204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_8
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 901
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1286f3b3a1eacec0800000000000000
+      internalID: -3545773663385648610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_9
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 901
+        width: 44
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 527a21d5638969850800000000000000
+      internalID: 6383456881101416229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_10
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 911
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1db6f431b6a192120800000000000000
+      internalID: 2389470124484553681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_11
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 871
+        width: 47
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34bbb7e3733ead8d0800000000000000
+      internalID: -2820692390183191741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_12
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 911
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bac4d16353c5ace70800000000000000
+      internalID: 9136216177685384363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_13
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 877
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b5f59a5745027c30800000000000000
+      internalID: 4355549593641285047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_14
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 893
+        width: 34
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8404863c90dcd9a50800000000000000
+      internalID: 6529600476573876296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_15
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 898
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50f637a18566f0220800000000000000
+      internalID: 2454292850527137541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_16
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 885
+        width: 28
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae497278768248880800000000000000
+      internalID: -8609712162511285014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_17
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 887
+        width: 34
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a73c43ae3a1a5ea0800000000000000
+      internalID: -5883361106876155994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_18
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 877
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5f1e5290da88fce0800000000000000
+      internalID: -1371193458120843426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 847
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f85c5468e1cd93d0800000000000000
+      internalID: -3198186956502837004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_20
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 842
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03917b4044e9bffa0800000000000000
+      internalID: -5765840882943715024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_21
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 807
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34677ef655bee5770800000000000000
+      internalID: 8601571090506413635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 837
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f5db435d801286e0800000000000000
+      internalID: -1836887498839829002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 711
+        width: 17
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f39c7adebfaf377d0800000000000000
+      internalID: -2921715773302388417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_24
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 831
+        width: 42
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52d3385eaab185030800000000000000
+      internalID: 3483564732580052261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_25
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 815
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd4ff9ffc50431d30800000000000000
+      internalID: 4400932029040948444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_26
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 733
+        width: 89
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c74a849877a922b60800000000000000
+      internalID: 7719902549461476476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_27
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 834
+        width: 26
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a8acf0b172659ca0800000000000000
+      internalID: -6010789887215884122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_28
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 821
+        width: 42
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a1e2896df123b5f0800000000000000
+      internalID: -742212141305372251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_29
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 823
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee3b42ab6b8e631c0800000000000000
+      internalID: -4524172904142425106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_30
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 823
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 868ff9dd765bf43e0800000000000000
+      internalID: -2067234246235260824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_31
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 767
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cb0ed1c7a5fdf7b0800000000000000
+      internalID: -5188721094800045118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_32
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 757
+        width: 36
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5856aea2cfa79e890800000000000000
+      internalID: -7428270886900570747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_33
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 770
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c5110401551b50a0800000000000000
+      internalID: -6891891367056697918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_34
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 762
+        width: 42
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b012ce3170e8d320800000000000000
+      internalID: 2583061163285811383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_35
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 751
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3659b74c37f21460800000000000000
+      internalID: 7211097791647012413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_36
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 671
+        width: 79
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0632ff9e08dc06880800000000000000
+      internalID: -8619663733221809312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_37
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 743
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4c65c9e4a46abad0800000000000000
+      internalID: -2685723568313635764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_38
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 743
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de8fe40cb1cab3790800000000000000
+      internalID: -7549251115166009107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_39
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 751
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3d12bd5966cb19c0800000000000000
+      internalID: -3955349691869029060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_40
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 733
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7c115d86a1ba5130800000000000000
+      internalID: 3556350184656018556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_41
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 714
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a246dbc60064a82a0800000000000000
+      internalID: -6734493325140859862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_42
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 727
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59a784f90cf2a91c0800000000000000
+      internalID: -4496228773623465323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_43
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 615
+        width: 43
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9bacf2a8c2ed98d0800000000000000
+      internalID: -2837862838817739877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_44
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 690
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d91111e0475bb8e00800000000000000
+      internalID: 1048130848350605725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_45
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 679
+        width: 42
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bc2f6b5bb97f0270800000000000000
+      internalID: 8218921690574302384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_46
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 671
+        width: 60
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6a475e915a6f98d0800000000000000
+      internalID: -2837432341438707094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_47
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 671
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86421cc877acc7150800000000000000
+      internalID: 5871790628995671144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_48
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 637
+        width: 106
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b498001cece5b500800000000000000
+      internalID: 411495439599703219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_49
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 647
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44c5dd55691a4a870800000000000000
+      internalID: 8693250847789636676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_50
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 655
+        width: 31
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9d4ea85995a1afa0800000000000000
+      internalID: -5791165567785349732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_51
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 479
+        width: 33
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 557b4f2faf9901d60800000000000000
+      internalID: 7858950652858513237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_52
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 591
+        width: 34
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82d056494d70ac2d0800000000000000
+      internalID: -3257782770845020888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_53
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 615
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6fa77170c5c5bd70800000000000000
+      internalID: 9058363655853682541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_54
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 589
+        width: 42
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2817aaac2859c4b0800000000000000
+      internalID: -5419703727698798547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_55
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 599
+        width: 42
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90bf871e30eb7c650800000000000000
+      internalID: 6253175531504204553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_56
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 613
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d356bc56a51d7bb30800000000000000
+      internalID: 4303138155160888637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_57
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 589
+        width: 52
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df7ee4c64f3c5f700800000000000000
+      internalID: 573579982116153341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_58
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 615
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e48e999590a183680800000000000000
+      internalID: -8775235246471124914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_59
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 586
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91a6d51c4636bbd00800000000000000
+      internalID: 989493827529959961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_60
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 583
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e863e934a5792b280800000000000000
+      internalID: -9028987888987130226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_61
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 527
+        width: 52
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 695aff1773b523a60800000000000000
+      internalID: 7652279010549802390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_62
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 527
+        width: 50
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc636853705d00020800000000000000
+      internalID: 2306077236153169612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_63
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 551
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fda50a416a09c2820800000000000000
+      internalID: 2894847703477410527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_64
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 519
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ba9a0efa78e5a630800000000000000
+      internalID: 3937809064151128757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_65
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 543
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d82c5e2db98b42a0800000000000000
+      internalID: -6752151770692310829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_66
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 551
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b4d84a759a2e0390800000000000000
+      internalID: -7850290278970108751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_67
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 509
+        width: 34
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c344a0353f74a2780800000000000000
+      internalID: -8707067819171625924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_68
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 535
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43d88179b67625890800000000000000
+      internalID: -7470795120060101324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_69
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 525
+        width: 52
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c6f1f7cc7474b310800000000000000
+      internalID: 1419887861807838920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_70
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 447
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f7510cfaa0d2a970800000000000000
+      internalID: 8764797257607370743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_71
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 415
+        width: 58
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 678c30d01c55b5b90800000000000000
+      internalID: -7252108487314651018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_72
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 461
+        width: 34
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff15bf02b74555e20800000000000000
+      internalID: 3338667586576142847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_73
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 479
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60c9f0d5d49f2ce90800000000000000
+      internalID: -7006763959565968378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_74
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 471
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fa49fe441b9d8760800000000000000
+      internalID: 7461790669149391606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_75
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 453
+        width: 62
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f59ae2bc427a983f0800000000000000
+      internalID: -898002874214209185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_76
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 407
+        width: 17
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e840be912eae4fa20800000000000000
+      internalID: 3095357100728714382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_77
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 471
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37d8ca51bf491f430800000000000000
+      internalID: 3814994165480852851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_78
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 463
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc0b3e1117211ba60800000000000000
+      internalID: 7687946315738886351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_79
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 453
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0335bb743916f7110800000000000000
+      internalID: 1260833705878573872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_80
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 463
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2068b78ada5d7a050800000000000000
+      internalID: 5811848785977640450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_81
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 458
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4244f283786ea0370800000000000000
+      internalID: 8289691532566414372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_82
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 453
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7028f0db0019c6790800000000000000
+      internalID: -7535488644139744761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_83
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 31
+        width: 99
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6c0be5766c920c20800000000000000
+      internalID: 3171269051501186155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_84
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 381
+        width: 60
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77168a128156de3f0800000000000000
+      internalID: -869927998694334089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_85
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 373
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cbc2c1aa04252d90800000000000000
+      internalID: -7123247607534400573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_86
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 389
+        width: 44
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 492ef2a1d5ada7dd0800000000000000
+      internalID: -2487435750762618220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_87
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 343
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ca95a0d13f0c13b0800000000000000
+      internalID: -5540536734944224573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_88
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 383
+        width: 58
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 753e99cb2d41079b0800000000000000
+      internalID: -5084541083961400489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_89
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 365
+        width: 42
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 698560a7334557f10800000000000000
+      internalID: 2266810567518214294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_90
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 351
+        width: 89
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd976a2bc4a7059b0800000000000000
+      internalID: -5093436708722673188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_91
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 295
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 605e3cfcef11a3fd0800000000000000
+      internalID: -2361555268497316602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_92
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 325
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94a11899e999331c0800000000000000
+      internalID: -4525104294117959095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_93
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 322
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a4ee44553eb8e880800000000000000
+      internalID: -8581399953697479519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_94
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 314
+        width: 39
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5caeae0842648ee50800000000000000
+      internalID: 6838793156757744325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_95
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 309
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3b265b3ba4e24650800000000000000
+      internalID: 6215781859810749245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_96
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 327
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ede8aa7e8aa05e210800000000000000
+      internalID: 1361506182906941150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_97
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 314
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c887d54845350ac40800000000000000
+      internalID: 5521504765619304588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_98
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 319
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd1cde9dfd924db70800000000000000
+      internalID: 8922802803138478557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_99
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 309
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc494a8ee7232fad0800000000000000
+      internalID: -2670016108426914609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_100
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 279
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76acf5f0e3d650110800000000000000
+      internalID: 1226506586841664103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_101
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 314
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80b11144421df3b30800000000000000
+      internalID: 4269360925461519112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_102
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 293
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 434e584d23b5c4bf0800000000000000
+      internalID: -338795598087592908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_103
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 295
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13b28f1e86972f890800000000000000
+      internalID: -7425739344205829327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_104
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 255
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ae0fac9d745746d0800000000000000
+      internalID: -3006341327770153306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_105
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 271
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72f97baa9ddf71580800000000000000
+      internalID: -8856331030886899929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_106
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 261
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 844078989d6dcf8e0800000000000000
+      internalID: -1658214332975610808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_107
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 239
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03df8d5a7e7951f70800000000000000
+      internalID: 9157392438503472432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_108
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 215
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d59b1bd58a7176730800000000000000
+      internalID: 3992185606581107037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_109
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 250
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b53bfef8350b05980800000000000000
+      internalID: -8552141819432946853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_110
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 247
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc44cdfb805f23bd0800000000000000
+      internalID: -2651787812640373557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_111
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 231
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2785d253445024df0800000000000000
+      internalID: -197589643142801294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_112
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 239
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c56686436bd3b6f10800000000000000
+      internalID: 2263971090456405596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_113
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 199
+        width: 26
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d67fbd31d01c60f10800000000000000
+      internalID: 2235686526947948397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_114
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 239
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17235cb923c20a420800000000000000
+      internalID: 2639157977512489585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_115
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 229
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95b4acc1352e3b800800000000000000
+      internalID: 627093619727813465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_116
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 178
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02e602b72b69eb880800000000000000
+      internalID: -8593265345662259680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_117
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 159
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88e9db52915eec5d0800000000000000
+      internalID: -3040240802258379128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_118
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 149
+        width: 58
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ee98ea7dce184ef0800000000000000
+      internalID: -123815121873494301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_119
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 183
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a083a2ba7c2c9b470800000000000000
+      internalID: 8410967941917063178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_120
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 175
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 381ca9b077c81fdd0800000000000000
+      internalID: -2454025879016521341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_121
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 175
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a44d4513fa89f5750800000000000000
+      internalID: 6295918682301584458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_122
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 159
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fa73960ca212f440800000000000000
+      internalID: 4968053868997081842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_123
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 175
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d4f4f8507fe00340800000000000000
+      internalID: 4828122066348995799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_124
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 167
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8aa121ff20e5c510800000000000000
+      internalID: 1568906541722086029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_125
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 159
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fd4e41f5c7b72560800000000000000
+      internalID: 7288996582707318261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_126
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 95
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16e4c4764b1845c20800000000000000
+      internalID: 3194320647539674721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_127
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 95
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4f25fa10d6520d00800000000000000
+      internalID: 937407124251946831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_128
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 87
+        width: 52
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c41c0a8a9f399e100800000000000000
+      internalID: 137803964096758092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_129
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 103
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3d7bdc1e49499be0800000000000000
+      internalID: -1470063203519333059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_130
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 111
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbdbf3ff934aac0b0800000000000000
+      internalID: -5707569008736223809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_131
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 15
+        width: 148
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f71fcd460d032bca0800000000000000
+      internalID: -6002681681727917697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_132
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 87
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d907ae0fe9d98d6a0800000000000000
+      internalID: -6424211562471722851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_133
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 79
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 158311725a10155d0800000000000000
+      internalID: -3075675261680666543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_134
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 87
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5582c72778587830800000000000000
+      internalID: 4069099532120655195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_135
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 79
+        width: 34
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4c4d63a039de34f0800000000000000
+      internalID: -847000876975567793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_136
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 71
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 623a7ea6c5f6cefa0800000000000000
+      internalID: -5770114579847208154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_137
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 23
+        width: 9
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81afda7408819eb20800000000000000
+      internalID: 3164087152441948696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_138
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 23
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f125de087758d0730800000000000000
+      internalID: 3966973595093914143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_139
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 024fed553ec53d100800000000000000
+      internalID: 131550945591882784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_140
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 10
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f707f8be25b64e70800000000000000
+      internalID: 9099159309424986098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinhdien1_141
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 0
+        width: 153
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 898a6f4811af5bee0800000000000000
+      internalID: -1245814768745928552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Chinhdien1_0: 566259504575552787
+      Chinhdien1_1: -6945364656923966111
+      Chinhdien1_10: 2389470124484553681
+      Chinhdien1_100: 1226506586841664103
+      Chinhdien1_101: 4269360925461519112
+      Chinhdien1_102: -338795598087592908
+      Chinhdien1_103: -7425739344205829327
+      Chinhdien1_104: -3006341327770153306
+      Chinhdien1_105: -8856331030886899929
+      Chinhdien1_106: -1658214332975610808
+      Chinhdien1_107: 9157392438503472432
+      Chinhdien1_108: 3992185606581107037
+      Chinhdien1_109: -8552141819432946853
+      Chinhdien1_11: -2820692390183191741
+      Chinhdien1_110: -2651787812640373557
+      Chinhdien1_111: -197589643142801294
+      Chinhdien1_112: 2263971090456405596
+      Chinhdien1_113: 2235686526947948397
+      Chinhdien1_114: 2639157977512489585
+      Chinhdien1_115: 627093619727813465
+      Chinhdien1_116: -8593265345662259680
+      Chinhdien1_117: -3040240802258379128
+      Chinhdien1_118: -123815121873494301
+      Chinhdien1_119: 8410967941917063178
+      Chinhdien1_12: 9136216177685384363
+      Chinhdien1_120: -2454025879016521341
+      Chinhdien1_121: 6295918682301584458
+      Chinhdien1_122: 4968053868997081842
+      Chinhdien1_123: 4828122066348995799
+      Chinhdien1_124: 1568906541722086029
+      Chinhdien1_125: 7288996582707318261
+      Chinhdien1_126: 3194320647539674721
+      Chinhdien1_127: 937407124251946831
+      Chinhdien1_128: 137803964096758092
+      Chinhdien1_129: -1470063203519333059
+      Chinhdien1_13: 4355549593641285047
+      Chinhdien1_130: -5707569008736223809
+      Chinhdien1_131: -6002681681727917697
+      Chinhdien1_132: -6424211562471722851
+      Chinhdien1_133: -3075675261680666543
+      Chinhdien1_134: 4069099532120655195
+      Chinhdien1_135: -847000876975567793
+      Chinhdien1_136: -5770114579847208154
+      Chinhdien1_137: 3164087152441948696
+      Chinhdien1_138: 3966973595093914143
+      Chinhdien1_139: 131550945591882784
+      Chinhdien1_14: 6529600476573876296
+      Chinhdien1_140: 9099159309424986098
+      Chinhdien1_141: -1245814768745928552
+      Chinhdien1_15: 2454292850527137541
+      Chinhdien1_16: -8609712162511285014
+      Chinhdien1_17: -5883361106876155994
+      Chinhdien1_18: -1371193458120843426
+      Chinhdien1_19: -3198186956502837004
+      Chinhdien1_2: 4295205702889416800
+      Chinhdien1_20: -5765840882943715024
+      Chinhdien1_21: 8601571090506413635
+      Chinhdien1_22: -1836887498839829002
+      Chinhdien1_23: -2921715773302388417
+      Chinhdien1_24: 3483564732580052261
+      Chinhdien1_25: 4400932029040948444
+      Chinhdien1_26: 7719902549461476476
+      Chinhdien1_27: -6010789887215884122
+      Chinhdien1_28: -742212141305372251
+      Chinhdien1_29: -4524172904142425106
+      Chinhdien1_3: 4169486032764749980
+      Chinhdien1_30: -2067234246235260824
+      Chinhdien1_31: -5188721094800045118
+      Chinhdien1_32: -7428270886900570747
+      Chinhdien1_33: -6891891367056697918
+      Chinhdien1_34: 2583061163285811383
+      Chinhdien1_35: 7211097791647012413
+      Chinhdien1_36: -8619663733221809312
+      Chinhdien1_37: -2685723568313635764
+      Chinhdien1_38: -7549251115166009107
+      Chinhdien1_39: -3955349691869029060
+      Chinhdien1_4: -4927884481359575073
+      Chinhdien1_40: 3556350184656018556
+      Chinhdien1_41: -6734493325140859862
+      Chinhdien1_42: -4496228773623465323
+      Chinhdien1_43: -2837862838817739877
+      Chinhdien1_44: 1048130848350605725
+      Chinhdien1_45: 8218921690574302384
+      Chinhdien1_46: -2837432341438707094
+      Chinhdien1_47: 5871790628995671144
+      Chinhdien1_48: 411495439599703219
+      Chinhdien1_49: 8693250847789636676
+      Chinhdien1_5: 2291680086685756057
+      Chinhdien1_50: -5791165567785349732
+      Chinhdien1_51: 7858950652858513237
+      Chinhdien1_52: -3257782770845020888
+      Chinhdien1_53: 9058363655853682541
+      Chinhdien1_54: -5419703727698798547
+      Chinhdien1_55: 6253175531504204553
+      Chinhdien1_56: 4303138155160888637
+      Chinhdien1_57: 573579982116153341
+      Chinhdien1_58: -8775235246471124914
+      Chinhdien1_59: 989493827529959961
+      Chinhdien1_6: -4328346816402407350
+      Chinhdien1_60: -9028987888987130226
+      Chinhdien1_61: 7652279010549802390
+      Chinhdien1_62: 2306077236153169612
+      Chinhdien1_63: 2894847703477410527
+      Chinhdien1_64: 3937809064151128757
+      Chinhdien1_65: -6752151770692310829
+      Chinhdien1_66: -7850290278970108751
+      Chinhdien1_67: -8707067819171625924
+      Chinhdien1_68: -7470795120060101324
+      Chinhdien1_69: 1419887861807838920
+      Chinhdien1_7: 8942755750678573204
+      Chinhdien1_70: 8764797257607370743
+      Chinhdien1_71: -7252108487314651018
+      Chinhdien1_72: 3338667586576142847
+      Chinhdien1_73: -7006763959565968378
+      Chinhdien1_74: 7461790669149391606
+      Chinhdien1_75: -898002874214209185
+      Chinhdien1_76: 3095357100728714382
+      Chinhdien1_77: 3814994165480852851
+      Chinhdien1_78: 7687946315738886351
+      Chinhdien1_79: 1260833705878573872
+      Chinhdien1_8: -3545773663385648610
+      Chinhdien1_80: 5811848785977640450
+      Chinhdien1_81: 8289691532566414372
+      Chinhdien1_82: -7535488644139744761
+      Chinhdien1_83: 3171269051501186155
+      Chinhdien1_84: -869927998694334089
+      Chinhdien1_85: -7123247607534400573
+      Chinhdien1_86: -2487435750762618220
+      Chinhdien1_87: -5540536734944224573
+      Chinhdien1_88: -5084541083961400489
+      Chinhdien1_89: 2266810567518214294
+      Chinhdien1_9: 6383456881101416229
+      Chinhdien1_90: -5093436708722673188
+      Chinhdien1_91: -2361555268497316602
+      Chinhdien1_92: -4525104294117959095
+      Chinhdien1_93: -8581399953697479519
+      Chinhdien1_94: 6838793156757744325
+      Chinhdien1_95: 6215781859810749245
+      Chinhdien1_96: 1361506182906941150
+      Chinhdien1_97: 5521504765619304588
+      Chinhdien1_98: 8922802803138478557
+      Chinhdien1_99: -2670016108426914609
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
