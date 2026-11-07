@@ -1,0 +1,3057 @@
+fileFormatVersion: 2
+guid: 0ea7d99e5875fab4ba5eb11dd40f5007
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4025243291508468552
+    second: Diary_0
+  - first:
+      213: 6301358461846560249
+    second: Diary_1
+  - first:
+      213: -4711469363879769841
+    second: Diary_2
+  - first:
+      213: 6924572903601369416
+    second: Diary_3
+  - first:
+      213: -4124161844002100041
+    second: Diary_4
+  - first:
+      213: 8010612228812760300
+    second: Diary_5
+  - first:
+      213: 150390480431786760
+    second: Diary_6
+  - first:
+      213: 2968750088349694945
+    second: Diary_7
+  - first:
+      213: 1628403456056343914
+    second: Diary_8
+  - first:
+      213: 4924053656781748173
+    second: Diary_9
+  - first:
+      213: 7090683181686899881
+    second: Diary_10
+  - first:
+      213: -4462327075190401706
+    second: Diary_11
+  - first:
+      213: 5488948202024751512
+    second: Diary_12
+  - first:
+      213: 6783644208944430242
+    second: Diary_13
+  - first:
+      213: -3642517402409093402
+    second: Diary_14
+  - first:
+      213: 2984635747546042089
+    second: Diary_15
+  - first:
+      213: -5326366087461897959
+    second: Diary_16
+  - first:
+      213: -2345319704904212912
+    second: Diary_17
+  - first:
+      213: -1946132625264161362
+    second: Diary_18
+  - first:
+      213: 8673396403518936303
+    second: Diary_19
+  - first:
+      213: -1415960662494197259
+    second: Diary_20
+  - first:
+      213: -8464644824660163277
+    second: Diary_21
+  - first:
+      213: 4833920029398131788
+    second: Diary_22
+  - first:
+      213: 165184688286932929
+    second: Diary_23
+  - first:
+      213: 8338108354718254796
+    second: Diary_24
+  - first:
+      213: -274009476487284502
+    second: Diary_25
+  - first:
+      213: -6746561899164580747
+    second: Diary_26
+  - first:
+      213: -4732437159967017923
+    second: Diary_27
+  - first:
+      213: -1075061268206391737
+    second: Diary_28
+  - first:
+      213: -3304912204021880146
+    second: Diary_29
+  - first:
+      213: 7835659604547315942
+    second: Diary_30
+  - first:
+      213: -3272849390429169911
+    second: Diary_31
+  - first:
+      213: 2994417867166983898
+    second: Diary_32
+  - first:
+      213: -3370453877518768
+    second: Diary_33
+  - first:
+      213: -7486002376936759529
+    second: Diary_34
+  - first:
+      213: -3540218620897846232
+    second: Diary_35
+  - first:
+      213: -6807454276932798508
+    second: Diary_36
+  - first:
+      213: -8117286172294992355
+    second: Diary_37
+  - first:
+      213: -5475967054098282178
+    second: Diary_38
+  - first:
+      213: -5898421171759541737
+    second: Diary_39
+  - first:
+      213: -3817394488748377710
+    second: Diary_40
+  - first:
+      213: 7643368949972015894
+    second: Diary_41
+  - first:
+      213: 8413595633320655788
+    second: Diary_42
+  - first:
+      213: 5689352027257848344
+    second: Diary_43
+  - first:
+      213: 3705901482063692964
+    second: Diary_44
+  - first:
+      213: 672827142395051531
+    second: Diary_45
+  - first:
+      213: -242616282068905662
+    second: Diary_46
+  - first:
+      213: -5512437461837348098
+    second: Diary_47
+  - first:
+      213: 3717578677264142162
+    second: Diary_48
+  - first:
+      213: -730422257366200533
+    second: Diary_49
+  - first:
+      213: 3726464474678973979
+    second: Diary_50
+  - first:
+      213: 539007988631712393
+    second: Diary_51
+  - first:
+      213: 1198728912576825247
+    second: Diary_52
+  - first:
+      213: -7795842058460840004
+    second: Diary_53
+  - first:
+      213: 4137096359910626901
+    second: Diary_54
+  - first:
+      213: -7805156879496087784
+    second: Diary_55
+  - first:
+      213: 7754406839083823618
+    second: Diary_56
+  - first:
+      213: -3151331390055968461
+    second: Diary_57
+  - first:
+      213: -1880775813043840199
+    second: Diary_58
+  - first:
+      213: 6824663160541825575
+    second: Diary_59
+  - first:
+      213: 1746790146265495663
+    second: Diary_60
+  - first:
+      213: 1624645394987120410
+    second: Diary_61
+  - first:
+      213: 8757323394299791861
+    second: Diary_62
+  - first:
+      213: 7903725510253543543
+    second: Diary_63
+  - first:
+      213: 1330270281384257248
+    second: Diary_64
+  - first:
+      213: 1830781240110252276
+    second: Diary_65
+  - first:
+      213: 5095889010303945737
+    second: Diary_66
+  - first:
+      213: -6008538384039527547
+    second: Diary_67
+  - first:
+      213: -2012552687726102752
+    second: Diary_68
+  - first:
+      213: 7994978291158212379
+    second: Diary_69
+  - first:
+      213: -2317943886824470675
+    second: Diary_70
+  - first:
+      213: 4488070507356669078
+    second: Diary_71
+  - first:
+      213: 6768887187636724707
+    second: Diary_72
+  - first:
+      213: -4367214492113355585
+    second: Diary_73
+  - first:
+      213: -6279614434105449543
+    second: Diary_74
+  - first:
+      213: 4089453669617053709
+    second: Diary_75
+  - first:
+      213: -5378369731438905357
+    second: Diary_76
+  - first:
+      213: 582040654600188689
+    second: Diary_77
+  - first:
+      213: 5765329081303286418
+    second: Diary_78
+  - first:
+      213: -4438911420366655182
+    second: Diary_79
+  - first:
+      213: -2888766778634981314
+    second: Diary_80
+  - first:
+      213: -7039269085244872770
+    second: Diary_81
+  - first:
+      213: -156708911727131607
+    second: Diary_82
+  - first:
+      213: -946134899665870297
+    second: Diary_83
+  - first:
+      213: -165060306044230847
+    second: Diary_84
+  - first:
+      213: 3638772158803879599
+    second: Diary_85
+  - first:
+      213: -1008283387148304395
+    second: Diary_86
+  - first:
+      213: -8995743067099217798
+    second: Diary_87
+  - first:
+      213: -3567451054300388187
+    second: Diary_88
+  - first:
+      213: -8553642779323103521
+    second: Diary_89
+  - first:
+      213: 7658110669544973490
+    second: Diary_90
+  - first:
+      213: -6292985006128702457
+    second: Diary_91
+  - first:
+      213: -4100211188465492772
+    second: Diary_92
+  - first:
+      213: 115334701711380250
+    second: Diary_93
+  - first:
+      213: 1495745024057410868
+    second: Diary_94
+  - first:
+      213: -7060730638197642135
+    second: Diary_95
+  - first:
+      213: 4219313297890729640
+    second: Diary_96
+  - first:
+      213: -7023332731958602134
+    second: Diary_97
+  - first:
+      213: 5216163154475271263
+    second: Diary_98
+  - first:
+      213: 601126687771594961
+    second: Diary_99
+  - first:
+      213: 3947646336367136334
+    second: Diary_100
+  - first:
+      213: 1300790760132297926
+    second: Diary_101
+  - first:
+      213: 2679083114801639645
+    second: Diary_102
+  - first:
+      213: -4687378737652765763
+    second: Diary_103
+  - first:
+      213: 8901793674311982632
+    second: Diary_104
+  - first:
+      213: 9138592533880241075
+    second: Diary_105
+  - first:
+      213: 515401240954841009
+    second: Diary_106
+  - first:
+      213: 8751857798434869268
+    second: Diary_107
+  - first:
+      213: 2272474260147349841
+    second: Diary_108
+  - first:
+      213: -6003680871252094383
+    second: Diary_109
+  - first:
+      213: 4310324081218799531
+    second: Diary_110
+  - first:
+      213: 5356868726754947560
+    second: Diary_111
+  - first:
+      213: 2044146081334386696
+    second: Diary_112
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Diary_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 981
+        width: 17
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84be2ec62798cd730800000000000000
+      internalID: 4025243291508468552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 975
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fd14c0922ce27750800000000000000
+      internalID: 6301358461846560249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_2
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 973
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f098fc3739f7d9eb0800000000000000
+      internalID: -4711469363879769841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_3
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 0
+        width: 897
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 841747c2e56091060800000000000000
+      internalID: 6924572903601369416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 967
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bce80457a804c6c0800000000000000
+      internalID: -4124161844002100041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 921
+        width: 7
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce4e8cb41696b2f60800000000000000
+      internalID: 8010612228812760300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_6
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 901
+        width: 20
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80bacbb585b461200800000000000000
+      internalID: 150390480431786760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 905
+        width: 5
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1eb3efae97e133920800000000000000
+      internalID: 2968750088349694945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 869
+        width: 15
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6db14dc050499610800000000000000
+      internalID: 1628403456056343914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 889
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc7707b46b0c55440800000000000000
+      internalID: 4924053656781748173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 879
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a4c84329ca276260800000000000000
+      internalID: 7090683181686899881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 873
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6551ba3ea21a212c0800000000000000
+      internalID: -4462327075190401706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 865
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 891543cde49ac2c40800000000000000
+      internalID: 5488948202024751512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 821
+        width: 17
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2acb4cc7778542e50800000000000000
+      internalID: 6783644208944430242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 849
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e63a3da8bd237dc0800000000000000
+      internalID: -3642517402409093402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_15
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 855
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ee0a6c266e8b6920800000000000000
+      internalID: 2984635747546042089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_16
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 853
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91975258342f416b0800000000000000
+      internalID: -5326366087461897959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 841
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05ed5788720c37fd0800000000000000
+      internalID: -2345319704904212912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 831
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eadc45930b2fdf4e0800000000000000
+      internalID: -1946132625264161362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 825
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe495eb43181e5870800000000000000
+      internalID: 8673396403518936303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 773
+        width: 17
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f94b10974f795ce0800000000000000
+      internalID: -1415960662494197259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 801
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 335484c216a878a80800000000000000
+      internalID: -8464644824660163277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 775
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c44ebe0d7a8851340800000000000000
+      internalID: 4833920029398131788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 729
+        width: 17
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cf1dab499ada4200800000000000000
+      internalID: 165184688286932929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 745
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc6c2b51f59e6b370800000000000000
+      internalID: 8338108354718254796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 734
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae872e835d5823cf0800000000000000
+      internalID: -274009476487284502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 727
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5744c1192b56f52a0800000000000000
+      internalID: -6746561899164580747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 665
+        width: 16
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d34be4ef971035eb0800000000000000
+      internalID: -4732437159967017923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 703
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74ee6c4f87d9411f0800000000000000
+      internalID: -1075061268206391737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 695
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaa2c615cd79222d0800000000000000
+      internalID: -3304912204021880146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 687
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e8abed25eaddbc60800000000000000
+      internalID: 7835659604547315942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 681
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9079d18d1d08492d0800000000000000
+      internalID: -3272849390429169911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 673
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad622916f2f4e8920800000000000000
+      internalID: 2994417867166983898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 665
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05e06ed079604fff0800000000000000
+      internalID: -3370453877518768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 647
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71f54fe20806c1890800000000000000
+      internalID: -7486002376936759529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_35
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 649
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82c1922dbed9edec0800000000000000
+      internalID: -3540218620897846232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_36
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 659
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d7f4be07601781a0800000000000000
+      internalID: -6807454276932798508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_37
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 639
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1eaa28cb3b995f80800000000000000
+      internalID: -8117286172294992355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 631
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e39caba2af47104b0800000000000000
+      internalID: -5475967054098282178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 623
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71211a90239942ea0800000000000000
+      internalID: -5898421171759541737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 617
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2997e9a10f3e50bc0800000000000000
+      internalID: -3817394488748377710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 545
+        width: 15
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61b155e4093b21a60800000000000000
+      internalID: 7643368949972015894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_42
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 617
+        width: 12
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cabfadfb6a813c470800000000000000
+      internalID: 8413595633320655788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_43
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 593
+        width: 6
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8124ada7683a4fe40800000000000000
+      internalID: 5689352027257848344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 585
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a4000363c10e6330800000000000000
+      internalID: 3705901482063692964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_45
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 587
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0eb2b1a8bc565900800000000000000
+      internalID: 672827142395051531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_46
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 575
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2419e82e6cd02acf0800000000000000
+      internalID: -242616282068905662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_47
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 579
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef201a8a553ef73b0800000000000000
+      internalID: -5512437461837348098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 567
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25f45e24c1e779330800000000000000
+      internalID: 3717578677264142162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 559
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2f06ada3d40dd5f0800000000000000
+      internalID: -730422257366200533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 543
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b165a5132bf07b330800000000000000
+      internalID: 3726464474678973979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_51
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 537
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 982bd7de8e0fa7700800000000000000
+      internalID: 539007988631712393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 529
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f97c128489db2a010800000000000000
+      internalID: 1198728912576825247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_53
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 537
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbf3464b3fa9fc390800000000000000
+      internalID: -7795842058460840004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_54
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 501
+        width: 10
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 556d806583be96930800000000000000
+      internalID: 4137096359910626901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 519
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 817707deb238ea390800000000000000
+      internalID: -7805156879496087784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 513
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 202737f7fef2d9b60800000000000000
+      internalID: 7754406839083823618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_57
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 511
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3311d261cc83444d0800000000000000
+      internalID: -3151331390055968461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_58
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 505
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93b1061ec5426e5e0800000000000000
+      internalID: -1880775813043840199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_59
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 495
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72a4ac36cf216be50800000000000000
+      internalID: 6824663160541825575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 487
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f68be451268dd3810800000000000000
+      internalID: 1746790146265495663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_61
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 493
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a177e260166eb8610800000000000000
+      internalID: 1624645394987120410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_62
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 485
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f905749a33488970800000000000000
+      internalID: 8757323394299791861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 477
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7700bd0d97cafad60800000000000000
+      internalID: 7903725510253543543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 469
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e6ea29d5c1167210800000000000000
+      internalID: 1330270281384257248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 373
+        width: 17
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f0883686dd386910800000000000000
+      internalID: 1830781240110252276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 454
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90ccbf14e0c38b640800000000000000
+      internalID: 5095889010303945737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_67
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 447
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58b3600ac226d9ca0800000000000000
+      internalID: -6008538384039527547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_68
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 439
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 027f3545ef9f114e0800000000000000
+      internalID: -2012552687726102752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_69
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 425
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1fd177856ed3fe60800000000000000
+      internalID: 7994978291158212379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 399
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d670a80e05205dfd0800000000000000
+      internalID: -2317943886824470675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_71
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 393
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 694c6edf854d84e30800000000000000
+      internalID: 4488070507356669078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 383
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e3a7c7b80befed50800000000000000
+      internalID: 6768887187636724707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_73
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 377
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbc35a3de898463c0800000000000000
+      internalID: -4367214492113355585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_74
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 333
+        width: 15
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b3aab861f35ad8a0800000000000000
+      internalID: -6279614434105449543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_75
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 421
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0031f61278a0c830800000000000000
+      internalID: 4089453669617053709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_76
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 361
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f7fede99313c55b0800000000000000
+      internalID: -5378369731438905357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_77
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 351
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 113b74e34e2d31800800000000000000
+      internalID: 582040654600188689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 343
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 292cf40e040920050800000000000000
+      internalID: 5765329081303286418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_79
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 335
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 231fe9fd491d562c0800000000000000
+      internalID: -4438911420366655182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 325
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3033809be909e7d0800000000000000
+      internalID: -2888766778634981314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_81
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 309
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb72797001e7f4e90800000000000000
+      internalID: -7039269085244872770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_82
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 287
+        width: 6
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 924cd57331243ddf0800000000000000
+      internalID: -156708911727131607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_83
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 261
+        width: 12
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 722e0d35257aed2f0800000000000000
+      internalID: -946134899665870297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_84
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 291
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14367b3b68695bdf0800000000000000
+      internalID: -165060306044230847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_85
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 295
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa62618dff38f7230800000000000000
+      internalID: 3638772158803879599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_86
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 279
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fff81cf99bd102f0800000000000000
+      internalID: -1008283387148304395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_87
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 265
+        width: 5
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a704eda8753b82380800000000000000
+      internalID: -8995743067099217798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_88
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 257
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a425d2da2edd7ec0800000000000000
+      internalID: -3567451054300388187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_89
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 233
+        width: 12
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd68cda163b5b4980800000000000000
+      internalID: -8553642779323103521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 247
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b46bdc5413174a60800000000000000
+      internalID: 7658110669544973490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_91
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 239
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70cd6d48a73daa8a0800000000000000
+      internalID: -6292985006128702457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_92
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 231
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdc9e6fd5af1917c0800000000000000
+      internalID: -4100211188465492772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_93
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 223
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1f48c5dc40c99100800000000000000
+      internalID: 115334701711380250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_94
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 209
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4350081bc24f1c410800000000000000
+      internalID: 1495745024057410868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_95
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 217
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96c2387d4ee330e90800000000000000
+      internalID: -7060730638197642135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 207
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aedbdce6130e8a30800000000000000
+      internalID: 4219313297890729640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_97
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 201
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a66db3c671c188e90800000000000000
+      internalID: -7023332731958602134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_98
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 207
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f54caf8a0c8836840800000000000000
+      internalID: 5216163154475271263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_99
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 181
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d012a1a981a75800800000000000000
+      internalID: 601126687771594961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 185
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4e090a6d6bd8c630800000000000000
+      internalID: 3947646336367136334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_101
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 161
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c4cbc0fd465d0210800000000000000
+      internalID: 1300790760132297926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_102
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 159
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd0bf7506e30e2520800000000000000
+      internalID: 2679083114801639645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_103
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 137
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbbec767fd513feb0800000000000000
+      internalID: -4687378737652765763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_104
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 129
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82e5f2dde26898b70800000000000000
+      internalID: 8901793674311982632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_105
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 113
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bbf7f0cd7dc2de70800000000000000
+      internalID: 9138592533880241075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_106
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 15
+        width: 25
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b7a8eba2b2172700800000000000000
+      internalID: 515401240954841009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_107
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 81
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41051706c48d47970800000000000000
+      internalID: 8751857798434869268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_108
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 71
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1592d4dac43798f10800000000000000
+      internalID: 2272474260147349841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_109
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 56
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15216347e04aeaca0800000000000000
+      internalID: -6003680871252094383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_110
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 41
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba7cbdf2ae851db30800000000000000
+      internalID: 4310324081218799531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_111
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 33
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e1b0ae99bb675a40800000000000000
+      internalID: 5356868726754947560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diary_112
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 23
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80061f6d7044e5c10800000000000000
+      internalID: 2044146081334386696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Diary_0: 4025243291508468552
+      Diary_1: 6301358461846560249
+      Diary_10: 7090683181686899881
+      Diary_100: 3947646336367136334
+      Diary_101: 1300790760132297926
+      Diary_102: 2679083114801639645
+      Diary_103: -4687378737652765763
+      Diary_104: 8901793674311982632
+      Diary_105: 9138592533880241075
+      Diary_106: 515401240954841009
+      Diary_107: 8751857798434869268
+      Diary_108: 2272474260147349841
+      Diary_109: -6003680871252094383
+      Diary_11: -4462327075190401706
+      Diary_110: 4310324081218799531
+      Diary_111: 5356868726754947560
+      Diary_112: 2044146081334386696
+      Diary_12: 5488948202024751512
+      Diary_13: 6783644208944430242
+      Diary_14: -3642517402409093402
+      Diary_15: 2984635747546042089
+      Diary_16: -5326366087461897959
+      Diary_17: -2345319704904212912
+      Diary_18: -1946132625264161362
+      Diary_19: 8673396403518936303
+      Diary_2: -4711469363879769841
+      Diary_20: -1415960662494197259
+      Diary_21: -8464644824660163277
+      Diary_22: 4833920029398131788
+      Diary_23: 165184688286932929
+      Diary_24: 8338108354718254796
+      Diary_25: -274009476487284502
+      Diary_26: -6746561899164580747
+      Diary_27: -4732437159967017923
+      Diary_28: -1075061268206391737
+      Diary_29: -3304912204021880146
+      Diary_3: 6924572903601369416
+      Diary_30: 7835659604547315942
+      Diary_31: -3272849390429169911
+      Diary_32: 2994417867166983898
+      Diary_33: -3370453877518768
+      Diary_34: -7486002376936759529
+      Diary_35: -3540218620897846232
+      Diary_36: -6807454276932798508
+      Diary_37: -8117286172294992355
+      Diary_38: -5475967054098282178
+      Diary_39: -5898421171759541737
+      Diary_4: -4124161844002100041
+      Diary_40: -3817394488748377710
+      Diary_41: 7643368949972015894
+      Diary_42: 8413595633320655788
+      Diary_43: 5689352027257848344
+      Diary_44: 3705901482063692964
+      Diary_45: 672827142395051531
+      Diary_46: -242616282068905662
+      Diary_47: -5512437461837348098
+      Diary_48: 3717578677264142162
+      Diary_49: -730422257366200533
+      Diary_5: 8010612228812760300
+      Diary_50: 3726464474678973979
+      Diary_51: 539007988631712393
+      Diary_52: 1198728912576825247
+      Diary_53: -7795842058460840004
+      Diary_54: 4137096359910626901
+      Diary_55: -7805156879496087784
+      Diary_56: 7754406839083823618
+      Diary_57: -3151331390055968461
+      Diary_58: -1880775813043840199
+      Diary_59: 6824663160541825575
+      Diary_6: 150390480431786760
+      Diary_60: 1746790146265495663
+      Diary_61: 1624645394987120410
+      Diary_62: 8757323394299791861
+      Diary_63: 7903725510253543543
+      Diary_64: 1330270281384257248
+      Diary_65: 1830781240110252276
+      Diary_66: 5095889010303945737
+      Diary_67: -6008538384039527547
+      Diary_68: -2012552687726102752
+      Diary_69: 7994978291158212379
+      Diary_7: 2968750088349694945
+      Diary_70: -2317943886824470675
+      Diary_71: 4488070507356669078
+      Diary_72: 6768887187636724707
+      Diary_73: -4367214492113355585
+      Diary_74: -6279614434105449543
+      Diary_75: 4089453669617053709
+      Diary_76: -5378369731438905357
+      Diary_77: 582040654600188689
+      Diary_78: 5765329081303286418
+      Diary_79: -4438911420366655182
+      Diary_8: 1628403456056343914
+      Diary_80: -2888766778634981314
+      Diary_81: -7039269085244872770
+      Diary_82: -156708911727131607
+      Diary_83: -946134899665870297
+      Diary_84: -165060306044230847
+      Diary_85: 3638772158803879599
+      Diary_86: -1008283387148304395
+      Diary_87: -8995743067099217798
+      Diary_88: -3567451054300388187
+      Diary_89: -8553642779323103521
+      Diary_9: 4924053656781748173
+      Diary_90: 7658110669544973490
+      Diary_91: -6292985006128702457
+      Diary_92: -4100211188465492772
+      Diary_93: 115334701711380250
+      Diary_94: 1495745024057410868
+      Diary_95: -7060730638197642135
+      Diary_96: 4219313297890729640
+      Diary_97: -7023332731958602134
+      Diary_98: 5216163154475271263
+      Diary_99: 601126687771594961
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
