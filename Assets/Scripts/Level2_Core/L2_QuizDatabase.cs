@@ -88,7 +88,10 @@ public static class L2_QuizDatabase
         "Áo dài là trang phục chỉ dành cho phụ nữ và không có ý nghĩa nào ngoài thẩm mỹ.",
         "Áo dài là biểu tượng văn hóa Việt Nam, vừa mang giá trị nhận diện và thẩm mỹ, vừa có thể biến đổi theo thời đại và hoàn cảnh sử dụng.",
         "Mặc áo dài là điều kiện bắt buộc để một người được xem là hiểu văn hóa Việt Nam.",
-        2
+        2,
+        "",
+        null,
+        L2_ItemConstants.Item_AoDai
     );
 
     // Hanbok Hàn Quốc
@@ -100,7 +103,10 @@ public static class L2_QuizDatabase
         "Jeogori kết hợp với Chima (váy) là cấu tạo cơ bản bắt buộc của mọi Hanbok nam.",
         "Áo dài xẻ tà kết hợp với quần trắng và khăn đóng.",
         "Kimono kết hợp với Hakama và dây Obi.",
-        0
+        0,
+        "",
+        null,
+        L2_ItemConstants.Item_Hanbok
     );
 
     // Câu 8: Nón Lá (Item_NonLa) - Nón Bài Thơ Xứ Huế
@@ -113,20 +119,24 @@ public static class L2_QuizDatabase
         "Nón Quai Thao – Loại nón rộng vành có quai tết chỉ ngũ sắc, dành riêng cho nghệ nhân hát Quan họ.",
         "Nón Ngựa – Loại nón đội khi cưỡi ngựa của giới quan lại phong kiến miền Trung.",
         1,
-        "Nón Bài Thơ nổi tiếng của xứ Huế được tạo ra bằng cách cắt tỉa hình ảnh hoặc các câu thơ bằng giấy bản rồi ép khéo léo giữa hai lớp lá nón. Khi soi lên ánh sáng, hình ảnh và dòng thơ mới hiện rõ, tạo nên giá trị nghệ thuật độc đáo."
+        "Nón Bài Thơ nổi tiếng của xứ Huế được tạo ra bằng cách cắt tỉa hình ảnh hoặc các câu thơ bằng giấy bản rồi ép khéo léo giữa hai lớp lá nón. Khi soi lên ánh sáng, hình ảnh và dòng thơ mới hiện rõ, tạo nên giá trị nghệ thuật độc đáo.",
+        null,
+        L2_ItemConstants.Item_NonLa
     );
 
     // Câu 9: Mũ Gat (Item_MuGat) - Mũ Gat Thời Joseon
     public static readonly L2_QuizData MuGatQuiz = new L2_QuizData(
         "Quiz_MuGat",
         "THU THẬP: MŨ GAT",
-        "Hạ Ân nhớ lại cô từng thấy người cha Hàn Quốc của mình đội một chiếc mũ hình trụ cao, vành rộng, màu đen mịn và có thể nhìn xuyên thấu nhẹ. Đây là chiếc mũ Gat (갓) truyền thống. Trong xã hội Hàn Quốc thời Joseon, chiếc mũ này mang giá trị văn hóa nổi bật nào?",
+        "Hạ Ân nhớ lại cô từng thấy người cha Hàn Quốc của mình đội một chiếc mũ hình trụ cao, vành rộng, màu đen mịn và có thể nhìn xuyên thấu nhẹ. Đây là chiếc mũ Gat truyền thống. Trong xã hội Hàn Quốc thời Joseon, chiếc mũ này mang giá trị văn hóa nổi bật nào?",
         "Lớp mũ bảo hộ chuyên dụng dành cho binh lính khi đi tuần tra ban đêm.",
         "Mũ che nắng dành cho tầng lớp nông dân lao động ngoài đồng ruộng.",
         "Biểu tượng thể hiện địa vị xã hội, sự tươm tất và phong thái tri thức của tầng lớp quý tộc / nho sĩ (Yangban).",
         "Mũ nghi lễ bắt buộc dành cho chú rể trong ngày cưới, bất kể tầng lớp xuất thân.",
         2,
-        "Mũ Gat (đặc biệt là Heunglip - mũ Gat đen làm từ lông đuôi ngựa hoặc tre chẻ sợi siêu nhỏ) là phụ kiện không thể thiếu của các quý tộc Nho sĩ thời Joseon mỗi khi ra khỏi nhà, tượng trưng cho lễ nghi, tri thức và phẩm cấp xã hội."
+        "Mũ Gat (đặc biệt là Heunglip - mũ Gat đen làm từ lông đuôi ngựa hoặc tre chẻ sợi siêu nhỏ) là phụ kiện không thể thiếu của các quý tộc Nho sĩ thời Joseon mỗi khi ra khỏi nhà, tượng trưng cho lễ nghi, tri thức và phẩm cấp xã hội.",
+        null,
+        L2_ItemConstants.Item_MuGat
     );
 
     public static L2_QuizData GetPaintingQuiz(int index)

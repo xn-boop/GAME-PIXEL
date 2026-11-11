@@ -12,10 +12,21 @@ namespace JourneyOfMemories.Editor
     public static class RegisterMenuVerifier
     {
         private const string LOG_FILE_PATH = "Logs/RegisterMenuVerification.log";
+        private const string TRIGGER_FLAG = "Temp/RunRegisterVerifier.flag";
 
         static RegisterMenuVerifier()
         {
-            EditorApplication.delayCall += RunVerification;
+            EditorApplication.update -= CheckTrigger;
+            EditorApplication.update += CheckTrigger;
+        }
+
+        private static void CheckTrigger()
+        {
+            if (File.Exists(TRIGGER_FLAG))
+            {
+                try { File.Delete(TRIGGER_FLAG); } catch { }
+                RunVerification();
+            }
         }
 
         [MenuItem("Tools/Verify RegisterMenu Scene & Play Mode")]
@@ -46,6 +57,12 @@ namespace JourneyOfMemories.Editor
 
             try
             {
+                for (int i = 0; i <= 30; i++)
+                {
+                    string fPath = $"Assets/UI/RegisterMenuFrames/frame_{i:D2}.png";
+                    AssetDatabase.ImportAsset(fPath, ImportAssetOptions.ForceUpdate);
+                }
+                AssetDatabase.Refresh(ImportAssetOptions.ForceUpdate);
                 Scene scene;
                 if (EditorApplication.isPlaying)
                 {
@@ -66,6 +83,21 @@ namespace JourneyOfMemories.Editor
                 // 1. Kiểm tra RegisterMenuController
                 var controller = UnityEngine.Object.FindAnyObjectByType<RegisterMenuController>();
                 Check("RegisterMenuController Exists", controller != null);
+
+                // 1b. Kiểm tra BackgroundImage và UIFrameAnimator
+                var bgObj = GameObject.Find("BackgroundImage");
+                Check("BackgroundImage Exists", bgObj != null);
+                if (bgObj != null)
+                {
+                    var bgImg = bgObj.GetComponent<Image>();
+                    Check("BackgroundImage Image Attached", bgImg != null);
+                    Check("BackgroundImage Sprite Assigned", bgImg != null && bgImg.sprite != null, $"Sprite: {bgImg?.sprite?.name}");
+
+                    var anim = bgObj.GetComponent<UIFrameAnimator>();
+                    Check("UIFrameAnimator Attached", anim != null);
+                    Check("UIFrameAnimator Frames Assigned & Not Null", anim != null && anim.frames != null && anim.frames.Length > 0 && anim.frames[0] != null,
+                        $"Count: {anim?.frames?.Length}, Frame[0]: {anim?.frames?[0]?.name}");
+                }
 
                 if (controller != null)
                 {
@@ -279,27 +311,32 @@ namespace JourneyOfMemories.Editor
                         tex.Apply();
 
                         string outPng = "D:/game/picture/reggister/actual_unity_render.png";
-                        File.WriteAllBytes(outPng, tex.EncodeToPNG());
-                        logLines.Add($"[INFO] Rendered scene to {outPng}");
-
-                        // Restore
-                        if (fg != null) fg.alpha = prevAlpha;
-                        canvas.renderMode = prevMode;
-                        canvas.worldCamera = prevCam;
-                        cam.targetTexture = null;
-                        RenderTexture.active = null;
-                        UnityEngine.Object.DestroyImmediate(rt);
-                        UnityEngine.Object.DestroyImmediate(tex);
+                        try
+                        {
+                            string dir = Path.GetDirectoryName(outPng);
+                            if (!string.IsNullOrEmpty(dir) && !Directory.Exists(dir))
+                            {
+                                Directory.CreateDirectory(dir);
+                            }
+                            File.WriteAllBytes(outPng, tex.EncodeToPNG());
+                            logLines.Add($"[INFO] Rendered scene to {outPng}");
+                        }
+                        finally
+                        {
+                            // Restore
+                            if (fg != null) fg.alpha = prevAlpha;
+                            canvas.renderMode = prevMode;
+                            canvas.worldCamera = prevCam;
+                            cam.targetTexture = null;
+                            RenderTexture.active = null;
+                            UnityEngine.Object.DestroyImmediate(rt);
+                            UnityEngine.Object.DestroyImmediate(tex);
+                        }
                     }
                 }
                 catch (Exception renderEx)
                 {
                     logLines.Add($"[WARN] Could not render screenshot: {renderEx.Message}");
-                }
-
-                if (!EditorApplication.isPlaying && scene.IsValid())
-                {
-                    EditorSceneManager.SaveScene(scene);
                 }
 
                 logLines.Add($"=== Result: {(allPassed ? "ALL CHECKS PASSED SUCCESSFUL!" : "SOME CHECKS FAILED")} ===");

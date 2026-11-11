@@ -30,7 +30,7 @@ namespace JourneyOfMemories.Core.Managers
             switch (mapId)
             {
                 case MapId.Map1_Kitchen:
-                    return "Map1";
+                    return "Level1_Prototype";
                 case MapId.Map2_DressingRoom: return "Scene_Level2";
                 case MapId.Map3_Garden: return "Map3_Garden";
                 case MapId.Ending: return "Ending";

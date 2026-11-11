@@ -17,12 +17,34 @@ public class L2_QuizManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI txtFeedback;
     [SerializeField] private Button btnClose;
 
+    [Header("Illustration References")]
+    [SerializeField] private GameObject illustrationContainer;
+    [SerializeField] private Image imgIllustration;
+    [SerializeField] private TextMeshProUGUI txtIllustrationName;
+
+    [Header("Item Sprites (Fallback / Direct Mapping)")]
+    [SerializeField] private Sprite aoDaiSprite;
+    [SerializeField] private Sprite nonLaSprite;
+    [SerializeField] private Sprite hanbokSprite;
+    [SerializeField] private Sprite muGatSprite;
+    [SerializeField] private Sprite catSprite;
+
     private L2_QuizData currentQuiz;
     private Action onCorrectCallback;
     private Coroutine closeCoroutine;
     private bool isHandlingAnswer = false;
 
     public bool IsQuizOpen => quizPanel != null && quizPanel.activeSelf;
+    public GameObject QuizPanel { get => quizPanel; set => quizPanel = value; }
+    public GameObject IllustrationContainer => illustrationContainer;
+    public Image IllustrationImage => imgIllustration;
+    public TextMeshProUGUI IllustrationNameText => txtIllustrationName;
+
+    public Sprite AoDaiSprite { get => aoDaiSprite; set => aoDaiSprite = value; }
+    public Sprite NonLaSprite { get => nonLaSprite; set => nonLaSprite = value; }
+    public Sprite HanbokSprite { get => hanbokSprite; set => hanbokSprite = value; }
+    public Sprite MuGatSprite { get => muGatSprite; set => muGatSprite = value; }
+    public Sprite CatSprite { get => catSprite; set => catSprite = value; }
 
     private readonly Color colorNormal = new Color(0.31f, 0.20f, 0.18f, 1f); // Brown #4E342E
     private readonly Color colorCorrect = new Color(0.18f, 0.7f, 0.35f, 1f); // Green #4CAF50
@@ -30,12 +52,16 @@ public class L2_QuizManager : MonoBehaviour
 
     private void Awake()
     {
+#if UNITY_EDITOR
+        Instance = this;
+#else
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
             return;
         }
         Instance = this;
+#endif
 
         if (quizPanel != null)
         {
@@ -57,6 +83,96 @@ public class L2_QuizManager : MonoBehaviour
         }
     }
 
+    public void SetQuizPanel(GameObject panel)
+    {
+        quizPanel = panel;
+        if (quizPanel != null)
+        {
+            quizPanel.SetActive(false);
+        }
+    }
+
+    public void SetIllustrationReferences(GameObject container, Image image, TextMeshProUGUI nameText)
+    {
+        illustrationContainer = container;
+        imgIllustration = image;
+        txtIllustrationName = nameText;
+    }
+
+    public void SetItemSprites(Sprite aoDai, Sprite nonLa, Sprite hanbok, Sprite muGat, Sprite cat = null)
+    {
+        aoDaiSprite = aoDai;
+        nonLaSprite = nonLa;
+        hanbokSprite = hanbok;
+        muGatSprite = muGat;
+        catSprite = cat;
+    }
+
+    public void ResolveIllustration(L2_QuizData data, out Sprite sprite, out string displayName)
+    {
+        sprite = null;
+        displayName = string.Empty;
+        if (data == null) return;
+
+        if (data.illustration != null)
+        {
+            sprite = data.illustration;
+        }
+
+        string idUpper = (data.id ?? "").ToUpperInvariant();
+        string rewardUpper = (data.rewardItemId ?? "").ToUpperInvariant();
+
+        if (idUpper.Contains("AODAI") || rewardUpper.Contains("AODAI"))
+        {
+            if (sprite == null)
+            {
+                sprite = aoDaiSprite != null ? aoDaiSprite : L2_InventoryManager.Instance?.GetItemSprite(L2_ItemType.AoDai);
+            }
+            displayName = "ÁO DÀI";
+        }
+        else if (idUpper.Contains("HANBOK") || rewardUpper.Contains("HANBOK"))
+        {
+            if (sprite == null)
+            {
+                sprite = hanbokSprite != null ? hanbokSprite : L2_InventoryManager.Instance?.GetItemSprite(L2_ItemType.Hanbok);
+            }
+            displayName = "HANBOK";
+        }
+        else if (idUpper.Contains("NONLA") || rewardUpper.Contains("NONLA"))
+        {
+            if (sprite == null)
+            {
+                sprite = nonLaSprite != null ? nonLaSprite : L2_InventoryManager.Instance?.GetItemSprite(L2_ItemType.NonLa);
+            }
+            displayName = "NÓN LÁ";
+        }
+        else if (idUpper.Contains("MUGAT") || rewardUpper.Contains("MUGAT"))
+        {
+            if (sprite == null)
+            {
+                sprite = muGatSprite != null ? muGatSprite : L2_InventoryManager.Instance?.GetItemSprite(L2_ItemType.MuGat);
+            }
+            displayName = "MŨ GAT";
+        }
+        else if (idUpper.Contains("CAT") || idUpper == "NPC_CAT")
+        {
+            if (sprite == null)
+            {
+                sprite = catSprite;
+            }
+            displayName = "CHÚ MÈO";
+        }
+        else if (idUpper.StartsWith("PAINTING_"))
+        {
+            if (sprite == null)
+            {
+                sprite = catSprite;
+            }
+            displayName = "KÝ ỨC";
+        }
+    }
+
+
     public void OpenQuiz(L2_QuizData data, Action onCorrect)
     {
         if (data == null) return;
@@ -75,11 +191,42 @@ public class L2_QuizManager : MonoBehaviour
         if (txtTitle != null)
         {
             txtTitle.text = data.title;
+            txtTitle.color = new Color(1f, 0.835f, 0.31f, 1f); // #FFD54F Bright gold
         }
 
         if (txtQuestion != null)
         {
             txtQuestion.text = data.question;
+        }
+
+        // Set Illustration
+        ResolveIllustration(data, out Sprite illustrationSprite, out string displayName);
+
+        if (imgIllustration != null)
+        {
+            if (illustrationSprite != null)
+            {
+                imgIllustration.sprite = illustrationSprite;
+                imgIllustration.color = Color.white;
+                imgIllustration.preserveAspect = true;
+                imgIllustration.enabled = true;
+            }
+            else
+            {
+                imgIllustration.sprite = null;
+                imgIllustration.color = new Color(1f, 1f, 1f, 0.05f);
+            }
+        }
+
+        if (txtIllustrationName != null)
+        {
+            txtIllustrationName.text = displayName;
+            txtIllustrationName.gameObject.SetActive(!string.IsNullOrEmpty(displayName));
+        }
+
+        if (illustrationContainer != null)
+        {
+            illustrationContainer.SetActive(true);
         }
 
         string[] prefixes = { "A. ", "B. ", "C. ", "D. " };

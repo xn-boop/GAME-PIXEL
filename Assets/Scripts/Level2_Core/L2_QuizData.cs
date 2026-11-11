@@ -12,8 +12,10 @@ public class L2_QuizData
     public int correctIndex;
     [TextArea(2, 6)]
     public string explanation;
+    public Sprite illustration;
+    public string rewardItemId;
 
-    public L2_QuizData(string id, string title, string question, string optA, string optB, string optC, string optD, int correctIndex, string explanation = "")
+    public L2_QuizData(string id, string title, string question, string optA, string optB, string optC, string optD, int correctIndex, string explanation = "", Sprite illustration = null, string rewardItemId = "")
     {
         this.id = id;
         this.title = title;
@@ -21,5 +23,7 @@ public class L2_QuizData
         this.options = new string[] { optA, optB, optC, optD };
         this.correctIndex = correctIndex;
         this.explanation = explanation;
+        this.illustration = illustration;
+        this.rewardItemId = rewardItemId;
     }
 }

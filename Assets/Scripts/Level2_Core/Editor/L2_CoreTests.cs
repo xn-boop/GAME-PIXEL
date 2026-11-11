@@ -203,6 +203,72 @@ public class L2_CoreTests
     }
 
     [Test]
+    public void TestSceneLevel2_QuizDialog_LayoutElementsFitWithinCardBounds()
+    {
+        string scenePath = "Assets/Scenes/Scene_Level2.unity";
+        var scene = UnityEditor.SceneManagement.EditorSceneManager.GetSceneByPath(scenePath);
+        bool wasLoaded = scene.isLoaded;
+        if (!wasLoaded)
+        {
+            scene = UnityEditor.SceneManagement.EditorSceneManager.OpenScene(scenePath, UnityEditor.SceneManagement.OpenSceneMode.Additive);
+        }
+
+        Canvas[] canvases = Object.FindObjectsByType<Canvas>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+        Canvas targetCanvas = null;
+        foreach (var c in canvases)
+        {
+            if (c.gameObject.scene == scene) { targetCanvas = c; break; }
+        }
+        Assert.IsNotNull(targetCanvas, "Canvas not found in Scene_Level2");
+
+        Transform quizModalT = targetCanvas.transform.Find("Panel_Quiz_Dialog");
+        Assert.IsNotNull(quizModalT, "Panel_Quiz_Dialog not found");
+
+        Transform cardContentT = quizModalT.Find("Card_Content");
+        Assert.IsNotNull(cardContentT, "Card_Content not found");
+
+        RectTransform cardRt = cardContentT.GetComponent<RectTransform>();
+        Assert.GreaterOrEqual(cardRt.rect.width, 1050f, "Card_Content width should be at least 1050 for fitted 2-column layout");
+        Assert.GreaterOrEqual(cardRt.rect.height, 480f, "Card_Content height should be at least 480 for fitted 2-column layout");
+        Assert.LessOrEqual(cardRt.rect.height, 540f, "Card_Content height should be at most 540 to snugly fit the content");
+
+        // Verify Panel_Illustration bottom aligns with Btn_Answer_D bottom
+        Transform panelIllT = cardContentT.Find("Panel_Illustration");
+        Transform btnAnsDT = cardContentT.Find("Btn_Answer_D");
+        if (panelIllT != null && btnAnsDT != null)
+        {
+            Vector3[] illCorners = new Vector3[4];
+            (panelIllT as RectTransform).GetWorldCorners(illCorners);
+            Vector3[] btnDCorners = new Vector3[4];
+            (btnAnsDT as RectTransform).GetWorldCorners(btnDCorners);
+            Assert.AreEqual(btnDCorners[0].y, illCorners[0].y, 2.5f, "Panel_Illustration bottom should align with Btn_Answer_D bottom");
+        }
+
+        // Verify all active children fit inside Card_Content
+        for (int i = 0; i < cardContentT.childCount; i++)
+        {
+            var child = cardContentT.GetChild(i) as RectTransform;
+            if (child == null || !child.gameObject.activeSelf) continue;
+
+            Vector3[] childCorners = new Vector3[4];
+            child.GetWorldCorners(childCorners);
+
+            Vector3[] cardCorners = new Vector3[4];
+            cardRt.GetWorldCorners(cardCorners);
+
+            Assert.GreaterOrEqual(childCorners[0].x, cardCorners[0].x - 1f, $"{child.name} overflows Card_Content on the left");
+            Assert.LessOrEqual(childCorners[2].x, cardCorners[2].x + 1f, $"{child.name} overflows Card_Content on the right");
+            Assert.GreaterOrEqual(childCorners[0].y, cardCorners[0].y - 1f, $"{child.name} overflows Card_Content on the bottom");
+            Assert.LessOrEqual(childCorners[2].y, cardCorners[2].y + 1f, $"{child.name} overflows Card_Content on the top");
+        }
+
+        if (!wasLoaded)
+        {
+            UnityEditor.SceneManagement.EditorSceneManager.CloseScene(scene, true);
+        }
+    }
+
+    [Test]
     public void TestMannequinController_LayeredEquipAndCombination()
     {
         GameObject go = new GameObject("Mannequin_Test");
@@ -245,5 +311,319 @@ public class L2_CoreTests
         Assert.IsTrue(eventFired);
 
         Object.DestroyImmediate(go);
+    }
+
+    [Test]
+    public void TestQuizData_Illustration_CanBeAssignedAndRetrieved()
+    {
+        Texture2D tex = new Texture2D(16, 16);
+        Sprite dummySprite = Sprite.Create(tex, new Rect(0, 0, 16, 16), Vector2.zero);
+
+        L2_QuizData customQuiz = new L2_QuizData(
+            "TEST_QUIZ", "TIÊU ĐỀ", "CÂU HỎI?",
+            "A", "B", "C", "D", 0, "GIẢI THÍCH",
+            dummySprite, "Item_AoDai"
+        );
+
+        Assert.AreEqual("TEST_QUIZ", customQuiz.id);
+        Assert.AreEqual("Item_AoDai", customQuiz.rewardItemId);
+        Assert.AreSame(dummySprite, customQuiz.illustration);
+
+        // Verify default item quizzes have rewardItemId populated
+        Assert.AreEqual(L2_ItemConstants.Item_AoDai, L2_QuizDatabase.AoDaiQuiz.rewardItemId);
+        Assert.AreEqual(L2_ItemConstants.Item_Hanbok, L2_QuizDatabase.HanbokQuiz.rewardItemId);
+        Assert.AreEqual(L2_ItemConstants.Item_NonLa, L2_QuizDatabase.NonLaQuiz.rewardItemId);
+        Assert.AreEqual(L2_ItemConstants.Item_MuGat, L2_QuizDatabase.MuGatQuiz.rewardItemId);
+
+        Object.DestroyImmediate(tex);
+    }
+
+    [Test]
+    public void TestQuizManager_OpenQuiz_ResolvesAndDisplaysItemIllustration()
+    {
+        // Clear any static illustration state leaked from other tests or scene objects
+        L2_QuizDatabase.AoDaiQuiz.illustration = null;
+        L2_QuizDatabase.HanbokQuiz.illustration = null;
+        L2_QuizDatabase.NonLaQuiz.illustration = null;
+        L2_QuizDatabase.MuGatQuiz.illustration = null;
+
+        GameObject qmGo = new GameObject("Test_QuizManager");
+        var qm = qmGo.AddComponent<L2_QuizManager>();
+
+        GameObject modalGo = new GameObject("Panel_Quiz_Dialog");
+        modalGo.SetActive(false);
+        qm.SetQuizPanel(modalGo);
+        GameObject panelIllGo = new GameObject("Panel_Illustration");
+        panelIllGo.transform.SetParent(modalGo.transform);
+
+        GameObject imgGo = new GameObject("Img_Illustration");
+        imgGo.transform.SetParent(panelIllGo.transform);
+        var img = imgGo.AddComponent<UnityEngine.UI.Image>();
+
+        GameObject txtNameGo = new GameObject("Txt_Illustration_Name");
+        txtNameGo.transform.SetParent(panelIllGo.transform);
+        var txtName = txtNameGo.AddComponent<TMPro.TextMeshProUGUI>();
+
+        qm.SetIllustrationReferences(panelIllGo, img, txtName);
+
+        // Set dummy sprites
+        Texture2D tex = new Texture2D(16, 16);
+        Sprite sAoDai = Sprite.Create(tex, new Rect(0, 0, 16, 16), Vector2.zero);
+        Sprite sNonLa = Sprite.Create(tex, new Rect(0, 0, 16, 16), Vector2.zero);
+        Sprite sHanbok = Sprite.Create(tex, new Rect(0, 0, 16, 16), Vector2.zero);
+        Sprite sMuGat = Sprite.Create(tex, new Rect(0, 0, 16, 16), Vector2.zero);
+        qm.SetItemSprites(sAoDai, sNonLa, sHanbok, sMuGat);
+
+        // 1. Test Ao Dai illustration
+        qm.OpenQuiz(L2_QuizDatabase.AoDaiQuiz, null);
+        Assert.IsTrue(qm.IsQuizOpen);
+        Assert.IsTrue(qm.IllustrationContainer.activeSelf);
+        Assert.AreSame(sAoDai, qm.IllustrationImage.sprite);
+        Assert.IsTrue(qm.IllustrationImage.preserveAspect);
+        Assert.AreEqual("ÁO DÀI", qm.IllustrationNameText.text);
+        qm.CloseQuiz();
+
+        // 2. Test Hanbok illustration
+        qm.OpenQuiz(L2_QuizDatabase.HanbokQuiz, null);
+        Assert.AreSame(sHanbok, qm.IllustrationImage.sprite);
+        Assert.AreEqual("HANBOK", qm.IllustrationNameText.text);
+        qm.CloseQuiz();
+
+        // 3. Test Non La illustration
+        qm.OpenQuiz(L2_QuizDatabase.NonLaQuiz, null);
+        Assert.AreSame(sNonLa, qm.IllustrationImage.sprite);
+        Assert.AreEqual("NÓN LÁ", qm.IllustrationNameText.text);
+        qm.CloseQuiz();
+
+        // 4. Test Mu Gat illustration
+        qm.OpenQuiz(L2_QuizDatabase.MuGatQuiz, null);
+        Assert.AreSame(sMuGat, qm.IllustrationImage.sprite);
+        Assert.AreEqual("MŨ GAT", qm.IllustrationNameText.text);
+        qm.CloseQuiz();
+
+        Object.DestroyImmediate(tex);
+        Object.DestroyImmediate(modalGo);
+        Object.DestroyImmediate(qmGo);
+    }
+
+    [Test]
+    public void TestGameManager_ObjectiveUI_UpdatesCostumeAndPickedCountOnCollect()
+    {
+        GameObject gmGo = new GameObject("Test_GameManager");
+        var gm = gmGo.AddComponent<L2_GameManager>();
+
+        GameObject txtGo = new GameObject("Txt_Objective");
+        var txtObj = txtGo.AddComponent<TMPro.TextMeshProUGUI>();
+
+        var field = typeof(L2_GameManager).GetField("txtObjective", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+        field.SetValue(gm, txtObj);
+
+        // Initial update
+        gm.UpdateObjectiveUI();
+        Assert.AreEqual("TRANG PHỤC: 0/4 (Đã nhặt: 0)", txtObj.text);
+
+        // Collect item 1
+        gm.OnItemCollected(L2_ItemType.MuGat);
+        Assert.AreEqual("TRANG PHỤC: 1/4 (Đã nhặt: 1)", txtObj.text);
+        Assert.AreEqual(1, gm.CollectedCount);
+
+        // Collect item 2
+        gm.OnItemCollected(L2_ItemType.AoDai);
+        Assert.AreEqual("TRANG PHỤC: 2/4 (Đã nhặt: 2)", txtObj.text);
+        Assert.AreEqual(2, gm.CollectedCount);
+
+        // Collect item 3
+        gm.OnItemCollected(L2_ItemType.NonLa);
+        Assert.AreEqual("TRANG PHỤC: 3/4 (Đã nhặt: 3)", txtObj.text);
+        Assert.AreEqual(3, gm.CollectedCount);
+
+        // Collect item 4
+        gm.OnItemCollected(L2_ItemType.Hanbok);
+        Assert.AreEqual("TRANG PHỤC: 4/4 (Đã nhặt: 4)", txtObj.text);
+        Assert.AreEqual(4, gm.CollectedCount);
+
+        // Place items (1 to 3)
+        gm.OnItemPlacedOnMannequin(L2_ItemType.AoDai);
+        gm.OnItemPlacedOnMannequin(L2_ItemType.NonLa);
+        gm.OnItemPlacedOnMannequin(L2_ItemType.Hanbok);
+        Assert.AreEqual(3, gm.PlacedCount);
+        Assert.AreEqual("TRANG PHỤC: 4/4 (Đã nhặt: 4)", txtObj.text);
+
+        // Place 4th item (all placed)
+        gm.OnItemPlacedOnMannequin(L2_ItemType.MuGat);
+        Assert.AreEqual(4, gm.PlacedCount);
+        Assert.AreEqual("TRANG PHỤC: 4/4", txtObj.text);
+
+        Object.DestroyImmediate(txtGo);
+        Object.DestroyImmediate(gmGo);
+    }
+
+    [Test]
+    public void TestSceneLevel2_TopRightHUDButtons_ExistAndProperlyConfigured()
+    {
+        string scenePath = "Assets/Scenes/Scene_Level2.unity";
+        var scene = UnityEditor.SceneManagement.EditorSceneManager.GetSceneByPath(scenePath);
+        bool wasLoaded = scene.isLoaded;
+        if (!wasLoaded)
+        {
+            scene = UnityEditor.SceneManagement.EditorSceneManager.OpenScene(scenePath, UnityEditor.SceneManagement.OpenSceneMode.Additive);
+        }
+
+        Canvas[] canvases = Object.FindObjectsByType<Canvas>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+        Canvas targetCanvas = null;
+        foreach (var c in canvases)
+        {
+            if (c.gameObject.scene == scene) { targetCanvas = c; break; }
+        }
+        Assert.IsNotNull(targetCanvas, "Canvas not found in Scene_Level2");
+
+        // 1. HUD_TopRight_Buttons Container
+        Transform topRightT = targetCanvas.transform.Find("HUD_TopRight_Buttons");
+        Assert.IsNotNull(topRightT, "HUD_TopRight_Buttons not found in Canvas");
+
+        // 2. 4 Buttons: Btn_Help, Btn_Sound, Btn_Pause, Btn_Home
+        Transform btnHelpT = topRightT.Find("Btn_Help");
+        Assert.IsNotNull(btnHelpT, "Btn_Help not found in HUD_TopRight_Buttons");
+        Assert.IsNotNull(btnHelpT.GetComponent<UnityEngine.UI.Button>(), "Btn_Help has no Button component");
+
+        Transform btnSoundT = topRightT.Find("Btn_Sound");
+        Assert.IsNotNull(btnSoundT, "Btn_Sound not found in HUD_TopRight_Buttons");
+        Assert.IsNotNull(btnSoundT.GetComponent<UnityEngine.UI.Button>(), "Btn_Sound has no Button component");
+
+        Transform btnPauseT = topRightT.Find("Btn_Pause");
+        Assert.IsNotNull(btnPauseT, "Btn_Pause not found in HUD_TopRight_Buttons");
+        Assert.IsNotNull(btnPauseT.GetComponent<UnityEngine.UI.Button>(), "Btn_Pause has no Button component");
+
+        Transform btnHomeT = topRightT.Find("Btn_Home");
+        Assert.IsNotNull(btnHomeT, "Btn_Home not found in HUD_TopRight_Buttons");
+        Assert.IsNotNull(btnHomeT.GetComponent<UnityEngine.UI.Button>(), "Btn_Home has no Button component");
+
+        // 3. Modals: Panel_Pause, Panel_Guide, Panel_Confirm_Home
+        Transform panelPauseT = targetCanvas.transform.Find("Panel_Pause");
+        Assert.IsNotNull(panelPauseT, "Panel_Pause not found in Canvas");
+        Assert.IsFalse(panelPauseT.gameObject.activeSelf, "Panel_Pause should be inactive by default");
+
+        Transform panelGuideT = targetCanvas.transform.Find("Panel_Guide");
+        Assert.IsNotNull(panelGuideT, "Panel_Guide not found in Canvas");
+        Assert.IsFalse(panelGuideT.gameObject.activeSelf, "Panel_Guide should be inactive by default");
+
+        Transform panelConfirmHomeT = targetCanvas.transform.Find("Panel_Confirm_Home");
+        Assert.IsNotNull(panelConfirmHomeT, "Panel_Confirm_Home not found in Canvas");
+        Assert.IsFalse(panelConfirmHomeT.gameObject.activeSelf, "Panel_Confirm_Home should be inactive by default");
+
+        // 4. L2_GameHUDController attached
+        var hudCtrl = targetCanvas.GetComponent<L2_GameHUDController>();
+        Assert.IsNotNull(hudCtrl, "L2_GameHUDController not found on Canvas");
+
+        if (!wasLoaded)
+        {
+            UnityEditor.SceneManagement.EditorSceneManager.CloseScene(scene, true);
+        }
+    }
+
+    [Test]
+    public void TestGameHUDController_PauseToggleAndModalLifecycle()
+    {
+        GameObject hudGo = new GameObject("Test_HUDController");
+        var hud = hudGo.AddComponent<L2_GameHUDController>();
+
+        GameObject pausePanel = new GameObject("Test_PausePanel");
+        pausePanel.SetActive(false);
+
+        GameObject guidePanel = new GameObject("Test_GuidePanel");
+        guidePanel.SetActive(false);
+
+        GameObject homePanel = new GameObject("Test_HomePanel");
+        homePanel.SetActive(false);
+
+        UnityEditor.SerializedObject so = new UnityEditor.SerializedObject(hud);
+        so.FindProperty("panelPause").objectReferenceValue = pausePanel;
+        so.FindProperty("panelGuide").objectReferenceValue = guidePanel;
+        so.FindProperty("panelConfirmHome").objectReferenceValue = homePanel;
+        so.ApplyModifiedPropertiesWithoutUndo();
+
+        // Initial state
+        Assert.IsFalse(hud.IsPaused);
+        Assert.IsFalse(hud.IsGuideOpen);
+        Assert.IsFalse(hud.IsConfirmHomeOpen);
+
+        // Toggle pause
+        hud.TogglePause();
+        Assert.IsTrue(hud.IsPaused);
+        Assert.IsTrue(pausePanel.activeSelf);
+        Assert.AreEqual(0f, Time.timeScale);
+
+        // Resume game
+        hud.ResumeGame();
+        Assert.IsFalse(hud.IsPaused);
+        Assert.IsFalse(pausePanel.activeSelf);
+        Assert.AreEqual(1f, Time.timeScale);
+
+        // Toggle Guide
+        hud.ToggleGuide();
+        Assert.IsTrue(hud.IsGuideOpen);
+        Assert.IsTrue(guidePanel.activeSelf);
+        Assert.AreEqual(0f, Time.timeScale);
+
+        hud.CloseGuide();
+        Assert.IsFalse(hud.IsGuideOpen);
+        Assert.IsFalse(guidePanel.activeSelf);
+        Assert.AreEqual(1f, Time.timeScale);
+
+        // Open Confirm Home
+        hud.OpenConfirmHome();
+        Assert.IsTrue(hud.IsConfirmHomeOpen);
+        Assert.IsTrue(homePanel.activeSelf);
+
+        hud.CloseConfirmHome();
+        Assert.IsFalse(hud.IsConfirmHomeOpen);
+        Assert.IsFalse(homePanel.activeSelf);
+        Assert.AreEqual(1f, Time.timeScale);
+
+        Object.DestroyImmediate(homePanel);
+        Object.DestroyImmediate(guidePanel);
+        Object.DestroyImmediate(pausePanel);
+        Object.DestroyImmediate(hudGo);
+    }
+
+    [Test]
+    public void TestGameHUDController_SoundToggle_UpdatesStateAndIcon()
+    {
+        GameObject hudGo = new GameObject("Test_HUDController_Sound");
+        var hud = hudGo.AddComponent<L2_GameHUDController>();
+
+        GameObject imgGo = new GameObject("SoundIcon");
+        var img = imgGo.AddComponent<UnityEngine.UI.Image>();
+
+        Sprite onSprite = Sprite.Create(Texture2D.whiteTexture, new Rect(0, 0, 1, 1), Vector2.zero);
+        Sprite offSprite = Sprite.Create(Texture2D.blackTexture, new Rect(0, 0, 1, 1), Vector2.zero);
+
+        UnityEditor.SerializedObject so = new UnityEditor.SerializedObject(hud);
+        so.FindProperty("imgSoundIcon").objectReferenceValue = img;
+        so.FindProperty("soundOnSprite").objectReferenceValue = onSprite;
+        so.FindProperty("soundOffSprite").objectReferenceValue = offSprite;
+        so.ApplyModifiedPropertiesWithoutUndo();
+
+        bool initialMuted = hud.IsMuted;
+        hud.ToggleSound();
+        Assert.AreEqual(!initialMuted, hud.IsMuted, "Sound state should invert after toggle");
+        Assert.AreEqual(hud.IsMuted ? offSprite : onSprite, img.sprite);
+
+        // Toggle back
+        hud.ToggleSound();
+        Assert.AreEqual(initialMuted, hud.IsMuted, "Sound state should revert to original");
+        Assert.AreEqual(hud.IsMuted ? offSprite : onSprite, img.sprite);
+
+        Object.DestroyImmediate(onSprite);
+        Object.DestroyImmediate(offSprite);
+        Object.DestroyImmediate(imgGo);
+        Object.DestroyImmediate(hudGo);
+    }
+
+    [Test]
+    public void TestGameManager_ContinueGame_TargetsMap3()
+    {
+        var method = typeof(L2_GameManager).GetMethod("ContinueGame");
+        Assert.IsNotNull(method, "L2_GameManager must have a public ContinueGame method.");
     }
 }

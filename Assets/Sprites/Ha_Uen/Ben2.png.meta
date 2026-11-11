@@ -1,0 +1,4357 @@
+fileFormatVersion: 2
+guid: ffbbfad54dbf02d43b883ce5c36c834d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4894447315108695182
+    second: Ben2_0
+  - first:
+      213: -221944065057162087
+    second: Ben2_1
+  - first:
+      213: -117908859168753495
+    second: Ben2_2
+  - first:
+      213: -1198158187381352441
+    second: Ben2_3
+  - first:
+      213: 2018361108376511739
+    second: Ben2_4
+  - first:
+      213: -3938028532018204609
+    second: Ben2_5
+  - first:
+      213: 6760309731103363490
+    second: Ben2_6
+  - first:
+      213: -3291713998609890261
+    second: Ben2_7
+  - first:
+      213: -7907367480236661034
+    second: Ben2_8
+  - first:
+      213: -2922967121138198549
+    second: Ben2_9
+  - first:
+      213: 4721184235648808233
+    second: Ben2_10
+  - first:
+      213: 2469280180894463150
+    second: Ben2_11
+  - first:
+      213: 7864852520140430691
+    second: Ben2_12
+  - first:
+      213: -5646158899018273587
+    second: Ben2_13
+  - first:
+      213: -6109833126912282647
+    second: Ben2_14
+  - first:
+      213: -2691481042693215579
+    second: Ben2_15
+  - first:
+      213: 6499352186983301687
+    second: Ben2_16
+  - first:
+      213: 277557923253112941
+    second: Ben2_17
+  - first:
+      213: 810474750331006518
+    second: Ben2_18
+  - first:
+      213: 6861850726422371626
+    second: Ben2_19
+  - first:
+      213: -1013431978455860890
+    second: Ben2_20
+  - first:
+      213: -7290184539540045669
+    second: Ben2_21
+  - first:
+      213: -8414137656363012992
+    second: Ben2_22
+  - first:
+      213: -320992829739009283
+    second: Ben2_23
+  - first:
+      213: 7421217890132148957
+    second: Ben2_24
+  - first:
+      213: 903898200096845625
+    second: Ben2_25
+  - first:
+      213: -123187691664342474
+    second: Ben2_26
+  - first:
+      213: -2290074077726464598
+    second: Ben2_27
+  - first:
+      213: -8407892255902933092
+    second: Ben2_28
+  - first:
+      213: 7075138592351698727
+    second: Ben2_29
+  - first:
+      213: 8329742729774735327
+    second: Ben2_30
+  - first:
+      213: -3708793644756379053
+    second: Ben2_31
+  - first:
+      213: -2898867664325073664
+    second: Ben2_32
+  - first:
+      213: 7457668332234088584
+    second: Ben2_33
+  - first:
+      213: 8023629862717828537
+    second: Ben2_34
+  - first:
+      213: -799686499076395261
+    second: Ben2_35
+  - first:
+      213: 7736303390492714601
+    second: Ben2_36
+  - first:
+      213: -5115971374877046680
+    second: Ben2_37
+  - first:
+      213: -8417278287354017572
+    second: Ben2_38
+  - first:
+      213: -1119145462555102761
+    second: Ben2_39
+  - first:
+      213: 103177501201842166
+    second: Ben2_40
+  - first:
+      213: 2057423968299615655
+    second: Ben2_41
+  - first:
+      213: 7260099312932330408
+    second: Ben2_42
+  - first:
+      213: 4355484356846572740
+    second: Ben2_43
+  - first:
+      213: -1270042648094864256
+    second: Ben2_44
+  - first:
+      213: 4572745668384808404
+    second: Ben2_45
+  - first:
+      213: -8503600377045192939
+    second: Ben2_46
+  - first:
+      213: 6275227683000082205
+    second: Ben2_47
+  - first:
+      213: 2493861452066072996
+    second: Ben2_48
+  - first:
+      213: 9176115819768302788
+    second: Ben2_49
+  - first:
+      213: 4245100409723043958
+    second: Ben2_50
+  - first:
+      213: 3393247325370905837
+    second: Ben2_51
+  - first:
+      213: -6085510761269279902
+    second: Ben2_52
+  - first:
+      213: 9068905577093932260
+    second: Ben2_53
+  - first:
+      213: 4004620138777675463
+    second: Ben2_54
+  - first:
+      213: -6455358711707320089
+    second: Ben2_55
+  - first:
+      213: -5341626367995140442
+    second: Ben2_56
+  - first:
+      213: -3950004818502970690
+    second: Ben2_57
+  - first:
+      213: 1866025078357101605
+    second: Ben2_58
+  - first:
+      213: -5842162181476442795
+    second: Ben2_59
+  - first:
+      213: -5044327138211219758
+    second: Ben2_60
+  - first:
+      213: -1467490806760429236
+    second: Ben2_61
+  - first:
+      213: -8046466031046702179
+    second: Ben2_62
+  - first:
+      213: -4738045035345190377
+    second: Ben2_63
+  - first:
+      213: -5831834221921912101
+    second: Ben2_64
+  - first:
+      213: 6988649648574318425
+    second: Ben2_65
+  - first:
+      213: -3916476724678795818
+    second: Ben2_66
+  - first:
+      213: -1900137034999019699
+    second: Ben2_67
+  - first:
+      213: -950990258192986397
+    second: Ben2_68
+  - first:
+      213: -6541593240678711198
+    second: Ben2_69
+  - first:
+      213: -7449145195572357208
+    second: Ben2_70
+  - first:
+      213: -8319607410631013440
+    second: Ben2_71
+  - first:
+      213: 4953814847508021517
+    second: Ben2_72
+  - first:
+      213: 3110200580850184366
+    second: Ben2_73
+  - first:
+      213: -8540979464603796886
+    second: Ben2_74
+  - first:
+      213: 9027328669234222899
+    second: Ben2_75
+  - first:
+      213: 8489548411520125822
+    second: Ben2_76
+  - first:
+      213: -8809733571004584101
+    second: Ben2_77
+  - first:
+      213: -9085839575165220275
+    second: Ben2_78
+  - first:
+      213: 2165419395456699981
+    second: Ben2_79
+  - first:
+      213: -8074574065879840288
+    second: Ben2_80
+  - first:
+      213: 1007908059656256943
+    second: Ben2_81
+  - first:
+      213: 7803721687268777001
+    second: Ben2_82
+  - first:
+      213: 2046880898834073158
+    second: Ben2_83
+  - first:
+      213: 4426320873188774001
+    second: Ben2_84
+  - first:
+      213: -6563295983032722675
+    second: Ben2_85
+  - first:
+      213: -5024524897489456245
+    second: Ben2_86
+  - first:
+      213: 6627195177080791692
+    second: Ben2_87
+  - first:
+      213: -5921767346915399490
+    second: Ben2_88
+  - first:
+      213: 1147191528836511086
+    second: Ben2_89
+  - first:
+      213: 3019992852787172172
+    second: Ben2_90
+  - first:
+      213: -3624115597184220060
+    second: Ben2_91
+  - first:
+      213: -1421322060696428433
+    second: Ben2_92
+  - first:
+      213: -4148298326725513490
+    second: Ben2_93
+  - first:
+      213: 2079736316317394264
+    second: Ben2_94
+  - first:
+      213: 4578324762415576195
+    second: Ben2_95
+  - first:
+      213: 8218966184096607495
+    second: Ben2_96
+  - first:
+      213: -1382893268829738362
+    second: Ben2_97
+  - first:
+      213: 5348008276620040790
+    second: Ben2_98
+  - first:
+      213: -7896965599913878274
+    second: Ben2_99
+  - first:
+      213: -7015075995636099450
+    second: Ben2_100
+  - first:
+      213: 8033031451105718981
+    second: Ben2_101
+  - first:
+      213: -3365656531420618343
+    second: Ben2_102
+  - first:
+      213: -8303965188660592595
+    second: Ben2_103
+  - first:
+      213: 5750881885368833561
+    second: Ben2_104
+  - first:
+      213: 7156762975650461232
+    second: Ben2_105
+  - first:
+      213: 1810091147100402800
+    second: Ben2_106
+  - first:
+      213: 4423462186276799307
+    second: Ben2_107
+  - first:
+      213: -6584531125453088367
+    second: Ben2_108
+  - first:
+      213: 7167556193547070684
+    second: Ben2_109
+  - first:
+      213: 4420325141530825228
+    second: Ben2_110
+  - first:
+      213: -5770623833678647957
+    second: Ben2_111
+  - first:
+      213: -4691923370005613629
+    second: Ben2_112
+  - first:
+      213: -534593517792192398
+    second: Ben2_113
+  - first:
+      213: 2890688480320922901
+    second: Ben2_114
+  - first:
+      213: -5928863721052735839
+    second: Ben2_115
+  - first:
+      213: -1741522697537270176
+    second: Ben2_116
+  - first:
+      213: 5486024529237354892
+    second: Ben2_117
+  - first:
+      213: 1638103825637474357
+    second: Ben2_118
+  - first:
+      213: 6592296825018965752
+    second: Ben2_119
+  - first:
+      213: 6248215021882610756
+    second: Ben2_120
+  - first:
+      213: 8276562024533739542
+    second: Ben2_121
+  - first:
+      213: -960610735260881070
+    second: Ben2_122
+  - first:
+      213: -6721791838916507421
+    second: Ben2_123
+  - first:
+      213: -843899359675076390
+    second: Ben2_124
+  - first:
+      213: 8432021856333489475
+    second: Ben2_125
+  - first:
+      213: 3862158724392728169
+    second: Ben2_126
+  - first:
+      213: 651721200436750877
+    second: Ben2_127
+  - first:
+      213: 1923312105937078469
+    second: Ben2_128
+  - first:
+      213: 5099224211672593170
+    second: Ben2_129
+  - first:
+      213: -2465555290138495491
+    second: Ben2_130
+  - first:
+      213: 1552062859925648547
+    second: Ben2_131
+  - first:
+      213: 7149990964392035131
+    second: Ben2_132
+  - first:
+      213: -5847509714688018686
+    second: Ben2_133
+  - first:
+      213: -3940417164490435021
+    second: Ben2_134
+  - first:
+      213: -4124652229544456830
+    second: Ben2_135
+  - first:
+      213: 5222584246201074453
+    second: Ben2_136
+  - first:
+      213: -5547763849740658934
+    second: Ben2_137
+  - first:
+      213: 3174404186183878960
+    second: Ben2_138
+  - first:
+      213: 1161955719521726727
+    second: Ben2_139
+  - first:
+      213: -7787499979853496512
+    second: Ben2_140
+  - first:
+      213: 8628070823087705997
+    second: Ben2_141
+  - first:
+      213: 4654016907118960567
+    second: Ben2_142
+  - first:
+      213: 8129255529447560399
+    second: Ben2_143
+  - first:
+      213: 1492395664733222321
+    second: Ben2_144
+  - first:
+      213: -5497585402129063612
+    second: Ben2_145
+  - first:
+      213: 4545434534932996876
+    second: Ben2_146
+  - first:
+      213: -5922867677024046344
+    second: Ben2_147
+  - first:
+      213: 3966105159641780104
+    second: Ben2_148
+  - first:
+      213: 3468466574779546237
+    second: Ben2_149
+  - first:
+      213: 6583198851408677390
+    second: Ben2_150
+  - first:
+      213: 4500868541176362226
+    second: Ben2_151
+  - first:
+      213: -9060484031926172454
+    second: Ben2_152
+  - first:
+      213: -1331506816624253219
+    second: Ben2_153
+  - first:
+      213: -6786987406940364171
+    second: Ben2_154
+  - first:
+      213: -4232418550391234824
+    second: Ben2_155
+  - first:
+      213: -7819476800694105027
+    second: Ben2_156
+  - first:
+      213: -1793742514747778353
+    second: Ben2_157
+  - first:
+      213: 9152064491045754670
+    second: Ben2_158
+  - first:
+      213: 8674729944019654995
+    second: Ben2_159
+  - first:
+      213: -5627768315020864553
+    second: Ben2_160
+  - first:
+      213: 4619178671433002138
+    second: Ben2_161
+  - first:
+      213: -5394327154058016363
+    second: Ben2_162
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ben2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1015
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8c0be4b6e19ce340800000000000000
+      internalID: 4894447315108695182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_1
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 957
+        width: 122
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99cf24a7c0f7becf0800000000000000
+      internalID: -221944065057162087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_2
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 0
+        width: 778
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a8ff5d648a1d5ef0800000000000000
+      internalID: -117908859168753495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_3
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 1018
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70898680a794f5fe0800000000000000
+      internalID: -1198158187381352441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_4
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 965
+        width: 140
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf4ee3dfbb8a20c10800000000000000
+      internalID: 2018361108376511739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_5
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 959
+        width: 73
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f30b3b92aef4959c0800000000000000
+      internalID: -3938028532018204609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 959
+        width: 17
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a1580ef1e171dd50800000000000000
+      internalID: 6760309731103363490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_7
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 965
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b244daafe8b7152d0800000000000000
+      internalID: -3291713998609890261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_8
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 973
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d6a408fb23634290800000000000000
+      internalID: -7907367480236661034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_9
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 967
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be7596ec3e88f67d0800000000000000
+      internalID: -2922967121138198549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 911
+        width: 17
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92575056c04058140800000000000000
+      internalID: 4721184235648808233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 685
+        width: 57
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea47021ed35a44220800000000000000
+      internalID: 2469280180894463150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_12
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 821
+        width: 106
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36d5ec182b1952d60800000000000000
+      internalID: 7864852520140430691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_13
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 901
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dccea9e5560d4a1b0800000000000000
+      internalID: -5646158899018273587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_14
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 901
+        width: 42
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9efaa717423853ba0800000000000000
+      internalID: -6109833126912282647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_15
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 901
+        width: 44
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aaa2927040f5aad0800000000000000
+      internalID: -2691481042693215579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_16
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 911
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7324c470166523a50800000000000000
+      internalID: 6499352186983301687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_17
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 871
+        width: 47
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d60d81ce5751ad300800000000000000
+      internalID: 277557923253112941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_18
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 911
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63e27e8cd726f3b00800000000000000
+      internalID: 810474750331006518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_19
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 877
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2d592a41e03a3f50800000000000000
+      internalID: 6861850726422371626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_20
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 898
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 669fd182cf09fe1f0800000000000000
+      internalID: -1013431978455860890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_21
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 885
+        width: 28
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b90cbad49cf04da90800000000000000
+      internalID: -7290184539540045669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_22
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 887
+        width: 34
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08cae3da16afa3b80800000000000000
+      internalID: -8414137656363012992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_23
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 877
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfa75f7d8ba9b8bf0800000000000000
+      internalID: -320992829739009283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_24
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 845
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd2c91e0a567df660800000000000000
+      internalID: 7421217890132148957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_25
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 807
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93f23e9bf9a4b8c00800000000000000
+      internalID: 903898200096845625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_26
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 834
+        width: 42
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63285a572795a4ef0800000000000000
+      internalID: -123187691664342474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_27
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 826
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa5a8c772c50830e0800000000000000
+      internalID: -2290074077726464598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_28
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 815
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9fd5294a8a215b80800000000000000
+      internalID: -8407892255902933092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_29
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 733
+        width: 89
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72fb7c56011ff2260800000000000000
+      internalID: 7075138592351698727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_30
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 834
+        width: 26
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdf9d9e31e0399370800000000000000
+      internalID: 8329742729774735327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_31
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 821
+        width: 26
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35ad11384d7b78cc0800000000000000
+      internalID: -3708793644756379053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_32
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 823
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 005a909d73725c7d0800000000000000
+      internalID: -2898867664325073664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_33
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 807
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8802e73f5d5fe7760800000000000000
+      internalID: 7457668332234088584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_34
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 767
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bd238069d8a95f60800000000000000
+      internalID: 8023629862717828537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_35
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 757
+        width: 36
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30f20e2bd51f6e4f0800000000000000
+      internalID: -799686499076395261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_36
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 751
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 966e7f8e1fedc5b60800000000000000
+      internalID: 7736303390492714601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_37
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 778
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 868036fd32b6009b0800000000000000
+      internalID: -5115971374877046680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_38
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 762
+        width: 42
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd8c7aa8ef1df2b80800000000000000
+      internalID: -8417278287354017572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_39
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 751
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d1b96c912ff770f0800000000000000
+      internalID: -1119145462555102761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_40
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 762
+        width: 26
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ffb2f3046f8e6100800000000000000
+      internalID: 103177501201842166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_41
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 743
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a58fdec2307d8c10800000000000000
+      internalID: 2057423968299615655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_42
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 743
+        width: 47
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ab93650cdd01c460800000000000000
+      internalID: 7260099312932330408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_43
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 743
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c45c9a32f9c17c30800000000000000
+      internalID: 4355484356846572740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_44
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 751
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08c85b6c0f6ef5ee0800000000000000
+      internalID: -1270042648094864256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_45
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 733
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dd584c35f7a57f30800000000000000
+      internalID: 4572745668384808404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_46
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 727
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51fe756d2842df980800000000000000
+      internalID: -8503600377045192939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_47
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 714
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1fdae18456161750800000000000000
+      internalID: 6275227683000082205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_48
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 647
+        width: 66
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a9207117c9fb9220800000000000000
+      internalID: 2493861452066072996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_49
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 709
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ccc12f88bc185f70800000000000000
+      internalID: 9176115819768302788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_50
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 671
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6704865c450a9ea30800000000000000
+      internalID: 4245100409723043958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_51
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 698
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de4f6c7d67c371f20800000000000000
+      internalID: 3393247325370905837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_52
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 671
+        width: 60
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2634abd743ceb8ba0800000000000000
+      internalID: -6085510761269279902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_53
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 671
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e42e30c2993bdd70800000000000000
+      internalID: 9068905577093932260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_54
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 637
+        width: 106
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c608308cc4439730800000000000000
+      internalID: 4004620138777675463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 543
+        width: 73
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e046f22475f966a0800000000000000
+      internalID: -6455358711707320089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_56
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 679
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a62ac49e1bbed5b0800000000000000
+      internalID: -5341626367995140442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_57
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 655
+        width: 31
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb29c0cab83ce29c0800000000000000
+      internalID: -3950004818502970690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_58
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 615
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52c02711ce375e910800000000000000
+      internalID: 1866025078357101605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_59
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 615
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55d10e4f2787ceea0800000000000000
+      internalID: -5842162181476442795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_60
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 626
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d6be0c9133fef9b0800000000000000
+      internalID: -5044327138211219758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_61
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 613
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c49a4e7e2ec62abe0800000000000000
+      internalID: -1467490806760429236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_62
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 589
+        width: 52
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9bc63ad6c5355090800000000000000
+      internalID: -8046466031046702179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_63
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 589
+        width: 42
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7126272c4251f3eb0800000000000000
+      internalID: -4738045035345190377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_64
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 599
+        width: 42
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdab06d6ca9211fa0800000000000000
+      internalID: -5831834221921912101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_65
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 615
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9574ee2f3dbacf060800000000000000
+      internalID: 6988649648574318425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_66
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 607
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dd5f665b21e5a9c0800000000000000
+      internalID: -3916476724678795818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_67
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 607
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d47c15c1f6b51a5e0800000000000000
+      internalID: -1900137034999019699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_68
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 583
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eecc8316676dc2f0800000000000000
+      internalID: -950990258192986397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_69
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 599
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 260cf304b979735a0800000000000000
+      internalID: -6541593240678711198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_70
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 599
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a71a9179e15f9890800000000000000
+      internalID: -7449145195572357208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_71
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 586
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cb81a2a321da8c80800000000000000
+      internalID: -8319607410631013440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 517
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0185cc7b5c7fb440800000000000000
+      internalID: 4953814847508021517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_73
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 527
+        width: 52
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea0f9c123f6a92b20800000000000000
+      internalID: 3110200580850184366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_74
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 527
+        width: 50
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6a7262dd68587980800000000000000
+      internalID: -8540979464603796886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_75
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 551
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 337d7688893874d70800000000000000
+      internalID: 9027328669234222899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_76
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 535
+        width: 26
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7b832cfc4fe0d570800000000000000
+      internalID: 8489548411520125822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_77
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 551
+        width: 23
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5f207e3ef98db580800000000000000
+      internalID: -8809733571004584101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_78
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 519
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4a47149b0d98e180800000000000000
+      internalID: -9085839575165220275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_79
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 543
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4e00ff977d1d0e10800000000000000
+      internalID: 2165419395456699981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_80
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 551
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e986a20ba951ff80800000000000000
+      internalID: -8074574065879840288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_81
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 509
+        width: 34
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fad70164a0fccfd00800000000000000
+      internalID: 1007908059656256943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_82
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 535
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92cdaa757836c4c60800000000000000
+      internalID: 7803721687268777001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_83
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 525
+        width: 52
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6468988255bf76c10800000000000000
+      internalID: 2046880898834073158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 125
+        width: 65
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 170505ce1637d6d30800000000000000
+      internalID: 4426320873188774001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_85
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 447
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0b1697c31d7ae4a0800000000000000
+      internalID: -6563295983032722675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_86
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 415
+        width: 58
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b83f8001a3d454ab0800000000000000
+      internalID: -5024524897489456245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_87
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 471
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c822513b6e688fb50800000000000000
+      internalID: 6627195177080791692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_88
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 461
+        width: 34
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb8a99c09f7a1dda0800000000000000
+      internalID: -5921767346915399490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_89
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 479
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6533ad0e94abef00800000000000000
+      internalID: 1147191528836511086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_90
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 471
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c43199ebf7b29e920800000000000000
+      internalID: 3019992852787172172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_91
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 453
+        width: 62
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 464c1e4d01e84bdc0800000000000000
+      internalID: -3624115597184220060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_92
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 471
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6063c4cd13764ce0800000000000000
+      internalID: -1421322060696428433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_93
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 463
+        width: 23
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeead2586a84e66c0800000000000000
+      internalID: -4148298326725513490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_94
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 463
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 855e3982925bcdc10800000000000000
+      internalID: 2079736316317394264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_95
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 453
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 384b72a4d1a798f30800000000000000
+      internalID: 4578324762415576195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_96
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 463
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70da600d232af0270800000000000000
+      internalID: 8218966184096607495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_97
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 458
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68aef1d16e9fecce0800000000000000
+      internalID: -1382893268829738362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_98
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 453
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65a59cf4131f73a40800000000000000
+      internalID: 5348008276620040790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_99
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 389
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efc57a570a7586290800000000000000
+      internalID: -7896965599913878274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_100
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 381
+        width: 36
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6869db7ac8175ae90800000000000000
+      internalID: -7015075995636099450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_101
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 373
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c272b04b8f0b7f60800000000000000
+      internalID: 8033031451105718981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_102
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 378
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99163b87739ca41d0800000000000000
+      internalID: -3365656531420618343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_103
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 386
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d200dae38a362cc80800000000000000
+      internalID: -8303965188660592595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_104
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 378
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91653a2fa9c3fcf40800000000000000
+      internalID: 5750881885368833561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_105
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 389
+        width: 44
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0363059120ee15360800000000000000
+      internalID: 7156762975650461232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_106
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 343
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 074bff9de4cbe1910800000000000000
+      internalID: 1810091147100402800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_107
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 383
+        width: 58
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b43c6620c6b436d30800000000000000
+      internalID: 4423462186276799307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_108
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 365
+        width: 42
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1999dd6e3db0f94a0800000000000000
+      internalID: -6584531125453088367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_109
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 351
+        width: 89
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdc2608f166487360800000000000000
+      internalID: 7167556193547070684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_110
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 303
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c025cacdb46285d30800000000000000
+      internalID: 4420325141530825228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_111
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 325
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6d6e258230aaefa0800000000000000
+      internalID: -5770623833678647957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_112
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 322
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c33679cd80f2eeb0800000000000000
+      internalID: -4691923370005613629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_113
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 314
+        width: 42
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27815c8270eb498f0800000000000000
+      internalID: -534593517792192398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_114
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 314
+        width: 39
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 515a7d97bd9cd1820800000000000000
+      internalID: 2890688480320922901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_115
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 309
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a673f0bbd178bda0800000000000000
+      internalID: -5928863721052735839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_116
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 327
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06ec205655ed4d7e0800000000000000
+      internalID: -1741522697537270176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_117
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 314
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c89a54e3e36422c40800000000000000
+      internalID: 5486024529237354892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_118
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 319
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 530845810c6bbb610800000000000000
+      internalID: 1638103825637474357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_119
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 309
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fed03de80b8c7b50800000000000000
+      internalID: 6592296825018965752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_120
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 279
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 444929b357e16b650800000000000000
+      internalID: 6248215021882610756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_121
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 314
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61842d96f414cd270800000000000000
+      internalID: 8276562024533739542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_122
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 293
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25f295530a93ba2f0800000000000000
+      internalID: -960610735260881070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_123
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 295
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e80343afe567b2a0800000000000000
+      internalID: -6721791838916507421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_124
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 255
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad03368e00ed944f0800000000000000
+      internalID: -843899359675076390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_125
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 261
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 345661d143f840570800000000000000
+      internalID: 8432021856333489475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_126
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 271
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 966ba91b5e4299530800000000000000
+      internalID: 3862158724392728169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_127
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 261
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1aaf949af06b0900800000000000000
+      internalID: 651721200436750877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_128
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 239
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c886929b2af0ba10800000000000000
+      internalID: 1923312105937078469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_129
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 215
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 213f0d6576514c640800000000000000
+      internalID: 5099224211672593170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_130
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 250
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df5b535d68698cdd0800000000000000
+      internalID: -2465555290138495491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_131
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 239
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a4f1faa2f80a8510800000000000000
+      internalID: 1552062859925648547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_132
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 231
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3307db56eed93360800000000000000
+      internalID: 7149990964392035131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_133
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 239
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 207ff5b55e879dea0800000000000000
+      internalID: -5847509714688018686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_134
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 199
+        width: 26
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33612b35773d059c0800000000000000
+      internalID: -3940417164490435021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_135
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 239
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28dcafb86aa42c6c0800000000000000
+      internalID: -4124652229544456830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_136
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 229
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 513cd5493b85a7840800000000000000
+      internalID: 5222584246201074453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_137
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 178
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0754760c226203b0800000000000000
+      internalID: -5547763849740658934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_138
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 159
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 039c003e9cfbd0c20800000000000000
+      internalID: 3174404186183878960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_139
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 149
+        width: 58
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70173d21298102010800000000000000
+      internalID: 1161955719521726727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_140
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 183
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04f787c370e3de390800000000000000
+      internalID: -7787499979853496512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_141
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 167
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8f0e0b33b01db770800000000000000
+      internalID: 8628070823087705997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_142
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 181
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bfdc7f08b3669040800000000000000
+      internalID: 4654016907118960567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_143
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 175
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc41a1955dae0d070800000000000000
+      internalID: 8129255529447560399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_144
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 175
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b5b1c433fd06b410800000000000000
+      internalID: 1492395664733222321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_145
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 159
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44169b74437a4b3b0800000000000000
+      internalID: -5497585402129063612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_146
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 175
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c03697470a0a41f30800000000000000
+      internalID: 4545434534932996876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_147
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 167
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f2b65b7a3fbdcda0800000000000000
+      internalID: -5922867677024046344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_148
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 159
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88fca4e11af6a0730800000000000000
+      internalID: 3966105159641780104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_149
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7
+        width: 17
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7afc0919f7722030800000000000000
+      internalID: 3468466574779546237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_150
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 95
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0a49ffd9783c5b50800000000000000
+      internalID: 6583198851408677390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_151
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 95
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f43c81771c467e30800000000000000
+      internalID: 4500868541176362226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_152
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 103
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad401f707c1b24280800000000000000
+      internalID: -9060484031926172454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_153
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 111
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd6a91bda99858de0800000000000000
+      internalID: -1331506816624253219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_154
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 0
+        width: 185
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 572254299e6cfc1a0800000000000000
+      internalID: -6786987406940364171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_155
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 31
+        width: 52
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fe1823b0cd6345c0800000000000000
+      internalID: -4232418550391234824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_156
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 79
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3c48357743ab7390800000000000000
+      internalID: -7819476800694105027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_157
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 87
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fca51fdbfa85b17e0800000000000000
+      internalID: -1793742514747778353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_158
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 87
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e279f363a2aa20f70800000000000000
+      internalID: 9152064491045754670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_159
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 79
+        width: 34
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3595cb36ce4d26870800000000000000
+      internalID: 8674729944019654995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_160
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 71
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d39bf0e88626e1b0800000000000000
+      internalID: -5627768315020864553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_161
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 18
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9c23d8378e9a1040800000000000000
+      internalID: 4619178671433002138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ben2_162
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 23
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 599c024a8008325b0800000000000000
+      internalID: -5394327154058016363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Ben2_0: 4894447315108695182
+      Ben2_1: -221944065057162087
+      Ben2_10: 4721184235648808233
+      Ben2_100: -7015075995636099450
+      Ben2_101: 8033031451105718981
+      Ben2_102: -3365656531420618343
+      Ben2_103: -8303965188660592595
+      Ben2_104: 5750881885368833561
+      Ben2_105: 7156762975650461232
+      Ben2_106: 1810091147100402800
+      Ben2_107: 4423462186276799307
+      Ben2_108: -6584531125453088367
+      Ben2_109: 7167556193547070684
+      Ben2_11: 2469280180894463150
+      Ben2_110: 4420325141530825228
+      Ben2_111: -5770623833678647957
+      Ben2_112: -4691923370005613629
+      Ben2_113: -534593517792192398
+      Ben2_114: 2890688480320922901
+      Ben2_115: -5928863721052735839
+      Ben2_116: -1741522697537270176
+      Ben2_117: 5486024529237354892
+      Ben2_118: 1638103825637474357
+      Ben2_119: 6592296825018965752
+      Ben2_12: 7864852520140430691
+      Ben2_120: 6248215021882610756
+      Ben2_121: 8276562024533739542
+      Ben2_122: -960610735260881070
+      Ben2_123: -6721791838916507421
+      Ben2_124: -843899359675076390
+      Ben2_125: 8432021856333489475
+      Ben2_126: 3862158724392728169
+      Ben2_127: 651721200436750877
+      Ben2_128: 1923312105937078469
+      Ben2_129: 5099224211672593170
+      Ben2_13: -5646158899018273587
+      Ben2_130: -2465555290138495491
+      Ben2_131: 1552062859925648547
+      Ben2_132: 7149990964392035131
+      Ben2_133: -5847509714688018686
+      Ben2_134: -3940417164490435021
+      Ben2_135: -4124652229544456830
+      Ben2_136: 5222584246201074453
+      Ben2_137: -5547763849740658934
+      Ben2_138: 3174404186183878960
+      Ben2_139: 1161955719521726727
+      Ben2_14: -6109833126912282647
+      Ben2_140: -7787499979853496512
+      Ben2_141: 8628070823087705997
+      Ben2_142: 4654016907118960567
+      Ben2_143: 8129255529447560399
+      Ben2_144: 1492395664733222321
+      Ben2_145: -5497585402129063612
+      Ben2_146: 4545434534932996876
+      Ben2_147: -5922867677024046344
+      Ben2_148: 3966105159641780104
+      Ben2_149: 3468466574779546237
+      Ben2_15: -2691481042693215579
+      Ben2_150: 6583198851408677390
+      Ben2_151: 4500868541176362226
+      Ben2_152: -9060484031926172454
+      Ben2_153: -1331506816624253219
+      Ben2_154: -6786987406940364171
+      Ben2_155: -4232418550391234824
+      Ben2_156: -7819476800694105027
+      Ben2_157: -1793742514747778353
+      Ben2_158: 9152064491045754670
+      Ben2_159: 8674729944019654995
+      Ben2_16: 6499352186983301687
+      Ben2_160: -5627768315020864553
+      Ben2_161: 4619178671433002138
+      Ben2_162: -5394327154058016363
+      Ben2_17: 277557923253112941
+      Ben2_18: 810474750331006518
+      Ben2_19: 6861850726422371626
+      Ben2_2: -117908859168753495
+      Ben2_20: -1013431978455860890
+      Ben2_21: -7290184539540045669
+      Ben2_22: -8414137656363012992
+      Ben2_23: -320992829739009283
+      Ben2_24: 7421217890132148957
+      Ben2_25: 903898200096845625
+      Ben2_26: -123187691664342474
+      Ben2_27: -2290074077726464598
+      Ben2_28: -8407892255902933092
+      Ben2_29: 7075138592351698727
+      Ben2_3: -1198158187381352441
+      Ben2_30: 8329742729774735327
+      Ben2_31: -3708793644756379053
+      Ben2_32: -2898867664325073664
+      Ben2_33: 7457668332234088584
+      Ben2_34: 8023629862717828537
+      Ben2_35: -799686499076395261
+      Ben2_36: 7736303390492714601
+      Ben2_37: -5115971374877046680
+      Ben2_38: -8417278287354017572
+      Ben2_39: -1119145462555102761
+      Ben2_4: 2018361108376511739
+      Ben2_40: 103177501201842166
+      Ben2_41: 2057423968299615655
+      Ben2_42: 7260099312932330408
+      Ben2_43: 4355484356846572740
+      Ben2_44: -1270042648094864256
+      Ben2_45: 4572745668384808404
+      Ben2_46: -8503600377045192939
+      Ben2_47: 6275227683000082205
+      Ben2_48: 2493861452066072996
+      Ben2_49: 9176115819768302788
+      Ben2_5: -3938028532018204609
+      Ben2_50: 4245100409723043958
+      Ben2_51: 3393247325370905837
+      Ben2_52: -6085510761269279902
+      Ben2_53: 9068905577093932260
+      Ben2_54: 4004620138777675463
+      Ben2_55: -6455358711707320089
+      Ben2_56: -5341626367995140442
+      Ben2_57: -3950004818502970690
+      Ben2_58: 1866025078357101605
+      Ben2_59: -5842162181476442795
+      Ben2_6: 6760309731103363490
+      Ben2_60: -5044327138211219758
+      Ben2_61: -1467490806760429236
+      Ben2_62: -8046466031046702179
+      Ben2_63: -4738045035345190377
+      Ben2_64: -5831834221921912101
+      Ben2_65: 6988649648574318425
+      Ben2_66: -3916476724678795818
+      Ben2_67: -1900137034999019699
+      Ben2_68: -950990258192986397
+      Ben2_69: -6541593240678711198
+      Ben2_7: -3291713998609890261
+      Ben2_70: -7449145195572357208
+      Ben2_71: -8319607410631013440
+      Ben2_72: 4953814847508021517
+      Ben2_73: 3110200580850184366
+      Ben2_74: -8540979464603796886
+      Ben2_75: 9027328669234222899
+      Ben2_76: 8489548411520125822
+      Ben2_77: -8809733571004584101
+      Ben2_78: -9085839575165220275
+      Ben2_79: 2165419395456699981
+      Ben2_8: -7907367480236661034
+      Ben2_80: -8074574065879840288
+      Ben2_81: 1007908059656256943
+      Ben2_82: 7803721687268777001
+      Ben2_83: 2046880898834073158
+      Ben2_84: 4426320873188774001
+      Ben2_85: -6563295983032722675
+      Ben2_86: -5024524897489456245
+      Ben2_87: 6627195177080791692
+      Ben2_88: -5921767346915399490
+      Ben2_89: 1147191528836511086
+      Ben2_9: -2922967121138198549
+      Ben2_90: 3019992852787172172
+      Ben2_91: -3624115597184220060
+      Ben2_92: -1421322060696428433
+      Ben2_93: -4148298326725513490
+      Ben2_94: 2079736316317394264
+      Ben2_95: 4578324762415576195
+      Ben2_96: 8218966184096607495
+      Ben2_97: -1382893268829738362
+      Ben2_98: 5348008276620040790
+      Ben2_99: -7896965599913878274
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

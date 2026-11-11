@@ -15,10 +15,22 @@ EditorBuildSettings:
     path: Assets/Scenes/RegisterMenu.unity
     guid: e1000000000000000000000000000001
   - enabled: 1
-    path: Assets/Scenes/Map1.unity
-    guid: 4b100000000000000000000000000001
+    path: Assets/Scenes/Map0_Prologue.unity
+    guid: 6f9bd71aec2fbf040912ebf106d2be7e
+  - enabled: 1
+    path: Assets/Scenes/Level1_Prototype.unity
+    guid: 32a4b5d7c1a4ead4b9ad59a615534cfd
   - enabled: 1
     path: Assets/Scenes/Scene_Level2.unity
     guid: a2b3732a29889b3489cd148d5158619d
+  - enabled: 1
+    path: Assets/_Map3_Final/Scenes/Map3_Final.unity
+    guid: f216ef2ced55a964698c50d7d6ed68e5
+  - enabled: 1
+    path: Assets/Scenes/Puzzle.unity
+    guid: d32da4cfbf0746eea046ed2af91bade6
+  - enabled: 1
+    path: Assets/Scenes/Chọn map.unity
+    guid: f0b88384773e11b43b8ac36f508b2f37
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 3590b91b4603b465dbb4216d601bff33, type: 3}

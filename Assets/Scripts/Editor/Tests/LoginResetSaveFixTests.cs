@@ -71,6 +71,7 @@ namespace JourneyOfMemories.Tests
             GameObject loginObj = new GameObject("LoginController", typeof(LoginMenuController));
             loginObj.transform.SetParent(testRoot.transform);
             loginController = loginObj.GetComponent<LoginMenuController>();
+            loginController.transitionToMapSelectOnLogin = false;
 
             loginEmailInput = CreateInputField("LoginEmail", loginObj.transform);
             loginPassInput = CreateInputField("LoginPass", loginObj.transform);
@@ -113,7 +114,7 @@ namespace JourneyOfMemories.Tests
             mainMenuStatusText = CreateText("MainMenuStatusText", mmObj.transform);
             mainMenuController.statusText = mainMenuStatusText;
             mainMenuController.fadeDuration = 0.01f;
-            mainMenuController.firstLevelSceneName = "Map1";
+            mainMenuController.firstLevelSceneName = "Level1_Prototype";
 
             GameObject dlg = new GameObject("ConfirmDialog");
             dlg.transform.SetParent(mmObj.transform);
@@ -438,6 +439,24 @@ namespace JourneyOfMemories.Tests
             // Nhấn lần 2 khi đang chuyển cảnh
             loginController.OnLoginClicked();
             Assert.IsTrue(loginController.IsTransitioning, "Trạng thái vẫn giữ nguyên, không khởi động coroutine thứ 2.");
+        }
+
+        #endregion
+
+        #region AC-11: Đăng nhập thành công chuyển tới scene "Chọn map"
+
+        [Test]
+        public void BR01_AC11_Login_WhenTransitionToMapSelectEnabled_TransitionsToChonMapScene()
+        {
+            loginController.transitionToMapSelectOnLogin = true;
+            loginController.gameSceneName = "Chọn map";
+
+            var routine = loginController.SimulateLoginForTest("user@test.com", "123456");
+            StepCoroutine(routine);
+
+            Assert.AreEqual("Chọn map", loginController.gameSceneName, "Scene đích sau khi đăng nhập thành công phải là 'Chọn map'.");
+            Assert.IsTrue(loginStatusText.text.Contains("Chọn map") || loginStatusText.text.Contains("thành công"),
+                $"Thông báo trạng thái hiển thị đúng nội dung: {loginStatusText.text}");
         }
 
         #endregion

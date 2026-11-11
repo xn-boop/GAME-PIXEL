@@ -10,15 +10,9 @@ using UnityEngine.UI;
 
 namespace JourneyOfMemories.Editor
 {
-    [InitializeOnLoad]
     public static class LoginMenuVerifier
     {
         private const string LOG_FILE_PATH = "Logs/LoginMenuVerification.log";
-
-        static LoginMenuVerifier()
-        {
-            EditorApplication.delayCall += RunVerification;
-        }
 
         [MenuItem("Tools/Build & Verify LoginMenu Scene")]
         public static void BuildAndVerify()

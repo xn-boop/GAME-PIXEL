@@ -42,6 +42,21 @@ public class UIFrameAnimator : MonoBehaviour
         targetImage = GetComponent<Image>();
     }
 
+#if UNITY_EDITOR
+    private void OnValidate()
+    {
+        if (targetImage == null)
+        {
+            targetImage = GetComponent<Image>();
+        }
+
+        if (targetImage != null && frames != null && frames.Length > 0 && targetImage.sprite == null)
+        {
+            targetImage.sprite = frames[0];
+        }
+    }
+#endif
+
     private void OnEnable()
     {
         timer = 0f;

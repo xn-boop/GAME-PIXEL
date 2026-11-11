@@ -251,5 +251,48 @@ namespace JourneyOfMemories.Tests
             controller.OnLoginClicked();
             StringAssert.Contains("ĐĂNG NHẬP", statusText.text);
         }
+
+        [Test]
+        public void RegisterMenu_FrameAnimationAndSprites_AreValidAndComplete()
+        {
+            string scenePath = "Assets/Scenes/RegisterMenu.unity";
+            Assert.IsTrue(System.IO.File.Exists(scenePath), "RegisterMenu.unity phải tồn tại!");
+
+            string content = System.IO.File.ReadAllText(scenePath);
+
+            // 1. Kiểm tra dùng đúng localId Sprite (fileID: 21300000)
+            Assert.IsTrue(content.Contains("fileID: 21300000, guid: e8bc567ef5ec4d7dbeff7dc1634d28e3"), "frame_00 phải dùng đúng localId 21300000!");
+            Assert.IsTrue(content.Contains("fileID: 21300000, guid: e3f55940492f42e6bcad9ea0c081fef5"), "checkbox_checked phải dùng đúng localId 21300000!");
+
+            // 2. Kiểm tra tất cả 31 frames tồn tại và load được Sprite hợp lệ
+            for (int i = 0; i <= 30; i++)
+            {
+                string framePath = $"Assets/UI/RegisterMenuFrames/frame_{i:D2}.png";
+                var sprite = AssetDatabase.LoadAssetAtPath<Sprite>(framePath);
+                Assert.IsNotNull(sprite, $"Frame {framePath} phải load được Sprite hợp lệ!");
+            }
+
+            // 3. Kiểm tra UIFrameAnimator trong scene
+            Assert.IsTrue(content.Contains("m_EditorClassIdentifier: Assembly-CSharp::UIFrameAnimator"), "Scene phải có component UIFrameAnimator!");
+            Assert.IsTrue(content.Contains("fileID: 21300000, guid: e8bc567ef5ec4d7dbeff7dc1634d28e3"), "UIFrameAnimator phải tham chiếu đúng Sprite frame_00!");
+        }
+
+        [Test]
+        public void RegisterMenu_InputSystemAndInteractiveElements_AreFullyWired()
+        {
+            string scenePath = "Assets/Scenes/RegisterMenu.unity";
+            string content = System.IO.File.ReadAllText(scenePath);
+
+            // 1. InputSystemUIInputModule phải có ActionsAsset
+            Assert.IsTrue(content.Contains("guid: ca9f5fa95ffab41fb9a615ab714db018"), "InputSystemUIInputModule phải được gán DefaultInputActions asset!");
+            Assert.IsTrue(content.Contains("m_PointAction: {fileID: -1654692200621890270"), "m_PointAction phải được kết nối để nhận tương tác chuột / chạm!");
+            Assert.IsTrue(content.Contains("m_LeftClickAction: {fileID: 3001919216989983466"), "m_LeftClickAction phải được kết nối để nhận sự kiện nhấn nút!");
+
+            // 2. Canvas Raycaster
+            Assert.IsTrue(content.Contains("UnityEngine.UI::UnityEngine.UI.GraphicRaycaster"), "Canvas phải có GraphicRaycaster!");
+
+            // 3. Checkmark sprite
+            Assert.IsTrue(content.Contains("fileID: 21300000, guid: e3f55940492f42e6bcad9ea0c081fef5"), "Checkmark phải gán đúng Sprite checkbox_checked!");
+        }
     }
 }

@@ -83,7 +83,7 @@ public class L2_GameManager : MonoBehaviour
         }
     }
 
-    private void UpdateObjectiveUI()
+    public void UpdateObjectiveUI()
     {
         if (txtObjective != null)
         {
@@ -93,7 +93,7 @@ public class L2_GameManager : MonoBehaviour
             }
             else
             {
-                txtObjective.text = $"TRANG PHỤC: {placedCount}/4 (Đã nhặt: {collectedCount})";
+                txtObjective.text = $"TRANG PHỤC: {collectedCount}/4 (Đã nhặt: {collectedCount})";
             }
         }
     }
@@ -207,6 +207,13 @@ public class L2_GameManager : MonoBehaviour
         {
             L2_PlayerController.Instance.SetMovementLocked(true);
         }
+
+        // Tự động chuyển sang màn hình Puzzle sau 5 giây nếu người chơi chưa bấm nút Tiếp tục
+        yield return new WaitForSeconds(5.0f);
+        if (isVictory && panelVictory != null && panelVictory.activeSelf)
+        {
+            ContinueGame();
+        }
     }
 
     public void RestartGame()
@@ -217,7 +224,38 @@ public class L2_GameManager : MonoBehaviour
 
     public void ContinueGame()
     {
-        if (Application.CanStreamedLevelBeLoaded("MainMenu"))
+        // Ghi nhận hoàn thành Màn 2 để mở khóa Mảnh ghép 2 trong scene "Puzzle"
+        PlayerPrefs.SetInt("Puzzle_RecentCompletedMap", 2);
+        PlayerPrefs.SetInt("Puzzle_UnlockedPieces", Mathf.Max(PlayerPrefs.GetInt("Puzzle_UnlockedPieces", 0), 2));
+        PlayerPrefs.Save();
+
+        // Chuyển sang scene "Puzzle" để hiển thị hiệu ứng xuất hiện dần mảnh ảnh 2
+        if (Application.CanStreamedLevelBeLoaded("Puzzle"))
+        {
+            SceneManager.LoadScene("Puzzle");
+        }
+        else if (Application.CanStreamedLevelBeLoaded("Assets/Scenes/Puzzle.unity"))
+        {
+            SceneManager.LoadScene("Assets/Scenes/Puzzle.unity");
+        }
+        else if (Application.CanStreamedLevelBeLoaded("Puzzel"))
+        {
+            SceneManager.LoadScene("Puzzel");
+        }
+        // Proceed to Map 3
+        else if (Application.CanStreamedLevelBeLoaded("Map3_Final"))
+        {
+            SceneManager.LoadScene("Map3_Final");
+        }
+        else if (Application.CanStreamedLevelBeLoaded("Assets/Scenes/Scenes/Map3_Final.unity"))
+        {
+            SceneManager.LoadScene("Assets/Scenes/Scenes/Map3_Final.unity");
+        }
+        else if (Application.CanStreamedLevelBeLoaded("Assets/_Map3_Final/Scenes/Map3_Final.unity"))
+        {
+            SceneManager.LoadScene("Assets/_Map3_Final/Scenes/Map3_Final.unity");
+        }
+        else if (Application.CanStreamedLevelBeLoaded("MainMenu"))
         {
             SceneManager.LoadScene("MainMenu");
         }

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1037862399300",
+    "project_id": "game-pixel-6f9b4",
+    "storage_bucket": "game-pixel-6f9b4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1037862399300:android:dd29926056fbfc99af3b11",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.JourneyOfMemories"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkHyNBaITudAA4-MiHD2bdp4iQIgc-fkM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

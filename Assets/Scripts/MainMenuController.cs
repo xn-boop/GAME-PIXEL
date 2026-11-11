@@ -330,9 +330,15 @@ public class MainMenuController : MonoBehaviour
             return;
         }
 
-        string targetScene = !string.IsNullOrEmpty(firstLevelSceneName) && firstLevelSceneName != "Level1_Prototype" ? firstLevelSceneName : "Map1";
+        string targetScene = !string.IsNullOrEmpty(firstLevelSceneName) && firstLevelSceneName != "Level1_Prototype" ? firstLevelSceneName : "Level1_Prototype";
         if (Application.CanStreamedLevelBeLoaded(targetScene))
         {
+#if UNITY_EDITOR
+            if (!Application.isPlaying)
+            {
+                return;
+            }
+#endif
             SceneManager.LoadScene(targetScene);
         }
         else

@@ -32,3 +32,16 @@
 .DS_Store
 Thumbs.db
 Desktop.ini
+
+# Firebase SDK Archives and extracted folders
+firebase_unity_sdk*
+*.zip
+*.tar.gz
+*.tgz
+
+# Unity Crash Recovery
+[Aa]ssets/_Recovery/
+[Aa]ssets/_Recovery.meta
+
+# Duplicate root config
+/google-services.json

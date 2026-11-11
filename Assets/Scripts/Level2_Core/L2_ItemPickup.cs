@@ -135,6 +135,15 @@ public class L2_ItemPickup : L2_Interactable
 
         if (L2_QuizManager.Instance != null && quiz != null)
         {
+            // Attach item illustration from InventoryManager if available
+            if (quiz.illustration == null && L2_InventoryManager.Instance != null)
+            {
+                quiz.illustration = L2_InventoryManager.Instance.GetItemSprite(itemType);
+            }
+            if (string.IsNullOrEmpty(quiz.rewardItemId))
+            {
+                quiz.rewardItemId = itemType.ToItemId();
+            }
             L2_QuizManager.Instance.OpenQuiz(quiz, OnItemSolved);
         }
         else

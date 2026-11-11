@@ -83,8 +83,10 @@ public class LoginMenuController : MonoBehaviour
     public string registerMenuSceneName = "RegisterMenu";
 
     [Tooltip("Tên scene game bắt đầu sau khi đăng nhập thành công")]
+    public string gameSceneName = "Chọn map";
 
-    public string gameSceneName = "Level1_Prototype";
+    [Tooltip("Chuyển thẳng tới scene Chọn map sau khi đăng nhập thành công")]
+    public bool transitionToMapSelectOnLogin = true;
 
     [Header("Audio Feedback")]
 
@@ -920,88 +922,78 @@ public class LoginMenuController : MonoBehaviour
 
             }
 
-            SetStatusMessage(GetText("Đăng nhập thành công! Đang tải tiến trình...",
-
-                                     "Login successful! Loading progress..."), isError: false);
-
-            PlayFeedbackTone(1050f, 0.22f);
-
-            yield return new WaitForSecondsRealtime(0.5f);
-
-            // Hiệu ứng mờ dần màn hình sang đen
-
-            yield return StartCoroutine(FadeOutRoutine());
-
-            // BR-01: Chuyển scene theo SceneFlowManager.LoadCurrentMap() sau khi tải thành công
-
-            bool sceneLoaded = false;
-
-            if (flow != null)
-
+            if (transitionToMapSelectOnLogin)
             {
+                SetStatusMessage(GetText("Đăng nhập thành công! Đang chuyển đến Chọn map...",
+                                         "Login successful! Opening Map Select..."), isError: false);
+                PlayFeedbackTone(1050f, 0.22f);
+                yield return new WaitForSecondsRealtime(0.5f);
+                yield return StartCoroutine(FadeOutRoutine());
 
-                sceneLoaded = flow.LoadCurrentMap();
+                string targetScene = !string.IsNullOrEmpty(gameSceneName) ? gameSceneName : "Chọn map";
+                bool sceneLoaded = LoadSceneByNameOrPath(targetScene);
+                if (!sceneLoaded && flow != null)
+                {
+                    sceneLoaded = flow.LoadCurrentMap();
+                }
 
+                if (!sceneLoaded)
+                {
+                    Debug.LogError($"[LoginMenu] Scene '{targetScene}' chưa có trong Build Settings! Giữ nguyên save.");
+                    if (screenFadeOverlay != null)
+                    {
+                        StartCoroutine(FadeInRoutine());
+                    }
+                    SetStatusMessage(GetText("Scene chưa có trong Build Settings!",
+                                             "The scene is not in Build Settings!"), isError: true);
+                    PlayFeedbackTone(350f, 0.2f);
+                    isTransitioning = false;
+                    SetInteractable(true);
+                }
             }
-
             else
-
             {
+                SetStatusMessage(GetText("Đăng nhập thành công! Đang tải tiến trình...",
+                                         "Login successful! Loading progress..."), isError: false);
 
-                string targetScene = !string.IsNullOrEmpty(gameSceneName) ? gameSceneName : "Level1_Prototype";
+                PlayFeedbackTone(1050f, 0.22f);
 
-#if UNITY_EDITOR
+                yield return new WaitForSecondsRealtime(0.5f);
 
-                if (!Application.isPlaying)
+                // Hiệu ứng mờ dần màn hình sang đen
+                yield return StartCoroutine(FadeOutRoutine());
 
+                // BR-01: Chuyển scene theo SceneFlowManager.LoadCurrentMap() sau khi tải thành công
+                bool sceneLoaded = false;
+                if (flow != null)
                 {
-
-                    sceneLoaded = true;
-
+                    sceneLoaded = flow.LoadCurrentMap();
+                }
+                if (!sceneLoaded)
+                {
+                    string targetScene = !string.IsNullOrEmpty(gameSceneName) ? gameSceneName : "Level1_Prototype";
+                    sceneLoaded = LoadSceneByNameOrPath(targetScene);
                 }
 
-                else
-
-#endif
-
-                if (Application.CanStreamedLevelBeLoaded(targetScene))
-
+                if (!sceneLoaded)
                 {
+                    // AC-09: Scene của map đã lưu chưa có trong Build Settings -> Không reset save; hiển thị lỗi; có thể quay lại menu
+                    Debug.LogError("[LoginMenu] Scene của bản đồ đã lưu chưa có trong Build Settings! Giữ nguyên save.");
 
-                    SceneManager.LoadScene(targetScene);
+                    if (screenFadeOverlay != null)
+                    {
+                        StartCoroutine(FadeInRoutine());
+                    }
 
-                    sceneLoaded = true;
+                    SetStatusMessage(GetText("Scene của bản đồ đã lưu chưa có trong Build Settings!",
+                                             "The scene for the saved map is not in Build Settings!"), isError: true);
 
+                    PlayFeedbackTone(350f, 0.2f);
+
+                    isTransitioning = false;
+
+                    SetInteractable(true);
                 }
-
-            }
-
-            if (!sceneLoaded)
-
-            {
-
-                // AC-09: Scene của map đã lưu chưa có trong Build Settings -> Không reset save; hiển thị lỗi; có thể quay lại menu
-
-                Debug.LogError("[LoginMenu] Scene của bản đồ đã lưu chưa có trong Build Settings! Giữ nguyên save.");
-
-                if (screenFadeOverlay != null)
-
-                {
-
-                    StartCoroutine(FadeInRoutine());
-
-                }
-
-                SetStatusMessage(GetText("Scene của bản đồ đã lưu chưa có trong Build Settings!",
-
-                                         "The scene for the saved map is not in Build Settings!"), isError: true);
-
-                PlayFeedbackTone(350f, 0.2f);
-
-                isTransitioning = false;
-
-                SetInteractable(true);
-
             }
 
         }
@@ -1010,118 +1002,142 @@ public class LoginMenuController : MonoBehaviour
 
         {
 
-            // BR-02: Chưa có save -> khởi tạo lượt chơi đầu tiên ở Map 1 và chỉ tạo save mới trong trường hợp này
-
-            SetStatusMessage(GetText("Đăng nhập thành công! Bắt đầu hành trình mới...",
-
-                                     "Login successful! Starting a new journey..."), isError: false);
-
-            PlayFeedbackTone(1050f, 0.22f);
-
-            save?.StartNewGame();
-
-            yield return new WaitForSecondsRealtime(0.5f);
-
-            yield return StartCoroutine(FadeOutRoutine());
-
-            bool sceneLoaded = false;
-
-            if (flow != null)
-
+            // BR-02: Chưa có save -> khởi tạo lượt chơi đầu tiên và chuyển scene
+            if (transitionToMapSelectOnLogin)
             {
+                SetStatusMessage(GetText("Đăng nhập thành công! Đang mở Chọn map...",
+                                         "Login successful! Opening Map Select..."), isError: false);
+                PlayFeedbackTone(1050f, 0.22f);
+                save?.StartNewGame();
+                yield return new WaitForSecondsRealtime(0.5f);
+                yield return StartCoroutine(FadeOutRoutine());
 
-                sceneLoaded = flow.LoadCurrentMap();
+                string targetScene = !string.IsNullOrEmpty(gameSceneName) ? gameSceneName : "Chọn map";
+                bool sceneLoaded = LoadSceneByNameOrPath(targetScene);
+                if (!sceneLoaded && flow != null)
+                {
+                    sceneLoaded = flow.LoadCurrentMap();
+                }
 
+                if (!sceneLoaded)
+                {
+                    Debug.LogError($"[LoginMenu] Không thể tải scene bắt đầu '{targetScene}'.");
+                    if (screenFadeOverlay != null)
+                    {
+                        StartCoroutine(FadeInRoutine());
+                    }
+                    SetStatusMessage(GetText("Không thể tải scene bắt đầu!",
+                                             "Unable to load start scene!"), isError: true);
+                    PlayFeedbackTone(350f, 0.2f);
+                    isTransitioning = false;
+                    SetInteractable(true);
+                }
             }
-
-            if (!sceneLoaded)
-
+            else
             {
+                SetStatusMessage(GetText("Đăng nhập thành công! Bắt đầu hành trình mới...",
+                                         "Login successful! Starting a new journey..."), isError: false);
 
-                string targetScene = !string.IsNullOrEmpty(gameSceneName) ? gameSceneName : "Level1_Prototype";
+                PlayFeedbackTone(1050f, 0.22f);
 
-#if UNITY_EDITOR
+                save?.StartNewGame();
 
-                if (!Application.isPlaying)
+                yield return new WaitForSecondsRealtime(0.5f);
 
+                yield return StartCoroutine(FadeOutRoutine());
+
+                bool sceneLoaded = false;
+
+                if (flow != null)
                 {
-
-                    sceneLoaded = true;
-
+                    sceneLoaded = flow.LoadCurrentMap();
                 }
 
-                else
-
-#endif
-
-                if (Application.CanStreamedLevelBeLoaded(targetScene))
-
+                if (!sceneLoaded)
                 {
-
-                    SceneManager.LoadScene(targetScene);
-
-                    sceneLoaded = true;
-
+                    string targetScene = !string.IsNullOrEmpty(gameSceneName) ? gameSceneName : "Level1_Prototype";
+                    sceneLoaded = LoadSceneByNameOrPath(targetScene);
                 }
 
-            }
-
-            if (!sceneLoaded)
-
-            {
-
-                Debug.LogError("[LoginMenu] Không thể tải scene bắt đầu.");
-
-                if (screenFadeOverlay != null)
-
+                if (!sceneLoaded)
                 {
+                    Debug.LogError("[LoginMenu] Không thể tải scene bắt đầu.");
 
-                    StartCoroutine(FadeInRoutine());
+                    if (screenFadeOverlay != null)
+                    {
+                        StartCoroutine(FadeInRoutine());
+                    }
 
+                    SetStatusMessage(GetText("Không thể tải scene bắt đầu!",
+                                             "Unable to load start scene!"), isError: true);
+
+                    PlayFeedbackTone(350f, 0.2f);
+
+                    isTransitioning = false;
+
+                    SetInteractable(true);
                 }
-
-                SetStatusMessage(GetText("Không thể tải scene bắt đầu!",
-
-                                         "Unable to load start scene!"), isError: true);
-
-                PlayFeedbackTone(350f, 0.2f);
-
-                isTransitioning = false;
-
-                SetInteractable(true);
-
             }
 
         }
 
     }
 
-    private IEnumerator TransitionToSceneRoutine(string targetScene)
-
+    /// <summary>
+    /// Tải scene theo tên hoặc đường dẫn, hỗ trợ fallback cả trong Editor và Build runtime
+    /// </summary>
+    public bool LoadSceneByNameOrPath(string sceneName)
     {
+        if (string.IsNullOrEmpty(sceneName)) return false;
 
+#if UNITY_EDITOR
+        if (!Application.isPlaying)
+        {
+            return true;
+        }
+#endif
+
+        if (Application.CanStreamedLevelBeLoaded(sceneName))
+        {
+            SceneManager.LoadScene(sceneName);
+            return true;
+        }
+
+        string fullPath = sceneName.StartsWith("Assets/") ? sceneName : $"Assets/Scenes/{sceneName}.unity";
+        if (Application.CanStreamedLevelBeLoaded(fullPath))
+        {
+            SceneManager.LoadScene(fullPath);
+            return true;
+        }
+
+#if UNITY_EDITOR
+        foreach (var s in UnityEditor.EditorBuildSettings.scenes)
+        {
+            if (s.enabled && (s.path == fullPath || System.IO.Path.GetFileNameWithoutExtension(s.path).Equals(sceneName, StringComparison.OrdinalIgnoreCase)))
+            {
+                SceneManager.LoadScene(s.path);
+                return true;
+            }
+        }
+#endif
+
+        return false;
+    }
+
+    private IEnumerator TransitionToSceneRoutine(string targetScene)
+    {
         yield return new WaitForSecondsRealtime(0.18f);
-
         yield return StartCoroutine(FadeOutRoutine());
 
-        if (!string.IsNullOrEmpty(targetScene) && Application.CanStreamedLevelBeLoaded(targetScene))
-
+        if (LoadSceneByNameOrPath(targetScene))
         {
-
-            SceneManager.LoadScene(targetScene);
-
+            yield break;
         }
-
         else
-
         {
-
             Debug.LogWarning($"[LoginMenu] Không thể tải scene '{targetScene}', quay về 'MainMenu'.");
-
             SceneManager.LoadScene("MainMenu");
-
         }
-
     }
 
     private void SetStatusMessage(string message, bool isError)

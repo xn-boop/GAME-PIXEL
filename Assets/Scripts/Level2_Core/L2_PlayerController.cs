@@ -22,6 +22,29 @@ public class L2_PlayerController : MonoBehaviour
     private Vector2 moveInput = Vector2.zero;
     private bool isMoving = false;
     private bool isMovementLocked = false;
+    private bool hasIsMovingParam = false;
+
+    private void CacheAnimatorParameters()
+    {
+        hasIsMovingParam = false;
+        if (animator == null) return;
+        foreach (var p in animator.parameters)
+        {
+            if (p.name == "IsMoving")
+            {
+                hasIsMovingParam = true;
+                break;
+            }
+        }
+    }
+
+    private void SetAnimatorMoving(bool moving)
+    {
+        if (animator != null && hasIsMovingParam)
+        {
+            animator.SetBool("IsMoving", moving);
+        }
+    }
 
     private readonly List<L2_Interactable> nearbyInteractables = new List<L2_Interactable>();
 
@@ -65,6 +88,7 @@ public class L2_PlayerController : MonoBehaviour
         {
             animator = GetComponentInChildren<Animator>();
         }
+        CacheAnimatorParameters();
     }
 
     private void Start()
@@ -78,6 +102,7 @@ public class L2_PlayerController : MonoBehaviour
         {
             animator = GetComponentInChildren<Animator>();
         }
+        CacheAnimatorParameters();
     }
 
     private void OnValidate()
@@ -101,7 +126,7 @@ public class L2_PlayerController : MonoBehaviour
             isMoving = false;
             if (animator != null)
             {
-                animator.SetBool("IsMoving", false);
+                SetAnimatorMoving(false);
             }
             return;
         }
@@ -140,7 +165,7 @@ public class L2_PlayerController : MonoBehaviour
         // Update animation flag
         if (animator != null)
         {
-            animator.SetBool("IsMoving", isMoving);
+            SetAnimatorMoving(isMoving);
         }
 
         // Interaction keypress (E or Space)
@@ -183,7 +208,7 @@ public class L2_PlayerController : MonoBehaviour
             }
             if (animator != null)
             {
-                animator.SetBool("IsMoving", false);
+                SetAnimatorMoving(false);
             }
         }
     }

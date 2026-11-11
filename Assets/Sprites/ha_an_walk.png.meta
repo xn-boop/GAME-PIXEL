@@ -1,0 +1,652 @@
+fileFormatVersion: 2
+guid: 0bd42a69a73c55c4ba1975600dd7593e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4157670218611518522
+    second: ha_an_walk_0
+  - first:
+      213: -8017063002911323952
+    second: ha_an_walk_1
+  - first:
+      213: 4283828874017269705
+    second: ha_an_walk_2
+  - first:
+      213: -5056824669738053038
+    second: ha_an_walk_3
+  - first:
+      213: 7566395910804073788
+    second: ha_an_walk_4
+  - first:
+      213: 6417028312407077499
+    second: ha_an_walk_5
+  - first:
+      213: -3343118379416447352
+    second: ha_an_walk_6
+  - first:
+      213: 1570526625117573163
+    second: ha_an_walk_7
+  - first:
+      213: -4250049437208434679
+    second: ha_an_walk_8
+  - first:
+      213: 7353080184601687110
+    second: ha_an_walk_9
+  - first:
+      213: 423216862058024005
+    second: ha_an_walk_10
+  - first:
+      213: -2729731004485257906
+    second: ha_an_walk_11
+  - first:
+      213: -4271412061777412767
+    second: ha_an_walk_12
+  - first:
+      213: -8997822741254590063
+    second: ha_an_walk_13
+  - first:
+      213: -2234210402743100702
+    second: ha_an_walk_14
+  - first:
+      213: -3499387725414034150
+    second: ha_an_walk_15
+  - first:
+      213: 5513993851575584701
+    second: ha_an_walk_16
+  - first:
+      213: -8549356805803281156
+    second: ha_an_walk_17
+  - first:
+      213: -3880794953154547979
+    second: ha_an_walk_18
+  - first:
+      213: 8521251274128684785
+    second: ha_an_walk_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ha_an_walk_0
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 846
+        width: 136
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c39076e6fcfc46c0800000000000000
+      internalID: -4157670218611518522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ha_an_walk_1
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 846
+        width: 143
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d84b81dcabadb090800000000000000
+      internalID: -8017063002911323952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ha_an_walk_2
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 846
+        width: 141
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c76c5a0aa7337b30800000000000000
+      internalID: 4283828874017269705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ha_an_walk_3
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 848
+        width: 140
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 252d4dc41cc82d9b0800000000000000
+      internalID: -5056824669738053038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ha_an_walk_4
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 846
+        width: 139
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3de17d0efc310960800000000000000
+      internalID: 7566395910804073788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ha_an_walk_5
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 560
+        width: 136
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b72f5a2504ddd0950800000000000000
+      internalID: 6417028312407077499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ha_an_walk_6
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 560
+        width: 136
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8869dc8eb8bda91d0800000000000000
+      internalID: -3343118379416447352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ha_an_walk_7
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 560
+        width: 136
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b201d6005a1abc510800000000000000
+      internalID: 1570526625117573163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ha_an_walk_8
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 560
+        width: 139
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 908a759fd8ac405c0800000000000000
+      internalID: -4250049437208434679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ha_an_walk_9
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 559
+        width: 142
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 644b52838736b0660800000000000000
+      internalID: 7353080184601687110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ha_an_walk_10
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 274
+        width: 142
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54c8ce56e719fd500800000000000000
+      internalID: 423216862058024005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ha_an_walk_11
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 272
+        width: 149
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4539493d1c0e1ad0800000000000000
+      internalID: -2729731004485257906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ha_an_walk_12
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 271
+        width: 146
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16d30785c55e8b4c0800000000000000
+      internalID: -4271412061777412767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ha_an_walk_13
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 271
+        width: 149
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 191b69ba3ef412380800000000000000
+      internalID: -8997822741254590063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ha_an_walk_14
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 271
+        width: 146
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ead30fd97d7ef0e0800000000000000
+      internalID: -2234210402743100702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ha_an_walk_15
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 12
+        width: 141
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a15955f776daf6fc0800000000000000
+      internalID: -3499387725414034150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ha_an_walk_16
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 12
+        width: 143
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db7c9d09134a58c40800000000000000
+      internalID: 5513993851575584701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ha_an_walk_17
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 11
+        width: 130
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf4f60418459a5980800000000000000
+      internalID: -8549356805803281156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ha_an_walk_18
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 11
+        width: 139
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fe281b2d85a42ac0800000000000000
+      internalID: -3880794953154547979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ha_an_walk_19
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 11
+        width: 132
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f6f844e2e0914670800000000000000
+      internalID: 8521251274128684785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ha_an_walk_0: -4157670218611518522
+      ha_an_walk_1: -8017063002911323952
+      ha_an_walk_10: 423216862058024005
+      ha_an_walk_11: -2729731004485257906
+      ha_an_walk_12: -4271412061777412767
+      ha_an_walk_13: -8997822741254590063
+      ha_an_walk_14: -2234210402743100702
+      ha_an_walk_15: -3499387725414034150
+      ha_an_walk_16: 5513993851575584701
+      ha_an_walk_17: -8549356805803281156
+      ha_an_walk_18: -3880794953154547979
+      ha_an_walk_19: 8521251274128684785
+      ha_an_walk_2: 4283828874017269705
+      ha_an_walk_3: -5056824669738053038
+      ha_an_walk_4: 7566395910804073788
+      ha_an_walk_5: 6417028312407077499
+      ha_an_walk_6: -3343118379416447352
+      ha_an_walk_7: 1570526625117573163
+      ha_an_walk_8: -4250049437208434679
+      ha_an_walk_9: 7353080184601687110
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

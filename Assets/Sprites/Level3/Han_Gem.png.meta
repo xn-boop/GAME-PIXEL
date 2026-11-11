@@ -1,0 +1,2121 @@
+fileFormatVersion: 2
+guid: 96a6b10fa928b504ca0760df8a7160cf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3639908471873417398
+    second: Han_Gem_0
+  - first:
+      213: -1227277561296440982
+    second: Han_Gem_1
+  - first:
+      213: 6466458826830662035
+    second: Han_Gem_2
+  - first:
+      213: -2612529441444136906
+    second: Han_Gem_3
+  - first:
+      213: 3623992281725365853
+    second: Han_Gem_4
+  - first:
+      213: -3842318455369980546
+    second: Han_Gem_5
+  - first:
+      213: 2064539192408966189
+    second: Han_Gem_6
+  - first:
+      213: 2367589928605485646
+    second: Han_Gem_7
+  - first:
+      213: 1722035070003853029
+    second: Han_Gem_8
+  - first:
+      213: -4212403726998196946
+    second: Han_Gem_9
+  - first:
+      213: -5398356548056408765
+    second: Han_Gem_10
+  - first:
+      213: -8043083178352492967
+    second: Han_Gem_11
+  - first:
+      213: 8666624200608792134
+    second: Han_Gem_12
+  - first:
+      213: 6279419778637953894
+    second: Han_Gem_13
+  - first:
+      213: 3738303699049613934
+    second: Han_Gem_14
+  - first:
+      213: -5605425180838144545
+    second: Han_Gem_15
+  - first:
+      213: -2213045810680845159
+    second: Han_Gem_16
+  - first:
+      213: 8423832898855249921
+    second: Han_Gem_17
+  - first:
+      213: 6717599801146797953
+    second: Han_Gem_18
+  - first:
+      213: -3812226093162411928
+    second: Han_Gem_19
+  - first:
+      213: 720868503552820656
+    second: Han_Gem_20
+  - first:
+      213: 8838298687485201796
+    second: Han_Gem_21
+  - first:
+      213: 3988604688553234942
+    second: Han_Gem_22
+  - first:
+      213: 7563577389160587746
+    second: Han_Gem_23
+  - first:
+      213: -1521677102399683403
+    second: Han_Gem_24
+  - first:
+      213: 4074769886522374021
+    second: Han_Gem_25
+  - first:
+      213: -5711665719183674765
+    second: Han_Gem_26
+  - first:
+      213: -4432711493352116504
+    second: Han_Gem_27
+  - first:
+      213: 8590571923592888383
+    second: Han_Gem_28
+  - first:
+      213: 6107319769818454886
+    second: Han_Gem_29
+  - first:
+      213: 250002513310456482
+    second: Han_Gem_30
+  - first:
+      213: 4412079062969261679
+    second: Han_Gem_31
+  - first:
+      213: 494389705343484228
+    second: Han_Gem_32
+  - first:
+      213: 2836599442771151125
+    second: Han_Gem_33
+  - first:
+      213: -1790957477892078332
+    second: Han_Gem_34
+  - first:
+      213: 7908929495874909521
+    second: Han_Gem_35
+  - first:
+      213: 1484468291924162574
+    second: Han_Gem_36
+  - first:
+      213: -211426088243758460
+    second: Han_Gem_37
+  - first:
+      213: -8950897800533601942
+    second: Han_Gem_38
+  - first:
+      213: 121623405638501548
+    second: Han_Gem_39
+  - first:
+      213: -892174650139011958
+    second: Han_Gem_40
+  - first:
+      213: -2836492222938236742
+    second: Han_Gem_41
+  - first:
+      213: 4444718195334376713
+    second: Han_Gem_42
+  - first:
+      213: 8922259752865744294
+    second: Han_Gem_43
+  - first:
+      213: -8327446518873102957
+    second: Han_Gem_44
+  - first:
+      213: -5340081964478130032
+    second: Han_Gem_45
+  - first:
+      213: -1063127777212466893
+    second: Han_Gem_46
+  - first:
+      213: -6996513566069768129
+    second: Han_Gem_47
+  - first:
+      213: 3540987725346911194
+    second: Han_Gem_48
+  - first:
+      213: 3727334572845611428
+    second: Han_Gem_49
+  - first:
+      213: -1903397367207041454
+    second: Han_Gem_50
+  - first:
+      213: -2618159058225659928
+    second: Han_Gem_51
+  - first:
+      213: 3221565717066070297
+    second: Han_Gem_52
+  - first:
+      213: -3213908938369619734
+    second: Han_Gem_53
+  - first:
+      213: -4379761267909297553
+    second: Han_Gem_54
+  - first:
+      213: -1674044519687647997
+    second: Han_Gem_55
+  - first:
+      213: 2509082434881610434
+    second: Han_Gem_56
+  - first:
+      213: 6085551965037083652
+    second: Han_Gem_57
+  - first:
+      213: 4190001801845908515
+    second: Han_Gem_58
+  - first:
+      213: 2743980466215234216
+    second: Han_Gem_59
+  - first:
+      213: 2700751707494186456
+    second: Han_Gem_60
+  - first:
+      213: 3581671186073833341
+    second: Han_Gem_61
+  - first:
+      213: 4919328302972602126
+    second: Han_Gem_62
+  - first:
+      213: -7482908481449914156
+    second: Han_Gem_63
+  - first:
+      213: -1726036046511669811
+    second: Han_Gem_64
+  - first:
+      213: -2969111605160347103
+    second: Han_Gem_65
+  - first:
+      213: 3008312342051599254
+    second: Han_Gem_66
+  - first:
+      213: -8461394643262189352
+    second: Han_Gem_67
+  - first:
+      213: 3223973065621849164
+    second: Han_Gem_68
+  - first:
+      213: 7414992580526381135
+    second: Han_Gem_69
+  - first:
+      213: 781519696065271686
+    second: Han_Gem_70
+  - first:
+      213: -6130268688396040668
+    second: Han_Gem_71
+  - first:
+      213: -6458992856257189361
+    second: Han_Gem_72
+  - first:
+      213: 1915616129010245911
+    second: Han_Gem_73
+  - first:
+      213: 1363039763712574660
+    second: Han_Gem_74
+  - first:
+      213: 3084010264980215484
+    second: Han_Gem_75
+  - first:
+      213: -391419149381897910
+    second: Han_Gem_76
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Han_Gem_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1007
+        width: 33
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b033f8587d838230800000000000000
+      internalID: 3639908471873417398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 959
+        width: 17
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a613e167f85d7fee0800000000000000
+      internalID: -1227277561296440982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 941
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3994eefca0a7db950800000000000000
+      internalID: 6466458826830662035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_3
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 933
+        width: 564
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 638f875905e6ebbd0800000000000000
+      internalID: -2612529441444136906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_4
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 965
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5e6ffc87c10b4230800000000000000
+      internalID: 3623992281725365853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_5
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 973
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e75aeb9e8b75daac0800000000000000
+      internalID: -3842318455369980546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_6
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 973
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2488640577b6ac10800000000000000
+      internalID: 2064539192408966189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_7
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 983
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4a825cfe7e5bd020800000000000000
+      internalID: 2367589928605485646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_8
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 962
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e6385eb5c5e5e710800000000000000
+      internalID: 1722035070003853029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_9
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 957
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2dadb9e0298a85c0800000000000000
+      internalID: -4212403726998196946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_10
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 927
+        width: 260
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34d913e325f2515b0800000000000000
+      internalID: -5398356548056408765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_11
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 973
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95e316f967a316090800000000000000
+      internalID: -8043083178352492967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_12
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 967
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64e371feac8064870800000000000000
+      internalID: 8666624200608792134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_13
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 959
+        width: 73
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66bf645d40bf42750800000000000000
+      internalID: 6279419778637953894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 847
+        width: 35
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6a816c686f11e330800000000000000
+      internalID: 3738303699049613934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_15
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 0
+        width: 1009
+        height: 923
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd5dc113f778532b0800000000000000
+      internalID: -5605425180838144545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_16
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 911
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99ca3b67f8ea941e0800000000000000
+      internalID: -2213045810680845159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_17
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 919
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 108248fd36777e470800000000000000
+      internalID: 8423832898855249921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_18
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 919
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18fe6928d65b93d50800000000000000
+      internalID: 6717599801146797953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_19
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 919
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8684499f090481bc0800000000000000
+      internalID: -3812226093162411928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_20
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 911
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b5880ca51a010a00800000000000000
+      internalID: 720868503552820656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_21
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 898
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48d4b5634d1f7aa70800000000000000
+      internalID: 8838298687485201796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_22
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 898
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef15caae4de5a5730800000000000000
+      internalID: 3988604688553234942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_23
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 890
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e1e718df8937f860800000000000000
+      internalID: 7563577389160587746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_24
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 877
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b40f90dcbae1eae0800000000000000
+      internalID: -1521677102399683403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 679
+        width: 19
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 587ff9b6f9d7c8830800000000000000
+      internalID: 4074769886522374021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_26
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 829
+        width: 34
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 372f7444a461cb0b0800000000000000
+      internalID: -5711665719183674765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_27
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 834
+        width: 26
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eea4fed168db72c0800000000000000
+      internalID: -4432711493352116504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_28
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 823
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f30c23356a7d73770800000000000000
+      internalID: 8590571923592888383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_29
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 767
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66bdfb109fe81c450800000000000000
+      internalID: 6107319769818454886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_30
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 751
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aa13d616ff287300800000000000000
+      internalID: 250002513310456482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_31
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 714
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6e9835188ada3d30800000000000000
+      internalID: 4412079062969261679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_32
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 690
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 441cb9f41dc6cd600800000000000000
+      internalID: 494389705343484228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_33
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 687
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 519027c0a20ad5720800000000000000
+      internalID: 2836599442771151125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 607
+        width: 17
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 405c96aa9ad3527e0800000000000000
+      internalID: -1790957477892078332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_35
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 615
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 155bb33297922cd60800000000000000
+      internalID: 7908929495874909521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_36
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 615
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e087874eb04e99410800000000000000
+      internalID: 1484468291924162574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_37
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 607
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48afaf9c71dd01df0800000000000000
+      internalID: -211426088243758460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_38
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 599
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a619e52dfd508c380800000000000000
+      internalID: -8950897800533601942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 519
+        width: 17
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca4c471d7d710b100800000000000000
+      internalID: 121623405638501548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_40
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 551
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a841bd4f1eb5e93f0800000000000000
+      internalID: -892174650139011958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_41
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 522
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab8bb930a51c2a8d0800000000000000
+      internalID: -2836492222938236742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_42
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 535
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90dee9746afcead30800000000000000
+      internalID: 4444718195334376713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_43
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 207
+        width: 17
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a5c35b19fb32db70800000000000000
+      internalID: 8922259752865744294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_44
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 503
+        width: 6
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39561840387fe6c80800000000000000
+      internalID: -8327446518873102957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_45
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 447
+        width: 36
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0989fcb0fb734e5b0800000000000000
+      internalID: -5340081964478130032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_46
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 453
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33976685be20f31f0800000000000000
+      internalID: -1063127777212466893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_47
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 463
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f30c5341bf367ee90800000000000000
+      internalID: -6996513566069768129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_48
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 453
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad33253439d142130800000000000000
+      internalID: 3540987725346911194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_49
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 399
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a9be75bb072ab330800000000000000
+      internalID: 3727334572845611428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_50
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 399
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 256e53ddd26c595e0800000000000000
+      internalID: -1903397367207041454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_51
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 314
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8effcf8453e6aabd0800000000000000
+      internalID: -2618159058225659928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_52
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 325
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 919bc4a73fc45bc20800000000000000
+      internalID: 3221565717066070297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_53
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 314
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae8a60c39d6e563d0800000000000000
+      internalID: -3213908938369619734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_54
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 319
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6a7041f456f733c0800000000000000
+      internalID: -4379761267909297553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_55
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 309
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30d04d9f06994c8e0800000000000000
+      internalID: -1674044519687647997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_56
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 303
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c26a4b4e2d02d220800000000000000
+      internalID: 2509082434881610434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_57
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 255
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40c37320549347450800000000000000
+      internalID: 6085551965037083652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_58
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 261
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 324a54f6070e52a30800000000000000
+      internalID: 4190001801845908515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_59
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 247
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aaae5f12b3941620800000000000000
+      internalID: 2743980466215234216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_60
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 239
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dd78b76e5ffa7520800000000000000
+      internalID: 2700751707494186456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_61
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 229
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7fce2c97f6a4b130800000000000000
+      internalID: 3581671186073833341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_62
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7
+        width: 17
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0705302707f44440800000000000000
+      internalID: 4919328302972602126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_63
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 186
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d09b6cd16e572890800000000000000
+      internalID: -7482908481449914156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_64
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 178
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcdf6225c53eb08e0800000000000000
+      internalID: -1726036046511669811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_65
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 167
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12a7de3e9b89bc6d0800000000000000
+      internalID: -2969111605160347103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_66
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 167
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 693b869e22cafb920800000000000000
+      internalID: 3008312342051599254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_67
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 95
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d0d6fff666139a80800000000000000
+      internalID: -8461394643262189352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_68
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 87
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4441ddfb6addbc20800000000000000
+      internalID: 3223973065621849164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_69
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 71
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f489e66377857e660800000000000000
+      internalID: 7414992580526381135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_70
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 39
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68711fcd50488da00800000000000000
+      internalID: 781519696065271686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_71
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 47
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42644728b19eceaa0800000000000000
+      internalID: -6130268688396040668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_72
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 31
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0a210ce73c0d56a0800000000000000
+      internalID: -6458992856257189361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_73
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 15
+        width: 6
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7112aaf48b2a59a10800000000000000
+      internalID: 1915616129010245911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_74
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 21
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c402d2817d7ae210800000000000000
+      internalID: 1363039763712574660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_75
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 23
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb6ddc70ffa9cca20800000000000000
+      internalID: 3084010264980215484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Han_Gem_76
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 0
+        width: 73
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a417ec28b56619af0800000000000000
+      internalID: -391419149381897910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Han_Gem_0: 3639908471873417398
+      Han_Gem_1: -1227277561296440982
+      Han_Gem_10: -5398356548056408765
+      Han_Gem_11: -8043083178352492967
+      Han_Gem_12: 8666624200608792134
+      Han_Gem_13: 6279419778637953894
+      Han_Gem_14: 3738303699049613934
+      Han_Gem_15: -5605425180838144545
+      Han_Gem_16: -2213045810680845159
+      Han_Gem_17: 8423832898855249921
+      Han_Gem_18: 6717599801146797953
+      Han_Gem_19: -3812226093162411928
+      Han_Gem_2: 6466458826830662035
+      Han_Gem_20: 720868503552820656
+      Han_Gem_21: 8838298687485201796
+      Han_Gem_22: 3988604688553234942
+      Han_Gem_23: 7563577389160587746
+      Han_Gem_24: -1521677102399683403
+      Han_Gem_25: 4074769886522374021
+      Han_Gem_26: -5711665719183674765
+      Han_Gem_27: -4432711493352116504
+      Han_Gem_28: 8590571923592888383
+      Han_Gem_29: 6107319769818454886
+      Han_Gem_3: -2612529441444136906
+      Han_Gem_30: 250002513310456482
+      Han_Gem_31: 4412079062969261679
+      Han_Gem_32: 494389705343484228
+      Han_Gem_33: 2836599442771151125
+      Han_Gem_34: -1790957477892078332
+      Han_Gem_35: 7908929495874909521
+      Han_Gem_36: 1484468291924162574
+      Han_Gem_37: -211426088243758460
+      Han_Gem_38: -8950897800533601942
+      Han_Gem_39: 121623405638501548
+      Han_Gem_4: 3623992281725365853
+      Han_Gem_40: -892174650139011958
+      Han_Gem_41: -2836492222938236742
+      Han_Gem_42: 4444718195334376713
+      Han_Gem_43: 8922259752865744294
+      Han_Gem_44: -8327446518873102957
+      Han_Gem_45: -5340081964478130032
+      Han_Gem_46: -1063127777212466893
+      Han_Gem_47: -6996513566069768129
+      Han_Gem_48: 3540987725346911194
+      Han_Gem_49: 3727334572845611428
+      Han_Gem_5: -3842318455369980546
+      Han_Gem_50: -1903397367207041454
+      Han_Gem_51: -2618159058225659928
+      Han_Gem_52: 3221565717066070297
+      Han_Gem_53: -3213908938369619734
+      Han_Gem_54: -4379761267909297553
+      Han_Gem_55: -1674044519687647997
+      Han_Gem_56: 2509082434881610434
+      Han_Gem_57: 6085551965037083652
+      Han_Gem_58: 4190001801845908515
+      Han_Gem_59: 2743980466215234216
+      Han_Gem_6: 2064539192408966189
+      Han_Gem_60: 2700751707494186456
+      Han_Gem_61: 3581671186073833341
+      Han_Gem_62: 4919328302972602126
+      Han_Gem_63: -7482908481449914156
+      Han_Gem_64: -1726036046511669811
+      Han_Gem_65: -2969111605160347103
+      Han_Gem_66: 3008312342051599254
+      Han_Gem_67: -8461394643262189352
+      Han_Gem_68: 3223973065621849164
+      Han_Gem_69: 7414992580526381135
+      Han_Gem_7: 2367589928605485646
+      Han_Gem_70: 781519696065271686
+      Han_Gem_71: -6130268688396040668
+      Han_Gem_72: -6458992856257189361
+      Han_Gem_73: 1915616129010245911
+      Han_Gem_74: 1363039763712574660
+      Han_Gem_75: 3084010264980215484
+      Han_Gem_76: -391419149381897910
+      Han_Gem_8: 1722035070003853029
+      Han_Gem_9: -4212403726998196946
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -400,7 +400,8 @@ public static class LoginMenuSetup
         controller.fadeDuration = 0.35f;
         controller.mainMenuSceneName = "MainMenu";
         controller.registerMenuSceneName = "RegisterMenu";
-        controller.gameSceneName = "Level1_Prototype";
+        controller.gameSceneName = "Chọn map";
+        controller.transitionToMapSelectOnLogin = true;
 
         // Gán sự kiện
         loginBtn.onClick.AddListener(controller.OnLoginClicked);

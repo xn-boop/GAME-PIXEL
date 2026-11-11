@@ -1,0 +1,4591 @@
+fileFormatVersion: 2
+guid: e9d254d829992fa43b033e2141a1768a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4877208237370064156
+    second: BenDi2_0
+  - first:
+      213: -702209546491614940
+    second: BenDi2_1
+  - first:
+      213: -5163842648289917560
+    second: BenDi2_2
+  - first:
+      213: -2127148928784150946
+    second: BenDi2_3
+  - first:
+      213: -6286714563293619432
+    second: BenDi2_4
+  - first:
+      213: 8284858229067689724
+    second: BenDi2_5
+  - first:
+      213: 6085471736959733664
+    second: BenDi2_6
+  - first:
+      213: 2976628538101263866
+    second: BenDi2_7
+  - first:
+      213: 745599058494689805
+    second: BenDi2_8
+  - first:
+      213: -9098263425560359659
+    second: BenDi2_9
+  - first:
+      213: 6717448624590508343
+    second: BenDi2_10
+  - first:
+      213: -9047975518371720901
+    second: BenDi2_11
+  - first:
+      213: 574027986076468161
+    second: BenDi2_12
+  - first:
+      213: -661590022533836092
+    second: BenDi2_13
+  - first:
+      213: -3148444432934250227
+    second: BenDi2_14
+  - first:
+      213: 2434989160913874416
+    second: BenDi2_15
+  - first:
+      213: 36439905752115460
+    second: BenDi2_16
+  - first:
+      213: -3823622321824091086
+    second: BenDi2_17
+  - first:
+      213: 7540118220222292246
+    second: BenDi2_18
+  - first:
+      213: -343943394260156482
+    second: BenDi2_19
+  - first:
+      213: 1189690257677041003
+    second: BenDi2_20
+  - first:
+      213: -7936670339718528944
+    second: BenDi2_21
+  - first:
+      213: 7770389203358057828
+    second: BenDi2_22
+  - first:
+      213: -7355223033927799855
+    second: BenDi2_23
+  - first:
+      213: 4447637692145005548
+    second: BenDi2_24
+  - first:
+      213: 8226992926170440891
+    second: BenDi2_25
+  - first:
+      213: 5916419133296352996
+    second: BenDi2_26
+  - first:
+      213: -2001514051045557439
+    second: BenDi2_27
+  - first:
+      213: -8583289038482491408
+    second: BenDi2_28
+  - first:
+      213: 2623973726181771658
+    second: BenDi2_29
+  - first:
+      213: -4763392558577845416
+    second: BenDi2_30
+  - first:
+      213: -8043655660729224789
+    second: BenDi2_31
+  - first:
+      213: -4148740502560725097
+    second: BenDi2_32
+  - first:
+      213: -2219159955317953740
+    second: BenDi2_33
+  - first:
+      213: 5232442643932494408
+    second: BenDi2_34
+  - first:
+      213: -109774188313348253
+    second: BenDi2_35
+  - first:
+      213: -1927708842633813403
+    second: BenDi2_36
+  - first:
+      213: 2353328610698555358
+    second: BenDi2_37
+  - first:
+      213: 408733687020249977
+    second: BenDi2_38
+  - first:
+      213: 4034567158961044559
+    second: BenDi2_39
+  - first:
+      213: -6902976950944090344
+    second: BenDi2_40
+  - first:
+      213: 8158713854876076251
+    second: BenDi2_41
+  - first:
+      213: -9047875826034326728
+    second: BenDi2_42
+  - first:
+      213: 428882495031970843
+    second: BenDi2_43
+  - first:
+      213: -7090907592814621825
+    second: BenDi2_44
+  - first:
+      213: -8341759882433002051
+    second: BenDi2_45
+  - first:
+      213: -5119615837671890794
+    second: BenDi2_46
+  - first:
+      213: 7748758282666423351
+    second: BenDi2_47
+  - first:
+      213: -3641223506153369810
+    second: BenDi2_48
+  - first:
+      213: -1154772485108750951
+    second: BenDi2_49
+  - first:
+      213: -1791527809293338620
+    second: BenDi2_50
+  - first:
+      213: 8891275205525078839
+    second: BenDi2_51
+  - first:
+      213: 1619763125785313007
+    second: BenDi2_52
+  - first:
+      213: -8857998378446667258
+    second: BenDi2_53
+  - first:
+      213: 6169597899877478683
+    second: BenDi2_54
+  - first:
+      213: -1459713879337918268
+    second: BenDi2_55
+  - first:
+      213: -3798379346614961645
+    second: BenDi2_56
+  - first:
+      213: 649312366259601974
+    second: BenDi2_57
+  - first:
+      213: 2596884783352624804
+    second: BenDi2_58
+  - first:
+      213: 4192939278207188540
+    second: BenDi2_59
+  - first:
+      213: 4070637348650302824
+    second: BenDi2_60
+  - first:
+      213: -2897149475705902050
+    second: BenDi2_61
+  - first:
+      213: 8536253343407103281
+    second: BenDi2_62
+  - first:
+      213: 2026226539681221973
+    second: BenDi2_63
+  - first:
+      213: 5598683211584691323
+    second: BenDi2_64
+  - first:
+      213: 3617224853935783386
+    second: BenDi2_65
+  - first:
+      213: 331563250324646394
+    second: BenDi2_66
+  - first:
+      213: -1986654313529012091
+    second: BenDi2_67
+  - first:
+      213: -6204228430744926240
+    second: BenDi2_68
+  - first:
+      213: 4895458690758926292
+    second: BenDi2_69
+  - first:
+      213: -3645621083988564343
+    second: BenDi2_70
+  - first:
+      213: 3219143964662847066
+    second: BenDi2_71
+  - first:
+      213: -1455935840970358200
+    second: BenDi2_72
+  - first:
+      213: -9053684786092199648
+    second: BenDi2_73
+  - first:
+      213: 652107746882253002
+    second: BenDi2_74
+  - first:
+      213: 3701564401394922780
+    second: BenDi2_75
+  - first:
+      213: 4520539194332549924
+    second: BenDi2_76
+  - first:
+      213: 3268366946200109154
+    second: BenDi2_77
+  - first:
+      213: -3218232032333314058
+    second: BenDi2_78
+  - first:
+      213: -1480587678556027305
+    second: BenDi2_79
+  - first:
+      213: 4383662789241849894
+    second: BenDi2_80
+  - first:
+      213: -991916436119078111
+    second: BenDi2_81
+  - first:
+      213: -9206061163997237623
+    second: BenDi2_82
+  - first:
+      213: 4726336921624922021
+    second: BenDi2_83
+  - first:
+      213: -2132366947525517622
+    second: BenDi2_84
+  - first:
+      213: -6732170278824824780
+    second: BenDi2_85
+  - first:
+      213: 7222397140591622519
+    second: BenDi2_86
+  - first:
+      213: 4795522663230010697
+    second: BenDi2_87
+  - first:
+      213: 4111016847965136481
+    second: BenDi2_88
+  - first:
+      213: 2502101115812259898
+    second: BenDi2_89
+  - first:
+      213: 7833864884390007124
+    second: BenDi2_90
+  - first:
+      213: -5025221505900982221
+    second: BenDi2_91
+  - first:
+      213: 1578780668250312201
+    second: BenDi2_92
+  - first:
+      213: 4849549445597610109
+    second: BenDi2_93
+  - first:
+      213: -8540813365176077391
+    second: BenDi2_94
+  - first:
+      213: -2195519671333217424
+    second: BenDi2_95
+  - first:
+      213: 8149318355853882645
+    second: BenDi2_96
+  - first:
+      213: 1638370244865837813
+    second: BenDi2_97
+  - first:
+      213: 3817992992898370988
+    second: BenDi2_98
+  - first:
+      213: 4667321659250676707
+    second: BenDi2_99
+  - first:
+      213: 1485799913370899063
+    second: BenDi2_100
+  - first:
+      213: 6683963895671980137
+    second: BenDi2_101
+  - first:
+      213: -60865024782319930
+    second: BenDi2_102
+  - first:
+      213: 1561549764533276812
+    second: BenDi2_103
+  - first:
+      213: 2169607482795004097
+    second: BenDi2_104
+  - first:
+      213: -2158236198902427543
+    second: BenDi2_105
+  - first:
+      213: -3046529821737225286
+    second: BenDi2_106
+  - first:
+      213: -8662314856911188696
+    second: BenDi2_107
+  - first:
+      213: 9036591654669639038
+    second: BenDi2_108
+  - first:
+      213: -3339653652048943619
+    second: BenDi2_109
+  - first:
+      213: -5533324901000873591
+    second: BenDi2_110
+  - first:
+      213: 5578113072015970618
+    second: BenDi2_111
+  - first:
+      213: 5280300609540830430
+    second: BenDi2_112
+  - first:
+      213: -2896119250871678089
+    second: BenDi2_113
+  - first:
+      213: 2475103213110068956
+    second: BenDi2_114
+  - first:
+      213: -3920221172770072964
+    second: BenDi2_115
+  - first:
+      213: 8616300425516664180
+    second: BenDi2_116
+  - first:
+      213: 397011398115955945
+    second: BenDi2_117
+  - first:
+      213: -6060926031471131695
+    second: BenDi2_118
+  - first:
+      213: 5662722955888893100
+    second: BenDi2_119
+  - first:
+      213: 5200503067439560156
+    second: BenDi2_120
+  - first:
+      213: -5176983544649968579
+    second: BenDi2_121
+  - first:
+      213: 4157960713754741917
+    second: BenDi2_122
+  - first:
+      213: -5740900453575899917
+    second: BenDi2_123
+  - first:
+      213: -4634270737489600257
+    second: BenDi2_124
+  - first:
+      213: 7690708462043270543
+    second: BenDi2_125
+  - first:
+      213: 6418537574584877674
+    second: BenDi2_126
+  - first:
+      213: 204251547687631242
+    second: BenDi2_127
+  - first:
+      213: -96576913195039405
+    second: BenDi2_128
+  - first:
+      213: 8120813183452057885
+    second: BenDi2_129
+  - first:
+      213: 5421660967236923768
+    second: BenDi2_130
+  - first:
+      213: 346297719735898653
+    second: BenDi2_131
+  - first:
+      213: 2862338061480684075
+    second: BenDi2_132
+  - first:
+      213: 8966279286692925801
+    second: BenDi2_133
+  - first:
+      213: 5063769168896803659
+    second: BenDi2_134
+  - first:
+      213: 7967164507421357617
+    second: BenDi2_135
+  - first:
+      213: 623099457725324026
+    second: BenDi2_136
+  - first:
+      213: 4872269248700244021
+    second: BenDi2_137
+  - first:
+      213: 351908429233432826
+    second: BenDi2_138
+  - first:
+      213: -7296333660601774808
+    second: BenDi2_139
+  - first:
+      213: -8396318864259912113
+    second: BenDi2_140
+  - first:
+      213: -2772719166758046618
+    second: BenDi2_141
+  - first:
+      213: 5930262063463992648
+    second: BenDi2_142
+  - first:
+      213: -1588354949089362618
+    second: BenDi2_143
+  - first:
+      213: 230129233958013138
+    second: BenDi2_144
+  - first:
+      213: 6256817991999365282
+    second: BenDi2_145
+  - first:
+      213: 1752631317353379774
+    second: BenDi2_146
+  - first:
+      213: 3334589704225164246
+    second: BenDi2_147
+  - first:
+      213: 7764470923879732200
+    second: BenDi2_148
+  - first:
+      213: 8990831884856547033
+    second: BenDi2_149
+  - first:
+      213: 1683021962824314481
+    second: BenDi2_150
+  - first:
+      213: 2086043304664628940
+    second: BenDi2_151
+  - first:
+      213: 7262858786004464731
+    second: BenDi2_152
+  - first:
+      213: 2314970511667528501
+    second: BenDi2_153
+  - first:
+      213: -4379842513125449351
+    second: BenDi2_154
+  - first:
+      213: -3573820951294919760
+    second: BenDi2_155
+  - first:
+      213: -8503705372204053941
+    second: BenDi2_156
+  - first:
+      213: 3906178380348067431
+    second: BenDi2_157
+  - first:
+      213: 1641112827553375767
+    second: BenDi2_158
+  - first:
+      213: 7804733692156835319
+    second: BenDi2_159
+  - first:
+      213: -3621393351124745123
+    second: BenDi2_160
+  - first:
+      213: -8522234509251636173
+    second: BenDi2_161
+  - first:
+      213: -8158910203241694627
+    second: BenDi2_162
+  - first:
+      213: -1857600466122512321
+    second: BenDi2_163
+  - first:
+      213: -407467603812213392
+    second: BenDi2_164
+  - first:
+      213: 4661472652618394518
+    second: BenDi2_165
+  - first:
+      213: -366466769019567169
+    second: BenDi2_166
+  - first:
+      213: 615145624413811623
+    second: BenDi2_167
+  - first:
+      213: 1980931865543968115
+    second: BenDi2_168
+  - first:
+      213: 1247351310948623139
+    second: BenDi2_169
+  - first:
+      213: -8325300360294138471
+    second: BenDi2_170
+  - first:
+      213: 6564372345139156897
+    second: BenDi2_171
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BenDi2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1015
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1d3d042d035fa340800000000000000
+      internalID: 4877208237370064156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 959
+        width: 17
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 429aa7f43204146f0800000000000000
+      internalID: -702209546491614940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_2
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 0
+        width: 834
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 885caa878785658b0800000000000000
+      internalID: -5163842648289917560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_3
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 965
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5ec773c159da72e0800000000000000
+      internalID: -2127148928784150946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_4
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 973
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81bdb92c96a11c8a0800000000000000
+      internalID: -6286714563293619432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_5
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1018
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfe2d0e0aaab9f270800000000000000
+      internalID: 8284858229067689724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_6
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 1018
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0af0a247d40f37450800000000000000
+      internalID: 6085471736959733664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_7
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 1015
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afde0d172eb1f4920800000000000000
+      internalID: 2976628538101263866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_8
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 1018
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d021172b466e85a00800000000000000
+      internalID: 745599058494689805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_9
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 965
+        width: 124
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51dcb8e7e997cb180800000000000000
+      internalID: -9098263425560359659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_10
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 973
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73157a9feeb293d50800000000000000
+      internalID: 6717448624590508343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_11
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 967
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b31d50b44322f6280800000000000000
+      internalID: -9047975518371720901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_12
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 959
+        width: 73
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c38839796b57f700800000000000000
+      internalID: 574027986076468161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 943
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c29de7316f81d6f0800000000000000
+      internalID: -661590022533836092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 855
+        width: 19
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d09d5eb287a7e44d0800000000000000
+      internalID: -3148444432934250227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_15
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 901
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fda230adb1dac120800000000000000
+      internalID: 2434989160913874416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_16
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 901
+        width: 42
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 409e006b6e5718000800000000000000
+      internalID: 36439905752115460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_17
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 901
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 234bb68b1c3cfeac0800000000000000
+      internalID: -3823622321824091086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_18
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 911
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 611ecc07291e3a860800000000000000
+      internalID: 7540118220222292246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_19
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 871
+        width: 47
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebff7422e411a3bf0800000000000000
+      internalID: -343943394260156482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_20
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 911
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6d35917cf0a28010800000000000000
+      internalID: 1189690257677041003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_21
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 877
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 050c2b550684bd190800000000000000
+      internalID: -7936670339718528944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_22
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 893
+        width: 34
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46500b8afc7f5db60800000000000000
+      internalID: 7770389203358057828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_23
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 898
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1db66face9ffce990800000000000000
+      internalID: -7355223033927799855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_24
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 885
+        width: 28
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce3f0f99aee29bd30800000000000000
+      internalID: 4447637692145005548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_25
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 887
+        width: 34
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb46a065a762c2270800000000000000
+      internalID: 8226992926170440891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_26
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 877
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ee147eead75b1250800000000000000
+      internalID: 5916419133296352996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 751
+        width: 17
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14bf97633913934e0800000000000000
+      internalID: -2001514051045557439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_28
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 845
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f73fb0881802e880800000000000000
+      internalID: -8583289038482491408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_29
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 807
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a89c509933a3a6420800000000000000
+      internalID: 2623973726181771658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_30
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 834
+        width: 42
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85b7a3c94b705edb0800000000000000
+      internalID: -4763392558577845416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_31
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 826
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba1bcae2bc13f5090800000000000000
+      internalID: -8043655660729224789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_32
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 815
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 797a79f6e76bc66c0800000000000000
+      internalID: -4148740502560725097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_33
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 733
+        width: 89
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43b608b37c5f331e0800000000000000
+      internalID: -2219159955317953740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_34
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 834
+        width: 26
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84ab33bacde5d9840800000000000000
+      internalID: 5232442643932494408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_35
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 826
+        width: 26
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 367731415f00a7ef0800000000000000
+      internalID: -109774188313348253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_36
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 823
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 562ae6465076f35e0800000000000000
+      internalID: -1927708842633813403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_37
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 807
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edf637827e3b8a020800000000000000
+      internalID: 2353328610698555358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_38
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 767
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 973e39e6f1d1ca500800000000000000
+      internalID: 408733687020249977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_39
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 757
+        width: 36
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4c745c7479adf730800000000000000
+      internalID: 4034567158961044559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_40
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 762
+        width: 26
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 817b4426903b330a0800000000000000
+      internalID: -6902976950944090344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_41
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 743
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd842f73603993170800000000000000
+      internalID: 8158713854876076251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_42
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 751
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8334169bfdc7f6280800000000000000
+      internalID: -9047875826034326728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_43
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 762
+        width: 42
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1c83ce5b52b3f500800000000000000
+      internalID: 428882495031970843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_44
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 751
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7b0a231d19089d90800000000000000
+      internalID: -7090907592814621825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_45
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 751
+        width: 23
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db50afd559d1c3c80800000000000000
+      internalID: -8341759882433002051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_46
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 743
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6906a11458873f8b0800000000000000
+      internalID: -5119615837671890794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_47
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 751
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 734b2b87a9e198b60800000000000000
+      internalID: 7748758282666423351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_48
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 733
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2f0def5386c77dc0800000000000000
+      internalID: -3641223506153369810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 743
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 995a2b40b8c69ffe0800000000000000
+      internalID: -1154772485108750951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 679
+        width: 17
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40836d903f63327e0800000000000000
+      internalID: -1791527809293338620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_51
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 727
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7338f8101b7246b70800000000000000
+      internalID: 8891275205525078839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_52
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 714
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feeb5b42bfd8a7610800000000000000
+      internalID: 1619763125785313007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_53
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 709
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60243bf0861121580800000000000000
+      internalID: -8857998378446667258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_54
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 671
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b11713d1a90de9550800000000000000
+      internalID: 6169597899877478683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_55
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 698
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c02b5ce5fd0ebbe0800000000000000
+      internalID: -1459713879337918268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_56
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 671
+        width: 60
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31ab5d2eb12794bc0800000000000000
+      internalID: -3798379346614961645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_57
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 671
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6320c2b2822d20900800000000000000
+      internalID: 649312366259601974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_58
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 637
+        width: 106
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a6b95a93fcf90420800000000000000
+      internalID: 2596884783352624804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_59
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 690
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3e7252fe00503a30800000000000000
+      internalID: 4192939278207188540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_60
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 679
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86d3db7f91fcd7830800000000000000
+      internalID: 4070637348650302824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_61
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 639
+        width: 9
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1c275fc6e14bc7d0800000000000000
+      internalID: -2897149475705902050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_62
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 655
+        width: 31
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13d5586503dd67670800000000000000
+      internalID: 8536253343407103281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 583
+        width: 17
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55d0b2c6d4a9e1c10800000000000000
+      internalID: 2026226539681221973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_64
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 615
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7cd274c7b482bd40800000000000000
+      internalID: 5598683211584691323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_65
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 626
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: add7e8bf6d6f23230800000000000000
+      internalID: 3617224853935783386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_66
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 613
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af9ac2cf403f99400800000000000000
+      internalID: 331563250324646394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_67
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 589
+        width: 52
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5801b967d6cfd64e0800000000000000
+      internalID: -1986654313529012091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_68
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 615
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e7c1181d1726e9a0800000000000000
+      internalID: -6204228430744926240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_69
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 599
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dfd843fdb920f340800000000000000
+      internalID: 4895458690758926292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_70
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 599
+        width: 42
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 986ef2f70f6286dc0800000000000000
+      internalID: -3645621083988564343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_71
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 615
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a56529e4162bcac20800000000000000
+      internalID: 3219143964662847066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_72
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 607
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 842c337011a7bcbe0800000000000000
+      internalID: -1455935840970358200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_73
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 607
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 021bd90d7a9da5280800000000000000
+      internalID: -9053684786092199648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_74
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 583
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac072307a80cc0900800000000000000
+      internalID: 652107746882253002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_75
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 599
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c15306a16399e5330800000000000000
+      internalID: 3701564401394922780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_76
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 599
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4231c67427e2cbe30800000000000000
+      internalID: 4520539194332549924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_77
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 586
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 260c2e7cb629b5d20800000000000000
+      internalID: 3268366946200109154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 559
+        width: 9
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f74dfb740b8653d0800000000000000
+      internalID: -3218232032333314058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_79
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 551
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75609d0d955e37be0800000000000000
+      internalID: -1480587678556027305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_80
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 535
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 628cbd7c416e5dc30800000000000000
+      internalID: 4383662789241849894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_81
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 525
+        width: 52
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12b304ab1410c32f0800000000000000
+      internalID: -991916436119078111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_82
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 543
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98eec6ba5208d3080800000000000000
+      internalID: -9206061163997237623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_83
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 551
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a744469362579140800000000000000
+      internalID: 4726336921624922021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_84
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 551
+        width: 23
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ace15f91f8f4862e0800000000000000
+      internalID: -2132366947525517622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_85
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 543
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 430343bccc68292a0800000000000000
+      internalID: -6732170278824824780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_86
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 517
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 779b2c7feeb1b3460800000000000000
+      internalID: 7222397140591622519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_87
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 535
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 945f826547e1d8240800000000000000
+      internalID: 4795522663230010697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_88
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 527
+        width: 34
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 166ab98ca044d0930800000000000000
+      internalID: 4111016847965136481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_89
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 535
+        width: 26
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a38291845bf39b220800000000000000
+      internalID: 2502101115812259898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_90
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 519
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45119745b9a77bc60800000000000000
+      internalID: 7833864884390007124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_91
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 231
+        width: 19
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3305e174aa3d24ab0800000000000000
+      internalID: -5025221505900982221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_92
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 509
+        width: 34
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90e405d27a4f8e510800000000000000
+      internalID: 1578780668250312201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_93
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 461
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d70c989d68f0d4340800000000000000
+      internalID: 4849549445597610109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_94
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 471
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b375cbde7fe87980800000000000000
+      internalID: -8540813365176077391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_95
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 461
+        width: 34
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07b1dc4cd72f781e0800000000000000
+      internalID: -2195519671333217424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_96
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 479
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 515bd322ed1381170800000000000000
+      internalID: 8149318355853882645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_97
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 471
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fa4cc7ae09acb610800000000000000
+      internalID: 1638370244865837813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_98
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 453
+        width: 62
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cad43a0066c3cf430800000000000000
+      internalID: 3817992992898370988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_99
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 447
+        width: 36
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e39f101258a5c040800000000000000
+      internalID: 4667321659250676707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_100
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 471
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77257cb262f9e9410800000000000000
+      internalID: 1485799913370899063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_101
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 463
+        width: 23
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 960801dffb532cc50800000000000000
+      internalID: 6683963895671980137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_102
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 463
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ceba9a1593c72ff0800000000000000
+      internalID: -60865024782319930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_103
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 453
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c80d916cc3dbba510800000000000000
+      internalID: 1561549764533276812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_104
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 463
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c09602b28efb1e10800000000000000
+      internalID: 2169607482795004097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_105
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 458
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9601807ac976c02e0800000000000000
+      internalID: -2158236198902427543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_106
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 453
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab3f7b1b44d88b5d0800000000000000
+      internalID: -3046529821737225286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_107
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 389
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82d4835588649c780800000000000000
+      internalID: -8662314856911188696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_108
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 407
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7dd7d46b3c686d70800000000000000
+      internalID: 9036591654669639038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_109
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 389
+        width: 44
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df569cc92ba27a1d0800000000000000
+      internalID: -3339653652048943619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_110
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 383
+        width: 58
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 989f401c15ea533b0800000000000000
+      internalID: -5533324901000873591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_111
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 351
+        width: 89
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a31997ee840796d40800000000000000
+      internalID: 5578113072015970618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_112
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 389
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed4b5fa9d65674940800000000000000
+      internalID: 5280300609540830430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_113
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 386
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77b8f98b2eaeec7d0800000000000000
+      internalID: -2896119250871678089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_114
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 378
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd68ad73245595220800000000000000
+      internalID: 2475103213110068956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_115
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 378
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7613141d939899c0800000000000000
+      internalID: -3920221172770072964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_116
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 365
+        width: 42
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 475c7fcf59f339770800000000000000
+      internalID: 8616300425516664180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_117
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 343
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e49b7c53c7728500800000000000000
+      internalID: 397011398115955945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_118
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 327
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d3ce34f2e343eba0800000000000000
+      internalID: -6060926031471131695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_119
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 314
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cac1537a688069e40800000000000000
+      internalID: 5662722955888893100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_120
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 325
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd570148cf5eb2840800000000000000
+      internalID: 5200503067439560156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_121
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 322
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d34981d15e8a728b0800000000000000
+      internalID: -5176983544649968579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_122
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 314
+        width: 42
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9c81654d3b04b930800000000000000
+      internalID: 4157960713754741917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_123
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 314
+        width: 39
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f4cabd34793450b0800000000000000
+      internalID: -5740900453575899917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_124
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 309
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff0e1f25153cfafb0800000000000000
+      internalID: -4634270737489600257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_125
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 314
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8d0e2f5992eaba60800000000000000
+      internalID: 7690708462043270543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_126
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 319
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6201aecae9331950800000000000000
+      internalID: 6418537574584877674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_127
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 309
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a89beb053b5a5d200800000000000000
+      internalID: 204251547687631242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_128
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 314
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35581832fc3e8aef0800000000000000
+      internalID: -96576913195039405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_129
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 314
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1118fe709ce2b070800000000000000
+      internalID: 8120813183452057885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_130
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 293
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 871f1ccaceb9d3b40800000000000000
+      internalID: 5421660967236923768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_131
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 295
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d12d26bf0fb4ec400800000000000000
+      internalID: 346297719735898653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_132
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 261
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2ae2a53d4119b720800000000000000
+      internalID: 2862338061480684075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_133
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 271
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9615640818f9e6c70800000000000000
+      internalID: 8966279286692925801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_134
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 261
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b434ba8ea3f164640800000000000000
+      internalID: 5063769168896803659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_135
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 247
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13633fb58ed019e60800000000000000
+      internalID: 7967164507421357617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_136
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 255
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afad47dc7a1b5a800800000000000000
+      internalID: 623099457725324026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_137
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 239
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53066da3117cd9340800000000000000
+      internalID: 4872269248700244021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_138
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 250
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af8ace51ada32e400800000000000000
+      internalID: 351908429233432826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_139
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 239
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82d0b1d71373eba90800000000000000
+      internalID: -7296333660601774808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_140
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 231
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4e60e28a784a7b80800000000000000
+      internalID: -8396318864259912113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_141
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 239
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 664387bbb925589d0800000000000000
+      internalID: -2772719166758046618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_142
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 199
+        width: 26
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84d0fb54de58c4250800000000000000
+      internalID: 5930262063463992648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_143
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 239
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64d7b4ad69705f9e0800000000000000
+      internalID: -1588354949089362618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_144
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 17
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d8008aa155913300800000000000000
+      internalID: 230129233958013138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_145
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 229
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a0256d40dea4d650800000000000000
+      internalID: 6256817991999365282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_146
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 178
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb7b215b5e8925810800000000000000
+      internalID: 1752631317353379774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_147
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 167
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6db04082ba7d64e20800000000000000
+      internalID: 3334589704225164246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_148
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 183
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e353b6da21f0cb60800000000000000
+      internalID: 7764470923879732200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_149
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 167
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d6512cb6f9d5cc70800000000000000
+      internalID: 8990831884856547033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_150
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 181
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17ee253ee8b4b5710800000000000000
+      internalID: 1683021962824314481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_151
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 175
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccefd90555d13fc10800000000000000
+      internalID: 2086043304664628940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_152
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 175
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b54fe99e59bdac460800000000000000
+      internalID: 7262858786004464731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_153
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 159
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53382754a6d602020800000000000000
+      internalID: 2314970511667528501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_154
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 175
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 971e001907ca733c0800000000000000
+      internalID: -4379842513125449351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_155
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 167
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bbb73b97cc376ec0800000000000000
+      internalID: -3573820951294919760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_156
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 167
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4a423fb405ccf980800000000000000
+      internalID: -8503705372204053941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_157
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 159
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76e05f58a88853630800000000000000
+      internalID: 3906178380348067431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_158
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 95
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 716e7a2fb6766c610800000000000000
+      internalID: 1641112827553375767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_159
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 103
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f5f78711fbff4c60800000000000000
+      internalID: 7804733692156835319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_160
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 111
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d548f322fe93ebdc0800000000000000
+      internalID: -3621393351124745123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_161
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 15
+        width: 148
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3341b77ddd0fab980800000000000000
+      internalID: -8522234509251636173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_162
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 95
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5af77dd56ab5ce80800000000000000
+      internalID: -8158910203241694627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_163
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 87
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f38ea22d73a7836e0800000000000000
+      internalID: -1857600466122512321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_164
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 79
+        width: 34
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07d1b498f52685af0800000000000000
+      internalID: -407467603812213392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_165
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 87
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69b64851ea0e0b040800000000000000
+      internalID: 4661472652618394518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_166
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 87
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb38a9a4a6c0aeaf0800000000000000
+      internalID: -366466769019567169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_167
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 87
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a3325cafaf698800800000000000000
+      internalID: 615145624413811623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_168
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 71
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 375000a490fad7b10800000000000000
+      internalID: 1980931865543968115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_169
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 18
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 323e537986b7f4110800000000000000
+      internalID: 1247351310948623139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_170
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 23
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99d7c308e67967c80800000000000000
+      internalID: -8325300360294138471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenDi2_171
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 0
+        width: 153
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a7da6d4ed5591b50800000000000000
+      internalID: 6564372345139156897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BenDi2_0: 4877208237370064156
+      BenDi2_1: -702209546491614940
+      BenDi2_10: 6717448624590508343
+      BenDi2_100: 1485799913370899063
+      BenDi2_101: 6683963895671980137
+      BenDi2_102: -60865024782319930
+      BenDi2_103: 1561549764533276812
+      BenDi2_104: 2169607482795004097
+      BenDi2_105: -2158236198902427543
+      BenDi2_106: -3046529821737225286
+      BenDi2_107: -8662314856911188696
+      BenDi2_108: 9036591654669639038
+      BenDi2_109: -3339653652048943619
+      BenDi2_11: -9047975518371720901
+      BenDi2_110: -5533324901000873591
+      BenDi2_111: 5578113072015970618
+      BenDi2_112: 5280300609540830430
+      BenDi2_113: -2896119250871678089
+      BenDi2_114: 2475103213110068956
+      BenDi2_115: -3920221172770072964
+      BenDi2_116: 8616300425516664180
+      BenDi2_117: 397011398115955945
+      BenDi2_118: -6060926031471131695
+      BenDi2_119: 5662722955888893100
+      BenDi2_12: 574027986076468161
+      BenDi2_120: 5200503067439560156
+      BenDi2_121: -5176983544649968579
+      BenDi2_122: 4157960713754741917
+      BenDi2_123: -5740900453575899917
+      BenDi2_124: -4634270737489600257
+      BenDi2_125: 7690708462043270543
+      BenDi2_126: 6418537574584877674
+      BenDi2_127: 204251547687631242
+      BenDi2_128: -96576913195039405
+      BenDi2_129: 8120813183452057885
+      BenDi2_13: -661590022533836092
+      BenDi2_130: 5421660967236923768
+      BenDi2_131: 346297719735898653
+      BenDi2_132: 2862338061480684075
+      BenDi2_133: 8966279286692925801
+      BenDi2_134: 5063769168896803659
+      BenDi2_135: 7967164507421357617
+      BenDi2_136: 623099457725324026
+      BenDi2_137: 4872269248700244021
+      BenDi2_138: 351908429233432826
+      BenDi2_139: -7296333660601774808
+      BenDi2_14: -3148444432934250227
+      BenDi2_140: -8396318864259912113
+      BenDi2_141: -2772719166758046618
+      BenDi2_142: 5930262063463992648
+      BenDi2_143: -1588354949089362618
+      BenDi2_144: 230129233958013138
+      BenDi2_145: 6256817991999365282
+      BenDi2_146: 1752631317353379774
+      BenDi2_147: 3334589704225164246
+      BenDi2_148: 7764470923879732200
+      BenDi2_149: 8990831884856547033
+      BenDi2_15: 2434989160913874416
+      BenDi2_150: 1683021962824314481
+      BenDi2_151: 2086043304664628940
+      BenDi2_152: 7262858786004464731
+      BenDi2_153: 2314970511667528501
+      BenDi2_154: -4379842513125449351
+      BenDi2_155: -3573820951294919760
+      BenDi2_156: -8503705372204053941
+      BenDi2_157: 3906178380348067431
+      BenDi2_158: 1641112827553375767
+      BenDi2_159: 7804733692156835319
+      BenDi2_16: 36439905752115460
+      BenDi2_160: -3621393351124745123
+      BenDi2_161: -8522234509251636173
+      BenDi2_162: -8158910203241694627
+      BenDi2_163: -1857600466122512321
+      BenDi2_164: -407467603812213392
+      BenDi2_165: 4661472652618394518
+      BenDi2_166: -366466769019567169
+      BenDi2_167: 615145624413811623
+      BenDi2_168: 1980931865543968115
+      BenDi2_169: 1247351310948623139
+      BenDi2_17: -3823622321824091086
+      BenDi2_170: -8325300360294138471
+      BenDi2_171: 6564372345139156897
+      BenDi2_18: 7540118220222292246
+      BenDi2_19: -343943394260156482
+      BenDi2_2: -5163842648289917560
+      BenDi2_20: 1189690257677041003
+      BenDi2_21: -7936670339718528944
+      BenDi2_22: 7770389203358057828
+      BenDi2_23: -7355223033927799855
+      BenDi2_24: 4447637692145005548
+      BenDi2_25: 8226992926170440891
+      BenDi2_26: 5916419133296352996
+      BenDi2_27: -2001514051045557439
+      BenDi2_28: -8583289038482491408
+      BenDi2_29: 2623973726181771658
+      BenDi2_3: -2127148928784150946
+      BenDi2_30: -4763392558577845416
+      BenDi2_31: -8043655660729224789
+      BenDi2_32: -4148740502560725097
+      BenDi2_33: -2219159955317953740
+      BenDi2_34: 5232442643932494408
+      BenDi2_35: -109774188313348253
+      BenDi2_36: -1927708842633813403
+      BenDi2_37: 2353328610698555358
+      BenDi2_38: 408733687020249977
+      BenDi2_39: 4034567158961044559
+      BenDi2_4: -6286714563293619432
+      BenDi2_40: -6902976950944090344
+      BenDi2_41: 8158713854876076251
+      BenDi2_42: -9047875826034326728
+      BenDi2_43: 428882495031970843
+      BenDi2_44: -7090907592814621825
+      BenDi2_45: -8341759882433002051
+      BenDi2_46: -5119615837671890794
+      BenDi2_47: 7748758282666423351
+      BenDi2_48: -3641223506153369810
+      BenDi2_49: -1154772485108750951
+      BenDi2_5: 8284858229067689724
+      BenDi2_50: -1791527809293338620
+      BenDi2_51: 8891275205525078839
+      BenDi2_52: 1619763125785313007
+      BenDi2_53: -8857998378446667258
+      BenDi2_54: 6169597899877478683
+      BenDi2_55: -1459713879337918268
+      BenDi2_56: -3798379346614961645
+      BenDi2_57: 649312366259601974
+      BenDi2_58: 2596884783352624804
+      BenDi2_59: 4192939278207188540
+      BenDi2_6: 6085471736959733664
+      BenDi2_60: 4070637348650302824
+      BenDi2_61: -2897149475705902050
+      BenDi2_62: 8536253343407103281
+      BenDi2_63: 2026226539681221973
+      BenDi2_64: 5598683211584691323
+      BenDi2_65: 3617224853935783386
+      BenDi2_66: 331563250324646394
+      BenDi2_67: -1986654313529012091
+      BenDi2_68: -6204228430744926240
+      BenDi2_69: 4895458690758926292
+      BenDi2_7: 2976628538101263866
+      BenDi2_70: -3645621083988564343
+      BenDi2_71: 3219143964662847066
+      BenDi2_72: -1455935840970358200
+      BenDi2_73: -9053684786092199648
+      BenDi2_74: 652107746882253002
+      BenDi2_75: 3701564401394922780
+      BenDi2_76: 4520539194332549924
+      BenDi2_77: 3268366946200109154
+      BenDi2_78: -3218232032333314058
+      BenDi2_79: -1480587678556027305
+      BenDi2_8: 745599058494689805
+      BenDi2_80: 4383662789241849894
+      BenDi2_81: -991916436119078111
+      BenDi2_82: -9206061163997237623
+      BenDi2_83: 4726336921624922021
+      BenDi2_84: -2132366947525517622
+      BenDi2_85: -6732170278824824780
+      BenDi2_86: 7222397140591622519
+      BenDi2_87: 4795522663230010697
+      BenDi2_88: 4111016847965136481
+      BenDi2_89: 2502101115812259898
+      BenDi2_9: -9098263425560359659
+      BenDi2_90: 7833864884390007124
+      BenDi2_91: -5025221505900982221
+      BenDi2_92: 1578780668250312201
+      BenDi2_93: 4849549445597610109
+      BenDi2_94: -8540813365176077391
+      BenDi2_95: -2195519671333217424
+      BenDi2_96: 8149318355853882645
+      BenDi2_97: 1638370244865837813
+      BenDi2_98: 3817992992898370988
+      BenDi2_99: 4667321659250676707
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
