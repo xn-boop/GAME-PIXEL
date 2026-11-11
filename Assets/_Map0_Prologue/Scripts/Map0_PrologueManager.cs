@@ -104,9 +104,46 @@ namespace Game.Map0
                 yellowCatNpc.SetActive(false);
             }
 
+            // Ensure sound controller for top-right sound icon sync
+            EnsureSoundController();
+
+            if (bgmSource != null)
+            {
+                bool isMuted = AudioManager.Instance != null ? AudioManager.Instance.IsMuted : (PlayerPrefs.GetInt("Game_Audio_Muted", 0) == 1);
+                bgmSource.mute = isMuted;
+                if (isMuted && bgmSource.isPlaying)
+                {
+                    bgmSource.Pause();
+                }
+            }
+
             // Set initial state and start Stage 1 sequence
             currentStage = PrologueStage.Stage1_ArriveHome;
             StartStage1Sequence();
+        }
+
+        private void Update()
+        {
+            if (bgmSource != null && AudioManager.Instance != null)
+            {
+                if (AudioManager.Instance.IsMuted && bgmSource.isPlaying)
+                {
+                    bgmSource.Pause();
+                }
+                else if (!AudioManager.Instance.IsMuted && !bgmSource.isPlaying && currentStage < PrologueStage.Stage4_CatGuidance)
+                {
+                    bgmSource.UnPause();
+                }
+            }
+        }
+
+        private void EnsureSoundController()
+        {
+            var soundCtrl = GetComponent<MenuSoundController>();
+            if (soundCtrl == null)
+            {
+                soundCtrl = gameObject.AddComponent<MenuSoundController>();
+            }
         }
 
         #region Stage 1: Bước vào ngôi nhà cũ

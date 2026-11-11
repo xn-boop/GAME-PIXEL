@@ -74,7 +74,7 @@ namespace Game.Map3
             Instance = this;
 
             // Load saved mute state
-            isMuted = PlayerPrefs.GetInt("Game_Audio_Muted", 0) == 1;
+            isMuted = AudioManager.Instance != null ? AudioManager.Instance.IsMuted : (PlayerPrefs.GetInt("Game_Audio_Muted", 0) == 1);
             ApplyAudioMute(isMuted, notify: false);
 
             // Wire Top Right Buttons
@@ -119,6 +119,14 @@ namespace Game.Map3
 
         private void Update()
         {
+            // Sync mute state across scenes
+            if (AudioManager.Instance != null && isMuted != AudioManager.Instance.IsMuted)
+            {
+                isMuted = AudioManager.Instance.IsMuted;
+                UpdateSoundIcon();
+                UpdateSoundModalUI();
+            }
+
             // Don't intercept shortcuts if quiz is active
             if (Map3_QuizManager.Instance != null && Map3_QuizManager.Instance.IsQuizOpen)
             {
@@ -227,14 +235,7 @@ namespace Game.Map3
 
         public void OnSoundButtonClicked()
         {
-            if (panelSound != null)
-            {
-                ToggleSoundModal();
-            }
-            else
-            {
-                ToggleSound();
-            }
+            ToggleSound();
         }
 
         public void ToggleSoundModal()
@@ -301,7 +302,7 @@ namespace Game.Map3
 
             if (AudioManager.Instance != null)
             {
-                AudioManager.Instance.SetMusicVolume(muted ? 0f : 0.3f);
+                AudioManager.Instance.SetMuted(muted);
             }
 
             if (notify && Map3_UIManager.Instance != null)

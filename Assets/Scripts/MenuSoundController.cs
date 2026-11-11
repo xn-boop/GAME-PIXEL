@@ -478,6 +478,7 @@ public class MenuSoundController : MonoBehaviour
     private Button CreateSoundButton(Transform parent)
     {
         GameObject btnObj = new GameObject("Btn_Sound", typeof(RectTransform), typeof(CanvasRenderer), typeof(Image), typeof(Button));
+        btnObj.layer = parent.gameObject.layer;
         btnObj.transform.SetParent(parent, false);
 
         RectTransform rt = btnObj.GetComponent<RectTransform>();
@@ -501,6 +502,7 @@ public class MenuSoundController : MonoBehaviour
 
         // Tạo Icon con
         GameObject iconObj = new GameObject("Icon", typeof(RectTransform), typeof(CanvasRenderer), typeof(Image));
+        iconObj.layer = parent.gameObject.layer;
         iconObj.transform.SetParent(btnObj.transform, false);
 
         RectTransform iconRt = iconObj.GetComponent<RectTransform>();

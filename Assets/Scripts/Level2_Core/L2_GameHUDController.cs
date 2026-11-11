@@ -68,7 +68,7 @@ public class L2_GameHUDController : MonoBehaviour
         Instance = this;
 
         // Load saved mute state
-        isMuted = PlayerPrefs.GetInt("Game_Audio_Muted", 0) == 1;
+        isMuted = AudioManager.Instance != null ? AudioManager.Instance.IsMuted : (PlayerPrefs.GetInt("Game_Audio_Muted", 0) == 1);
         ApplyAudioMute(isMuted, notify: false);
 
         // Wire Top Right Buttons
@@ -112,6 +112,14 @@ public class L2_GameHUDController : MonoBehaviour
 
     private void Update()
     {
+        // Sync mute state across scenes
+        if (AudioManager.Instance != null && isMuted != AudioManager.Instance.IsMuted)
+        {
+            isMuted = AudioManager.Instance.IsMuted;
+            UpdateSoundIcon();
+            UpdateSoundModalUI();
+        }
+
         // Don't intercept shortcuts if quiz is active
         if (L2_QuizManager.Instance != null && L2_QuizManager.Instance.IsQuizOpen)
         {
@@ -194,14 +202,7 @@ public class L2_GameHUDController : MonoBehaviour
 
     public void OnSoundButtonClicked()
     {
-        if (panelSound != null)
-        {
-            ToggleSoundModal();
-        }
-        else
-        {
-            ToggleSound();
-        }
+        ToggleSound();
     }
 
     public void ToggleSoundModal()
@@ -268,7 +269,7 @@ public class L2_GameHUDController : MonoBehaviour
 
         if (AudioManager.Instance != null)
         {
-            AudioManager.Instance.SetMusicVolume(muted ? 0f : 0.3f);
+            AudioManager.Instance.SetMuted(muted);
         }
 
         if (notify && L2_GameManager.Instance != null)

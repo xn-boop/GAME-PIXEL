@@ -811,6 +811,19 @@ Chuyến đi lần này không quá bận rộn, nhưng tôi rất thích nhữn
     {
         if (isTransitioning) return;
 
+        // Sync BGM with global mute
+        if (bgmAudioSource != null && AudioManager.Instance != null)
+        {
+            if (AudioManager.Instance.IsMuted && bgmAudioSource.isPlaying)
+            {
+                bgmAudioSource.Pause();
+            }
+            else if (!AudioManager.Instance.IsMuted && !bgmAudioSource.isPlaying && backgroundMusicClip != null)
+            {
+                bgmAudioSource.UnPause();
+            }
+        }
+
         // Phím tắt kiểm thử nhanh cho QA / Editor:
         // Phím 1: Xem hiệu ứng mở mảnh 1 (sau Map 1)
         // Phím 2: Xem hiệu ứng mở mảnh 2 (sau Map 2)
@@ -1604,11 +1617,18 @@ Chuyến đi lần này không quá bận rộn, nhưng tôi rất thích nhữn
 #endif
         }
 
+        bool isMuted = AudioManager.Instance != null ? AudioManager.Instance.IsMuted : (PlayerPrefs.GetInt("Game_Audio_Muted", 0) == 1);
         if (bgmAudioSource != null && backgroundMusicClip != null && !bgmAudioSource.isPlaying)
         {
             bgmAudioSource.clip = backgroundMusicClip;
-            bgmAudioSource.Play();
+            bgmAudioSource.mute = isMuted;
+            if (!isMuted)
+            {
+                bgmAudioSource.Play();
+            }
         }
+
+        EnsureSoundController();
 
         // Tạo sẵn các clip âm thanh procedural retro
         clickChime = CreateProceduralChime(950f, 0.10f, 25f);
@@ -1619,6 +1639,15 @@ Chuyến đi lần này không quá bận rộn, nhưng tôi rất thích nhữn
         chestOpenChime = CreateChestOpenChime();
         bookLiftChime = CreateBookLiftChime();
         pageFlipChime = CreatePageFlipChime();
+    }
+
+    private void EnsureSoundController()
+    {
+        var soundCtrl = GetComponent<MenuSoundController>();
+        if (soundCtrl == null)
+        {
+            soundCtrl = gameObject.AddComponent<MenuSoundController>();
+        }
     }
 
     public void OnMusicVolumeChanged(float volume)

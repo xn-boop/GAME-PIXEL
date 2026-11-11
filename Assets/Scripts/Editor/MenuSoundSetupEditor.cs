@@ -23,7 +23,11 @@ public static class MenuSoundSetupEditor
         "Assets/Scenes/MainMenu.unity",
         "Assets/Scenes/LoginMenu.unity",
         "Assets/Scenes/RegisterMenu.unity",
-        "Assets/Scenes/Chọn map.unity"
+        "Assets/Scenes/Chọn map.unity",
+        "Assets/Scenes/Map0_Prologue.unity",
+        "Assets/_Map0_Prologue/Scenes/Map0_Prologue.unity",
+        "Assets/Scenes/Puzzle.unity",
+        "Assets/Scenes/Puzzel.unity"
     };
 
     private static int updateTicks = 0;
@@ -194,6 +198,7 @@ public static class MenuSoundSetupEditor
         else
         {
             GameObject btnObj = new GameObject("Btn_Sound", typeof(RectTransform), typeof(CanvasRenderer), typeof(Image), typeof(Button));
+            btnObj.layer = canvas.gameObject.layer;
             btnObj.transform.SetParent(canvas.transform, false);
 
             RectTransform rt = btnObj.GetComponent<RectTransform>();
@@ -216,6 +221,7 @@ public static class MenuSoundSetupEditor
             btnSound.colors = colors;
 
             GameObject iconObj = new GameObject("Icon", typeof(RectTransform), typeof(CanvasRenderer), typeof(Image));
+            iconObj.layer = canvas.gameObject.layer;
             iconObj.transform.SetParent(btnObj.transform, false);
 
             RectTransform iconRt = iconObj.GetComponent<RectTransform>();
@@ -252,8 +258,7 @@ public static class MenuSoundSetupEditor
         GameObject managerGo = null;
         foreach (GameObject root in scene.GetRootGameObjects())
         {
-            if (root.name == "MainMenuManager" || root.name == "LoginMenuManager" ||
-                root.name == "RegisterMenuManager" || root.name == "ChonMapMenuManager")
+            if (root.name.EndsWith("Manager") || root.name.Contains("Menu"))
             {
                 managerGo = root;
                 break;
