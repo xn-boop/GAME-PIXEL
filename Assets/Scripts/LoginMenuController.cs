@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 using System.Collections;
 
@@ -936,6 +936,12 @@ public class LoginMenuController : MonoBehaviour
                 yield return new WaitForSecondsRealtime(0.5f);
                 yield return StartCoroutine(FadeOutRoutine());
 
+                // Dừng nhạc nền menu ngay khi rời LoginMenu sang Chọn map
+                if (AudioManager.Instance != null)
+                {
+                    try { AudioManager.Instance.StopMusic(); } catch { }
+                }
+
                 string targetScene = !string.IsNullOrEmpty(gameSceneName) ? gameSceneName : "Chọn map";
                 bool sceneLoaded = LoadSceneByNameOrPath(targetScene);
                 if (!sceneLoaded && flow != null)
@@ -1017,6 +1023,12 @@ public class LoginMenuController : MonoBehaviour
                 save?.StartNewGame();
                 yield return new WaitForSecondsRealtime(0.5f);
                 yield return StartCoroutine(FadeOutRoutine());
+
+                // Dừng nhạc nền menu ngay khi rời LoginMenu sang Chọn map
+                if (AudioManager.Instance != null)
+                {
+                    try { AudioManager.Instance.StopMusic(); } catch { }
+                }
 
                 string targetScene = !string.IsNullOrEmpty(gameSceneName) ? gameSceneName : "Chọn map";
                 bool sceneLoaded = LoadSceneByNameOrPath(targetScene);

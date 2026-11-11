@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -91,13 +91,26 @@ public class AudioManager : MonoBehaviour
 
         // Tự động kiểm tra phát hoặc dừng nhạc nền tùy theo cảnh hiện tại khi khởi chạy
         string currentScene = SceneManager.GetActiveScene().name;
-        if (IsStopMusicScene(currentScene))
-        {
-            StopMusic();
-        }
-        else if (IsMenuScene(currentScene))
+        if (IsMenuScene(currentScene))
         {
             PlayMainMenuMusic();
+        }
+        else
+        {
+            StopMusic();
+
+            if (currentScene == "Level1_Prototype" || currentScene == "Map1")
+            {
+                PlayLevel1Music();
+            }
+            else if (currentScene == "Scene_Level2" || currentScene == "Map2")
+            {
+                PlayLevel2Music();
+            }
+            else if (currentScene == "Map3_Final" || currentScene == "Map3")
+            {
+                PlayLevel3Music();
+            }
         }
     }
 
@@ -105,42 +118,37 @@ public class AudioManager : MonoBehaviour
     {
         string name = scene.name;
 
-        // Dừng nhạc nền menu khi đến trang Chọn map hoặc khi sang Map 0
-        if (IsStopMusicScene(name))
-        {
-            StopMusic();
-        }
-        else if (IsMenuScene(name))
+        // Chỉ phát nhạc nền menu (zephiramusic) ở 3 cảnh menu: MainMenu, LoginMenu, RegisterMenu.
+        // TẤT CẢ các cảnh còn lại (Chọn map, Map0_Prologue, Level 1..3, Puzzle, v.v.) tuyệt đối dừng nhạc menu!
+        if (IsMenuScene(name))
         {
             PlayMainMenuMusic();
         }
-        else if (name == "Level1_Prototype" || name == "Map1")
+        else
         {
-            PlayLevel1Music();
-        }
-        else if (name == "Scene_Level2" || name == "Map2")
-        {
-            PlayLevel2Music();
-        }
-        else if (name == "Map3_Final" || name == "Map3")
-        {
-            PlayLevel3Music();
+            StopMusic();
+
+            if (name == "Level1_Prototype" || name == "Map1")
+            {
+                PlayLevel1Music();
+            }
+            else if (name == "Scene_Level2" || name == "Map2")
+            {
+                PlayLevel2Music();
+            }
+            else if (name == "Map3_Final" || name == "Map3")
+            {
+                PlayLevel3Music();
+            }
         }
     }
 
-    private bool IsStopMusicScene(string sceneName)
+    public bool IsMenuScene(string sceneName)
     {
-        return sceneName == "Chọn map" ||
-               sceneName == "Chá» n map" ||
-               sceneName == "MenuManChoi" ||
-               sceneName == "Map0_Prologue";
-    }
-
-    private bool IsMenuScene(string sceneName)
-    {
-        return sceneName == "MainMenu" ||
-               sceneName == "LoginMenu" ||
-               sceneName == "RegisterMenu";
+        if (string.IsNullOrEmpty(sceneName)) return false;
+        return sceneName.Equals("MainMenu", StringComparison.OrdinalIgnoreCase) ||
+               sceneName.Equals("LoginMenu", StringComparison.OrdinalIgnoreCase) ||
+               sceneName.Equals("RegisterMenu", StringComparison.OrdinalIgnoreCase);
     }
 
     public void EnsureAudioSources()
@@ -287,9 +295,11 @@ public class AudioManager : MonoBehaviour
 
     public void StopMusic()
     {
+        EnsureAudioSources();
         if (musicSource != null)
         {
             musicSource.Stop();
+            musicSource.clip = null;
         }
     }
 
