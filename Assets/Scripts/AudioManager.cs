@@ -156,9 +156,20 @@ public class AudioManager : MonoBehaviour
         if (isInitialized) return;
         isInitialized = true;
 
-        if (mainMenuMusic == null)
+        if (mainMenuMusic == null || (mainMenuMusic != null && mainMenuMusic.name == "BGM_MainMenu"))
         {
-            try { mainMenuMusic = Resources.Load<AudioClip>("Audio/BGM_MainMenu"); } catch { }
+            // Ưu tiên bản nhạc BGM_Level03_Bridge du dương, êm dịu, hoài niệm, phù hợp sâu sắc với chủ đề "The Journey of Memories"
+            try { mainMenuMusic = Resources.Load<AudioClip>("Audio/BGM/BGM_Level03_Bridge"); } catch { }
+#if UNITY_EDITOR
+            if (mainMenuMusic == null)
+            {
+                try { mainMenuMusic = UnityEditor.AssetDatabase.LoadAssetAtPath<AudioClip>("Assets/Audio/BGM/BGM_Level03_Bridge.mp3"); } catch { }
+            }
+#endif
+            if (mainMenuMusic == null)
+            {
+                try { mainMenuMusic = Resources.Load<AudioClip>("Audio/BGM_MainMenu"); } catch { }
+            }
 #if UNITY_EDITOR
             if (mainMenuMusic == null)
             {
