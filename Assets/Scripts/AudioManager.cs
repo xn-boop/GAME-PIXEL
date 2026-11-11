@@ -320,7 +320,19 @@ public class AudioManager : MonoBehaviour
 
         musicSource.clip = clip;
         musicSource.volume = isMuted ? 0f : musicVolume;
-        musicSource.Play();
+        musicSource.mute = isMuted;
+
+        if (!isMuted)
+        {
+            musicSource.Play();
+        }
+        else
+        {
+            if (musicSource.isPlaying)
+            {
+                musicSource.Pause();
+            }
+        }
     }
 
     public void StopMusic()
@@ -409,11 +421,40 @@ public class AudioManager : MonoBehaviour
 
         if (musicSource != null)
         {
+            musicSource.mute = isMuted;
             musicSource.volume = isMuted ? 0f : musicVolume;
+
+            if (isMuted)
+            {
+                if (musicSource.isPlaying)
+                {
+                    musicSource.Pause();
+                }
+            }
+            else
+            {
+                if (musicSource.clip != null)
+                {
+                    musicSource.UnPause();
+                    if (!musicSource.isPlaying)
+                    {
+                        musicSource.Play();
+                    }
+                }
+                else
+                {
+                    Scene currentScene = SceneManager.GetActiveScene();
+                    if (IsMenuScene(currentScene))
+                    {
+                        PlayMainMenuMusic();
+                    }
+                }
+            }
         }
 
         if (sfxSource != null)
         {
+            sfxSource.mute = isMuted;
             sfxSource.volume = isMuted ? 0f : sfxVolume;
         }
     }

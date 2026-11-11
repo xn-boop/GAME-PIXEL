@@ -194,14 +194,7 @@ public class L1_GameHUDController : MonoBehaviour
 
     public void OnSoundButtonClicked()
     {
-        if (panelSound != null)
-        {
-            ToggleSoundModal();
-        }
-        else
-        {
-            ToggleSound();
-        }
+        ToggleSound();
     }
 
     public void ToggleSoundModal()

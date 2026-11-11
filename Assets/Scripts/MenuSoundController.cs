@@ -78,9 +78,18 @@ public class MenuSoundController : MonoBehaviour
         UpdateUIState(updateSliders: true);
     }
 
-#if UNITY_EDITOR
+    private bool? lastMutedState = null;
+
     private void Update()
     {
+        bool currentMuted = AudioManager.Instance != null ? AudioManager.Instance.IsMuted : (PlayerPrefs.GetInt("Game_Audio_Muted", 0) == 1);
+        if (!lastMutedState.HasValue || currentMuted != lastMutedState.Value)
+        {
+            lastMutedState = currentMuted;
+            UpdateSoundIcon();
+        }
+
+#if UNITY_EDITOR
         if (!Application.isPlaying)
         {
             if (btnSound == null || panelSound == null)
@@ -88,8 +97,8 @@ public class MenuSoundController : MonoBehaviour
                 EnsureUI();
             }
         }
-    }
 #endif
+    }
 
     /// <summary>
     /// Nạp các sprite biểu tượng chuẩn từ dự án nếu chưa được kéo vào Inspector
@@ -281,22 +290,11 @@ public class MenuSoundController : MonoBehaviour
 
     public void OnSoundButtonClicked()
     {
-        AudioManager.Instance?.PlayClickSound();
-        if (panelSound != null)
+        if (panelSound != null && panelSound.activeSelf)
         {
-            if (panelSound.activeSelf)
-            {
-                CloseSoundModal();
-            }
-            else
-            {
-                OpenSoundModal();
-            }
+            panelSound.SetActive(false);
         }
-        else
-        {
-            ToggleMute();
-        }
+        ToggleMute();
     }
 
     public void OpenSoundModal()
@@ -321,20 +319,28 @@ public class MenuSoundController : MonoBehaviour
 
     public void ToggleMute()
     {
-        AudioManager.Instance?.PlayClickSound();
+        bool wasMuted = false;
         if (AudioManager.Instance != null)
         {
+            wasMuted = AudioManager.Instance.IsMuted;
             AudioManager.Instance.ToggleMute();
+            if (wasMuted) // Khi bật lại âm thanh thì phát tiếng click báo hiệu
+            {
+                AudioManager.Instance.PlayClickSound();
+            }
         }
         else
         {
-            bool current = PlayerPrefs.GetInt("Game_Audio_Muted", 0) == 1;
-            PlayerPrefs.SetInt("Game_Audio_Muted", current ? 0 : 1);
+            wasMuted = PlayerPrefs.GetInt("Game_Audio_Muted", 0) == 1;
+            bool next = !wasMuted;
+            PlayerPrefs.SetInt("Game_Audio_Muted", next ? 1 : 0);
             PlayerPrefs.Save();
-            AudioListener.pause = !current;
-            AudioListener.volume = !current ? 0f : 1f;
+            AudioListener.pause = next;
+            AudioListener.volume = next ? 0f : 1f;
         }
+
         UpdateUIState(updateSliders: true);
+        UpdateSoundIcon();
     }
 
     public void OnMusicVolumeChanged(float value)
@@ -427,6 +433,18 @@ public class MenuSoundController : MonoBehaviour
 
     public void UpdateSoundIcon()
     {
+        LoadSpritesIfNull();
+
+        if (imgSoundIcon == null && btnSound != null)
+        {
+            imgSoundIcon = btnSound.transform.Find("Icon")?.GetComponent<Image>();
+        }
+        if (imgSoundIcon == null)
+        {
+            GameObject found = GameObject.Find("Btn_Sound/Icon");
+            if (found != null) imgSoundIcon = found.GetComponent<Image>();
+        }
+
         bool isMuted = false;
         float musicVol = 0.45f;
 
@@ -441,16 +459,16 @@ public class MenuSoundController : MonoBehaviour
             musicVol = PlayerPrefs.GetFloat("Game_Music_Volume", 0.45f);
         }
 
+        bool shouldBeOff = isMuted || musicVol <= 0.001f;
+
         if (imgSoundIcon != null)
         {
-            if (isMuted || musicVol <= 0.001f)
+            Sprite targetSprite = shouldBeOff ? soundOffSprite : soundOnSprite;
+            if (targetSprite != null)
             {
-                if (soundOffSprite != null) imgSoundIcon.sprite = soundOffSprite;
+                imgSoundIcon.sprite = targetSprite;
             }
-            else
-            {
-                if (soundOnSprite != null) imgSoundIcon.sprite = soundOnSprite;
-            }
+            imgSoundIcon.preserveAspect = true;
             imgSoundIcon.color = Color.white;
         }
     }
