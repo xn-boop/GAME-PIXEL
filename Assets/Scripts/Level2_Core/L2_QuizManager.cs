@@ -81,6 +81,170 @@ public class L2_QuizManager : MonoBehaviour
                 answerButtons[i].onClick.AddListener(() => OnAnswerClicked(index));
             }
         }
+
+        EnforceQuizUILayout();
+    }
+
+    public static void ConfigureAnswerText(TextMeshProUGUI txt)
+    {
+        if (txt == null) return;
+        txt.textWrappingMode = TextWrappingModes.Normal;
+        txt.enableAutoSizing = true;
+        txt.fontSizeMin = 18f;
+        txt.fontSizeMax = 21f;
+        txt.alignment = TextAlignmentOptions.MidlineLeft;
+        txt.margin = new Vector4(24f, 2f, 24f, 2f);
+        txt.overflowMode = TextOverflowModes.Ellipsis;
+
+        RectTransform rt = txt.rectTransform;
+        if (rt != null)
+        {
+            rt.anchorMin = Vector2.zero;
+            rt.anchorMax = Vector2.one;
+            rt.pivot = new Vector2(0.5f, 0.5f);
+            rt.anchoredPosition = Vector2.zero;
+            rt.sizeDelta = Vector2.zero;
+        }
+    }
+
+    public static void ConfigureQuestionText(TextMeshProUGUI txt)
+    {
+        if (txt == null) return;
+        txt.textWrappingMode = TextWrappingModes.Normal;
+        txt.enableAutoSizing = true;
+        txt.fontSizeMin = 24f;
+        txt.fontSizeMax = 28f;
+        txt.alignment = TextAlignmentOptions.TopLeft;
+        txt.margin = new Vector4(12f, 4f, 12f, 4f);
+        txt.overflowMode = TextOverflowModes.Ellipsis;
+    }
+
+    public void EnforceQuizUILayout()
+    {
+        if (quizPanel == null) return;
+        Transform card = quizPanel.transform.Find("Card_Content");
+        if (card == null && quizPanel.transform.childCount > 0)
+        {
+            card = quizPanel.transform.GetChild(0);
+        }
+        if (card == null) return;
+
+        RectTransform cardRt = card.GetComponent<RectTransform>();
+        if (cardRt != null)
+        {
+            cardRt.anchorMin = new Vector2(0.5f, 0.5f);
+            cardRt.anchorMax = new Vector2(0.5f, 0.5f);
+            cardRt.pivot = new Vector2(0.5f, 0.5f);
+            cardRt.anchoredPosition = Vector2.zero;
+            cardRt.sizeDelta = new Vector2(1400f, 760f);
+        }
+
+        // Cột trái: Panel_Illustration
+        Transform illusTr = card.Find("Panel_Illustration");
+        if (illusTr != null)
+        {
+            RectTransform illusRt = illusTr.GetComponent<RectTransform>();
+            if (illusRt != null)
+            {
+                illusRt.anchorMin = new Vector2(0.5f, 0.5f);
+                illusRt.anchorMax = new Vector2(0.5f, 0.5f);
+                illusRt.pivot = new Vector2(0.5f, 0.5f);
+                illusRt.anchoredPosition = new Vector2(-420f, -50f);
+                illusRt.sizeDelta = new Vector2(380f, 480f);
+            }
+
+            Transform imgTr = illusTr.Find("Img_Illustration");
+            if (imgTr != null)
+            {
+                RectTransform imgRt = imgTr.GetComponent<RectTransform>();
+                if (imgRt != null)
+                {
+                    imgRt.anchoredPosition = new Vector2(0f, 40f);
+                    imgRt.sizeDelta = new Vector2(310f, 310f);
+                }
+            }
+
+            Transform nameTr = illusTr.Find("Txt_Illustration_Name");
+            if (nameTr != null)
+            {
+                RectTransform nameRt = nameTr.GetComponent<RectTransform>();
+                if (nameRt != null)
+                {
+                    nameRt.anchoredPosition = new Vector2(0f, -175f);
+                    nameRt.sizeDelta = new Vector2(370f, 46f);
+                }
+                var txtName = nameTr.GetComponent<TextMeshProUGUI>();
+                if (txtName != null)
+                {
+                    txtName.fontSize = 24f;
+                    txtName.alignment = TextAlignmentOptions.Center;
+                }
+            }
+        }
+
+        // Cột phải: Tiêu đề
+        Transform titleTr = card.Find("Txt_Title");
+        if (titleTr != null)
+        {
+            RectTransform titleRt = titleTr.GetComponent<RectTransform>();
+            if (titleRt != null)
+            {
+                titleRt.anchoredPosition = new Vector2(0f, 312f);
+                titleRt.sizeDelta = new Vector2(950f, 54f);
+            }
+            var tTmp = titleTr.GetComponent<TextMeshProUGUI>();
+            if (tTmp != null)
+            {
+                tTmp.fontSize = 26f;
+            }
+        }
+
+        // Cột phải: Câu hỏi (hạ xuống Y = 135 để nằm trọn vẹn trong khung vàng, không tràn lên viền gỗ)
+        if (txtQuestion != null)
+        {
+            RectTransform qRt = txtQuestion.rectTransform;
+            if (qRt != null)
+            {
+                qRt.anchoredPosition = new Vector2(235f, 125f);
+                qRt.sizeDelta = new Vector2(850f, 130f);
+            }
+            ConfigureQuestionText(txtQuestion);
+        }
+
+        // Cột phải: Phản hồi
+        if (txtFeedback != null)
+        {
+            RectTransform fRt = txtFeedback.rectTransform;
+            if (fRt != null)
+            {
+                fRt.anchoredPosition = new Vector2(235f, 48f);
+                fRt.sizeDelta = new Vector2(850f, 26f);
+            }
+            txtFeedback.fontSize = 19f;
+        }
+
+        // Cột phải: 4 Nút Đáp Án
+        float[] btnYs = { -6f, -92f, -178f, -264f };
+        for (int i = 0; i < answerButtons.Length; i++)
+        {
+            if (answerButtons[i] != null)
+            {
+                RectTransform bRt = answerButtons[i].GetComponent<RectTransform>();
+                if (bRt != null)
+                {
+                    bRt.anchorMin = new Vector2(0.5f, 0.5f);
+                    bRt.anchorMax = new Vector2(0.5f, 0.5f);
+                    bRt.pivot = new Vector2(0.5f, 0.5f);
+                    bRt.anchoredPosition = new Vector2(235f, btnYs[i]);
+                    bRt.sizeDelta = new Vector2(850f, 78f);
+                }
+
+                if (i < answerTexts.Length && answerTexts[i] != null)
+                {
+                    ConfigureAnswerText(answerTexts[i]);
+                }
+            }
+        }
     }
 
     public void SetQuizPanel(GameObject panel)
@@ -182,6 +346,8 @@ public class L2_QuizManager : MonoBehaviour
         onCorrectCallback = onCorrect;
         isHandlingAnswer = false;
 
+        EnforceQuizUILayout();
+
         if (closeCoroutine != null)
         {
             StopCoroutine(closeCoroutine);
@@ -196,7 +362,9 @@ public class L2_QuizManager : MonoBehaviour
 
         if (txtQuestion != null)
         {
+            ConfigureQuestionText(txtQuestion);
             txtQuestion.text = data.question;
+            txtQuestion.ForceMeshUpdate();
         }
 
         // Set Illustration
@@ -236,7 +404,9 @@ public class L2_QuizManager : MonoBehaviour
             {
                 if (answerTexts[i] != null)
                 {
+                    ConfigureAnswerText(answerTexts[i]);
                     answerTexts[i].text = prefixes[i] + data.options[i];
+                    answerTexts[i].ForceMeshUpdate();
                 }
                 if (answerButtons[i] != null)
                 {

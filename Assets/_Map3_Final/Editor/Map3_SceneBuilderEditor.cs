@@ -76,13 +76,68 @@ namespace Game.Map3.Editor
 
 
         [MenuItem("Tools/Map 3/Setup Hint Frame & Dialog")]
-
         public static void SetupHintFrameInScene()
-
         {
-
             SetupTopRightHUDInScene();
+        }
 
+        [MenuItem("Tools/Map 3/Configure Quiz Illustration Sprites")]
+        public static void ConfigureQuizIllustrationSprites()
+        {
+            string dir = "Assets/Sprites/Level3/QuizIllustrations";
+            if (!Directory.Exists(dir)) return;
+            string[] files = Directory.GetFiles(dir, "*.png");
+            foreach (string f in files)
+            {
+                string assetPath = f.Replace("\\", "/");
+                TextureImporter ti = AssetImporter.GetAtPath(assetPath) as TextureImporter;
+                if (ti != null)
+                {
+                    ti.textureType = TextureImporterType.Sprite;
+                    ti.spriteImportMode = SpriteImportMode.Single;
+                    ti.mipmapEnabled = false;
+                    ti.filterMode = FilterMode.Point;
+                    ti.alphaIsTransparency = true;
+                    ti.SaveAndReimport();
+                }
+            }
+            AssetDatabase.Refresh();
+            Debug.Log("[Map3] Configured all QuizIllustration sprites!");
+        }
+
+        [MenuItem("Tools/Map 3/Update Quiz UI in Map3_Final")]
+        public static void UpdateQuizUIInScene()
+        {
+            ConfigureQuizIllustrationSprites();
+
+            var initialScene = EditorSceneManager.GetActiveScene();
+            string returnPath = initialScene.path;
+
+            foreach (string scenePath in AllMap3ScenePaths)
+            {
+                if (!File.Exists(scenePath)) continue;
+
+                Debug.Log($"[Map3_SceneBuilder] Updating Quiz UI layout in scene: {scenePath}");
+                var scene = EditorSceneManager.OpenScene(scenePath, OpenSceneMode.Single);
+
+                var qm = Object.FindFirstObjectByType<Map3_QuizManager>();
+                if (qm != null)
+                {
+                    qm.LoadIllustrationSpritesIfNull();
+                    qm.EnforceQuizUILayout();
+                    EditorUtility.SetDirty(qm);
+                    if (qm.gameObject != null) EditorUtility.SetDirty(qm.gameObject);
+                }
+
+                EditorSceneManager.MarkSceneDirty(scene);
+                EditorSceneManager.SaveScene(scene);
+            }
+
+            if (!string.IsNullOrEmpty(returnPath) && File.Exists(returnPath))
+            {
+                EditorSceneManager.OpenScene(returnPath, OpenSceneMode.Single);
+            }
+            Debug.Log("[Map3_SceneBuilder] Finished updating Quiz UI in Map 3 scenes.");
         }
 
 
@@ -1520,150 +1575,113 @@ namespace Game.Map3.Editor
 
 
             GameObject quizCardGo = CreateUIPanel(quizModalGo.transform, "Card_Content",
-
                 new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f),
-
-                Vector2.zero, new Vector2(880f, 650f),
-
+                Vector2.zero, new Vector2(1400f, 760f),
                 quizPanelSprite != null ? quizPanelSprite : uiSprite,
-
                 quizPanelSprite != null ? Color.white : new Color(0.12f, 0.14f, 0.18f, 1f));
 
-
-
-            // Close button
-
-            GameObject btnCloseGo = CreateUIButton(quizCardGo.transform, "Btn_Close",
-
-                new Vector2(1f, 1f), new Vector2(1f, 1f), new Vector2(0.5f, 0.5f),
-
-                new Vector2(-35f, -35f), new Vector2(44f, 44f),
-
-                uiSprite, new Color(0.85f, 0.2f, 0.2f, 1f),
-
-                "X", 24, FontStyles.Bold, Color.white, defaultFont);
-
-
-
-            // Title
-
-            GameObject txtTitleGo = CreateUIText(quizCardGo.transform, "Txt_Title",
-
-                new Vector2(0.5f, 1f), new Vector2(0.5f, 1f), new Vector2(0.5f, 1f),
-
-                new Vector2(0f, -45f), new Vector2(760f, 50f),
-
-                "CÂU HỎI VĂN HÓA", 28, FontStyles.Bold, new Color(1f, 0.8f, 0.2f, 1f), TextAlignmentOptions.Center, defaultFont);
-
-
-
-            // Question
-
-            GameObject txtQuestContentGo = CreateUIText(quizCardGo.transform, "Txt_Question",
-
-                new Vector2(0.5f, 1f), new Vector2(0.5f, 1f), new Vector2(0.5f, 1f),
-
-                new Vector2(0f, -140f), new Vector2(800f, 130f),
-
-                "Nội dung câu hỏi văn hóa...", 20, FontStyles.Normal, Color.white, TextAlignmentOptions.TopLeft, defaultFont);
-
-            var txtQuestionTmp = txtQuestContentGo.GetComponent<TextMeshProUGUI>();
-
-            txtQuestionTmp.textWrappingMode = TextWrappingModes.Normal;
-
-
-
-            // 4 Answer Buttons
-
-            Button[] ansBtns = new Button[4];
-
-            TextMeshProUGUI[] ansTexts = new TextMeshProUGUI[4];
-
-            string[] btnNames = { "Btn_Answer_A", "Btn_Answer_B", "Btn_Answer_C", "Btn_Answer_D" };
-
-            float startBtnY = -245f;
-
-            float btnStepY = 60f;
-
-
-
-            for (int i = 0; i < 4; i++)
-
+            var cardImg = quizCardGo.GetComponent<Image>();
+            if (cardImg != null)
             {
-
-                GameObject aBtnGo = CreateUIButton(quizCardGo.transform, btnNames[i],
-
-                    new Vector2(0.5f, 1f), new Vector2(0.5f, 1f), new Vector2(0.5f, 1f),
-
-                    new Vector2(0f, startBtnY - i * btnStepY), new Vector2(800f, 52f),
-
-                    buttonSprite != null ? buttonSprite : uiSprite,
-
-                    new Color32(78, 52, 46, 255), // #4E342E
-
-                    $"Phương án {i + 1}", 17, FontStyles.Normal, Color.white, defaultFont);
-
-
-
-                ansBtns[i] = aBtnGo.GetComponent<Button>();
-
-                ansTexts[i] = aBtnGo.GetComponentInChildren<TextMeshProUGUI>();
-
-                ansTexts[i].alignment = TextAlignmentOptions.MidlineLeft;
-
-                ansTexts[i].margin = new Vector4(20f, 0f, 20f, 0f);
-
-                ansTexts[i].textWrappingMode = TextWrappingModes.Normal;
-
+                cardImg.type = Image.Type.Sliced;
+                cardImg.preserveAspect = false;
             }
 
+            // Close button
+            GameObject btnCloseGo = CreateUIButton(quizCardGo.transform, "Btn_Close",
+                new Vector2(1f, 1f), new Vector2(1f, 1f), new Vector2(0.5f, 0.5f),
+                new Vector2(-40f, -40f), new Vector2(44f, 44f),
+                uiSprite, new Color(0.85f, 0.2f, 0.2f, 1f),
+                "X", 24, FontStyles.Bold, Color.white, defaultFont);
 
+            // Title
+            GameObject txtTitleGo = CreateUIText(quizCardGo.transform, "Txt_Title",
+                new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f),
+                new Vector2(0f, 312f), new Vector2(950f, 54f),
+                "CÂU HỎI VĂN HÓA", 26, FontStyles.Bold, new Color(1f, 0.835f, 0.31f, 1f), TextAlignmentOptions.Center, defaultFont);
+
+            // --- LEFT COLUMN: ILLUSTRATION PANEL ---
+            GameObject panelIllustrationGo = CreateUIPanel(quizCardGo.transform, "Panel_Illustration",
+                new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f),
+                new Vector2(-440f, -40f), new Vector2(390f, 520f),
+                uiSprite, new Color32(20, 24, 32, 255));
+
+            GameObject imgIllustrationGo = CreateUIPanel(panelIllustrationGo.transform, "Img_Illustration",
+                new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f),
+                new Vector2(0f, 40f), new Vector2(310f, 310f),
+                null, Color.white);
+            var imgIllustration = imgIllustrationGo.GetComponent<Image>();
+            imgIllustration.preserveAspect = true;
+
+            GameObject txtNameGo = CreateUIText(panelIllustrationGo.transform, "Txt_Illustration_Name",
+                new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f),
+                new Vector2(0f, -175f), new Vector2(370f, 46f),
+                "CHÚ MÈO", 24, FontStyles.Bold, new Color(1f, 0.835f, 0.31f, 1f), TextAlignmentOptions.Center, defaultFont);
+
+            // --- RIGHT COLUMN: QUESTION & CHOICES ---
+            // Question (hạ xuống Y = 135 để nằm trọn vẹn trong khung vàng, không tràn lên viền gỗ)
+            GameObject txtQuestContentGo = CreateUIText(quizCardGo.transform, "Txt_Question",
+                new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f),
+                new Vector2(235f, 125f), new Vector2(850f, 130f),
+                "Nội dung câu hỏi văn hóa...", 28f, FontStyles.Normal, new Color(0.22f, 0.13f, 0.09f, 1f), TextAlignmentOptions.TopLeft, defaultFont);
+
+            var txtQuestionTmp = txtQuestContentGo.GetComponent<TextMeshProUGUI>();
+            txtQuestionTmp.margin = new Vector4(12f, 4f, 12f, 4f);
+            txtQuestionTmp.enableAutoSizing = true;
+            txtQuestionTmp.fontSizeMin = 24f;
+            txtQuestionTmp.fontSizeMax = 28f;
+            txtQuestionTmp.textWrappingMode = TextWrappingModes.Normal;
+            txtQuestionTmp.overflowMode = TextOverflowModes.Ellipsis;
+
+            // Feedback Text
+            GameObject txtFeedGo = CreateUIText(quizCardGo.transform, "Txt_Feedback",
+                new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f),
+                new Vector2(235f, 48f), new Vector2(850f, 26f),
+                "", 19, FontStyles.Bold, new Color(0.2f, 0.9f, 0.4f, 1f), TextAlignmentOptions.Center, defaultFont);
+
+            // 4 Answer Buttons
+            Button[] ansBtns = new Button[4];
+            TextMeshProUGUI[] ansTexts = new TextMeshProUGUI[4];
+            string[] btnNames = { "Btn_Answer_A", "Btn_Answer_B", "Btn_Answer_C", "Btn_Answer_D" };
+            float[] btnYs = { -6f, -92f, -178f, -264f };
+
+            for (int i = 0; i < 4; i++)
+            {
+                GameObject aBtnGo = CreateUIButton(quizCardGo.transform, btnNames[i],
+                    new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f),
+                    new Vector2(235f, btnYs[i]), new Vector2(850f, 78f),
+                    buttonSprite != null ? buttonSprite : uiSprite,
+                    new Color32(78, 52, 46, 255), // #4E342E
+                    $"Phương án {i + 1}", 21, FontStyles.Normal, Color.white, defaultFont);
+
+                ansBtns[i] = aBtnGo.GetComponent<Button>();
+                ansTexts[i] = aBtnGo.GetComponentInChildren<TextMeshProUGUI>();
+                ansTexts[i].alignment = TextAlignmentOptions.MidlineLeft;
+                ansTexts[i].margin = new Vector4(24f, 2f, 24f, 2f);
+                ansTexts[i].enableAutoSizing = true;
+                ansTexts[i].fontSizeMin = 18f;
+                ansTexts[i].fontSizeMax = 21f;
+                ansTexts[i].textWrappingMode = TextWrappingModes.Normal;
+                ansTexts[i].overflowMode = TextOverflowModes.Ellipsis;
+            }
 
             // Explanation Text
-
             GameObject txtExplanationGo = CreateUIText(quizCardGo.transform, "Txt_Explanation",
-
-                new Vector2(0.5f, 0f), new Vector2(0.5f, 0f), new Vector2(0.5f, 0.5f),
-
-                new Vector2(0f, 85f), new Vector2(800f, 75f),
-
+                new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f),
+                new Vector2(220f, -255f), new Vector2(840f, 76f),
                 "", 17, FontStyles.Normal, new Color(0.9f, 0.95f, 1f, 1f), TextAlignmentOptions.TopLeft, defaultFont);
 
             var txtExplanationTmp = txtExplanationGo.GetComponent<TextMeshProUGUI>();
-
             txtExplanationTmp.textWrappingMode = TextWrappingModes.Normal;
-
             txtExplanationGo.SetActive(false);
 
-
-
-            // Feedback Text
-
-            GameObject txtFeedGo = CreateUIText(quizCardGo.transform, "Txt_Feedback",
-
-                new Vector2(0.5f, 0f), new Vector2(0.5f, 0f), new Vector2(0.5f, 0.5f),
-
-                new Vector2(0f, 140f), new Vector2(800f, 36f),
-
-                "", 21, FontStyles.Bold, new Color(0.2f, 0.9f, 0.4f, 1f), TextAlignmentOptions.Center, defaultFont);
-
-
-
             // Continue Button (shown after correct answer to proceed)
-
             GameObject btnContinueGo = CreateUIButton(quizCardGo.transform, "Btn_Continue",
-
-                new Vector2(0.5f, 0f), new Vector2(0.5f, 0f), new Vector2(0.5f, 0.5f),
-
-                new Vector2(0f, 35f), new Vector2(220f, 48f),
-
+                new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f),
+                new Vector2(220f, -255f), new Vector2(220f, 50f),
                 uiSprite, new Color(0.18f, 0.7f, 0.35f, 1f),
-
                 "Tiếp tục", 20, FontStyles.Bold, Color.white, defaultFont);
-
             btnContinueGo.SetActive(false);
-
-
 
             quizModalGo.SetActive(false);
 
@@ -1819,6 +1837,10 @@ namespace Game.Map3.Editor
             soQm.FindProperty("btnContinue").objectReferenceValue = btnContinueGo.GetComponent<Button>();
 
             soQm.FindProperty("btnClose").objectReferenceValue = btnCloseGo.GetComponent<Button>();
+
+            soQm.FindProperty("illustrationContainer").objectReferenceValue = panelIllustrationGo;
+            soQm.FindProperty("imgIllustration").objectReferenceValue = imgIllustration;
+            soQm.FindProperty("txtIllustrationName").objectReferenceValue = txtNameGo.GetComponent<TextMeshProUGUI>();
 
 
 

@@ -60,9 +60,52 @@ public class L1_QuizManager : MonoBehaviour
     public Sprite KimbapSprite { get => kimbapSprite; set => kimbapSprite = value; }
     public Sprite FlagVnSprite { get => flagVnSprite; set => flagVnSprite = value; }
     public Sprite FlagKrSprite { get => flagKrSprite; set => flagKrSprite = value; }
-    public Sprite BanhMiSprite { get => banhMiSprite; set => banhMiSprite = value; }
-    public Sprite TteokbokkiSprite { get => tteokbokkiSprite; set => tteokbokkiSprite = value; }
+    public Sprite BanhMiSprite
+    {
+        get
+        {
+            if (banhMiSprite == null) banhMiSprite = LoadSpriteRuntime("Level1/Icon_BanhMi.png");
+            return banhMiSprite;
+        }
+        set => banhMiSprite = value;
+    }
+    public Sprite TteokbokkiSprite
+    {
+        get
+        {
+            if (tteokbokkiSprite == null) tteokbokkiSprite = LoadSpriteRuntime("Level1/Icon_Tteokbokki.png");
+            return tteokbokkiSprite;
+        }
+        set => tteokbokkiSprite = value;
+    }
     public Sprite CatSprite { get => catSprite; set => catSprite = value; }
+
+    public static Sprite LoadSpriteRuntime(string relativePath)
+    {
+#if UNITY_EDITOR
+        Sprite sp = UnityEditor.AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Sprites/" + relativePath);
+        if (sp != null) return sp;
+#endif
+        try
+        {
+            string fullPath = System.IO.Path.Combine(Application.dataPath, "Sprites", relativePath);
+            if (System.IO.File.Exists(fullPath))
+            {
+                byte[] bytes = System.IO.File.ReadAllBytes(fullPath);
+                Texture2D tex = new Texture2D(2, 2, TextureFormat.RGBA32, false);
+                if (tex.LoadImage(bytes))
+                {
+                    tex.filterMode = FilterMode.Point;
+                    return Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), new Vector2(0.5f, 0.5f));
+                }
+            }
+        }
+        catch (Exception e)
+        {
+            Debug.LogWarning("[L1_QuizManager] LoadSpriteRuntime error: " + e.Message);
+        }
+        return null;
+    }
 
     private readonly Color colorNormal = new Color(0.31f, 0.20f, 0.18f, 1f); // Brown #4E342E
     private readonly Color colorCorrect = new Color(0.18f, 0.7f, 0.35f, 1f); // Green #4CAF50
@@ -101,6 +144,7 @@ public class L1_QuizManager : MonoBehaviour
         }
 
         ConfigureAllTexts();
+        EnforceQuizUILayout();
 
         // Fallback item sprites from inventory manager if not wired
         if (thitKhoSprite == null && L1_InventoryManager.Instance != null)
@@ -109,6 +153,10 @@ public class L1_QuizManager : MonoBehaviour
             kimchiSprite = L1_InventoryManager.Instance.kimchiIcon;
         if (kimbapSprite == null && L1_InventoryManager.Instance != null)
             kimbapSprite = L1_InventoryManager.Instance.kimbapIcon;
+        if (banhMiSprite == null)
+            banhMiSprite = BanhMiSprite;
+        if (tteokbokkiSprite == null)
+            tteokbokkiSprite = TteokbokkiSprite;
     }
 
     public void ConfigureAllTexts()
@@ -132,10 +180,11 @@ public class L1_QuizManager : MonoBehaviour
         if (txt == null) return;
         txt.textWrappingMode = TextWrappingModes.Normal;
         txt.enableAutoSizing = true;
-        txt.fontSizeMin = 10f;
-        txt.fontSizeMax = 17f;
+        txt.fontSize = 21f;
+        txt.fontSizeMin = 18f;
+        txt.fontSizeMax = 21f;
         txt.alignment = TextAlignmentOptions.MidlineLeft;
-        txt.margin = new Vector4(16f, 3f, 16f, 3f);
+        txt.margin = new Vector4(24f, 2f, 24f, 2f);
         txt.overflowMode = TextOverflowModes.Ellipsis;
 
         RectTransform rt = txt.rectTransform;
@@ -154,11 +203,140 @@ public class L1_QuizManager : MonoBehaviour
         if (txt == null) return;
         txt.textWrappingMode = TextWrappingModes.Normal;
         txt.enableAutoSizing = true;
-        txt.fontSizeMin = 13f;
-        txt.fontSizeMax = 18f;
+        txt.fontSize = 28f;
+        txt.fontSizeMin = 24f;
+        txt.fontSizeMax = 28f;
         txt.alignment = TextAlignmentOptions.TopLeft;
-        txt.margin = new Vector4(6f, 2f, 6f, 2f);
+        txt.margin = new Vector4(12f, 4f, 12f, 4f);
         txt.overflowMode = TextOverflowModes.Ellipsis;
+    }
+
+    public void EnforceQuizUILayout()
+    {
+        if (quizPanel == null) return;
+        Transform card = quizPanel.transform.Find("Card_Content");
+        if (card == null && quizPanel.transform.childCount > 0)
+        {
+            card = quizPanel.transform.GetChild(0);
+        }
+        if (card == null) return;
+
+        RectTransform cardRt = card.GetComponent<RectTransform>();
+        if (cardRt != null)
+        {
+            cardRt.anchorMin = new Vector2(0.5f, 0.5f);
+            cardRt.anchorMax = new Vector2(0.5f, 0.5f);
+            cardRt.pivot = new Vector2(0.5f, 0.5f);
+            cardRt.anchoredPosition = Vector2.zero;
+            cardRt.sizeDelta = new Vector2(1400f, 760f);
+        }
+
+        // Cột trái: Panel_Illustration
+        Transform illusTr = card.Find("Panel_Illustration");
+        if (illusTr != null)
+        {
+            RectTransform illusRt = illusTr.GetComponent<RectTransform>();
+            if (illusRt != null)
+            {
+                illusRt.anchorMin = new Vector2(0.5f, 0.5f);
+                illusRt.anchorMax = new Vector2(0.5f, 0.5f);
+                illusRt.pivot = new Vector2(0.5f, 0.5f);
+                illusRt.anchoredPosition = new Vector2(-440f, -40f);
+                illusRt.sizeDelta = new Vector2(390f, 520f);
+            }
+
+            Transform imgTr = illusTr.Find("Img_Illustration");
+            if (imgTr != null)
+            {
+                RectTransform imgRt = imgTr.GetComponent<RectTransform>();
+                if (imgRt != null)
+                {
+                    imgRt.anchoredPosition = new Vector2(0f, 40f);
+                    imgRt.sizeDelta = new Vector2(310f, 310f);
+                }
+            }
+
+            Transform nameTr = illusTr.Find("Txt_Illustration_Name");
+            if (nameTr != null)
+            {
+                RectTransform nameRt = nameTr.GetComponent<RectTransform>();
+                if (nameRt != null)
+                {
+                    nameRt.anchoredPosition = new Vector2(0f, -175f);
+                    nameRt.sizeDelta = new Vector2(370f, 46f);
+                }
+                var txtName = nameTr.GetComponent<TextMeshProUGUI>();
+                if (txtName != null)
+                {
+                    txtName.fontSize = 24f;
+                    txtName.alignment = TextAlignmentOptions.Center;
+                }
+            }
+        }
+
+        // Cột phải: Tiêu đề
+        Transform titleTr = card.Find("Txt_Title");
+        if (titleTr != null)
+        {
+            RectTransform titleRt = titleTr.GetComponent<RectTransform>();
+            if (titleRt != null)
+            {
+                titleRt.anchoredPosition = new Vector2(0f, 312f);
+                titleRt.sizeDelta = new Vector2(950f, 54f);
+            }
+            var tTmp = titleTr.GetComponent<TextMeshProUGUI>();
+            if (tTmp != null)
+            {
+                tTmp.fontSize = 26f;
+            }
+        }
+
+        // Cột phải: Câu hỏi (hạ xuống Y = 125, đỉnh ở Y = 190, lọt sâu trong lòng khung kem vàng, cách xa gờ gỗ 60px)
+        if (txtQuestion != null)
+        {
+            RectTransform qRt = txtQuestion.rectTransform;
+            if (qRt != null)
+            {
+                qRt.anchoredPosition = new Vector2(235f, 125f);
+                qRt.sizeDelta = new Vector2(850f, 130f);
+            }
+            ConfigureQuestionText(txtQuestion);
+        }
+
+        // Cột phải: Phản hồi
+        if (txtFeedback != null)
+        {
+            RectTransform fRt = txtFeedback.rectTransform;
+            if (fRt != null)
+            {
+                fRt.anchoredPosition = new Vector2(235f, 48f);
+                fRt.sizeDelta = new Vector2(850f, 26f);
+            }
+            txtFeedback.fontSize = 19f;
+        }
+
+        // Cột phải: 4 Nút Đáp Án
+        float[] btnYs = { -6f, -92f, -178f, -264f };
+        for (int i = 0; i < answerButtons.Length; i++)
+        {
+            if (answerButtons[i] != null)
+            {
+                RectTransform bRt = answerButtons[i].GetComponent<RectTransform>();
+                if (bRt != null)
+                {
+                    bRt.anchorMin = new Vector2(0.5f, 0.5f);
+                    bRt.anchorMax = new Vector2(0.5f, 0.5f);
+                    bRt.pivot = new Vector2(0.5f, 0.5f);
+                    bRt.anchoredPosition = new Vector2(235f, btnYs[i]);
+                    bRt.sizeDelta = new Vector2(850f, 78f);
+                }
+
+                if (i < answerTexts.Length && answerTexts[i] != null)
+                {
+                    ConfigureAnswerText(answerTexts[i]);
+                }
+            }
+        }
     }
 
     public void SetQuizPanel(GameObject panel)
@@ -230,18 +408,12 @@ public class L1_QuizManager : MonoBehaviour
         }
         else if (idUpper.Contains("BANHMI") || idUpper.Contains("BANH_MI") || titleUpper.Contains("BÁNH MÌ"))
         {
-            if (sprite == null)
-            {
-                sprite = banhMiSprite;
-            }
+            sprite = BanhMiSprite;
             displayName = "BÁNH MÌ";
         }
         else if (idUpper.Contains("TTEOKBOKKI") || idUpper.Contains("TOPOKKI") || titleUpper.Contains("TTEOKBOKKI") || titleUpper.Contains("BÁNH GẠO"))
         {
-            if (sprite == null)
-            {
-                sprite = tteokbokkiSprite;
-            }
+            sprite = TteokbokkiSprite;
             displayName = "TTEOKBOKKI";
         }
         else if (idUpper.Contains("FLAGVN") || idUpper.Contains("FLAG_VN") || titleUpper.Contains("QUỐC KỲ VIỆT NAM") || titleUpper.Contains("CỜ ĐỎ SAO VÀNG"))
@@ -286,6 +458,8 @@ public class L1_QuizManager : MonoBehaviour
         currentQuiz = data;
         onCorrectCallback = onCorrect;
         isHandlingAnswer = false;
+
+        EnforceQuizUILayout();
 
         if (closeCoroutine != null)
         {

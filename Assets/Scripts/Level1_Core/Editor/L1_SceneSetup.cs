@@ -307,7 +307,7 @@ public static class L1_SceneSetup
 
         RectTransform cardRt = cardContentT.GetComponent<RectTransform>();
 
-        cardRt.sizeDelta = new Vector2(1100f, 500f);
+        cardRt.sizeDelta = new Vector2(1400f, 760f);
 
         var cardImg = cardContentT.GetComponent<Image>();
 
@@ -343,7 +343,7 @@ public static class L1_SceneSetup
 
                 new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f),
 
-                new Vector2(-330f, -30f), new Vector2(310f, 308f),
+                new Vector2(-440f, -40f), new Vector2(390f, 520f),
 
                 uiSprite, HexColor("#141820"));
 
@@ -363,9 +363,9 @@ public static class L1_SceneSetup
 
             rt.pivot = new Vector2(0.5f, 0.5f);
 
-            rt.anchoredPosition = new Vector2(-330f, -30f);
+            rt.anchoredPosition = new Vector2(-440f, -40f);
 
-            rt.sizeDelta = new Vector2(310f, 308f);
+            rt.sizeDelta = new Vector2(390f, 520f);
 
         }
 
@@ -385,7 +385,7 @@ public static class L1_SceneSetup
 
                 new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f),
 
-                new Vector2(0f, 18f), new Vector2(240f, 240f),
+                new Vector2(0f, 40f), new Vector2(310f, 310f),
 
                 null, Color.white);
 
@@ -405,9 +405,9 @@ public static class L1_SceneSetup
 
             rt.pivot = new Vector2(0.5f, 0.5f);
 
-            rt.anchoredPosition = new Vector2(0f, 18f);
+            rt.anchoredPosition = new Vector2(0f, 40f);
 
-            rt.sizeDelta = new Vector2(240f, 240f);
+            rt.sizeDelta = new Vector2(310f, 310f);
 
         }
 
@@ -431,11 +431,11 @@ public static class L1_SceneSetup
 
             txtNameGo = CreateUIText(panelIllGo.transform, "Txt_Illustration_Name",
 
-                new Vector2(0.5f, 0f), new Vector2(0.5f, 0f), new Vector2(0.5f, 0f),
+                new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f),
 
-                new Vector2(0f, 10f), new Vector2(280f, 28f),
+                new Vector2(0f, -175f), new Vector2(370f, 46f),
 
-                "", 19, FontStyles.Bold, HexColor("#FFD54F"), TextAlignmentOptions.Center, defaultFont);
+                "", 24, FontStyles.Bold, HexColor("#FFD54F"), TextAlignmentOptions.Center, defaultFont);
 
         }
 
@@ -447,19 +447,19 @@ public static class L1_SceneSetup
 
             var rt = txtNameGo.GetComponent<RectTransform>();
 
-            rt.anchorMin = new Vector2(0.5f, 0f);
+            rt.anchorMin = new Vector2(0.5f, 0.5f);
 
-            rt.anchorMax = new Vector2(0.5f, 0f);
+            rt.anchorMax = new Vector2(0.5f, 0.5f);
 
-            rt.pivot = new Vector2(0.5f, 0f);
+            rt.pivot = new Vector2(0.5f, 0.5f);
 
-            rt.anchoredPosition = new Vector2(0f, 10f);
+            rt.anchoredPosition = new Vector2(0f, -175f);
 
-            rt.sizeDelta = new Vector2(280f, 28f);
+            rt.sizeDelta = new Vector2(370f, 46f);
 
             var tmp = txtNameGo.GetComponent<TextMeshProUGUI>();
 
-            tmp.fontSize = 19f;
+            tmp.fontSize = 24f;
 
             tmp.color = HexColor("#FFD54F");
 
@@ -485,15 +485,15 @@ public static class L1_SceneSetup
 
             rt.pivot = new Vector2(0.5f, 0.5f);
 
-            rt.anchoredPosition = new Vector2(0f, 195f);
+            rt.anchoredPosition = new Vector2(0f, 312f);
 
-            rt.sizeDelta = new Vector2(800f, 42f);
+            rt.sizeDelta = new Vector2(950f, 54f);
 
             var tmp = txtTitleT.GetComponent<TextMeshProUGUI>();
 
             tmp.alignment = TextAlignmentOptions.Center;
 
-            tmp.fontSize = 24f;
+            tmp.fontSize = 26f;
 
             tmp.fontStyle = FontStyles.Bold;
 
@@ -521,23 +521,23 @@ public static class L1_SceneSetup
 
             rt.pivot = new Vector2(0.5f, 0.5f);
 
-            rt.anchoredPosition = new Vector2(165f, 87f);
+            rt.anchoredPosition = new Vector2(235f, 125f);
 
-            rt.sizeDelta = new Vector2(640f, 74f);
+            rt.sizeDelta = new Vector2(850f, 130f);
 
             var tmp = txtQuestT.GetComponent<TextMeshProUGUI>();
 
             tmp.alignment = TextAlignmentOptions.TopLeft;
 
-            tmp.fontSize = 18f;
+            tmp.fontSize = 28f;
 
             tmp.enableAutoSizing = true;
 
-            tmp.fontSizeMin = 13f;
+            tmp.fontSizeMin = 24f;
 
-            tmp.fontSizeMax = 18f;
+            tmp.fontSizeMax = 28f;
 
-            tmp.margin = new Vector4(6f, 2f, 6f, 2f);
+            tmp.margin = new Vector4(12f, 4f, 12f, 4f);
 
             tmp.color = HexColor("#372016");
 
@@ -553,7 +553,7 @@ public static class L1_SceneSetup
 
         string[] btnNames = { "Btn_Answer_A", "Btn_Answer_B", "Btn_Answer_C", "Btn_Answer_D" };
 
-        float[] btnYs = { 7f, -49f, -105f, -161f };
+        float[] btnYs = { -6f, -92f, -178f, -264f };
 
         Button[] ansBtns = new Button[4];
 
@@ -579,9 +579,9 @@ public static class L1_SceneSetup
 
                 rt.pivot = new Vector2(0.5f, 0.5f);
 
-                rt.anchoredPosition = new Vector2(165f, btnYs[i]);
+                rt.anchoredPosition = new Vector2(235f, btnYs[i]);
 
-                rt.sizeDelta = new Vector2(640f, 46f);
+                rt.sizeDelta = new Vector2(850f, 78f);
 
                 var bImg = bT.GetComponent<Image>();
 
@@ -599,17 +599,17 @@ public static class L1_SceneSetup
 
                 {
 
-                    txt.fontSize = 17f;
+                    txt.fontSize = 21f;
 
                     txt.enableAutoSizing = true;
 
-                    txt.fontSizeMin = 10f;
+                    txt.fontSizeMin = 18f;
 
-                    txt.fontSizeMax = 17f;
+                    txt.fontSizeMax = 21f;
 
                     txt.alignment = TextAlignmentOptions.MidlineLeft;
 
-                    txt.margin = new Vector4(16f, 3f, 16f, 3f);
+                    txt.margin = new Vector4(24f, 2f, 24f, 2f);
 
                     txt.textWrappingMode = TextWrappingModes.Normal;
 
@@ -663,15 +663,15 @@ public static class L1_SceneSetup
 
             rt.pivot = new Vector2(0.5f, 0.5f);
 
-            rt.anchoredPosition = new Vector2(165f, 40f);
+            rt.anchoredPosition = new Vector2(235f, 48f);
 
-            rt.sizeDelta = new Vector2(640f, 20f);
+            rt.sizeDelta = new Vector2(850f, 26f);
 
             var tmp = txtFeedT.GetComponent<TextMeshProUGUI>();
 
             tmp.alignment = TextAlignmentOptions.Center;
 
-            tmp.fontSize = 17f;
+            tmp.fontSize = 19f;
 
             tmp.fontStyle = FontStyles.Bold;
 
@@ -1447,7 +1447,7 @@ public static class L1_SceneSetup
 
             new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f),
 
-            Vector2.zero, new Vector2(1100f, 500f),
+            Vector2.zero, new Vector2(1360f, 720f),
 
             quizCardSprite != null ? quizCardSprite : uiSprite, Color.white);
 
@@ -1471,7 +1471,7 @@ public static class L1_SceneSetup
 
             new Vector2(1f, 1f), new Vector2(1f, 1f), new Vector2(0.5f, 0.5f),
 
-            new Vector2(-55f, -55f), new Vector2(44f, 44f),
+            new Vector2(-40f, -40f), new Vector2(44f, 44f),
 
             uiSprite, HexColor("#D32F2F"),
 
@@ -1485,7 +1485,7 @@ public static class L1_SceneSetup
 
             new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f),
 
-            new Vector2(-330f, -30f), new Vector2(310f, 308f),
+            new Vector2(-440f, -40f), new Vector2(390f, 520f),
 
             uiSprite, HexColor("#141820"));
 
@@ -1495,7 +1495,7 @@ public static class L1_SceneSetup
 
             new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f),
 
-            new Vector2(0f, 18f), new Vector2(240f, 240f),
+            new Vector2(0f, 40f), new Vector2(310f, 310f),
 
             null, Color.white);
 
@@ -1507,11 +1507,11 @@ public static class L1_SceneSetup
 
         GameObject txtNameGo = CreateUIText(panelIllustrationGo.transform, "Txt_Illustration_Name",
 
-            new Vector2(0.5f, 0f), new Vector2(0.5f, 0f), new Vector2(0.5f, 0f),
+            new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f),
 
-            new Vector2(0f, 10f), new Vector2(280f, 28f),
+            new Vector2(0f, -175f), new Vector2(370f, 46f),
 
-            "", 19, FontStyles.Bold, HexColor("#FFD54F"), TextAlignmentOptions.Center, defaultFont);
+            "", 24, FontStyles.Bold, HexColor("#FFD54F"), TextAlignmentOptions.Center, defaultFont);
 
 
 
@@ -1523,31 +1523,31 @@ public static class L1_SceneSetup
 
             new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f),
 
-            new Vector2(0f, 195f), new Vector2(800f, 42f),
+            new Vector2(0f, 290f), new Vector2(900f, 54f),
 
-            "CÂU HỎI", 24, FontStyles.Bold, HexColor("#FFD54F"), TextAlignmentOptions.Center, defaultFont);
+            "CÂU HỎI", 26, FontStyles.Bold, HexColor("#FFD54F"), TextAlignmentOptions.Center, defaultFont);
 
 
 
-        // Question
+        // Question (hạ xuống Y = 135 để nằm trọn vẹn trong khung vàng, không tràn lên viền gỗ)
 
         GameObject txtQuestContentGo = CreateUIText(quizCardGo.transform, "Txt_Question",
 
             new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f),
 
-            new Vector2(165f, 87f), new Vector2(640f, 74f),
+            new Vector2(220f, 135f), new Vector2(840f, 130f),
 
-            "Nội dung câu hỏi...", 18, FontStyles.Normal, HexColor("#372016"), TextAlignmentOptions.TopLeft, defaultFont);
+            "Nội dung câu hỏi...", 28f, FontStyles.Normal, HexColor("#372016"), TextAlignmentOptions.TopLeft, defaultFont);
 
         var txtQuestionTmp = txtQuestContentGo.GetComponent<TextMeshProUGUI>();
 
-        txtQuestionTmp.margin = new Vector4(6f, 2f, 6f, 2f);
+        txtQuestionTmp.margin = new Vector4(8f, 2f, 8f, 2f);
 
         txtQuestionTmp.enableAutoSizing = true;
 
-        txtQuestionTmp.fontSizeMin = 13f;
+        txtQuestionTmp.fontSizeMin = 22f;
 
-        txtQuestionTmp.fontSizeMax = 18f;
+        txtQuestionTmp.fontSizeMax = 28f;
 
         txtQuestionTmp.textWrappingMode = TextWrappingModes.Normal;
 
@@ -1561,9 +1561,9 @@ public static class L1_SceneSetup
 
             new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f),
 
-            new Vector2(165f, 40f), new Vector2(640f, 20f),
+            new Vector2(220f, 54f), new Vector2(840f, 26f),
 
-            "", 17, FontStyles.Bold, HexColor("#4CAF50"), TextAlignmentOptions.Center, defaultFont);
+            "", 19, FontStyles.Bold, HexColor("#4CAF50"), TextAlignmentOptions.Center, defaultFont);
 
 
 
@@ -1575,7 +1575,7 @@ public static class L1_SceneSetup
 
         string[] btnNames = { "Btn_Answer_A", "Btn_Answer_B", "Btn_Answer_C", "Btn_Answer_D" };
 
-        float[] btnYs = { 7f, -49f, -105f, -161f };
+        float[] btnYs = { -6f, -92f, -178f, -264f };
 
 
 
@@ -1587,11 +1587,11 @@ public static class L1_SceneSetup
 
                 new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f),
 
-                new Vector2(165f, btnYs[i]), new Vector2(640f, 46f),
+                new Vector2(220f, btnYs[i]), new Vector2(840f, 76f),
 
                 uiSprite, HexColor("#4E342E"),
 
-                $"Phương án {i + 1}", 17, FontStyles.Normal, Color.white, defaultFont);
+                $"Phương án {i + 1}", 21, FontStyles.Normal, Color.white, defaultFont);
 
 
 
@@ -1601,13 +1601,13 @@ public static class L1_SceneSetup
 
             ansTexts[i].alignment = TextAlignmentOptions.MidlineLeft;
 
-            ansTexts[i].margin = new Vector4(16f, 3f, 16f, 3f);
+            ansTexts[i].margin = new Vector4(24f, 2f, 24f, 2f);
 
             ansTexts[i].enableAutoSizing = true;
 
-            ansTexts[i].fontSizeMin = 10f;
+            ansTexts[i].fontSizeMin = 18f;
 
-            ansTexts[i].fontSizeMax = 17f;
+            ansTexts[i].fontSizeMax = 21f;
 
             ansTexts[i].textWrappingMode = TextWrappingModes.Normal;
 
