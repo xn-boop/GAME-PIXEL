@@ -111,10 +111,10 @@ public class MenuManChoiController : MonoBehaviour
             settingsPanel.SetActive(false);
         }
 
-        // Khởi tạo âm lượng từ AudioManager
+        // Khởi tạo âm lượng từ AudioManager và dừng nhạc menu
         if (AudioManager.Instance != null)
         {
-            AudioManager.Instance.PlayMainMenuMusic();
+            AudioManager.Instance.StopMusic();
 
             if (volumeSlider != null)
             {

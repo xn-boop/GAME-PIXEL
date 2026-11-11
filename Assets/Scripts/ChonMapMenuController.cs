@@ -193,13 +193,13 @@ public class ChonMapMenuController : MonoBehaviour
         if (settingsPanel != null) settingsPanel.SetActive(false);
         if (mapSelectionPanel != null) mapSelectionPanel.SetActive(false);
 
-        // Khởi tạo slider âm lượng
+        // Khởi tạo slider âm lượng và dừng bài nhạc menu lại khi vào Chọn map
         float currentBgm = 0.75f;
 
         if (AudioManager.Instance != null)
         {
             currentBgm = AudioManager.Instance.musicVolume;
-            try { AudioManager.Instance.PlayMainMenuMusic(); } catch { }
+            try { AudioManager.Instance.StopMusic(); } catch { }
         }
 
         if (volumeSlider != null) volumeSlider.value = currentBgm;
@@ -419,6 +419,10 @@ public class ChonMapMenuController : MonoBehaviour
     private IEnumerator LoadSceneRoutine(string sceneName)
     {
         isTransitioning = true;
+        if (AudioManager.Instance != null)
+        {
+            try { AudioManager.Instance.StopMusic(); } catch { }
+        }
         yield return StartCoroutine(FadeOutRoutine());
 
         if (Application.CanStreamedLevelBeLoaded(sceneName))

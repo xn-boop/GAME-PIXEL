@@ -89,9 +89,13 @@ public class AudioManager : MonoBehaviour
         EnsureAudioSources();
         LoadClipsIfNeeded();
 
-        // Tự động phát nhạc nền menu nếu đang ở bất kỳ trang menu nào khi khởi chạy
+        // Tự động kiểm tra phát hoặc dừng nhạc nền tùy theo cảnh hiện tại khi khởi chạy
         string currentScene = SceneManager.GetActiveScene().name;
-        if (IsMenuScene(currentScene))
+        if (IsStopMusicScene(currentScene))
+        {
+            StopMusic();
+        }
+        else if (IsMenuScene(currentScene))
         {
             PlayMainMenuMusic();
         }
@@ -101,7 +105,12 @@ public class AudioManager : MonoBehaviour
     {
         string name = scene.name;
 
-        if (IsMenuScene(name))
+        // Dừng nhạc nền menu khi đến trang Chọn map hoặc khi sang Map 0
+        if (IsStopMusicScene(name))
+        {
+            StopMusic();
+        }
+        else if (IsMenuScene(name))
         {
             PlayMainMenuMusic();
         }
@@ -119,15 +128,19 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    private bool IsStopMusicScene(string sceneName)
+    {
+        return sceneName == "Chọn map" ||
+               sceneName == "Chá» n map" ||
+               sceneName == "MenuManChoi" ||
+               sceneName == "Map0_Prologue";
+    }
+
     private bool IsMenuScene(string sceneName)
     {
         return sceneName == "MainMenu" ||
                sceneName == "LoginMenu" ||
-               sceneName == "RegisterMenu" ||
-               sceneName == "Chọn map" ||
-               sceneName == "Chá» n map" ||
-               sceneName == "MenuManChoi" ||
-               sceneName == "Map0_Prologue";
+               sceneName == "RegisterMenu";
     }
 
     public void EnsureAudioSources()
