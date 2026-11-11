@@ -17,6 +17,9 @@ public class MenuManChoiController : MonoBehaviour
     [Tooltip("Scene đăng nhập nếu người dùng chọn Đăng xuất")]
     public string loginSceneName = "LoginMenu";
 
+    [Tooltip("Scene Menu chính khi bấm Thoát")]
+    public string mainMenuSceneName = "MainMenu";
+
     [Tooltip("Scene gameplay mặc định khi bắt đầu chơi")]
     public string firstLevelSceneName = "Map1";
 
@@ -291,18 +294,29 @@ public class MenuManChoiController : MonoBehaviour
     }
 
     /// <summary>
-    /// Xử lý khi nhấn nút "Thoát"
+    /// Xử lý khi nhấn nút "Thoát" -> Quay về trang MainMenu
     /// </summary>
     public void OnQuitClicked()
     {
         if (isTransitioning) return;
         PlayClickSound();
-        Debug.Log("[MenuManChoi] Đang thoát trò chơi...");
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-#else
-        Application.Quit();
-#endif
+        StartCoroutine(QuitToMainMenuRoutine());
+    }
+
+    private IEnumerator QuitToMainMenuRoutine()
+    {
+        isTransitioning = true;
+        yield return StartCoroutine(FadeOutRoutine());
+
+        string target = !string.IsNullOrEmpty(mainMenuSceneName) ? mainMenuSceneName : "MainMenu";
+        if (Application.CanStreamedLevelBeLoaded(target))
+        {
+            SceneManager.LoadScene(target);
+        }
+        else
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
     }
 
     private void PlayClickSound()

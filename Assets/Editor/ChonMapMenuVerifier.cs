@@ -171,6 +171,7 @@ namespace JourneyOfMemories.Editor
                         Check("QuitButton Size is 350x82", rt.sizeDelta == new Vector2(350f, 82f), $"Got {rt.sizeDelta}");
                         Check("QuitButton Has RegisterButtonEffect", controller.quitButton.GetComponent<RegisterButtonEffect>() != null);
                     }
+                    Check("Quit Targets MainMenu Scene", controller.mainMenuSceneName == "MainMenu", controller.mainMenuSceneName);
 
                     // 7. Kiểm tra Settings Panel
                     Check("SettingsPanel Wired", controller.settingsPanel != null);

@@ -382,6 +382,7 @@ namespace JourneyOfMemories.Editor
             controller.isStandaloneMode = false;
             controller.allowSceneTransition = true;
             controller.targetPlaySceneName = "Map0_Prologue";
+            controller.mainMenuSceneName = "MainMenu";
 
             // 12. Lưu Scene tại: Assets/Scenes/Chọn map.unity
             EditorSceneManager.SaveScene(newScene, scenePath);

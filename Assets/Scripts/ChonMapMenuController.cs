@@ -69,6 +69,9 @@ public class ChonMapMenuController : MonoBehaviour
     [Tooltip("Tên scene Map 0 để chuyển vào thẳng khi bấm Chơi")]
     public string targetPlaySceneName = "Map0_Prologue";
 
+    [Tooltip("Tên scene Menu chính để quay về khi bấm Thoát")]
+    public string mainMenuSceneName = "MainMenu";
+
     [Tooltip("Âm lượng hiệu ứng SFX cục bộ")]
     [Range(0f, 1f)]
     public float sfxVolume = 0.85f;
@@ -279,27 +282,36 @@ public class ChonMapMenuController : MonoBehaviour
     }
 
     /// <summary>
-    /// Xử lý khi nhấn nút "Thoát"
+    /// Xử lý khi nhấn nút "Thoát" -> Quay về trang MainMenu
     /// </summary>
     public void OnQuitClicked()
     {
         if (isTransitioning) return;
         PlayClickSound();
-        ShowStatus("Đang thoát trò chơi...", 2f);
-        StartCoroutine(QuitRoutine());
+        ShowStatus("Đang quay về Menu chính...", 2f);
+        StartCoroutine(QuitToMainMenuRoutine());
     }
 
-    private IEnumerator QuitRoutine()
+    private IEnumerator QuitToMainMenuRoutine()
     {
         isTransitioning = true;
         yield return StartCoroutine(FadeOutRoutine());
 
-        Debug.Log("[ChonMapMenu] Đang thoát trò chơi...");
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-#else
-        Application.Quit();
-#endif
+        Debug.Log($"[ChonMapMenu] Đang chuyển về Menu chính: '{mainMenuSceneName}'...");
+        string target = !string.IsNullOrEmpty(mainMenuSceneName) ? mainMenuSceneName : "MainMenu";
+        if (Application.CanStreamedLevelBeLoaded(target))
+        {
+            SceneManager.LoadScene(target);
+        }
+        else if (Application.CanStreamedLevelBeLoaded("Assets/Scenes/" + target + ".unity"))
+        {
+            SceneManager.LoadScene("Assets/Scenes/" + target + ".unity");
+        }
+        else
+        {
+            Debug.LogWarning($"[ChonMapMenu] Không thể kiểm tra CanStreamedLevelBeLoaded cho '{target}', tải trực tiếp qua SceneManager.LoadScene.");
+            SceneManager.LoadScene(target);
+        }
     }
 
     #endregion
