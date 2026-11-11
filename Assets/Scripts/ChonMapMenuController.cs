@@ -98,8 +98,6 @@ public class ChonMapMenuController : MonoBehaviour
 
     private void Awake()
     {
-        StopAllMenuMusic();
-
         if (audioSource == null)
         {
             audioSource = GetComponent<AudioSource>();
@@ -189,27 +187,20 @@ public class ChonMapMenuController : MonoBehaviour
         }
     }
 
-    private void OnEnable()
-    {
-        StopAllMenuMusic();
-    }
-
     private void Start()
     {
         // Ẩn các popup khi khởi đầu
         if (settingsPanel != null) settingsPanel.SetActive(false);
         if (mapSelectionPanel != null) mapSelectionPanel.SetActive(false);
 
-        // Khởi tạo slider âm lượng và dừng toàn bộ bài nhạc menu khi vào Chọn map
+        // Khởi tạo slider âm lượng và phát bài nhạc nền menu (zephiramusic) ở trang Chọn map
         float currentBgm = 0.75f;
 
         if (AudioManager.Instance != null)
         {
             currentBgm = AudioManager.Instance.musicVolume;
+            try { AudioManager.Instance.PlayMainMenuMusic(); } catch { }
         }
-
-        StopAllMenuMusic();
-        StartCoroutine(EnsureMenuMusicStoppedRoutine());
 
         if (volumeSlider != null) volumeSlider.value = currentBgm;
         if (sfxSlider != null) sfxSlider.value = sfxVolume;
@@ -221,44 +212,6 @@ public class ChonMapMenuController : MonoBehaviour
         }
 
         ShowStatus("Chào mừng đến Menu Chọn Map!", 3f);
-    }
-
-    private IEnumerator EnsureMenuMusicStoppedRoutine()
-    {
-        for (int i = 0; i < 5; i++)
-        {
-            StopAllMenuMusic();
-            yield return null;
-        }
-    }
-
-    public void StopAllMenuMusic()
-    {
-        try
-        {
-            if (AudioManager.Instance != null)
-            {
-                AudioManager.Instance.StopMusic();
-            }
-
-            var sources = UnityEngine.Object.FindObjectsByType<AudioSource>();
-            foreach (var src in sources)
-            {
-                if (src != null && src.isPlaying && src.clip != null)
-                {
-                    string clipName = src.clip.name.ToLowerInvariant();
-                    if (clipName.Contains("zephiramusic") || clipName.Contains("lofi") || clipName.Contains("bgm_mainmenu") || clipName.Contains("mainmenu"))
-                    {
-                        src.Stop();
-                        src.clip = null;
-                    }
-                }
-            }
-        }
-        catch (Exception ex)
-        {
-            Debug.LogWarning($"[ChonMapMenu] Lỗi khi dừng nhạc: {ex.Message}");
-        }
     }
 
     private void Update()

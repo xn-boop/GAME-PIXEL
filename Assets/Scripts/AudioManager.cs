@@ -90,7 +90,7 @@ public class AudioManager : MonoBehaviour
         LoadClipsIfNeeded();
 
         // Tự động kiểm tra phát hoặc dừng nhạc nền tùy theo cảnh hiện tại khi khởi chạy
-        string currentScene = SceneManager.GetActiveScene().name;
+        Scene currentScene = SceneManager.GetActiveScene();
         if (IsMenuScene(currentScene))
         {
             PlayMainMenuMusic();
@@ -99,15 +99,16 @@ public class AudioManager : MonoBehaviour
         {
             StopMusic();
 
-            if (currentScene == "Level1_Prototype" || currentScene == "Map1")
+            string currentName = currentScene.name;
+            if (currentName == "Level1_Prototype" || currentName == "Map1")
             {
                 PlayLevel1Music();
             }
-            else if (currentScene == "Scene_Level2" || currentScene == "Map2")
+            else if (currentName == "Scene_Level2" || currentName == "Map2")
             {
                 PlayLevel2Music();
             }
-            else if (currentScene == "Map3_Final" || currentScene == "Map3")
+            else if (currentName == "Map3_Final" || currentName == "Map3")
             {
                 PlayLevel3Music();
             }
@@ -116,11 +117,9 @@ public class AudioManager : MonoBehaviour
 
     private void HandleSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        string name = scene.name;
-
-        // Chỉ phát nhạc nền menu (zephiramusic) ở 3 cảnh menu: MainMenu, LoginMenu, RegisterMenu.
-        // TẤT CẢ các cảnh còn lại (Chọn map, Map0_Prologue, Level 1..3, Puzzle, v.v.) tuyệt đối dừng nhạc menu!
-        if (IsMenuScene(name))
+        // Phát nhạc nền menu (zephiramusic) ở các cảnh Menu: MainMenu, LoginMenu, RegisterMenu, Chọn map.
+        // Khi sang các cảnh gameplay (Map0_Prologue, Level 1..3, Puzzle, v.v.) thì dừng nhạc nền menu.
+        if (IsMenuScene(scene))
         {
             PlayMainMenuMusic();
         }
@@ -128,6 +127,7 @@ public class AudioManager : MonoBehaviour
         {
             StopMusic();
 
+            string name = scene.name;
             if (name == "Level1_Prototype" || name == "Map1")
             {
                 PlayLevel1Music();
@@ -143,12 +143,37 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    public bool IsMenuScene(Scene scene)
+    {
+        if (IsMenuScene(scene.name)) return true;
+        if (!string.IsNullOrEmpty(scene.path) && IsMenuScene(scene.path)) return true;
+        return false;
+    }
+
     public bool IsMenuScene(string sceneName)
     {
         if (string.IsNullOrEmpty(sceneName)) return false;
-        return sceneName.Equals("MainMenu", StringComparison.OrdinalIgnoreCase) ||
-               sceneName.Equals("LoginMenu", StringComparison.OrdinalIgnoreCase) ||
-               sceneName.Equals("RegisterMenu", StringComparison.OrdinalIgnoreCase);
+        string s = sceneName.Trim();
+
+        // 1. Menu chính, Đăng nhập, Đăng ký
+        if (s.Equals("MainMenu", StringComparison.OrdinalIgnoreCase) ||
+            s.Equals("LoginMenu", StringComparison.OrdinalIgnoreCase) ||
+            s.Equals("RegisterMenu", StringComparison.OrdinalIgnoreCase))
+        {
+            return true;
+        }
+
+        // 2. Scene Chọn map (hỗ trợ cả tên có dấu, không dấu, đường dẫn và biến thể mã hóa)
+        if (s.IndexOf("Chọn map", StringComparison.OrdinalIgnoreCase) >= 0 ||
+            s.IndexOf("Chon map", StringComparison.OrdinalIgnoreCase) >= 0 ||
+            s.IndexOf("ChonMap", StringComparison.OrdinalIgnoreCase) >= 0 ||
+            s.IndexOf("MenuManChoi", StringComparison.OrdinalIgnoreCase) >= 0 ||
+            s.IndexOf("Chá» n map", StringComparison.OrdinalIgnoreCase) >= 0)
+        {
+            return true;
+        }
+
+        return false;
     }
 
     public void EnsureAudioSources()
