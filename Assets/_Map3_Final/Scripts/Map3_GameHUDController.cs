@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -404,6 +404,32 @@ namespace Game.Map3
         public void ReturnToHome()
         {
             Time.timeScale = 1f;
+            string targetScene = "Chọn map";
+
+            if (Application.CanStreamedLevelBeLoaded(targetScene))
+            {
+                SceneManager.LoadScene(targetScene);
+                return;
+            }
+
+            string fullPath = $"Assets/Scenes/{targetScene}.unity";
+            if (Application.CanStreamedLevelBeLoaded(fullPath))
+            {
+                SceneManager.LoadScene(fullPath);
+                return;
+            }
+
+#if UNITY_EDITOR
+            foreach (var s in UnityEditor.EditorBuildSettings.scenes)
+            {
+                if (s.enabled && (s.path == fullPath || System.IO.Path.GetFileNameWithoutExtension(s.path).Equals(targetScene, System.StringComparison.OrdinalIgnoreCase)))
+                {
+                    SceneManager.LoadScene(s.path);
+                    return;
+                }
+            }
+#endif
+
             if (Application.CanStreamedLevelBeLoaded("MainMenu"))
             {
                 SceneManager.LoadScene("MainMenu");
