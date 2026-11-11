@@ -348,6 +348,10 @@ public class ChonMapMenuController : MonoBehaviour
     public void OnSfxVolumeChanged(float volume)
     {
         sfxVolume = Mathf.Clamp01(volume);
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.SetSfxVolume(sfxVolume);
+        }
         if (audioSource != null)
         {
             audioSource.volume = sfxVolume;
@@ -473,13 +477,44 @@ public class ChonMapMenuController : MonoBehaviour
 
     private void PlayClickSound()
     {
+        if (clickClip != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(clickClip, sfxVolume);
+            return;
+        }
+
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlayClickSound(sfxVolume);
+            return;
+        }
+
         if (audioSource != null)
         {
-            if (clickClip != null)
+            if (clickClip == null)
             {
-                audioSource.PlayOneShot(clickClip, 0.85f);
+                clickClip = CreateClickChime();
             }
+            audioSource.PlayOneShot(clickClip, sfxVolume);
         }
+    }
+
+    private AudioClip CreateClickChime()
+    {
+        int sampleRate = 44100;
+        int samples = Mathf.CeilToInt(sampleRate * 0.09f);
+        float[] data = new float[samples];
+        for (int i = 0; i < samples; i++)
+        {
+            float t = (float)i / sampleRate;
+            float progress = (float)i / samples;
+            float wave = Mathf.Sin(2f * Mathf.PI * 980f * t);
+            float envelope = Mathf.Exp(-5f * progress);
+            data[i] = wave * envelope * 0.45f;
+        }
+        AudioClip clip = AudioClip.Create("ChonMapClick", samples, 1, sampleRate, false);
+        clip.SetData(data, 0);
+        return clip;
     }
 
     private IEnumerator FadeInRoutine()

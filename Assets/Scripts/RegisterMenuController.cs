@@ -258,6 +258,12 @@ public class RegisterMenuController : MonoBehaviour
 
         }
 
+        // Tự động phát nhạc nền hoài niệm cho trang đăng ký
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlayMainMenuMusic();
+        }
+
 
 
         // Tự động focus vào ô Tên người chơi

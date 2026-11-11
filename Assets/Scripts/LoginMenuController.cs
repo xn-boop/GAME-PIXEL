@@ -222,6 +222,12 @@ public class LoginMenuController : MonoBehaviour
 
         }
 
+        // Tự động phát nhạc nền hoài niệm cho trang đăng nhập
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlayMainMenuMusic();
+        }
+
         // 5. Tự động chọn ô nhập liệu
 
         if (emailInput != null)

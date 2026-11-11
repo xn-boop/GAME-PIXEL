@@ -177,6 +177,7 @@ public class MainMenuController : MonoBehaviour
         if (isStartingGame) return;
         isStartingGame = true;
 
+        AudioManager.Instance?.PlayClickSound();
         Debug.Log("MainMenuController: Đang kích hoạt hiệu ứng Tap và vào game...");
 
         StartCoroutine(StartGameRoutine());
@@ -298,6 +299,7 @@ public class MainMenuController : MonoBehaviour
 
     public void CancelStartNewGame()
     {
+        AudioManager.Instance?.PlayClickSound();
         HideConfirmNewGameDialog();
         isStartingGame = false;
         Debug.Log("[MainMenuController] Người chơi đã hủy Chơi mới; tiến trình được giữ nguyên.");
@@ -305,6 +307,7 @@ public class MainMenuController : MonoBehaviour
 
     public void ConfirmStartNewGame()
     {
+        AudioManager.Instance?.PlayClickSound();
         HideConfirmNewGameDialog();
         StartNewGameConfirmed();
     }
@@ -538,6 +541,7 @@ public class MainMenuController : MonoBehaviour
     public void OpenSettings()
     {
         if (isStartingGame) return;
+        AudioManager.Instance?.PlayClickSound();
         if (mainPanel != null) mainPanel.SetActive(false);
         if (settingsPanel != null) settingsPanel.SetActive(true);
     }
@@ -547,6 +551,7 @@ public class MainMenuController : MonoBehaviour
     /// </summary>
     public void CloseSettings()
     {
+        AudioManager.Instance?.PlayClickSound();
         if (settingsPanel != null) settingsPanel.SetActive(false);
         if (mainPanel != null) mainPanel.SetActive(true);
     }
