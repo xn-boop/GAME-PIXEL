@@ -192,6 +192,8 @@ public class LoginMenuController : MonoBehaviour
 
         {
 
+            EnsureCheckmarkSprite();
+
             bool isRemembered = PlayerPrefs.GetInt("RememberLogin", 0) == 1;
 
             rememberToggle.isOn = isRemembered;
@@ -329,27 +331,53 @@ public class LoginMenuController : MonoBehaviour
     }
 
     /// <summary>
-
     /// Xử lý bật/tắt checkbox Ghi nhớ đăng nhập
-
     /// </summary>
-
     public void OnRememberToggleChanged(bool isOn)
-
     {
+        EnsureCheckmarkSprite();
 
         if (rememberToggle != null && rememberToggle.graphic != null)
-
         {
-
+            if (rememberToggle.graphic is Image checkmarkImg)
+            {
+                checkmarkImg.color = Color.white;
+                checkmarkImg.canvasRenderer.SetAlpha(isOn ? 1f : 0f);
+            }
             rememberToggle.graphic.gameObject.SetActive(isOn);
-
         }
 
         PlayerPrefs.SetInt("RememberLogin", isOn ? 1 : 0);
-
         PlayerPrefs.Save();
+    }
 
+    private void EnsureCheckmarkSprite()
+    {
+        if (rememberToggle != null && rememberToggle.graphic is Image checkmarkImg)
+        {
+            if (checkmarkImg.sprite == null)
+            {
+                string spritePath = System.IO.Path.Combine(Application.dataPath, "UI", "checkbox_checked.png");
+                if (System.IO.File.Exists(spritePath))
+                {
+                    try
+                    {
+                        byte[] fileData = System.IO.File.ReadAllBytes(spritePath);
+                        Texture2D tex = new Texture2D(39, 38, TextureFormat.RGBA32, false);
+                        if (tex.LoadImage(fileData))
+                        {
+                            tex.filterMode = FilterMode.Point;
+                            checkmarkImg.sprite = Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), new Vector2(0.5f, 0.5f), 100f);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Debug.LogWarning($"[LoginMenuController] Không thể tải runtime checkmark sprite: {ex.Message}");
+                    }
+                }
+            }
+            checkmarkImg.color = Color.white;
+        }
     }
 
     /// <summary>
