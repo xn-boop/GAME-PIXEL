@@ -230,6 +230,9 @@ public class LoginMenuController : MonoBehaviour
             AudioManager.Instance.PlayMainMenuMusic();
         }
 
+        // Tự động gắn icon âm thanh góc trên bên phải chuẩn Map 1
+        EnsureSoundController();
+
         // 5. Tự động chọn ô nhập liệu
 
         if (emailInput != null)
@@ -1349,11 +1352,17 @@ public class LoginMenuController : MonoBehaviour
     }
 
     private string GetText(string vi, string en)
-
     {
-
         return (LocalizationManager.CurrentLanguage == GameLanguage.Vietnamese) ? vi : en;
+    }
 
+    private void EnsureSoundController()
+    {
+        var soundCtrl = GetComponent<MenuSoundController>();
+        if (soundCtrl == null)
+        {
+            soundCtrl = gameObject.AddComponent<MenuSoundController>();
+        }
     }
 
 }

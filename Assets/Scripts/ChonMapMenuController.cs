@@ -211,6 +211,9 @@ public class ChonMapMenuController : MonoBehaviour
             StartCoroutine(FadeInRoutine());
         }
 
+        // Tự động gắn icon âm thanh góc trên bên phải chuẩn Map 1
+        EnsureSoundController();
+
         ShowStatus("Chào mừng đến Menu Chọn Map!", 3f);
     }
 
@@ -272,6 +275,13 @@ public class ChonMapMenuController : MonoBehaviour
     {
         if (isTransitioning) return;
         PlayClickSound();
+
+        var soundCtrl = GetComponent<MenuSoundController>() ?? UnityEngine.Object.FindAnyObjectByType<MenuSoundController>();
+        if (soundCtrl != null)
+        {
+            soundCtrl.OpenSoundModal();
+            return;
+        }
 
         if (mapSelectionPanel != null && mapSelectionPanel.activeSelf)
         {
@@ -564,4 +574,13 @@ public class ChonMapMenuController : MonoBehaviour
     }
 
     #endregion
+
+    private void EnsureSoundController()
+    {
+        var soundCtrl = GetComponent<MenuSoundController>();
+        if (soundCtrl == null)
+        {
+            soundCtrl = gameObject.AddComponent<MenuSoundController>();
+        }
+    }
 }

@@ -264,6 +264,9 @@ public class RegisterMenuController : MonoBehaviour
             AudioManager.Instance.PlayMainMenuMusic();
         }
 
+        // Tự động gắn icon âm thanh góc trên bên phải chuẩn Map 1
+        EnsureSoundController();
+
 
 
         // Tự động focus vào ô Tên người chơi
@@ -1482,6 +1485,15 @@ public class RegisterMenuController : MonoBehaviour
 
         }
 
+    }
+
+    private void EnsureSoundController()
+    {
+        var soundCtrl = GetComponent<MenuSoundController>();
+        if (soundCtrl == null)
+        {
+            soundCtrl = gameObject.AddComponent<MenuSoundController>();
+        }
     }
 
 }

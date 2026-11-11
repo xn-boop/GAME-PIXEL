@@ -140,6 +140,18 @@ public class MainMenuController : MonoBehaviour
                 musicVolumeSlider.onValueChanged.AddListener(OnVolumeChanged);
             }
         }
+
+        // Tự động gắn và đồng bộ icon âm thanh góc trên bên phải chuẩn Map 1
+        EnsureSoundController();
+    }
+
+    private void EnsureSoundController()
+    {
+        var soundCtrl = GetComponent<MenuSoundController>();
+        if (soundCtrl == null)
+        {
+            soundCtrl = gameObject.AddComponent<MenuSoundController>();
+        }
     }
 
     private void Update()
@@ -175,6 +187,11 @@ public class MainMenuController : MonoBehaviour
     public void PlayGame()
     {
         if (isStartingGame) return;
+
+        // Nếu bảng điều chỉnh âm thanh đang mở thì không bắt đầu game
+        var soundCtrl = GetComponent<MenuSoundController>() ?? UnityEngine.Object.FindAnyObjectByType<MenuSoundController>();
+        if (soundCtrl != null && soundCtrl.IsModalOpen) return;
+
         isStartingGame = true;
 
         AudioManager.Instance?.PlayClickSound();

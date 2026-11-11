@@ -49,6 +49,10 @@ public class AudioManager : MonoBehaviour
     [Range(0f, 1f)]
     public float sfxVolume = 0.85f;
 
+    [Header("Mute State")]
+    public bool isMuted = false;
+    public bool IsMuted => isMuted;
+
     private AudioSource musicSource;
     private AudioSource sfxSource;
     private bool isInitialized = false;
@@ -72,6 +76,7 @@ public class AudioManager : MonoBehaviour
 
         EnsureAudioSources();
         LoadClipsIfNeeded();
+        LoadSavedSettings();
     }
 
     private void OnEnable()
@@ -314,7 +319,7 @@ public class AudioManager : MonoBehaviour
             return;
 
         musicSource.clip = clip;
-        musicSource.volume = musicVolume;
+        musicSource.volume = isMuted ? 0f : musicVolume;
         musicSource.Play();
     }
 
@@ -387,24 +392,74 @@ public class AudioManager : MonoBehaviour
 
     #endregion
 
-    #region Volume Controls
+    #region Volume & Mute Controls
+
+    public void LoadSavedSettings()
+    {
+        isMuted = PlayerPrefs.GetInt("Game_Audio_Muted", 0) == 1;
+        musicVolume = PlayerPrefs.GetFloat("Game_Music_Volume", 0.45f);
+        sfxVolume = PlayerPrefs.GetFloat("Game_Sfx_Volume", 0.85f);
+        ApplyAudioSettings();
+    }
+
+    public void ApplyAudioSettings()
+    {
+        AudioListener.pause = isMuted;
+        AudioListener.volume = isMuted ? 0f : 1f;
+
+        if (musicSource != null)
+        {
+            musicSource.volume = isMuted ? 0f : musicVolume;
+        }
+
+        if (sfxSource != null)
+        {
+            sfxSource.volume = isMuted ? 0f : sfxVolume;
+        }
+    }
+
+    public void SetMuted(bool muted)
+    {
+        isMuted = muted;
+        PlayerPrefs.SetInt("Game_Audio_Muted", isMuted ? 1 : 0);
+        PlayerPrefs.Save();
+        ApplyAudioSettings();
+    }
+
+    public void ToggleMute()
+    {
+        SetMuted(!isMuted);
+    }
 
     public void SetMusicVolume(float volume)
     {
         musicVolume = Mathf.Clamp01(volume);
-        if (musicSource != null)
+        PlayerPrefs.SetFloat("Game_Music_Volume", musicVolume);
+        PlayerPrefs.Save();
+
+        if (isMuted && musicVolume > 0.01f)
         {
-            musicSource.volume = musicVolume;
+            isMuted = false;
+            PlayerPrefs.SetInt("Game_Audio_Muted", 0);
+            PlayerPrefs.Save();
         }
+        else if (musicVolume <= 0.001f && !isMuted)
+        {
+            isMuted = true;
+            PlayerPrefs.SetInt("Game_Audio_Muted", 1);
+            PlayerPrefs.Save();
+        }
+
+        ApplyAudioSettings();
     }
 
     public void SetSfxVolume(float volume)
     {
         sfxVolume = Mathf.Clamp01(volume);
-        if (sfxSource != null)
-        {
-            sfxSource.volume = sfxVolume;
-        }
+        PlayerPrefs.SetFloat("Game_Sfx_Volume", sfxVolume);
+        PlayerPrefs.Save();
+
+        ApplyAudioSettings();
     }
 
     #endregion
